@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\Toast.cydwr\Pins">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\TopDesign">
 <ExpandedNodeIds>
 <v>Toast</v>
 <v>Toast\Toast</v>
@@ -92,7 +92,6 @@
 <v>Toast\Toast\Source Files\SD_RTC_functions.c</v>
 <v>Toast\Toast\Source Files\utils.c</v>
 <v>Toast\Toast\Generated_Source</v>
-<v>Toast\Toast\Generated_Source\PSoC5</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -265,7 +264,6 @@
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\CS_RTC.lst</v>
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\cy_em_eeprom.lst</v>
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\CyBootAsmGnu.lst</v>
-<v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\cybootloader.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -353,7 +351,6 @@
 <v>Toast\Toast\Timer_v2_70</v>
 <v>Toast\Toast\Timer_v2_70\Timer_v2_70.pdf</v>
 <v>Toast\Toast\UART_v2_50.pdf</v>
-<v>Toast\Toast\ZeroTerminal</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
