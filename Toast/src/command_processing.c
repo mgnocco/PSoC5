@@ -2803,7 +2803,7 @@ uint8 memInit(void)
     for (i=0; i<EEPROM_BYTES_ROW*EEPROM_AFTER_CNT_FREE_ROWS; i++){
         g_mem.unused_bytes1[i] = 0;
     }
-    g_mem.dev.use_2nd_motor_flag = FALSE;
+    g_mem.dev.use_2nd_motor_flag = TRUE;
 
     // MOTOR STRUCT
     for (i=0; i< NUM_OF_MOTORS; i++) {
@@ -3172,6 +3172,46 @@ void cmd_get_joystick() {
 
     commWrite(packet_data, 6);
 }
+
+
+
+
+
+void cmd_set_inputs(){
+    
+    // Store position setted in right variables
+    int16 aux_int16[NUM_OF_MOTORS];
+    static int16 last_aux_int16[NUM_OF_MOTORS];
+    
+    aux_int16[0] = (int16)(g_rx.buffer[1]<<8 | g_rx.buffer[2]);
+    aux_int16[1] = (int16)(g_rx.buffer[3]<<8 | g_rx.buffer[4]);
+    aux_int16[2] = (int16)(g_rx.buffer[5]<<8 | g_rx.buffer[6]);
+    aux_int16[3] = (int16)(g_rx.buffer[7]<<8 | g_rx.buffer[8]);
+    aux_int16[4] = (int16)(g_rx.buffer[9]<<8 | g_rx.buffer[10]);
+    // Check if last command received was the same as this 
+    //(Note: last command not last motor reference in g_ref)
+    for (uint8 i = 0; i < NUM_OF_MOTORS; i++) {
+       if(last_aux_int16[i] != aux_int16[i]){
+            change_ext_ref_flag = TRUE;
+       }
+        // Update last command
+       last_aux_int16[i] = aux_int16[i];
+    }
+    
+    // Update g_refNew in case a new command has been received
+    if (change_ext_ref_flag) {
+        for (uint8 i = 0; i< NUM_OF_MOTORS; i++) {
+                    g_refNew[i].pwm = aux_int16[i];
+        }  
+        PWM_MOTORS_WriteCompare1(aux_int16[0]);
+        PWM_MOTORS_WriteCompare2(aux_int16[1]);
+        PWM_MOTORS_WriteCompare1(aux_int16[2]);
+        PWM_MOTORS_WriteCompare1(aux_int16[3]);
+        PWM_MOTORS_WriteCompare1(aux_int16[4]);
+    }
+}
+
+
 
 void cmd_set_inputs(){
     

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\Toast.cydwr\Pins">
 <ExpandedNodeIds>
 <v>Toast</v>
 <v>Toast\Toast</v>
@@ -362,7 +362,21 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\Toast.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\src\globals.c" />
+<name v=".\src\main.c" />
+<name v=".\src\interruptions.c" />
+<name v=".\Toast.cydsn\Toast.rpt" />
+<name v=".\src\command_processing.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1204, 510" SelectedTabbedMdiWindow="45530aa8-081f-43f5-8db1-1eb8a0c98d65"><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\TopDesign\TopDesign.cysch" Guid="c51dc70a-d8aa-4390-a7ca-605cf70a198f" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\globals.c" Guid="151f814b-9a32-4733-b4fd-6d1c64d8bf67" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\main.c" Guid="2d51d77c-32c6-4986-bd9a-37d874fc1e0c" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\interruptions.c" Guid="367be082-1158-4072-86cd-a9f02316b732" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.rpt" Guid="23b0999f-8960-4228-afa0-1cfc17b682c9" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\command_processing.c" Guid="45530aa8-081f-43f5-8db1-1eb8a0c98d65" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="Release" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
