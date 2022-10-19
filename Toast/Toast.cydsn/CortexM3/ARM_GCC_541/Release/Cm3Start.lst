@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
   11:Generated_Source\PSoC5/Cm3Start.c **** * You may use this file only in accordance with the license, terms, conditions,
   12:Generated_Source\PSoC5/Cm3Start.c **** * disclaimers, and limitations in the end user license agreement accompanying
   13:Generated_Source\PSoC5/Cm3Start.c **** * the software package with which this file was provided.
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 2
 
 
   14:Generated_Source\PSoC5/Cm3Start.c **** *******************************************************************************/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
   68:Generated_Source\PSoC5/Cm3Start.c **** *******************************************************************************/
   69:Generated_Source\PSoC5/Cm3Start.c **** #if defined (__ICCARM__)
   70:Generated_Source\PSoC5/Cm3Start.c ****     #pragma location=".ramvectors"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 3
 
 
   71:Generated_Source\PSoC5/Cm3Start.c ****     #pragma data_alignment=256
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  108:Generated_Source\PSoC5/Cm3Start.c ****                  */
  109:Generated_Source\PSoC5/Cm3Start.c ****             }
   58              		.loc 1 109 0 discriminator 1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 4
 
 
   59 0010 FEE7     		b	.L3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  149:Generated_Source\PSoC5/Cm3Start.c **** void Reset(void)
  150:Generated_Source\PSoC5/Cm3Start.c **** {
  151:Generated_Source\PSoC5/Cm3Start.c ****     #if(CYDEV_PROJ_TYPE != CYDEV_PROJ_TYPE_LOADABLE && CYDEV_PROJ_TYPE != CYDEV_PROJ_TYPE_LOADABLEA
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 5
 
 
  152:Generated_Source\PSoC5/Cm3Start.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  206:Generated_Source\PSoC5/Cm3Start.c **** typedef unsigned char __cy_byte_align8 __attribute ((aligned (8)));
  207:Generated_Source\PSoC5/Cm3Start.c **** 
  208:Generated_Source\PSoC5/Cm3Start.c **** struct __cy_region
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 6
 
 
  209:Generated_Source\PSoC5/Cm3Start.c **** {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  244:Generated_Source\PSoC5/Cm3Start.c ****     }
   93              		.loc 1 244 0 discriminator 1
   94 0012 FEE7     		b	.L5
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 7
 
 
   95              		.cfi_endproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  122 000c 7B68     		ldr	r3, [r7, #4]
  123 000e 1344     		add	r3, r3, r2
  124 0010 1A46     		mov	r2, r3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 8
 
 
  125 0012 0F4B     		ldr	r3, .L10+4
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  167              	.LFE2:
  168              		.size	_sbrk, .-_sbrk
  169              		.section	.text.Reset,"ax",%progbits
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 9
 
 
  170              		.align	2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  193              		.align	2
  194              		.global	Start_c
  195              		.thumb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 10
 
 
  196              		.thumb_func
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  337:Generated_Source\PSoC5/Cm3Start.c ****         uint32 *dst = (uint32 *)rptr->data;
  228              		.loc 1 337 0
  229 001a 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 11
 
 
  230 001c 5B68     		ldr	r3, [r3, #4]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  271 0058 08E0     		b	.L17
  272              	.L18:
  349:Generated_Source\PSoC5/Cm3Start.c ****         {
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 12
 
 
  350:Generated_Source\PSoC5/Cm3Start.c ****             *dst = 0u;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  363:Generated_Source\PSoC5/Cm3Start.c ****         /* If main returns, make sure we don't return. */
  364:Generated_Source\PSoC5/Cm3Start.c ****     }
  310              		.loc 1 364 0 discriminator 1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 13
 
 
  311 008e FEE7     		b	.L20
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  392:Generated_Source\PSoC5/Cm3Start.c ****         #endif /* (CYDEV_DEBUGGING_ENABLE) */
  393:Generated_Source\PSoC5/Cm3Start.c **** 
  394:Generated_Source\PSoC5/Cm3Start.c ****         /* Reset Status Register has Read-to-clear SW access mode.
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 14
 
 
  395:Generated_Source\PSoC5/Cm3Start.c ****         * Preserve current RESET_SR0 state to make it available for next reading.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  449:Generated_Source\PSoC5/Cm3Start.c **** /*******************************************************************************
  450:Generated_Source\PSoC5/Cm3Start.c **** * Function Name: initialize_psoc
  451:Generated_Source\PSoC5/Cm3Start.c **** ****************************************************************************//**
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 15
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 15
 
 
  452:Generated_Source\PSoC5/Cm3Start.c **** *
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  368 0022 04D8     		bhi	.L25
  369              		.loc 1 475 0 is_stmt 0 discriminator 1
  370 0024 134A     		ldr	r2, .L28+12
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 16
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 16
 
 
  371 0026 7B68     		ldr	r3, [r7, #4]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  496:Generated_Source\PSoC5/Cm3Start.c ****         /* Actually, no need to clean this variable, just to make compiler happy. */
  497:Generated_Source\PSoC5/Cm3Start.c ****         cySysNoInitDataValid = 0u;
  403              		.loc 1 497 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 17
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 17
 
 
  404 0058 0C4B     		ldr	r3, .L28+36
@@ -1015,17 +1015,17 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  453 000c 0D000000 		.4byte	.LASF44
  454 0010 0C       		.byte	0xc
  455 0011 77010000 		.4byte	.LASF45
- 456 0015 9F010000 		.4byte	.LASF46
+ 456 0015 A6010000 		.4byte	.LASF46
  457 0019 00000000 		.4byte	.Ldebug_ranges0+0
  458 001d 00000000 		.4byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 18
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 18
 
 
  459 0021 00000000 		.4byte	.Ldebug_line0
  460 0025 02       		.uleb128 0x2
  461 0026 01       		.byte	0x1
  462 0027 06       		.byte	0x6
- 463 0028 B4020000 		.4byte	.LASF0
+ 463 0028 89020000 		.4byte	.LASF0
  464 002c 02       		.uleb128 0x2
  465 002d 01       		.byte	0x1
  466 002e 08       		.byte	0x8
@@ -1033,7 +1033,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  468 0033 02       		.uleb128 0x2
  469 0034 02       		.byte	0x2
  470 0035 05       		.byte	0x5
- 471 0036 95020000 		.4byte	.LASF2
+ 471 0036 6A020000 		.4byte	.LASF2
  472 003a 02       		.uleb128 0x2
  473 003b 02       		.byte	0x2
  474 003c 07       		.byte	0x7
@@ -1041,7 +1041,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  476 0041 02       		.uleb128 0x2
  477 0042 04       		.byte	0x4
  478 0043 05       		.byte	0x5
- 479 0044 9F020000 		.4byte	.LASF4
+ 479 0044 74020000 		.4byte	.LASF4
  480 0048 02       		.uleb128 0x2
  481 0049 04       		.byte	0x4
  482 004a 07       		.byte	0x7
@@ -1049,11 +1049,11 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  484 004f 02       		.uleb128 0x2
  485 0050 08       		.byte	0x8
  486 0051 05       		.byte	0x5
- 487 0052 82020000 		.4byte	.LASF6
+ 487 0052 57020000 		.4byte	.LASF6
  488 0056 02       		.uleb128 0x2
  489 0057 08       		.byte	0x8
  490 0058 07       		.byte	0x7
- 491 0059 2F020000 		.4byte	.LASF7
+ 491 0059 04020000 		.4byte	.LASF7
  492 005d 03       		.uleb128 0x3
  493 005e 04       		.byte	0x4
  494 005f 05       		.byte	0x5
@@ -1061,7 +1061,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  496 0064 02       		.uleb128 0x2
  497 0065 04       		.byte	0x4
  498 0066 07       		.byte	0x7
- 499 0067 22020000 		.4byte	.LASF8
+ 499 0067 F7010000 		.4byte	.LASF8
  500 006b 04       		.uleb128 0x4
  501 006c 06000000 		.4byte	.LASF10
  502 0070 02       		.byte	0x2
@@ -1070,15 +1070,15 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  505 0076 02       		.uleb128 0x2
  506 0077 08       		.byte	0x8
  507 0078 04       		.byte	0x4
- 508 0079 A8020000 		.4byte	.LASF9
+ 508 0079 7D020000 		.4byte	.LASF9
  509 007d 05       		.uleb128 0x5
  510 007e 65010000 		.4byte	.LASF11
  511 0082 03       		.byte	0x3
  512 0083 E401     		.2byte	0x1e4
  513 0085 2C000000 		.4byte	0x2c
  514 0089 05       		.uleb128 0x5
- 515 008a 1B020000 		.4byte	.LASF12
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 19
+ 515 008a F0010000 		.4byte	.LASF12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 19
 
 
  516 008e 03       		.byte	0x3
@@ -1091,13 +1091,13 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  523 009c 02       		.uleb128 0x2
  524 009d 08       		.byte	0x8
  525 009e 04       		.byte	0x4
- 526 009f 04020000 		.4byte	.LASF14
+ 526 009f 9F010000 		.4byte	.LASF14
  527 00a3 02       		.uleb128 0x2
  528 00a4 01       		.byte	0x1
  529 00a5 08       		.byte	0x8
- 530 00a6 90020000 		.4byte	.LASF15
+ 530 00a6 65020000 		.4byte	.LASF15
  531 00aa 05       		.uleb128 0x5
- 532 00ab 74020000 		.4byte	.LASF16
+ 532 00ab 49020000 		.4byte	.LASF16
  533 00af 03       		.byte	0x3
  534 00b0 8E02     		.2byte	0x28e
  535 00b2 B6000000 		.4byte	0xb6
@@ -1111,7 +1111,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  543 00c7 06       		.uleb128 0x6
  544 00c8 89000000 		.4byte	0x89
  545 00cc 05       		.uleb128 0x5
- 546 00cd 4C020000 		.4byte	.LASF18
+ 546 00cd 21020000 		.4byte	.LASF18
  547 00d1 03       		.byte	0x3
  548 00d2 A002     		.2byte	0x2a0
  549 00d4 D8000000 		.4byte	0xd8
@@ -1122,23 +1122,23 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  554 00df 02       		.uleb128 0x2
  555 00e0 04       		.byte	0x4
  556 00e1 07       		.byte	0x7
- 557 00e2 79020000 		.4byte	.LASF19
+ 557 00e2 4E020000 		.4byte	.LASF19
  558 00e6 09       		.uleb128 0x9
  559 00e7 04       		.byte	0x4
  560 00e8 0A       		.uleb128 0xa
  561 00e9 A3000000 		.4byte	0xa3
  562 00ed 04       		.uleb128 0x4
- 563 00ee 63020000 		.4byte	.LASF20
+ 563 00ee 38020000 		.4byte	.LASF20
  564 00f2 01       		.byte	0x1
  565 00f3 CE       		.byte	0xce
  566 00f4 2C000000 		.4byte	0x2c
  567 00f8 0B       		.uleb128 0xb
- 568 00f9 EE020000 		.4byte	.LASF47
+ 568 00f9 C3020000 		.4byte	.LASF47
  569 00fd 10       		.byte	0x10
  570 00fe 01       		.byte	0x1
  571 00ff D0       		.byte	0xd0
  572 0100 35010000 		.4byte	0x135
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 20
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 20
 
 
  573 0104 0C       		.uleb128 0xc
@@ -1154,7 +1154,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  583 0117 35010000 		.4byte	0x135
  584 011b 04       		.byte	0x4
  585 011c 0C       		.uleb128 0xc
- 586 011d 59020000 		.4byte	.LASF23
+ 586 011d 2E020000 		.4byte	.LASF23
  587 0121 01       		.byte	0x1
  588 0122 D4       		.byte	0xd4
  589 0123 6B000000 		.4byte	0x6b
@@ -1170,7 +1170,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  599 0136 04       		.byte	0x4
  600 0137 ED000000 		.4byte	0xed
  601 013b 0D       		.uleb128 0xd
- 602 013c C0020000 		.4byte	.LASF31
+ 602 013c 95020000 		.4byte	.LASF31
  603 0140 01       		.byte	0x1
  604 0141 5A       		.byte	0x5a
  605 0142 00000000 		.4byte	.LFB0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  627 0170 10       		.uleb128 0x10
  628 0171 99010000 		.4byte	.LASF26
  629 0175 01       		.byte	0x1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 21
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 21
 
 
  630 0176 0701     		.2byte	0x107
@@ -1209,7 +1209,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  635 0185 9C       		.byte	0x9c
  636 0186 C7010000 		.4byte	0x1c7
  637 018a 11       		.uleb128 0x11
- 638 018b E7020000 		.4byte	.LASF28
+ 638 018b BC020000 		.4byte	.LASF28
  639 018f 01       		.byte	0x1
  640 0190 0701     		.2byte	0x107
  641 0192 5D000000 		.4byte	0x5d
@@ -1258,11 +1258,11 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  684 01ef 01       		.uleb128 0x1
  685 01f0 9C       		.byte	0x9c
  686 01f1 5A020000 		.4byte	0x25a
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 22
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 22
 
 
  687 01f5 13       		.uleb128 0x13
- 688 01f6 DF020000 		.4byte	.LASF34
+ 688 01f6 B4020000 		.4byte	.LASF34
  689 01fa 01       		.byte	0x1
  690 01fb 4A01     		.2byte	0x14a
  691 01fd 64000000 		.4byte	0x64
@@ -1297,7 +1297,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  720 0238 91       		.byte	0x91
  721 0239 68       		.sleb128 -24
  722 023a 13       		.uleb128 0x13
- 723 023b 46020000 		.4byte	.LASF36
+ 723 023b 1B020000 		.4byte	.LASF36
  724 023f 01       		.byte	0x1
  725 0240 5201     		.2byte	0x152
  726 0242 64000000 		.4byte	0x64
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  741 025b 04       		.byte	0x4
  742 025c 60020000 		.4byte	0x260
  743 0260 0A       		.uleb128 0xa
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 23
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 23
 
 
  744 0261 F8000000 		.4byte	0xf8
@@ -1326,7 +1326,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  746 0266 04       		.byte	0x4
  747 0267 89000000 		.4byte	0x89
  748 026b 18       		.uleb128 0x18
- 749 026c 0B020000 		.4byte	.LASF48
+ 749 026c E0010000 		.4byte	.LASF48
  750 0270 01       		.byte	0x1
  751 0271 CB01     		.2byte	0x1cb
  752 0273 00000000 		.4byte	.LFB5
@@ -1378,14 +1378,14 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  798 02d4 00000000 		.4byte	CyRamVectors
  799 02d8 1B       		.uleb128 0x1b
  800 02d9 60020000 		.4byte	0x260
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 24
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 24
 
 
  801 02dd E3020000 		.4byte	0x2e3
  802 02e1 1E       		.uleb128 0x1e
  803 02e2 00       		.byte	0
  804 02e3 1A       		.uleb128 0x1a
- 805 02e4 D2020000 		.4byte	.LASF41
+ 805 02e4 A7020000 		.4byte	.LASF41
  806 02e8 01       		.byte	0x1
  807 02e9 D8       		.byte	0xd8
  808 02ea EE020000 		.4byte	0x2ee
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  855 0011 00       		.byte	0
  856 0012 00       		.byte	0
  857 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 25
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 25
 
 
  858 0014 24       		.uleb128 0x24
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  912 004a 07       		.uleb128 0x7
  913 004b 0F       		.uleb128 0xf
  914 004c 00       		.byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 26
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 26
 
 
  915 004d 0B       		.uleb128 0xb
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  969 0083 0B       		.uleb128 0xb
  970 0084 00       		.byte	0
  971 0085 00       		.byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 27
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 27
 
 
  972 0086 0D       		.uleb128 0xd
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1026 00bf 0E       		.uleb128 0xe
  1027 00c0 3A       		.uleb128 0x3a
  1028 00c1 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 28
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 28
 
 
  1029 00c2 3B       		.uleb128 0x3b
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1083 00f9 08       		.uleb128 0x8
  1084 00fa 3A       		.uleb128 0x3a
  1085 00fb 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 29
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 29
 
 
  1086 00fc 3B       		.uleb128 0x3b
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1140 0133 0E       		.uleb128 0xe
  1141 0134 3A       		.uleb128 0x3a
  1142 0135 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 30
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 30
 
 
  1143 0136 3B       		.uleb128 0x3b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1197 016e 19       		.uleb128 0x19
  1198 016f 11       		.uleb128 0x11
  1199 0170 01       		.uleb128 0x1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 31
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 31
 
 
  1200 0171 12       		.uleb128 0x12
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1254 01a8 49       		.uleb128 0x49
  1255 01a9 13       		.uleb128 0x13
  1256 01aa 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 32
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 32
 
 
  1257 01ab 0B       		.uleb128 0xb
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1311 001c 14000000 		.4byte	.LFE1-.LFB1
  1312 0020 00000000 		.4byte	.LFB2
  1313 0024 54000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 33
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 33
 
 
  1314 0028 00000000 		.4byte	.LFB3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1350 009b 43795261 		.ascii	"CyRamVectors\000"
  1350      6D566563 
  1350      746F7273 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 34
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 34
 
 
  1350      00
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1378      6C756500 
  1379              	.LASF43:
  1380 0133 526F6D56 		.ascii	"RomVectors\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 35
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 35
 
 
  1380      6563746F 
@@ -2073,115 +2073,112 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 1
  1393              	.LASF26:
  1394 0199 5F736272 		.ascii	"_sbrk\000"
  1394      6B00
- 1395              	.LASF46:
- 1396 019f 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
- 1396      73657273 
- 1396      5C6D676E 
- 1396      6F63636F 
- 1396      5C4F6E65 
- 1397 01cf 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
- 1397      69616E6F 
- 1397      20546563 
- 1397      6E6F6C6F 
- 1397      6769615C 
- 1398 01fe 63796473 		.ascii	"cydsn\000"
- 1398      6E00
- 1399              	.LASF14:
- 1400 0204 646F7562 		.ascii	"double\000"
- 1400      6C6500
- 1401              	.LASF48:
- 1402 020b 696E6974 		.ascii	"initialize_psoc\000"
- 1402      69616C69 
- 1402      7A655F70 
- 1402      736F6300 
- 1403              	.LASF12:
- 1404 021b 75696E74 		.ascii	"uint32\000"
- 1404      333200
- 1405              	.LASF8:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 36
+ 1395              	.LASF14:
+ 1396 019f 646F7562 		.ascii	"double\000"
+ 1396      6C6500
+ 1397              	.LASF46:
+ 1398 01a6 433A5C55 		.ascii	"C:\\Users\\mgnocco\\Documents\\GitHub\\PSoC5\\Toast"
+ 1398      73657273 
+ 1398      5C6D676E 
+ 1398      6F63636F 
+ 1398      5C446F63 
+ 1399 01d3 5C546F61 		.ascii	"\\Toast.cydsn\000"
+ 1399      73742E63 
+ 1399      7964736E 
+ 1399      00
+ 1400              	.LASF48:
+ 1401 01e0 696E6974 		.ascii	"initialize_psoc\000"
+ 1401      69616C69 
+ 1401      7A655F70 
+ 1401      736F6300 
+ 1402              	.LASF12:
+ 1403 01f0 75696E74 		.ascii	"uint32\000"
+ 1403      333200
+ 1404              	.LASF8:
+ 1405 01f7 756E7369 		.ascii	"unsigned int\000"
+ 1405      676E6564 
+ 1405      20696E74 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 36
 
 
- 1406 0222 756E7369 		.ascii	"unsigned int\000"
- 1406      676E6564 
- 1406      20696E74 
- 1406      00
- 1407              	.LASF7:
- 1408 022f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1408      206C6F6E 
- 1408      6720756E 
- 1408      7369676E 
- 1408      65642069 
- 1409              	.LASF36:
- 1410 0246 6C696D69 		.ascii	"limit\000"
- 1410      7400
- 1411              	.LASF18:
- 1412 024c 63796973 		.ascii	"cyisraddress\000"
- 1412      72616464 
- 1412      72657373 
- 1412      00
- 1413              	.LASF23:
- 1414 0259 696E6974 		.ascii	"init_size\000"
- 1414      5F73697A 
- 1414      6500
- 1415              	.LASF20:
- 1416 0263 5F5F6379 		.ascii	"__cy_byte_align8\000"
- 1416      5F627974 
- 1416      655F616C 
- 1416      69676E38 
- 1416      00
- 1417              	.LASF16:
- 1418 0274 72656738 		.ascii	"reg8\000"
- 1418      00
- 1419              	.LASF19:
- 1420 0279 73697A65 		.ascii	"sizetype\000"
- 1420      74797065 
- 1420      00
- 1421              	.LASF6:
- 1422 0282 6C6F6E67 		.ascii	"long long int\000"
- 1422      206C6F6E 
- 1422      6720696E 
- 1422      7400
- 1423              	.LASF15:
- 1424 0290 63686172 		.ascii	"char\000"
- 1424      00
- 1425              	.LASF2:
- 1426 0295 73686F72 		.ascii	"short int\000"
- 1426      7420696E 
- 1426      7400
- 1427              	.LASF4:
- 1428 029f 6C6F6E67 		.ascii	"long int\000"
- 1428      20696E74 
- 1428      00
- 1429              	.LASF9:
- 1430 02a8 6C6F6E67 		.ascii	"long double\000"
- 1430      20646F75 
- 1430      626C6500 
- 1431              	.LASF0:
- 1432 02b4 7369676E 		.ascii	"signed char\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cckjWau4.s 			page 37
+ 1405      00
+ 1406              	.LASF7:
+ 1407 0204 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1407      206C6F6E 
+ 1407      6720756E 
+ 1407      7369676E 
+ 1407      65642069 
+ 1408              	.LASF36:
+ 1409 021b 6C696D69 		.ascii	"limit\000"
+ 1409      7400
+ 1410              	.LASF18:
+ 1411 0221 63796973 		.ascii	"cyisraddress\000"
+ 1411      72616464 
+ 1411      72657373 
+ 1411      00
+ 1412              	.LASF23:
+ 1413 022e 696E6974 		.ascii	"init_size\000"
+ 1413      5F73697A 
+ 1413      6500
+ 1414              	.LASF20:
+ 1415 0238 5F5F6379 		.ascii	"__cy_byte_align8\000"
+ 1415      5F627974 
+ 1415      655F616C 
+ 1415      69676E38 
+ 1415      00
+ 1416              	.LASF16:
+ 1417 0249 72656738 		.ascii	"reg8\000"
+ 1417      00
+ 1418              	.LASF19:
+ 1419 024e 73697A65 		.ascii	"sizetype\000"
+ 1419      74797065 
+ 1419      00
+ 1420              	.LASF6:
+ 1421 0257 6C6F6E67 		.ascii	"long long int\000"
+ 1421      206C6F6E 
+ 1421      6720696E 
+ 1421      7400
+ 1422              	.LASF15:
+ 1423 0265 63686172 		.ascii	"char\000"
+ 1423      00
+ 1424              	.LASF2:
+ 1425 026a 73686F72 		.ascii	"short int\000"
+ 1425      7420696E 
+ 1425      7400
+ 1426              	.LASF4:
+ 1427 0274 6C6F6E67 		.ascii	"long int\000"
+ 1427      20696E74 
+ 1427      00
+ 1428              	.LASF9:
+ 1429 027d 6C6F6E67 		.ascii	"long double\000"
+ 1429      20646F75 
+ 1429      626C6500 
+ 1430              	.LASF0:
+ 1431 0289 7369676E 		.ascii	"signed char\000"
+ 1431      65642063 
+ 1431      68617200 
+ 1432              	.LASF31:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccJoyMh3.s 			page 37
 
 
- 1432      65642063 
- 1432      68617200 
- 1433              	.LASF31:
- 1434 02c0 496E7444 		.ascii	"IntDefaultHandler\000"
- 1434      65666175 
- 1434      6C744861 
- 1434      6E646C65 
- 1434      7200
- 1435              	.LASF41:
- 1436 02d2 5F5F6379 		.ascii	"__cy_regions\000"
- 1436      5F726567 
- 1436      696F6E73 
- 1436      00
- 1437              	.LASF34:
- 1438 02df 72656769 		.ascii	"regions\000"
- 1438      6F6E7300 
- 1439              	.LASF28:
- 1440 02e7 6E627974 		.ascii	"nbytes\000"
- 1440      657300
- 1441              	.LASF47:
- 1442 02ee 5F5F6379 		.ascii	"__cy_region\000"
- 1442      5F726567 
- 1442      696F6E00 
- 1443              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1433 0295 496E7444 		.ascii	"IntDefaultHandler\000"
+ 1433      65666175 
+ 1433      6C744861 
+ 1433      6E646C65 
+ 1433      7200
+ 1434              	.LASF41:
+ 1435 02a7 5F5F6379 		.ascii	"__cy_regions\000"
+ 1435      5F726567 
+ 1435      696F6E73 
+ 1435      00
+ 1436              	.LASF34:
+ 1437 02b4 72656769 		.ascii	"regions\000"
+ 1437      6F6E7300 
+ 1438              	.LASF28:
+ 1439 02bc 6E627974 		.ascii	"nbytes\000"
+ 1439      657300
+ 1440              	.LASF47:
+ 1441 02c3 5F5F6379 		.ascii	"__cy_region\000"
+ 1441      5F726567 
+ 1441      696F6E00 
+ 1442              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

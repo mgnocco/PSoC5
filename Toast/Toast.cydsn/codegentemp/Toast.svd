@@ -19,7 +19,7 @@
         <register>
           <name>Chip_Select_ENCODER_LINE_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006579</addressOffset>
+          <addressOffset>0x4000657A</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -40,7 +40,7 @@
         <register>
           <name>RESET_COUNTERS_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006476</addressOffset>
+          <addressOffset>0x40006475</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -82,7 +82,7 @@
         <register>
           <name>BLINK_25HZ_COMPARE_Reg_</name>
           <description>UDB.D0 - Assigned Compare Value</description>
-          <addressOffset>0x40006427</addressOffset>
+          <addressOffset>0x40006426</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -91,7 +91,7 @@
         <register>
           <name>BLINK_25HZ_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x4000647E</addressOffset>
+          <addressOffset>0x4000647F</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -123,7 +123,7 @@
         <register>
           <name>BLINK_25HZ_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006497</addressOffset>
+          <addressOffset>0x40006496</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -260,7 +260,7 @@
         <register>
           <name>COUNTER_ENC_COUNTER</name>
           <description>UDB.A0 - Current Counter Value</description>
-          <addressOffset>0x40006405</addressOffset>
+          <addressOffset>0x40006402</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -269,7 +269,7 @@
         <register>
           <name>COUNTER_ENC_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006425</addressOffset>
+          <addressOffset>0x40006422</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -278,48 +278,16 @@
         <register>
           <name>COUNTER_ENC_COMPARE</name>
           <description>UDB.D1 - Assigned Compare Value</description>
-          <addressOffset>0x40006435</addressOffset>
+          <addressOffset>0x40006432</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
-        </register>
-        <register>
-          <name>COUNTER_ENC_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006576</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable Counter</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CAPMODE</name>
-              <description>Capture mode</description>
-              <lsb>3</lsb>
-              <msb>4</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE</name>
-              <description>Compare mode</description>
-              <lsb>0</lsb>
-              <msb>2</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
         </register>
         <register>
           <name>COUNTER_ENC_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006586</addressOffset>
+          <addressOffset>0x40006486</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -379,7 +347,7 @@
         <register>
           <name>COUNTER_ENC_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006596</addressOffset>
+          <addressOffset>0x40006496</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -501,6 +469,38 @@
             </field>
           </fields>
         </register>
+        <register>
+          <name>COUNTER_ENC_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006574</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable Counter</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CAPMODE</name>
+              <description>Capture mode</description>
+              <lsb>3</lsb>
+              <msb>4</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE</name>
+              <description>Compare mode</description>
+              <lsb>0</lsb>
+              <msb>2</msb>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -516,7 +516,7 @@
         <register>
           <name>MY_TIMER_REG_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006473</addressOffset>
+          <addressOffset>0x4000647E</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -537,7 +537,7 @@
         <register>
           <name>BLINK_CTRL_EN_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006478</addressOffset>
+          <addressOffset>0x4000647B</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -558,7 +558,7 @@
         <register>
           <name>RESET_FF_CONTROL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x4000657A</addressOffset>
+          <addressOffset>0x40006576</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -579,7 +579,7 @@
         <register>
           <name>FF_STATUS_STATUS_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006569</addressOffset>
+          <addressOffset>0x40006565</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -588,7 +588,7 @@
         <register>
           <name>FF_STATUS_MASK_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006589</addressOffset>
+          <addressOffset>0x40006585</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -597,7 +597,7 @@
         <register>
           <name>FF_STATUS_STATUS_AUX_CTL_REG</name>
           <description>No description available</description>
-          <addressOffset>0x40006599</addressOffset>
+          <addressOffset>0x40006595</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1026,7 +1026,7 @@
         <register>
           <name>RX_UART_RS485_RX_ADDRESS1</name>
           <description>RX Address1 Register</description>
-          <addressOffset>0x40006424</addressOffset>
+          <addressOffset>0x40006429</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1035,7 +1035,7 @@
         <register>
           <name>RX_UART_RS485_RX_ADDRESS2</name>
           <description>RX Address2 Register</description>
-          <addressOffset>0x40006434</addressOffset>
+          <addressOffset>0x40006439</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1044,7 +1044,7 @@
         <register>
           <name>RX_UART_RS485_RX_DATA</name>
           <description>RX Data Register</description>
-          <addressOffset>0x40006444</addressOffset>
+          <addressOffset>0x40006449</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1053,7 +1053,7 @@
         <register>
           <name>TX_UART_RS485_TX_DATA</name>
           <description>TX Data Register</description>
-          <addressOffset>0x4000644F</addressOffset>
+          <addressOffset>0x4000644E</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1122,7 +1122,7 @@
         <register>
           <name>TX_UART_RS485_TX_STATUS</name>
           <description>TX status register</description>
-          <addressOffset>0x4000646F</addressOffset>
+          <addressOffset>0x4000646E</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1620,7 +1620,7 @@
         <register>
           <name>BLINK_05HZ_COMPARE_Reg</name>
           <description>UDB.D0 - Assigned Compare Value</description>
-          <addressOffset>0x40006422</addressOffset>
+          <addressOffset>0x40006420</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1629,7 +1629,7 @@
         <register>
           <name>BLINK_05HZ_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006479</addressOffset>
+          <addressOffset>0x4000647C</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1661,7 +1661,7 @@
         <register>
           <name>BLINK_05HZ_STATUS_AUX_CTRLDP0</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006492</addressOffset>
+          <addressOffset>0x40006490</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -1786,7 +1786,7 @@
         <register>
           <name>BLINK_05HZ_STATUS_AUX_CTRLDP1</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006493</addressOffset>
+          <addressOffset>0x40006491</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>

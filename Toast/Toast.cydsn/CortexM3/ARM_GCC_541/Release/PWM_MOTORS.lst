@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
   22:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************/
   23:Generated_Source\PSoC5/PWM_MOTORS.c **** 
   24:Generated_Source\PSoC5/PWM_MOTORS.c **** #include "PWM_MOTORS.h"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 2
 
 
   25:Generated_Source\PSoC5/PWM_MOTORS.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
   51              		.loc 1 61 0
   52 0010 034B     		ldr	r3, .L3
   53 0012 0122     		movs	r2, #1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 3
 
 
   54 0014 1A70     		strb	r2, [r3]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
   84 0002 00AF     		add	r7, sp, #0
   85              		.cfi_def_cfa_register 7
   86:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction || PWM_MOTORS_UseControl)
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 4
 
 
   87:Generated_Source\PSoC5/PWM_MOTORS.c ****         uint8 ctrl;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  133:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_WriteCounter(PWM_MOTORS_INIT_PERIOD_VALUE);
   94              		.loc 1 133 0
   95 0014 6420     		movs	r0, #100
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 5
 
 
   96 0016 FFF7FEFF 		bl	PWM_MOTORS_WriteCounter
@@ -254,7 +254,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  140:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
  141:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteCompare1(PWM_MOTORS_INIT_COMPARE_VALUE1);
  100              		.loc 1 141 0
- 101 0020 3220     		movs	r0, #50
+ 101 0020 6420     		movs	r0, #100
  102 0022 FFF7FEFF 		bl	PWM_MOTORS_WriteCompare1
  142:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteCompare2(PWM_MOTORS_INIT_COMPARE_VALUE2);
  103              		.loc 1 142 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  178:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
  179:Generated_Source\PSoC5/PWM_MOTORS.c **** }
  106              		.loc 1 179 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 6
 
 
  107 002c 00BF     		nop
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  207:Generated_Source\PSoC5/PWM_MOTORS.c ****     /* Enable the PWM from the control register  */
  208:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction)
  209:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL |= PWM_MOTORS_CTRL_ENABLE;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 7
 
 
  210:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction) */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  163              		.cfi_def_cfa_register 7
  235:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction)
  236:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL &= ((uint8)(~PWM_MOTORS_CTRL_ENABLE));
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 8
 
 
  237:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction) */
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  271:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMOD
  272:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #else
  273:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemodemasked = comparemode;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 9
 
 
  274:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT) */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  328:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT)
  329:Generated_Source\PSoC5/PWM_MOTORS.c ****                 uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMODE1_S
  330:Generated_Source\PSoC5/PWM_MOTORS.c ****                                            PWM_MOTORS_CTRL_CMPMODE1_MASK;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 10
 
 
  331:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  385:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
  386:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
  387:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 11
 
 
  388:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Writes a new counter value directly to the counter register. This will be
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  218              	.LFE4:
  219              		.size	PWM_MOTORS_WriteCounter, .-PWM_MOTORS_WriteCounter
  220              		.section	.text.PWM_MOTORS_ReadCounter,"ax",%progbits
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 12
 
 
  221              		.align	2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  248              		.cfi_def_cfa_register 13
  249              		@ sp needed
  250 0012 80BC     		pop	{r7}
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 13
 
 
  251              		.cfi_restore 7
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  470:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
  471:Generated_Source\PSoC5/PWM_MOTORS.c **** *  This function is used to change the period of the counter.  The new period
  472:Generated_Source\PSoC5/PWM_MOTORS.c **** *  will be loaded the next time terminal count is detected.
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 14
 
 
  473:Generated_Source\PSoC5/PWM_MOTORS.c **** *
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  307              		.align	2
  308              		.global	PWM_MOTORS_WriteCompare1
  309              		.thumb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 15
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 15
 
 
  310              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  540:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
  541:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
  542:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 16
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 16
 
 
  543:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This funtion is used to change the compare1 value.  The compare output will
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  347              		.cfi_endproc
  348              	.LFE7:
  349              		.size	PWM_MOTORS_WriteCompare1, .-PWM_MOTORS_WriteCompare1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 17
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 17
 
 
  350              		.section	.text.PWM_MOTORS_WriteCompare2,"ax",%progbits
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  592:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
  376              		.loc 1 592 0
  377 0010 00BF     		nop
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 18
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 18
 
 
  378 0012 0C37     		adds	r7, r7, #12
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  623:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(PWM_MOTORS_DEADBAND_COUNT_SHIFT)
  624:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << PWM_MOTORS_DEADBAND_COUNT_
  625:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                     PWM_MOTORS_DEADBAND_COUNT_MASK;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 19
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 19
 
 
  626:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  680:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
  681:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
  682:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 20
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 20
 
 
  683:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  737:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadControlRegister(void) 
  738:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
  739:Generated_Source\PSoC5/PWM_MOTORS.c ****         uint8 result;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 21
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 21
 
 
  740:Generated_Source\PSoC5/PWM_MOTORS.c **** 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  404              		@ args = 0, pretend = 0, frame = 0
  405              		@ frame_needed = 1, uses_anonymous_args = 0
  406              		@ link register save eliminated.
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 22
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 22
 
 
  407 0000 80B4     		push	{r7}
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  813:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8/uint16: Current compare value
  814:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
  815:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 23
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 23
 
 
  816:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCompare(void) 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  464 0012 00BF     		.align	2
  465              	.L32:
  466 0014 28640040 		.word	1073767464
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 24
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 24
 
 
  467              		.cfi_endproc
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  501              	.L37:
  502 0012 00BF     		.align	2
  503              	.L36:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 25
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 25
 
 
  504 0014 38640040 		.word	1073767480
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  532 000c BD46     		mov	sp, r7
  533              		.cfi_def_cfa_register 13
  534              		@ sp needed
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 26
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 26
 
 
  535 000e 80BC     		pop	{r7}
@@ -1524,23 +1524,23 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  555 000b 01       		.uleb128 0x1
  556 000c 13000000 		.4byte	.LASF32
  557 0010 0C       		.byte	0xc
- 558 0011 46020000 		.4byte	.LASF33
- 559 0015 53010000 		.4byte	.LASF34
+ 558 0011 1B020000 		.4byte	.LASF33
+ 559 0015 5A010000 		.4byte	.LASF34
  560 0019 00000000 		.4byte	.Ldebug_ranges0+0
  561 001d 00000000 		.4byte	0
  562 0021 00000000 		.4byte	.Ldebug_line0
  563 0025 02       		.uleb128 0x2
  564 0026 01       		.byte	0x1
  565 0027 06       		.byte	0x6
- 566 0028 EA020000 		.4byte	.LASF0
+ 566 0028 BF020000 		.4byte	.LASF0
  567 002c 02       		.uleb128 0x2
  568 002d 01       		.byte	0x1
  569 002e 08       		.byte	0x8
- 570 002f BF010000 		.4byte	.LASF1
+ 570 002f 94010000 		.4byte	.LASF1
  571 0033 02       		.uleb128 0x2
  572 0034 02       		.byte	0x2
  573 0035 05       		.byte	0x5
- 574 0036 9B020000 		.4byte	.LASF2
+ 574 0036 70020000 		.4byte	.LASF2
  575 003a 02       		.uleb128 0x2
  576 003b 02       		.byte	0x2
  577 003c 07       		.byte	0x7
@@ -1548,7 +1548,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  579 0041 02       		.uleb128 0x2
  580 0042 04       		.byte	0x4
  581 0043 05       		.byte	0x5
- 582 0044 D5020000 		.4byte	.LASF4
+ 582 0044 AA020000 		.4byte	.LASF4
  583 0048 02       		.uleb128 0x2
  584 0049 04       		.byte	0x4
  585 004a 07       		.byte	0x7
@@ -1556,14 +1556,14 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  587 004f 02       		.uleb128 0x2
  588 0050 08       		.byte	0x8
  589 0051 05       		.byte	0x5
- 590 0052 33020000 		.4byte	.LASF6
+ 590 0052 08020000 		.4byte	.LASF6
  591 0056 02       		.uleb128 0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 27
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 27
 
 
  592 0057 08       		.byte	0x8
  593 0058 07       		.byte	0x7
- 594 0059 EC010000 		.4byte	.LASF7
+ 594 0059 C1010000 		.4byte	.LASF7
  595 005d 03       		.uleb128 0x3
  596 005e 04       		.byte	0x4
  597 005f 05       		.byte	0x5
@@ -1571,7 +1571,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  599 0064 02       		.uleb128 0x2
  600 0065 04       		.byte	0x4
  601 0066 07       		.byte	0x7
- 602 0067 CD010000 		.4byte	.LASF8
+ 602 0067 A2010000 		.4byte	.LASF8
  603 006b 04       		.uleb128 0x4
  604 006c 20010000 		.4byte	.LASF12
  605 0070 02       		.byte	0x2
@@ -1584,11 +1584,11 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  612 007e 02       		.uleb128 0x2
  613 007f 08       		.byte	0x8
  614 0080 04       		.byte	0x4
- 615 0081 B8010000 		.4byte	.LASF10
+ 615 0081 53010000 		.4byte	.LASF10
  616 0085 02       		.uleb128 0x2
  617 0086 01       		.byte	0x1
  618 0087 08       		.byte	0x8
- 619 0088 41020000 		.4byte	.LASF11
+ 619 0088 16020000 		.4byte	.LASF11
  620 008c 04       		.uleb128 0x4
  621 008d 09010000 		.4byte	.LASF13
  622 0091 02       		.byte	0x2
@@ -1599,13 +1599,13 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  627 009d 02       		.uleb128 0x2
  628 009e 08       		.byte	0x8
  629 009f 04       		.byte	0x4
- 630 00a0 DE020000 		.4byte	.LASF14
+ 630 00a0 B3020000 		.4byte	.LASF14
  631 00a4 02       		.uleb128 0x2
  632 00a5 04       		.byte	0x4
  633 00a6 07       		.byte	0x7
- 634 00a7 2A020000 		.4byte	.LASF15
+ 634 00a7 FF010000 		.4byte	.LASF15
  635 00ab 06       		.uleb128 0x6
- 636 00ac FE020000 		.4byte	.LASF16
+ 636 00ac D3020000 		.4byte	.LASF16
  637 00b0 01       		.byte	0x1
  638 00b1 37       		.byte	0x37
  639 00b2 00000000 		.4byte	.LFB0
@@ -1618,13 +1618,13 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  646 00c2 54       		.byte	0x54
  647 00c3 00000000 		.4byte	.LFB1
  648 00c7 34000000 		.4byte	.LFE1-.LFB1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 28
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 28
 
 
  649 00cb 01       		.uleb128 0x1
  650 00cc 9C       		.byte	0x9c
  651 00cd 07       		.uleb128 0x7
- 652 00ce DA010000 		.4byte	.LASF18
+ 652 00ce AF010000 		.4byte	.LASF18
  653 00d2 01       		.byte	0x1
  654 00d3 C7       		.byte	0xc7
  655 00d4 00000000 		.4byte	.LFB2
@@ -1632,7 +1632,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  657 00dc 01       		.uleb128 0x1
  658 00dd 9C       		.byte	0x9c
  659 00de 07       		.uleb128 0x7
- 660 00df 1A020000 		.4byte	.LASF19
+ 660 00df EF010000 		.4byte	.LASF19
  661 00e3 01       		.byte	0x1
  662 00e4 E9       		.byte	0xe9
  663 00e5 00000000 		.4byte	.LFB3
@@ -1640,7 +1640,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  665 00ed 01       		.uleb128 0x1
  666 00ee 9C       		.byte	0x9c
  667 00ef 08       		.uleb128 0x8
- 668 00f0 83020000 		.4byte	.LASF20
+ 668 00f0 58020000 		.4byte	.LASF20
  669 00f4 01       		.byte	0x1
  670 00f5 9301     		.2byte	0x193
  671 00f7 00000000 		.4byte	.LFB4
@@ -1667,7 +1667,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  692 0129 01       		.uleb128 0x1
  693 012a 9C       		.byte	0x9c
  694 012b 08       		.uleb128 0x8
- 695 012c 03020000 		.4byte	.LASF21
+ 695 012c D8010000 		.4byte	.LASF21
  696 0130 01       		.byte	0x1
  697 0131 E201     		.2byte	0x1e2
  698 0133 00000000 		.4byte	.LFB6
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  703 0141 09       		.uleb128 0x9
  704 0142 BA000000 		.4byte	.LASF23
  705 0146 01       		.byte	0x1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 29
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 29
 
 
  706 0147 E201     		.2byte	0x1e2
@@ -1688,7 +1688,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  710 014f 77       		.sleb128 -9
  711 0150 00       		.byte	0
  712 0151 08       		.uleb128 0x8
- 713 0152 6A020000 		.4byte	.LASF24
+ 713 0152 3F020000 		.4byte	.LASF24
  714 0156 01       		.byte	0x1
  715 0157 2B02     		.2byte	0x22b
  716 0159 00000000 		.4byte	.LFB7
@@ -1697,7 +1697,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  719 0162 9C       		.byte	0x9c
  720 0163 77010000 		.4byte	0x177
  721 0167 09       		.uleb128 0x9
- 722 0168 F6020000 		.4byte	.LASF25
+ 722 0168 CB020000 		.4byte	.LASF25
  723 016c 01       		.byte	0x1
  724 016d 2B02     		.2byte	0x22b
  725 016f 6B000000 		.4byte	0x6b
@@ -1715,7 +1715,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  737 0188 9C       		.byte	0x9c
  738 0189 9D010000 		.4byte	0x19d
  739 018d 09       		.uleb128 0x9
- 740 018e F6020000 		.4byte	.LASF25
+ 740 018e CB020000 		.4byte	.LASF25
  741 0192 01       		.byte	0x1
  742 0193 4802     		.2byte	0x248
  743 0195 6B000000 		.4byte	0x6b
@@ -1733,19 +1733,19 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  755 01b1 01       		.uleb128 0x1
  756 01b2 9C       		.byte	0x9c
  757 01b3 0A       		.uleb128 0xa
- 758 01b4 A5020000 		.4byte	.LASF29
+ 758 01b4 7A020000 		.4byte	.LASF29
  759 01b8 01       		.byte	0x1
  760 01b9 4A03     		.2byte	0x34a
  761 01bb 6B000000 		.4byte	0x6b
  762 01bf 00000000 		.4byte	.LFB10
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 30
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 30
 
 
  763 01c3 18000000 		.4byte	.LFE10-.LFB10
  764 01c7 01       		.uleb128 0x1
  765 01c8 9C       		.byte	0x9c
  766 01c9 0A       		.uleb128 0xa
- 767 01ca BD020000 		.4byte	.LASF30
+ 767 01ca 92020000 		.4byte	.LASF30
  768 01ce 01       		.byte	0x1
  769 01cf 5E03     		.2byte	0x35e
  770 01d1 6B000000 		.4byte	0x6b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  817 0016 0B       		.uleb128 0xb
  818 0017 0B       		.uleb128 0xb
  819 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 31
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 31
 
 
  820 0019 0B       		.uleb128 0xb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  874 004f 18       		.uleb128 0x18
  875 0050 9642     		.uleb128 0x2116
  876 0052 19       		.uleb128 0x19
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 32
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 32
 
 
  877 0053 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  931 008b 0E       		.uleb128 0xe
  932 008c 3A       		.uleb128 0x3a
  933 008d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 33
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 33
 
 
  934 008e 3B       		.uleb128 0x3b
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  988 0006 00000000 		.4byte	.Ldebug_info0
  989 000a 04       		.byte	0x4
  990 000b 00       		.byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 34
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 34
 
 
  991 000c 0000     		.2byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  1045 0058 00000000 		.4byte	.LFB11
  1046 005c 18000000 		.4byte	.LFE11
  1047 0060 00000000 		.4byte	.LFB12
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 35
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 35
 
 
  1048 0064 18000000 		.4byte	.LFE12
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  1069 00eb 666C6F61 		.ascii	"float\000"
  1069      7400
  1070              	.LASF22:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 36
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 36
 
 
  1071 00f1 636F756E 		.ascii	"counter\000"
@@ -2132,126 +2132,123 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
  1083      52535F52 
  1083      65616443 
  1083      6F756E74 
- 1084              	.LASF34:
- 1085 0153 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
- 1085      73657273 
- 1085      5C6D676E 
- 1085      6F63636F 
- 1085      5C4F6E65 
- 1086 0183 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
- 1086      69616E6F 
- 1086      20546563 
- 1086      6E6F6C6F 
- 1086      6769615C 
- 1087 01b2 63796473 		.ascii	"cydsn\000"
- 1087      6E00
- 1088              	.LASF10:
- 1089 01b8 646F7562 		.ascii	"double\000"
- 1089      6C6500
- 1090              	.LASF1:
- 1091 01bf 756E7369 		.ascii	"unsigned char\000"
- 1091      676E6564 
- 1091      20636861 
- 1091      7200
- 1092              	.LASF8:
- 1093 01cd 756E7369 		.ascii	"unsigned int\000"
- 1093      676E6564 
- 1093      20696E74 
- 1093      00
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 37
+ 1084              	.LASF10:
+ 1085 0153 646F7562 		.ascii	"double\000"
+ 1085      6C6500
+ 1086              	.LASF34:
+ 1087 015a 433A5C55 		.ascii	"C:\\Users\\mgnocco\\Documents\\GitHub\\PSoC5\\Toast"
+ 1087      73657273 
+ 1087      5C6D676E 
+ 1087      6F63636F 
+ 1087      5C446F63 
+ 1088 0187 5C546F61 		.ascii	"\\Toast.cydsn\000"
+ 1088      73742E63 
+ 1088      7964736E 
+ 1088      00
+ 1089              	.LASF1:
+ 1090 0194 756E7369 		.ascii	"unsigned char\000"
+ 1090      676E6564 
+ 1090      20636861 
+ 1090      7200
+ 1091              	.LASF8:
+ 1092 01a2 756E7369 		.ascii	"unsigned int\000"
+ 1092      676E6564 
+ 1092      20696E74 
+ 1092      00
+ 1093              	.LASF18:
+ 1094 01af 50574D5F 		.ascii	"PWM_MOTORS_Enable\000"
+ 1094      4D4F544F 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 37
 
 
- 1094              	.LASF18:
- 1095 01da 50574D5F 		.ascii	"PWM_MOTORS_Enable\000"
- 1095      4D4F544F 
- 1095      52535F45 
- 1095      6E61626C 
- 1095      6500
- 1096              	.LASF7:
- 1097 01ec 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1097      206C6F6E 
- 1097      6720756E 
- 1097      7369676E 
- 1097      65642069 
- 1098              	.LASF21:
- 1099 0203 50574D5F 		.ascii	"PWM_MOTORS_WritePeriod\000"
- 1099      4D4F544F 
- 1099      52535F57 
- 1099      72697465 
- 1099      50657269 
- 1100              	.LASF19:
- 1101 021a 50574D5F 		.ascii	"PWM_MOTORS_Stop\000"
- 1101      4D4F544F 
- 1101      52535F53 
- 1101      746F7000 
- 1102              	.LASF15:
- 1103 022a 73697A65 		.ascii	"sizetype\000"
- 1103      74797065 
- 1103      00
- 1104              	.LASF6:
- 1105 0233 6C6F6E67 		.ascii	"long long int\000"
- 1105      206C6F6E 
- 1105      6720696E 
- 1105      7400
- 1106              	.LASF11:
- 1107 0241 63686172 		.ascii	"char\000"
- 1107      00
- 1108              	.LASF33:
- 1109 0246 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_MOTORS.c\000"
- 1109      72617465 
- 1109      645F536F 
- 1109      75726365 
- 1109      5C50536F 
- 1110              	.LASF24:
- 1111 026a 50574D5F 		.ascii	"PWM_MOTORS_WriteCompare1\000"
- 1111      4D4F544F 
- 1111      52535F57 
- 1111      72697465 
- 1111      436F6D70 
- 1112              	.LASF20:
- 1113 0283 50574D5F 		.ascii	"PWM_MOTORS_WriteCounter\000"
- 1113      4D4F544F 
- 1113      52535F57 
- 1113      72697465 
- 1113      436F756E 
- 1114              	.LASF2:
- 1115 029b 73686F72 		.ascii	"short int\000"
- 1115      7420696E 
- 1115      7400
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 38
+ 1094      52535F45 
+ 1094      6E61626C 
+ 1094      6500
+ 1095              	.LASF7:
+ 1096 01c1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1096      206C6F6E 
+ 1096      6720756E 
+ 1096      7369676E 
+ 1096      65642069 
+ 1097              	.LASF21:
+ 1098 01d8 50574D5F 		.ascii	"PWM_MOTORS_WritePeriod\000"
+ 1098      4D4F544F 
+ 1098      52535F57 
+ 1098      72697465 
+ 1098      50657269 
+ 1099              	.LASF19:
+ 1100 01ef 50574D5F 		.ascii	"PWM_MOTORS_Stop\000"
+ 1100      4D4F544F 
+ 1100      52535F53 
+ 1100      746F7000 
+ 1101              	.LASF15:
+ 1102 01ff 73697A65 		.ascii	"sizetype\000"
+ 1102      74797065 
+ 1102      00
+ 1103              	.LASF6:
+ 1104 0208 6C6F6E67 		.ascii	"long long int\000"
+ 1104      206C6F6E 
+ 1104      6720696E 
+ 1104      7400
+ 1105              	.LASF11:
+ 1106 0216 63686172 		.ascii	"char\000"
+ 1106      00
+ 1107              	.LASF33:
+ 1108 021b 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_MOTORS.c\000"
+ 1108      72617465 
+ 1108      645F536F 
+ 1108      75726365 
+ 1108      5C50536F 
+ 1109              	.LASF24:
+ 1110 023f 50574D5F 		.ascii	"PWM_MOTORS_WriteCompare1\000"
+ 1110      4D4F544F 
+ 1110      52535F57 
+ 1110      72697465 
+ 1110      436F6D70 
+ 1111              	.LASF20:
+ 1112 0258 50574D5F 		.ascii	"PWM_MOTORS_WriteCounter\000"
+ 1112      4D4F544F 
+ 1112      52535F57 
+ 1112      72697465 
+ 1112      436F756E 
+ 1113              	.LASF2:
+ 1114 0270 73686F72 		.ascii	"short int\000"
+ 1114      7420696E 
+ 1114      7400
+ 1115              	.LASF29:
+ 1116 027a 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare1\000"
+ 1116      4D4F544F 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccp9shjV.s 			page 38
 
 
- 1116              	.LASF29:
- 1117 02a5 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare1\000"
- 1117      4D4F544F 
- 1117      52535F52 
- 1117      65616443 
- 1117      6F6D7061 
- 1118              	.LASF30:
- 1119 02bd 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare2\000"
- 1119      4D4F544F 
- 1119      52535F52 
- 1119      65616443 
- 1119      6F6D7061 
- 1120              	.LASF4:
- 1121 02d5 6C6F6E67 		.ascii	"long int\000"
- 1121      20696E74 
- 1121      00
- 1122              	.LASF14:
- 1123 02de 6C6F6E67 		.ascii	"long double\000"
- 1123      20646F75 
- 1123      626C6500 
- 1124              	.LASF0:
- 1125 02ea 7369676E 		.ascii	"signed char\000"
- 1125      65642063 
- 1125      68617200 
- 1126              	.LASF25:
- 1127 02f6 636F6D70 		.ascii	"compare\000"
- 1127      61726500 
- 1128              	.LASF16:
- 1129 02fe 50574D5F 		.ascii	"PWM_MOTORS_Start\000"
- 1129      4D4F544F 
- 1129      52535F53 
- 1129      74617274 
- 1129      00
- 1130              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1116      52535F52 
+ 1116      65616443 
+ 1116      6F6D7061 
+ 1117              	.LASF30:
+ 1118 0292 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare2\000"
+ 1118      4D4F544F 
+ 1118      52535F52 
+ 1118      65616443 
+ 1118      6F6D7061 
+ 1119              	.LASF4:
+ 1120 02aa 6C6F6E67 		.ascii	"long int\000"
+ 1120      20696E74 
+ 1120      00
+ 1121              	.LASF14:
+ 1122 02b3 6C6F6E67 		.ascii	"long double\000"
+ 1122      20646F75 
+ 1122      626C6500 
+ 1123              	.LASF0:
+ 1124 02bf 7369676E 		.ascii	"signed char\000"
+ 1124      65642063 
+ 1124      68617200 
+ 1125              	.LASF25:
+ 1126 02cb 636F6D70 		.ascii	"compare\000"
+ 1126      61726500 
+ 1127              	.LASF16:
+ 1128 02d3 50574D5F 		.ascii	"PWM_MOTORS_Start\000"
+ 1128      4D4F544F 
+ 1128      52535F53 
+ 1128      74617274 
+ 1128      00
+ 1129              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

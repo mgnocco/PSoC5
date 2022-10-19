@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
   22:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c ****     SHIFTREG_ENC_2_DISABLED,
   23:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** 
   24:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c ****     ((uint32) SHIFTREG_ENC_2_DEFAULT_A0),
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 2
 
 
   25:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c ****     ((uint32) SHIFTREG_ENC_2_DEFAULT_A1),
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
   59:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** }
   52              		.loc 1 59 0
   53 0014 00BF     		nop
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 3
 
 
   54 0016 BD46     		mov	sp, r7
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
   88              		.loc 1 79 0
   89 0004 054A     		ldr	r2, .L5
   90 0006 064B     		ldr	r3, .L5+4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 4
 
 
   91 0008 5B68     		ldr	r3, [r3, #4]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  101:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** * Reentrant:
  102:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** *  No.
  103:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** *
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 5
 
 
  104:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** *******************************************************************************/
@@ -282,7 +282,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  154              	.L9:
  155 002a 00BF     		.align	2
  156              	.L8:
- 157 002c 74650040 		.word	1073767796
+ 157 002c 72640040 		.word	1073767538
  158 0030 00000000 		.word	SHIFTREG_ENC_2_backup
  159              		.cfi_endproc
  160              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  112:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** 
  113:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** 
  114:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 6
 
 
  115:Generated_Source\PSoC5/SHIFTREG_ENC_2_PM.c **** * Function Name: SHIFTREG_ENC_2_Wakeup
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  202              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  203              		.file 3 "Generated_Source\\PSoC5\\SHIFTREG_ENC_2.h"
  204              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 7
 
 
  205              	.Ldebug_info0:
@@ -369,43 +369,43 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  210 000b 01       		.uleb128 0x1
  211 000c 06000000 		.4byte	.LASF26
  212 0010 0C       		.byte	0xc
- 213 0011 63020000 		.4byte	.LASF27
- 214 0015 14010000 		.4byte	.LASF28
+ 213 0011 38020000 		.4byte	.LASF27
+ 214 0015 94000000 		.4byte	.LASF28
  215 0019 00000000 		.4byte	.Ldebug_ranges0+0
  216 001d 00000000 		.4byte	0
  217 0021 00000000 		.4byte	.Ldebug_line0
  218 0025 02       		.uleb128 0x2
  219 0026 01       		.byte	0x1
  220 0027 06       		.byte	0x6
- 221 0028 41020000 		.4byte	.LASF0
+ 221 0028 16020000 		.4byte	.LASF0
  222 002c 02       		.uleb128 0x2
  223 002d 01       		.byte	0x1
  224 002e 08       		.byte	0x8
- 225 002f CF000000 		.4byte	.LASF1
+ 225 002f 09010000 		.4byte	.LASF1
  226 0033 02       		.uleb128 0x2
  227 0034 02       		.byte	0x2
  228 0035 05       		.byte	0x5
- 229 0036 16020000 		.4byte	.LASF2
+ 229 0036 EB010000 		.4byte	.LASF2
  230 003a 02       		.uleb128 0x2
  231 003b 02       		.byte	0x2
  232 003c 07       		.byte	0x7
- 233 003d 94000000 		.4byte	.LASF3
+ 233 003d CE000000 		.4byte	.LASF3
  234 0041 02       		.uleb128 0x2
  235 0042 04       		.byte	0x4
  236 0043 05       		.byte	0x5
- 237 0044 20020000 		.4byte	.LASF4
+ 237 0044 F5010000 		.4byte	.LASF4
  238 0048 02       		.uleb128 0x2
  239 0049 04       		.byte	0x4
  240 004a 07       		.byte	0x7
- 241 004b E2000000 		.4byte	.LASF5
+ 241 004b 1C010000 		.4byte	.LASF5
  242 004f 02       		.uleb128 0x2
  243 0050 08       		.byte	0x8
  244 0051 05       		.byte	0x5
- 245 0052 E6010000 		.4byte	.LASF6
+ 245 0052 BB010000 		.4byte	.LASF6
  246 0056 02       		.uleb128 0x2
  247 0057 08       		.byte	0x8
  248 0058 07       		.byte	0x7
- 249 0059 A9010000 		.4byte	.LASF7
+ 249 0059 7E010000 		.4byte	.LASF7
  250 005d 03       		.uleb128 0x3
  251 005e 04       		.byte	0x4
  252 005f 05       		.byte	0x5
@@ -413,34 +413,34 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  254 0064 02       		.uleb128 0x2
  255 0065 04       		.byte	0x4
  256 0066 07       		.byte	0x7
- 257 0067 9C010000 		.4byte	.LASF8
+ 257 0067 71010000 		.4byte	.LASF8
  258 006b 04       		.uleb128 0x4
- 259 006c 0E010000 		.4byte	.LASF9
+ 259 006c 48010000 		.4byte	.LASF9
  260 0070 02       		.byte	0x2
  261 0071 E401     		.2byte	0x1e4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 8
 
 
  262 0073 2C000000 		.4byte	0x2c
  263 0077 04       		.uleb128 0x4
- 264 0078 80010000 		.4byte	.LASF10
+ 264 0078 55010000 		.4byte	.LASF10
  265 007c 02       		.byte	0x2
  266 007d E601     		.2byte	0x1e6
  267 007f 48000000 		.4byte	0x48
  268 0083 02       		.uleb128 0x2
  269 0084 04       		.byte	0x4
  270 0085 04       		.byte	0x4
- 271 0086 C9000000 		.4byte	.LASF11
+ 271 0086 03010000 		.4byte	.LASF11
  272 008a 02       		.uleb128 0x2
  273 008b 08       		.byte	0x8
  274 008c 04       		.byte	0x4
- 275 008d 79010000 		.4byte	.LASF12
+ 275 008d 4E010000 		.4byte	.LASF12
  276 0091 02       		.uleb128 0x2
  277 0092 01       		.byte	0x1
  278 0093 08       		.byte	0x8
- 279 0094 11020000 		.4byte	.LASF13
+ 279 0094 E6010000 		.4byte	.LASF13
  280 0098 04       		.uleb128 0x4
- 281 0099 DD000000 		.4byte	.LASF14
+ 281 0099 17010000 		.4byte	.LASF14
  282 009d 02       		.byte	0x2
  283 009e 8E02     		.2byte	0x28e
  284 00a0 A4000000 		.4byte	0xa4
@@ -456,45 +456,45 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  294 00ba 02       		.uleb128 0x2
  295 00bb 08       		.byte	0x8
  296 00bc 04       		.byte	0x4
- 297 00bd 35020000 		.4byte	.LASF16
+ 297 00bd 0A020000 		.4byte	.LASF16
  298 00c1 02       		.uleb128 0x2
  299 00c2 04       		.byte	0x4
  300 00c3 07       		.byte	0x7
- 301 00c4 DD010000 		.4byte	.LASF17
+ 301 00c4 B2010000 		.4byte	.LASF17
  302 00c8 06       		.uleb128 0x6
  303 00c9 0C       		.byte	0xc
  304 00ca 03       		.byte	0x3
  305 00cb 2A       		.byte	0x2a
  306 00cc F5000000 		.4byte	0xf5
  307 00d0 07       		.uleb128 0x7
- 308 00d1 29020000 		.4byte	.LASF18
+ 308 00d1 FE010000 		.4byte	.LASF18
  309 00d5 03       		.byte	0x3
  310 00d6 2C       		.byte	0x2c
  311 00d7 6B000000 		.4byte	0x6b
  312 00db 00       		.byte	0
  313 00dc 07       		.uleb128 0x7
- 314 00dd 8E020000 		.4byte	.LASF19
+ 314 00dd 63020000 		.4byte	.LASF19
  315 00e1 03       		.byte	0x3
  316 00e2 2E       		.byte	0x2e
  317 00e3 77000000 		.4byte	0x77
  318 00e7 04       		.byte	0x4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 9
 
 
  319 00e8 07       		.uleb128 0x7
- 320 00e9 BD000000 		.4byte	.LASF20
+ 320 00e9 F7000000 		.4byte	.LASF20
  321 00ed 03       		.byte	0x3
  322 00ee 2F       		.byte	0x2f
  323 00ef 77000000 		.4byte	0x77
  324 00f3 08       		.byte	0x8
  325 00f4 00       		.byte	0
  326 00f5 08       		.uleb128 0x8
- 327 00f6 C0010000 		.4byte	.LASF21
+ 327 00f6 95010000 		.4byte	.LASF21
  328 00fa 03       		.byte	0x3
  329 00fb 35       		.byte	0x35
  330 00fc C8000000 		.4byte	0xc8
  331 0100 09       		.uleb128 0x9
- 332 0101 F4000000 		.4byte	.LASF22
+ 332 0101 2E010000 		.4byte	.LASF22
  333 0105 01       		.byte	0x1
  334 0106 32       		.byte	0x32
  335 0107 00000000 		.4byte	.LFB0
@@ -502,7 +502,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  337 010f 01       		.uleb128 0x1
  338 0110 9C       		.byte	0x9c
  339 0111 09       		.uleb128 0x9
- 340 0112 F4010000 		.4byte	.LASF23
+ 340 0112 C9010000 		.4byte	.LASF23
  341 0116 01       		.byte	0x1
  342 0117 4C       		.byte	0x4c
  343 0118 00000000 		.4byte	.LFB1
@@ -510,7 +510,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  345 0120 01       		.uleb128 0x1
  346 0121 9C       		.byte	0x9c
  347 0122 0A       		.uleb128 0xa
- 348 0123 87010000 		.4byte	.LASF24
+ 348 0123 5C010000 		.4byte	.LASF24
  349 0127 01       		.byte	0x1
  350 0128 69       		.byte	0x69
  351 0129 00000000 		.4byte	.LFB2
@@ -518,7 +518,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  353 0131 01       		.uleb128 0x1
  354 0132 9C       		.byte	0x9c
  355 0133 0A       		.uleb128 0xa
- 356 0134 A7000000 		.4byte	.LASF25
+ 356 0134 E1000000 		.4byte	.LASF25
  357 0138 01       		.byte	0x1
  358 0139 80       		.byte	0x80
  359 013a 00000000 		.4byte	.LFB3
@@ -526,7 +526,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  361 0142 01       		.uleb128 0x1
  362 0143 9C       		.byte	0x9c
  363 0144 0B       		.uleb128 0xb
- 364 0145 4D020000 		.4byte	.LASF29
+ 364 0145 22020000 		.4byte	.LASF29
  365 0149 01       		.byte	0x1
  366 014a 14       		.byte	0x14
  367 014b F5000000 		.4byte	0xf5
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  373              	.Ldebug_abbrev0:
  374 0000 01       		.uleb128 0x1
  375 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 10
 
 
  376 0002 01       		.byte	0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  430 0038 00       		.byte	0
  431 0039 49       		.uleb128 0x49
  432 003a 13       		.uleb128 0x13
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 11
 
 
  433 003b 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  487 0071 27       		.uleb128 0x27
  488 0072 19       		.uleb128 0x19
  489 0073 11       		.uleb128 0x11
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 12
 
 
  490 0074 01       		.uleb128 0x1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  544 000c 0000     		.2byte	0
  545 000e 0000     		.2byte	0
  546 0010 00000000 		.4byte	.LFB0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 13
 
 
  547 0014 28000000 		.4byte	.LFE0-.LFB0
@@ -768,151 +768,148 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 1
  576      74696F6E 
  576      2D736563 
  576      74696F6E 
- 577              	.LASF3:
- 578 0094 73686F72 		.ascii	"short unsigned int\000"
- 578      7420756E 
- 578      7369676E 
- 578      65642069 
- 578      6E7400
- 579              	.LASF25:
- 580 00a7 53484946 		.ascii	"SHIFTREG_ENC_2_Wakeup\000"
- 580      54524547 
- 580      5F454E43 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 14
+ 577              	.LASF28:
+ 578 0094 433A5C55 		.ascii	"C:\\Users\\mgnocco\\Documents\\GitHub\\PSoC5\\Toast"
+ 578      73657273 
+ 578      5C6D676E 
+ 578      6F63636F 
+ 578      5C446F63 
+ 579 00c1 5C546F61 		.ascii	"\\Toast.cydsn\000"
+ 579      73742E63 
+ 579      7964736E 
+ 579      00
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 14
 
 
- 580      5F325F57 
- 580      616B6575 
- 581              	.LASF20:
- 582 00bd 73617665 		.ascii	"saveSrA1Reg\000"
- 582      53724131 
- 582      52656700 
- 583              	.LASF11:
- 584 00c9 666C6F61 		.ascii	"float\000"
- 584      7400
- 585              	.LASF1:
- 586 00cf 756E7369 		.ascii	"unsigned char\000"
- 586      676E6564 
- 586      20636861 
- 586      7200
- 587              	.LASF14:
- 588 00dd 72656738 		.ascii	"reg8\000"
- 588      00
- 589              	.LASF5:
- 590 00e2 6C6F6E67 		.ascii	"long unsigned int\000"
- 590      20756E73 
- 590      69676E65 
- 590      6420696E 
- 590      7400
- 591              	.LASF22:
- 592 00f4 53484946 		.ascii	"SHIFTREG_ENC_2_SaveConfig\000"
- 592      54524547 
- 592      5F454E43 
- 592      5F325F53 
- 592      61766543 
- 593              	.LASF9:
- 594 010e 75696E74 		.ascii	"uint8\000"
- 594      3800
- 595              	.LASF28:
- 596 0114 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
- 596      73657273 
- 596      5C6D676E 
- 596      6F63636F 
- 596      5C4F6E65 
- 597 0144 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
- 597      69616E6F 
- 597      20546563 
- 597      6E6F6C6F 
- 597      6769615C 
- 598 0173 63796473 		.ascii	"cydsn\000"
- 598      6E00
- 599              	.LASF12:
- 600 0179 646F7562 		.ascii	"double\000"
- 600      6C6500
- 601              	.LASF10:
- 602 0180 75696E74 		.ascii	"uint32\000"
- 602      333200
- 603              	.LASF24:
- 604 0187 53484946 		.ascii	"SHIFTREG_ENC_2_Sleep\000"
- 604      54524547 
- 604      5F454E43 
- 604      5F325F53 
- 604      6C656570 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 15
+ 580              	.LASF3:
+ 581 00ce 73686F72 		.ascii	"short unsigned int\000"
+ 581      7420756E 
+ 581      7369676E 
+ 581      65642069 
+ 581      6E7400
+ 582              	.LASF25:
+ 583 00e1 53484946 		.ascii	"SHIFTREG_ENC_2_Wakeup\000"
+ 583      54524547 
+ 583      5F454E43 
+ 583      5F325F57 
+ 583      616B6575 
+ 584              	.LASF20:
+ 585 00f7 73617665 		.ascii	"saveSrA1Reg\000"
+ 585      53724131 
+ 585      52656700 
+ 586              	.LASF11:
+ 587 0103 666C6F61 		.ascii	"float\000"
+ 587      7400
+ 588              	.LASF1:
+ 589 0109 756E7369 		.ascii	"unsigned char\000"
+ 589      676E6564 
+ 589      20636861 
+ 589      7200
+ 590              	.LASF14:
+ 591 0117 72656738 		.ascii	"reg8\000"
+ 591      00
+ 592              	.LASF5:
+ 593 011c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 593      20756E73 
+ 593      69676E65 
+ 593      6420696E 
+ 593      7400
+ 594              	.LASF22:
+ 595 012e 53484946 		.ascii	"SHIFTREG_ENC_2_SaveConfig\000"
+ 595      54524547 
+ 595      5F454E43 
+ 595      5F325F53 
+ 595      61766543 
+ 596              	.LASF9:
+ 597 0148 75696E74 		.ascii	"uint8\000"
+ 597      3800
+ 598              	.LASF12:
+ 599 014e 646F7562 		.ascii	"double\000"
+ 599      6C6500
+ 600              	.LASF10:
+ 601 0155 75696E74 		.ascii	"uint32\000"
+ 601      333200
+ 602              	.LASF24:
+ 603 015c 53484946 		.ascii	"SHIFTREG_ENC_2_Sleep\000"
+ 603      54524547 
+ 603      5F454E43 
+ 603      5F325F53 
+ 603      6C656570 
+ 604              	.LASF8:
+ 605 0171 756E7369 		.ascii	"unsigned int\000"
+ 605      676E6564 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 15
 
 
- 605              	.LASF8:
- 606 019c 756E7369 		.ascii	"unsigned int\000"
- 606      676E6564 
- 606      20696E74 
- 606      00
- 607              	.LASF7:
- 608 01a9 6C6F6E67 		.ascii	"long long unsigned int\000"
- 608      206C6F6E 
- 608      6720756E 
- 608      7369676E 
- 608      65642069 
- 609              	.LASF21:
- 610 01c0 53484946 		.ascii	"SHIFTREG_ENC_2_BACKUP_STRUCT\000"
- 610      54524547 
- 610      5F454E43 
- 610      5F325F42 
- 610      41434B55 
- 611              	.LASF17:
- 612 01dd 73697A65 		.ascii	"sizetype\000"
- 612      74797065 
- 612      00
- 613              	.LASF6:
- 614 01e6 6C6F6E67 		.ascii	"long long int\000"
- 614      206C6F6E 
- 614      6720696E 
- 614      7400
- 615              	.LASF23:
- 616 01f4 53484946 		.ascii	"SHIFTREG_ENC_2_RestoreConfig\000"
- 616      54524547 
- 616      5F454E43 
- 616      5F325F52 
- 616      6573746F 
- 617              	.LASF13:
- 618 0211 63686172 		.ascii	"char\000"
- 618      00
- 619              	.LASF2:
- 620 0216 73686F72 		.ascii	"short int\000"
- 620      7420696E 
- 620      7400
- 621              	.LASF4:
- 622 0220 6C6F6E67 		.ascii	"long int\000"
- 622      20696E74 
- 622      00
- 623              	.LASF18:
- 624 0229 656E6162 		.ascii	"enableState\000"
- 624      6C655374 
- 624      61746500 
- 625              	.LASF16:
- 626 0235 6C6F6E67 		.ascii	"long double\000"
- 626      20646F75 
- 626      626C6500 
- 627              	.LASF0:
- 628 0241 7369676E 		.ascii	"signed char\000"
- 628      65642063 
- 628      68617200 
- 629              	.LASF29:
- 630 024d 53484946 		.ascii	"SHIFTREG_ENC_2_backup\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccS6MOEx.s 			page 16
+ 605      20696E74 
+ 605      00
+ 606              	.LASF7:
+ 607 017e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 607      206C6F6E 
+ 607      6720756E 
+ 607      7369676E 
+ 607      65642069 
+ 608              	.LASF21:
+ 609 0195 53484946 		.ascii	"SHIFTREG_ENC_2_BACKUP_STRUCT\000"
+ 609      54524547 
+ 609      5F454E43 
+ 609      5F325F42 
+ 609      41434B55 
+ 610              	.LASF17:
+ 611 01b2 73697A65 		.ascii	"sizetype\000"
+ 611      74797065 
+ 611      00
+ 612              	.LASF6:
+ 613 01bb 6C6F6E67 		.ascii	"long long int\000"
+ 613      206C6F6E 
+ 613      6720696E 
+ 613      7400
+ 614              	.LASF23:
+ 615 01c9 53484946 		.ascii	"SHIFTREG_ENC_2_RestoreConfig\000"
+ 615      54524547 
+ 615      5F454E43 
+ 615      5F325F52 
+ 615      6573746F 
+ 616              	.LASF13:
+ 617 01e6 63686172 		.ascii	"char\000"
+ 617      00
+ 618              	.LASF2:
+ 619 01eb 73686F72 		.ascii	"short int\000"
+ 619      7420696E 
+ 619      7400
+ 620              	.LASF4:
+ 621 01f5 6C6F6E67 		.ascii	"long int\000"
+ 621      20696E74 
+ 621      00
+ 622              	.LASF18:
+ 623 01fe 656E6162 		.ascii	"enableState\000"
+ 623      6C655374 
+ 623      61746500 
+ 624              	.LASF16:
+ 625 020a 6C6F6E67 		.ascii	"long double\000"
+ 625      20646F75 
+ 625      626C6500 
+ 626              	.LASF0:
+ 627 0216 7369676E 		.ascii	"signed char\000"
+ 627      65642063 
+ 627      68617200 
+ 628              	.LASF29:
+ 629 0222 53484946 		.ascii	"SHIFTREG_ENC_2_backup\000"
+ 629      54524547 
+ 629      5F454E43 
+ 629      5F325F62 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc897yei.s 			page 16
 
 
- 630      54524547 
- 630      5F454E43 
- 630      5F325F62 
- 630      61636B75 
- 631              	.LASF27:
- 632 0263 47656E65 		.ascii	"Generated_Source\\PSoC5\\SHIFTREG_ENC_2_PM.c\000"
- 632      72617465 
- 632      645F536F 
- 632      75726365 
- 632      5C50536F 
- 633              	.LASF19:
- 634 028e 73617665 		.ascii	"saveSrA0Reg\000"
- 634      53724130 
- 634      52656700 
- 635              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 629      61636B75 
+ 630              	.LASF27:
+ 631 0238 47656E65 		.ascii	"Generated_Source\\PSoC5\\SHIFTREG_ENC_2_PM.c\000"
+ 631      72617465 
+ 631      645F536F 
+ 631      75726365 
+ 631      5C50536F 
+ 632              	.LASF19:
+ 633 0263 73617665 		.ascii	"saveSrA0Reg\000"
+ 633      53724130 
+ 633      52656700 
+ 634              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

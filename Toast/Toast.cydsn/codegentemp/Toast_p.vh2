@@ -1,5 +1,5 @@
 -- Project:   Toast
--- Generated: 10/19/2022 11:42:26
+-- Generated: 10/19/2022 18:05:03
 -- PSoC Creator  4.4
 
 ENTITY Toast IS
@@ -209,6 +209,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \MY_TIMER_REG:control_7\ : bit;
     SIGNAL \PACER_TIMER:Net_261\ : bit;
     SIGNAL \PACER_TIMER:Net_57\ : bit;
+    SIGNAL \PWM_MOTORS:PWMUDB:cmp1_eq\ : bit;
     SIGNAL \PWM_MOTORS:PWMUDB:cmp1_less\ : bit;
     SIGNAL \PWM_MOTORS:PWMUDB:cmp2_eq\ : bit;
     SIGNAL \PWM_MOTORS:PWMUDB:cmp2_less\ : bit;
@@ -3451,6 +3452,7 @@ BEGIN
             clock => Net_2334,
             cs_addr_2 => \PWM_MOTORS:PWMUDB:tc_i\,
             cs_addr_1 => \PWM_MOTORS:PWMUDB:runmode_enable\,
+            ce0_comb => \PWM_MOTORS:PWMUDB:cmp1_eq\,
             cl0_comb => \PWM_MOTORS:PWMUDB:cmp1_less\,
             z0_comb => \PWM_MOTORS:PWMUDB:tc_i\,
             ce1_comb => \PWM_MOTORS:PWMUDB:cmp2_eq\,
@@ -5018,7 +5020,7 @@ BEGIN
 
     Net_9969:macrocell
         GENERIC MAP(
-            eqn_main => "(main_0 * !main_1)",
+            eqn_main => "(main_0 * main_1) + (main_0 * main_2)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
@@ -5026,7 +5028,8 @@ BEGIN
             q => Net_9969,
             clock_0 => Net_2334,
             main_0 => \PWM_MOTORS:PWMUDB:runmode_enable\,
-            main_1 => \PWM_MOTORS:PWMUDB:cmp1_less\);
+            main_1 => \PWM_MOTORS:PWMUDB:cmp1_eq\,
+            main_2 => \PWM_MOTORS:PWMUDB:cmp1_less\);
 
     Net_10345:macrocell
         GENERIC MAP(

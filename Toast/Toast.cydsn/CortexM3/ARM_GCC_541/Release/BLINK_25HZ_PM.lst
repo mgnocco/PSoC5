@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
   24:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** * Function Name: BLINK_25HZ_SaveConfig
   25:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** ********************************************************************************
   26:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** *
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 2
 
 
   27:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
   59:Generated_Source\PSoC5/BLINK_25HZ_PM.c ****         #if(BLINK_25HZ_KillModeMinTime)
   60:Generated_Source\PSoC5/BLINK_25HZ_PM.c ****              BLINK_25HZ_backup.PWMKillCounterPeriod = BLINK_25HZ_ReadKillTime();
   61:Generated_Source\PSoC5/BLINK_25HZ_PM.c ****         #endif /* (BLINK_25HZ_KillModeMinTime) */
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 3
 
 
   62:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
   80              		@ args = 0, pretend = 0, frame = 0
   81              		@ frame_needed = 1, uses_anonymous_args = 0
   82 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 4
 
 
   83              		.cfi_def_cfa_offset 8
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  112              		.size	BLINK_25HZ_RestoreConfig, .-BLINK_25HZ_RestoreConfig
  113              		.section	.text.BLINK_25HZ_Sleep,"ax",%progbits
  114              		.align	2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 5
 
 
  115              		.global	BLINK_25HZ_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  141 0014 1A70     		strb	r2, [r3]
  142 0016 02E0     		b	.L9
  143              	.L8:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 6
 
 
  143:Generated_Source\PSoC5/BLINK_25HZ_PM.c ****         }
@@ -330,7 +330,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  156              	.L11:
  157 002a 00BF     		.align	2
  158              	.L10:
- 159 002c 7E640040 		.word	1073767550
+ 159 002c 7F640040 		.word	1073767551
  160 0030 00000000 		.word	BLINK_25HZ_backup
  161              		.cfi_endproc
  162              	.LFE2:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  169:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** *
  170:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** * Return:
  171:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** *  None
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 7
 
 
  172:Generated_Source\PSoC5/BLINK_25HZ_PM.c **** *
@@ -418,42 +418,42 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  208 0000 41010000 		.4byte	0x141
  209 0004 0400     		.2byte	0x4
  210 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 8
 
 
  211 000a 04       		.byte	0x4
  212 000b 01       		.uleb128 0x1
- 213 000c C7000000 		.4byte	.LASF25
+ 213 000c 01010000 		.4byte	.LASF25
  214 0010 0C       		.byte	0xc
- 215 0011 A0000000 		.4byte	.LASF26
- 216 0015 D5010000 		.4byte	.LASF27
+ 215 0011 DA000000 		.4byte	.LASF26
+ 216 0015 43000000 		.4byte	.LASF27
  217 0019 00000000 		.4byte	.Ldebug_ranges0+0
  218 001d 00000000 		.4byte	0
  219 0021 00000000 		.4byte	.Ldebug_line0
  220 0025 02       		.uleb128 0x2
  221 0026 01       		.byte	0x1
  222 0027 06       		.byte	0x6
- 223 0028 BD010000 		.4byte	.LASF0
+ 223 0028 F7010000 		.4byte	.LASF0
  224 002c 02       		.uleb128 0x2
  225 002d 01       		.byte	0x1
  226 002e 08       		.byte	0x8
- 227 002f 55010000 		.4byte	.LASF1
+ 227 002f 8F010000 		.4byte	.LASF1
  228 0033 02       		.uleb128 0x2
  229 0034 02       		.byte	0x2
  230 0035 05       		.byte	0x5
- 231 0036 4B020000 		.4byte	.LASF2
+ 231 0036 20020000 		.4byte	.LASF2
  232 003a 02       		.uleb128 0x2
  233 003b 02       		.byte	0x2
  234 003c 07       		.byte	0x7
- 235 003d AA010000 		.4byte	.LASF3
+ 235 003d E4010000 		.4byte	.LASF3
  236 0041 02       		.uleb128 0x2
  237 0042 04       		.byte	0x4
  238 0043 05       		.byte	0x5
- 239 0044 93010000 		.4byte	.LASF4
+ 239 0044 CD010000 		.4byte	.LASF4
  240 0048 02       		.uleb128 0x2
  241 0049 04       		.byte	0x4
  242 004a 07       		.byte	0x7
- 243 004b 49000000 		.4byte	.LASF5
+ 243 004b 83000000 		.4byte	.LASF5
  244 004f 02       		.uleb128 0x2
  245 0050 08       		.byte	0x8
  246 0051 05       		.byte	0x5
@@ -461,7 +461,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  248 0056 02       		.uleb128 0x2
  249 0057 08       		.byte	0x8
  250 0058 07       		.byte	0x7
- 251 0059 71000000 		.4byte	.LASF7
+ 251 0059 AB000000 		.4byte	.LASF7
  252 005d 03       		.uleb128 0x3
  253 005e 04       		.byte	0x4
  254 005f 05       		.byte	0x5
@@ -471,27 +471,27 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  258 0066 07       		.byte	0x7
  259 0067 0E000000 		.4byte	.LASF8
  260 006b 04       		.uleb128 0x4
- 261 006c 43000000 		.4byte	.LASF12
+ 261 006c 7D000000 		.4byte	.LASF12
  262 0070 02       		.byte	0x2
  263 0071 E401     		.2byte	0x1e4
  264 0073 2C000000 		.4byte	0x2c
  265 0077 02       		.uleb128 0x2
  266 0078 04       		.byte	0x4
  267 0079 04       		.byte	0x4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 9
 
 
- 268 007a 9A000000 		.4byte	.LASF9
+ 268 007a D4000000 		.4byte	.LASF9
  269 007e 02       		.uleb128 0x2
  270 007f 08       		.byte	0x8
  271 0080 04       		.byte	0x4
- 272 0081 9C010000 		.4byte	.LASF10
+ 272 0081 D6010000 		.4byte	.LASF10
  273 0085 02       		.uleb128 0x2
  274 0086 01       		.byte	0x1
  275 0087 08       		.byte	0x8
- 276 0088 7B010000 		.4byte	.LASF11
+ 276 0088 B5010000 		.4byte	.LASF11
  277 008c 04       		.uleb128 0x4
- 278 008d 55020000 		.4byte	.LASF13
+ 278 008d 2A020000 		.4byte	.LASF13
  279 0091 02       		.byte	0x2
  280 0092 8E02     		.2byte	0x28e
  281 0094 98000000 		.4byte	0x98
@@ -500,11 +500,11 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  284 009d 02       		.uleb128 0x2
  285 009e 08       		.byte	0x8
  286 009f 04       		.byte	0x4
- 287 00a0 C9010000 		.4byte	.LASF14
+ 287 00a0 03020000 		.4byte	.LASF14
  288 00a4 02       		.uleb128 0x2
  289 00a5 04       		.byte	0x4
  290 00a6 07       		.byte	0x7
- 291 00a7 64020000 		.4byte	.LASF15
+ 291 00a7 39020000 		.4byte	.LASF15
  292 00ab 06       		.uleb128 0x6
  293 00ac 04       		.byte	0x4
  294 00ad 03       		.byte	0x3
@@ -517,34 +517,34 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  301 00ba 6B000000 		.4byte	0x6b
  302 00be 00       		.byte	0
  303 00bf 07       		.uleb128 0x7
- 304 00c0 A3010000 		.4byte	.LASF17
+ 304 00c0 DD010000 		.4byte	.LASF17
  305 00c4 03       		.byte	0x3
  306 00c5 71       		.byte	0x71
  307 00c6 6B000000 		.4byte	0x6b
  308 00ca 01       		.byte	0x1
  309 00cb 07       		.uleb128 0x7
- 310 00cc 5A020000 		.4byte	.LASF18
+ 310 00cc 2F020000 		.4byte	.LASF18
  311 00d0 03       		.byte	0x3
  312 00d1 73       		.byte	0x73
  313 00d2 6B000000 		.4byte	0x6b
  314 00d6 02       		.byte	0x2
  315 00d7 07       		.uleb128 0x7
- 316 00d8 80010000 		.4byte	.LASF19
+ 316 00d8 BA010000 		.4byte	.LASF19
  317 00dc 03       		.byte	0x3
  318 00dd 86       		.byte	0x86
  319 00de 6B000000 		.4byte	0x6b
  320 00e2 03       		.byte	0x3
  321 00e3 00       		.byte	0
  322 00e4 08       		.uleb128 0x8
- 323 00e5 63010000 		.4byte	.LASF20
+ 323 00e5 9D010000 		.4byte	.LASF20
  324 00e9 03       		.byte	0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 10
 
 
  325 00ea 8B       		.byte	0x8b
  326 00eb AB000000 		.4byte	0xab
  327 00ef 09       		.uleb128 0x9
- 328 00f0 5B000000 		.4byte	.LASF21
+ 328 00f0 95000000 		.4byte	.LASF21
  329 00f4 01       		.byte	0x1
  330 00f5 2A       		.byte	0x2a
  331 00f6 00000000 		.4byte	.LFB0
@@ -560,7 +560,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  341 010f 01       		.uleb128 0x1
  342 0110 9C       		.byte	0x9c
  343 0111 09       		.uleb128 0x9
- 344 0112 3A020000 		.4byte	.LASF23
+ 344 0112 0F020000 		.4byte	.LASF23
  345 0116 01       		.byte	0x1
  346 0117 88       		.byte	0x88
  347 0118 00000000 		.4byte	.LFB2
@@ -568,7 +568,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  349 0120 01       		.uleb128 0x1
  350 0121 9C       		.byte	0x9c
  351 0122 09       		.uleb128 0x9
- 352 0123 88000000 		.4byte	.LASF24
+ 352 0123 C2000000 		.4byte	.LASF24
  353 0127 01       		.byte	0x1
  354 0128 B2       		.byte	0xb2
  355 0129 00000000 		.4byte	.LFB3
@@ -576,7 +576,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  357 0131 01       		.uleb128 0x1
  358 0132 9C       		.byte	0x9c
  359 0133 0A       		.uleb128 0xa
- 360 0134 6D020000 		.4byte	.LASF28
+ 360 0134 42020000 		.4byte	.LASF28
  361 0138 01       		.byte	0x1
  362 0139 14       		.byte	0x14
  363 013a E4000000 		.4byte	0xe4
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  379 0009 1B       		.uleb128 0x1b
  380 000a 0E       		.uleb128 0xe
  381 000b 55       		.uleb128 0x55
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 11
 
 
  382 000c 17       		.uleb128 0x17
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  436 0042 3A       		.uleb128 0x3a
  437 0043 0B       		.uleb128 0xb
  438 0044 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 12
 
 
  439 0045 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  493 007c 00       		.byte	0
  494 007d 00       		.byte	0
  495 007e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 13
 
 
  496 007f 34       		.uleb128 0x34
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  545      206C6F6E 
  545      6720696E 
  545      7400
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 14
 
 
  546              	.LASF8:
@@ -797,146 +797,143 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 1
  551      485A5F52 
  551      6573746F 
  551      7265436F 
- 552              	.LASF12:
- 553 0043 75696E74 		.ascii	"uint8\000"
- 553      3800
- 554              	.LASF5:
- 555 0049 6C6F6E67 		.ascii	"long unsigned int\000"
- 555      20756E73 
- 555      69676E65 
- 555      6420696E 
- 555      7400
- 556              	.LASF21:
- 557 005b 424C494E 		.ascii	"BLINK_25HZ_SaveConfig\000"
- 557      4B5F3235 
- 557      485A5F53 
- 557      61766543 
- 557      6F6E6669 
- 558              	.LASF7:
- 559 0071 6C6F6E67 		.ascii	"long long unsigned int\000"
- 559      206C6F6E 
- 559      6720756E 
- 559      7369676E 
- 559      65642069 
- 560              	.LASF24:
- 561 0088 424C494E 		.ascii	"BLINK_25HZ_Wakeup\000"
- 561      4B5F3235 
- 561      485A5F57 
- 561      616B6575 
- 561      7000
- 562              	.LASF9:
- 563 009a 666C6F61 		.ascii	"float\000"
- 563      7400
- 564              	.LASF26:
- 565 00a0 47656E65 		.ascii	"Generated_Source\\PSoC5\\BLINK_25HZ_PM.c\000"
- 565      72617465 
- 565      645F536F 
- 565      75726365 
- 565      5C50536F 
- 566              	.LASF25:
- 567 00c7 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 567      43313120 
- 567      352E342E 
- 567      31203230 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 15
+ 552              	.LASF27:
+ 553 0043 433A5C55 		.ascii	"C:\\Users\\mgnocco\\Documents\\GitHub\\PSoC5\\Toast"
+ 553      73657273 
+ 553      5C6D676E 
+ 553      6F63636F 
+ 553      5C446F63 
+ 554 0070 5C546F61 		.ascii	"\\Toast.cydsn\000"
+ 554      73742E63 
+ 554      7964736E 
+ 554      00
+ 555              	.LASF12:
+ 556 007d 75696E74 		.ascii	"uint8\000"
+ 556      3800
+ 557              	.LASF5:
+ 558 0083 6C6F6E67 		.ascii	"long unsigned int\000"
+ 558      20756E73 
+ 558      69676E65 
+ 558      6420696E 
+ 558      7400
+ 559              	.LASF21:
+ 560 0095 424C494E 		.ascii	"BLINK_25HZ_SaveConfig\000"
+ 560      4B5F3235 
+ 560      485A5F53 
+ 560      61766543 
+ 560      6F6E6669 
+ 561              	.LASF7:
+ 562 00ab 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 562      206C6F6E 
+ 562      6720756E 
+ 562      7369676E 
+ 562      65642069 
+ 563              	.LASF24:
+ 564 00c2 424C494E 		.ascii	"BLINK_25HZ_Wakeup\000"
+ 564      4B5F3235 
+ 564      485A5F57 
+ 564      616B6575 
+ 564      7000
+ 565              	.LASF9:
+ 566 00d4 666C6F61 		.ascii	"float\000"
+ 566      7400
+ 567              	.LASF26:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 15
 
 
- 567      31363036 
- 568 00fa 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 568      20726576 
- 568      6973696F 
- 568      6E203233 
- 568      37373135 
- 569 012d 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 569      66756E63 
- 569      74696F6E 
- 569      2D736563 
- 569      74696F6E 
- 570              	.LASF1:
- 571 0155 756E7369 		.ascii	"unsigned char\000"
- 571      676E6564 
- 571      20636861 
- 571      7200
- 572              	.LASF20:
- 573 0163 424C494E 		.ascii	"BLINK_25HZ_backupStruct\000"
- 573      4B5F3235 
- 573      485A5F62 
- 573      61636B75 
- 573      70537472 
- 574              	.LASF11:
- 575 017b 63686172 		.ascii	"char\000"
- 575      00
- 576              	.LASF19:
- 577 0180 50574D43 		.ascii	"PWMControlRegister\000"
- 577      6F6E7472 
- 577      6F6C5265 
- 577      67697374 
- 577      657200
- 578              	.LASF4:
- 579 0193 6C6F6E67 		.ascii	"long int\000"
- 579      20696E74 
- 579      00
- 580              	.LASF10:
- 581 019c 646F7562 		.ascii	"double\000"
- 581      6C6500
- 582              	.LASF17:
- 583 01a3 50574D55 		.ascii	"PWMUdb\000"
- 583      646200
- 584              	.LASF3:
- 585 01aa 73686F72 		.ascii	"short unsigned int\000"
- 585      7420756E 
- 585      7369676E 
- 585      65642069 
- 585      6E7400
- 586              	.LASF0:
- 587 01bd 7369676E 		.ascii	"signed char\000"
- 587      65642063 
- 587      68617200 
- 588              	.LASF14:
- 589 01c9 6C6F6E67 		.ascii	"long double\000"
- 589      20646F75 
- 589      626C6500 
- 590              	.LASF27:
- 591 01d5 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\cc04cLS3.s 			page 16
+ 568 00da 47656E65 		.ascii	"Generated_Source\\PSoC5\\BLINK_25HZ_PM.c\000"
+ 568      72617465 
+ 568      645F536F 
+ 568      75726365 
+ 568      5C50536F 
+ 569              	.LASF25:
+ 570 0101 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 570      43313120 
+ 570      352E342E 
+ 570      31203230 
+ 570      31363036 
+ 571 0134 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 571      20726576 
+ 571      6973696F 
+ 571      6E203233 
+ 571      37373135 
+ 572 0167 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 572      66756E63 
+ 572      74696F6E 
+ 572      2D736563 
+ 572      74696F6E 
+ 573              	.LASF1:
+ 574 018f 756E7369 		.ascii	"unsigned char\000"
+ 574      676E6564 
+ 574      20636861 
+ 574      7200
+ 575              	.LASF20:
+ 576 019d 424C494E 		.ascii	"BLINK_25HZ_backupStruct\000"
+ 576      4B5F3235 
+ 576      485A5F62 
+ 576      61636B75 
+ 576      70537472 
+ 577              	.LASF11:
+ 578 01b5 63686172 		.ascii	"char\000"
+ 578      00
+ 579              	.LASF19:
+ 580 01ba 50574D43 		.ascii	"PWMControlRegister\000"
+ 580      6F6E7472 
+ 580      6F6C5265 
+ 580      67697374 
+ 580      657200
+ 581              	.LASF4:
+ 582 01cd 6C6F6E67 		.ascii	"long int\000"
+ 582      20696E74 
+ 582      00
+ 583              	.LASF10:
+ 584 01d6 646F7562 		.ascii	"double\000"
+ 584      6C6500
+ 585              	.LASF17:
+ 586 01dd 50574D55 		.ascii	"PWMUdb\000"
+ 586      646200
+ 587              	.LASF3:
+ 588 01e4 73686F72 		.ascii	"short unsigned int\000"
+ 588      7420756E 
+ 588      7369676E 
+ 588      65642069 
+ 588      6E7400
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccF3vdWj.s 			page 16
 
 
- 591      73657273 
- 591      5C6D676E 
- 591      6F63636F 
- 591      5C4F6E65 
- 592 0205 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
- 592      69616E6F 
- 592      20546563 
- 592      6E6F6C6F 
- 592      6769615C 
- 593 0234 63796473 		.ascii	"cydsn\000"
- 593      6E00
- 594              	.LASF23:
- 595 023a 424C494E 		.ascii	"BLINK_25HZ_Sleep\000"
- 595      4B5F3235 
- 595      485A5F53 
- 595      6C656570 
- 595      00
- 596              	.LASF2:
- 597 024b 73686F72 		.ascii	"short int\000"
- 597      7420696E 
- 597      7400
- 598              	.LASF13:
- 599 0255 72656738 		.ascii	"reg8\000"
- 599      00
- 600              	.LASF18:
- 601 025a 50574D50 		.ascii	"PWMPeriod\000"
- 601      6572696F 
- 601      6400
- 602              	.LASF15:
- 603 0264 73697A65 		.ascii	"sizetype\000"
- 603      74797065 
- 603      00
- 604              	.LASF28:
- 605 026d 424C494E 		.ascii	"BLINK_25HZ_backup\000"
- 605      4B5F3235 
- 605      485A5F62 
- 605      61636B75 
- 605      7000
- 606              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 589              	.LASF0:
+ 590 01f7 7369676E 		.ascii	"signed char\000"
+ 590      65642063 
+ 590      68617200 
+ 591              	.LASF14:
+ 592 0203 6C6F6E67 		.ascii	"long double\000"
+ 592      20646F75 
+ 592      626C6500 
+ 593              	.LASF23:
+ 594 020f 424C494E 		.ascii	"BLINK_25HZ_Sleep\000"
+ 594      4B5F3235 
+ 594      485A5F53 
+ 594      6C656570 
+ 594      00
+ 595              	.LASF2:
+ 596 0220 73686F72 		.ascii	"short int\000"
+ 596      7420696E 
+ 596      7400
+ 597              	.LASF13:
+ 598 022a 72656738 		.ascii	"reg8\000"
+ 598      00
+ 599              	.LASF18:
+ 600 022f 50574D50 		.ascii	"PWMPeriod\000"
+ 600      6572696F 
+ 600      6400
+ 601              	.LASF15:
+ 602 0239 73697A65 		.ascii	"sizetype\000"
+ 602      74797065 
+ 602      00
+ 603              	.LASF28:
+ 604 0242 424C494E 		.ascii	"BLINK_25HZ_backup\000"
+ 604      4B5F3235 
+ 604      485A5F62 
+ 604      61636B75 
+ 604      7000
+ 605              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

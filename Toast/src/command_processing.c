@@ -3180,7 +3180,7 @@ void cmd_set_inputs(){
     static int16 last_aux_int16[1];
     
     aux_int16[0] = (int16)(g_rx.buffer[1]<<8 | g_rx.buffer[2]);
-   
+    PWM_MOTORS_WriteCompare1(aux_int16[0]);
     
     // Check if last command received was the same as this 
     //(Note: last command not last motor reference in g_ref)

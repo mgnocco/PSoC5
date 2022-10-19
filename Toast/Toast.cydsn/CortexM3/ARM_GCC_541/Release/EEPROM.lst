@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
   28:Generated_Source\PSoC5/EEPROM.c **** *
   29:Generated_Source\PSoC5/EEPROM.c **** * Return:
   30:Generated_Source\PSoC5/EEPROM.c **** *  None
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 2
 
 
   31:Generated_Source\PSoC5/EEPROM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
   57:Generated_Source\PSoC5/EEPROM.c **** void EEPROM_Start(void) 
   58:Generated_Source\PSoC5/EEPROM.c **** {
   56              		.loc 1 58 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 3
 
 
   57              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
   91              		.cfi_def_cfa_register 7
   79:Generated_Source\PSoC5/EEPROM.c ****     /* Stop and power down EEPROM block */
   80:Generated_Source\PSoC5/EEPROM.c ****     CyEEPROM_Stop();
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 4
 
 
   92              		.loc 1 80 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  119              		.cfi_def_cfa_register 7
  120 0006 0346     		mov	r3, r0
  121 0008 0A46     		mov	r2, r1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 5
 
 
  122 000a FB71     		strb	r3, [r7, #7]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  158              		.loc 1 125 0
  159 004c 4FF0FF33 		mov	r3, #-1
  160 0050 FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 6
 
 
  126:Generated_Source\PSoC5/EEPROM.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  201 0094 FFF7FEFF 		bl	CySpcWriteRow
  202 0098 0346     		mov	r3, r0
  203 009a 072B     		cmp	r3, #7
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 7
 
 
  204 009c 1BD1     		bne	.L11
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  239 00d6 4FF0FF33 		mov	r3, #-1
  240 00da FB60     		str	r3, [r7, #12]
  241 00dc 09E0     		b	.L16
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 8
 
 
  242              	.L10:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  186:Generated_Source\PSoC5/EEPROM.c ****     return (status);
  269              		.loc 1 186 0
  270 0102 FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 9
 
 
  187:Generated_Source\PSoC5/EEPROM.c **** }
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  302              		.cfi_offset 14, -4
  303 0002 84B0     		sub	sp, sp, #16
  304              		.cfi_def_cfa_offset 24
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 10
 
 
  305 0004 00AF     		add	r7, sp, #0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  341              		.align	2
  342              		.global	EEPROM_UpdateTemperature
  343              		.thumb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 11
 
 
  344              		.thumb_func
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  375              	.LFB6:
  251:Generated_Source\PSoC5/EEPROM.c **** 
  252:Generated_Source\PSoC5/EEPROM.c **** 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 12
 
 
  253:Generated_Source\PSoC5/EEPROM.c **** /*******************************************************************************
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  400 001c 29D1     		bne	.L28
  283:Generated_Source\PSoC5/EEPROM.c ****         {
  284:Generated_Source\PSoC5/EEPROM.c ****             if(CySpcEraseSector(CY_SPC_FIRST_EE_ARRAYID, sectorNumber) == CYRET_STARTED)
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 13
 
 
  401              		.loc 1 284 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  298:Generated_Source\PSoC5/EEPROM.c ****                 }
  299:Generated_Source\PSoC5/EEPROM.c ****             }
  300:Generated_Source\PSoC5/EEPROM.c ****             else
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 14
 
 
  301:Generated_Source\PSoC5/EEPROM.c ****             {
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  477              		.align	2
  478              		.global	EEPROM_Write
  479              		.thumb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 15
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 15
 
 
  480              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  502 0010 97F90330 		ldrsb	r3, [r7, #3]
  503 0014 002B     		cmp	r3, #0
  504 0016 5FDB     		blt	.L39
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 16
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 16
 
 
  352:Generated_Source\PSoC5/EEPROM.c ****     {
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  542 005c 9B08     		lsrs	r3, r3, #2
  543 005e DBB2     		uxtb	r3, r3
  544 0060 002B     		cmp	r3, #0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 17
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 17
 
 
  545 0062 01D1     		bne	.L43
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  579              		.loc 1 388 0 is_stmt 1
  580 009c 124B     		ldr	r3, .L52
  581 009e 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 18
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 18
 
 
  582 00a0 DBB2     		uxtb	r3, r3
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  615 00d6 01E0     		b	.L50
  616              	.L39:
  410:Generated_Source\PSoC5/EEPROM.c ****         }
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 19
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 19
 
 
  411:Generated_Source\PSoC5/EEPROM.c ****     }
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  435:Generated_Source\PSoC5/EEPROM.c **** *  of the silicon has changed for more than 10C since component was started.
  436:Generated_Source\PSoC5/EEPROM.c **** *
  437:Generated_Source\PSoC5/EEPROM.c **** * Parameters:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 20
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 20
 
 
  438:Generated_Source\PSoC5/EEPROM.c **** *  rowData:    The address of the data to write to the EEPROM.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  466:Generated_Source\PSoC5/EEPROM.c ****             /* Plan for failure */
  467:Generated_Source\PSoC5/EEPROM.c ****             status = CYRET_UNKNOWN;
  673              		.loc 1 467 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 21
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 21
 
 
  674 0022 4FF0FF33 		mov	r3, #-1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  483:Generated_Source\PSoC5/EEPROM.c ****                 /* Command to erase and program the row. */
  484:Generated_Source\PSoC5/EEPROM.c ****                 if(status == CYRET_SUCCESS)
  713              		.loc 1 484 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 22
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 22
 
 
  714 0068 FB68     		ldr	r3, [r7, #12]
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  748              	.L55:
  505:Generated_Source\PSoC5/EEPROM.c ****         }
  506:Generated_Source\PSoC5/EEPROM.c ****     }
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 23
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 23
 
 
  507:Generated_Source\PSoC5/EEPROM.c ****     else
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  531:Generated_Source\PSoC5/EEPROM.c **** *  sectorNumber:  The sector number to erase.
  532:Generated_Source\PSoC5/EEPROM.c **** *
  533:Generated_Source\PSoC5/EEPROM.c **** * Return:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 24
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 24
 
 
  534:Generated_Source\PSoC5/EEPROM.c **** *  CYRET_STARTED, if the SPC command to erase was successfully started.
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  560:Generated_Source\PSoC5/EEPROM.c ****             /* Command to load a row of data */
  561:Generated_Source\PSoC5/EEPROM.c ****             if(CySpcEraseSector(CY_SPC_FIRST_EE_ARRAYID, sectorNumber) == CYRET_STARTED)
  807              		.loc 1 561 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 25
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 25
 
 
  808 0024 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  846              		.thumb_func
  847              		.type	EEPROM_Query, %function
  848              	EEPROM_Query:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 26
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 26
 
 
  849              	.LFB10:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  610:Generated_Source\PSoC5/EEPROM.c ****         if(CY_SPC_STATUS_SUCCESS == CY_SPC_READ_STATUS)
  871              		.loc 1 610 0
  872 0018 0E4B     		ldr	r3, .L81
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 27
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 27
 
 
  873 001a 1B78     		ldrb	r3, [r3]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  909 0050 BD46     		mov	sp, r7
  910              		.cfi_def_cfa_register 13
  911              		@ sp needed
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 28
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 28
 
 
  912 0052 80BD     		pop	{r7, pc}
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  941 0008 FB71     		strb	r3, [r7, #7]
  942 000a 0B46     		mov	r3, r1
  943 000c BB71     		strb	r3, [r7, #6]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 29
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 29
 
 
  944 000e 1346     		mov	r3, r2
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  980 004e DBB2     		uxtb	r3, r3
  981 0050 03F00203 		and	r3, r3, #2
  982 0054 002B     		cmp	r3, #0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 30
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 30
 
 
  983 0056 F8D0     		beq	.L87
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1019              		.loc 1 689 0
  1020 0096 4FF0FF33 		mov	r3, #-1
  1021 009a FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 31
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 31
 
 
  690:Generated_Source\PSoC5/EEPROM.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  709:Generated_Source\PSoC5/EEPROM.c ****                     status = CYRET_UNKNOWN;
  1057              		.loc 1 709 0
  1058 00d6 4FF0FF33 		mov	r3, #-1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 32
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 32
 
 
  1059 00da FB60     		str	r3, [r7, #12]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1093              		.size	EEPROM_ByteWritePos, .-EEPROM_ByteWritePos
  1094              		.text
  1095              	.Letext0:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 33
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 33
 
 
  1096              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
@@ -1933,42 +1933,42 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1105 000c 09000000 		.4byte	.LASF38
  1106 0010 0C       		.byte	0xc
  1107 0011 97000000 		.4byte	.LASF39
- 1108 0015 79010000 		.4byte	.LASF40
+ 1108 0015 BD000000 		.4byte	.LASF40
  1109 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1110 001d 00000000 		.4byte	0
  1111 0021 00000000 		.4byte	.Ldebug_line0
  1112 0025 02       		.uleb128 0x2
  1113 0026 01       		.byte	0x1
  1114 0027 06       		.byte	0x6
- 1115 0028 E0020000 		.4byte	.LASF0
+ 1115 0028 B5020000 		.4byte	.LASF0
  1116 002c 02       		.uleb128 0x2
  1117 002d 01       		.byte	0x1
  1118 002e 08       		.byte	0x8
- 1119 002f 0D010000 		.4byte	.LASF1
+ 1119 002f 37010000 		.4byte	.LASF1
  1120 0033 02       		.uleb128 0x2
  1121 0034 02       		.byte	0x2
  1122 0035 05       		.byte	0x5
- 1123 0036 98020000 		.4byte	.LASF2
+ 1123 0036 6D020000 		.4byte	.LASF2
  1124 003a 02       		.uleb128 0x2
  1125 003b 02       		.byte	0x2
  1126 003c 07       		.byte	0x7
- 1127 003d BD000000 		.4byte	.LASF3
+ 1127 003d F7000000 		.4byte	.LASF3
  1128 0041 02       		.uleb128 0x2
  1129 0042 04       		.byte	0x4
  1130 0043 05       		.byte	0x5
- 1131 0044 BC020000 		.4byte	.LASF4
+ 1131 0044 91020000 		.4byte	.LASF4
  1132 0048 02       		.uleb128 0x2
  1133 0049 04       		.byte	0x4
  1134 004a 07       		.byte	0x7
- 1135 004b 49010000 		.4byte	.LASF5
+ 1135 004b 73010000 		.4byte	.LASF5
  1136 004f 02       		.uleb128 0x2
  1137 0050 08       		.byte	0x8
  1138 0051 05       		.byte	0x5
- 1139 0052 71020000 		.4byte	.LASF6
+ 1139 0052 46020000 		.4byte	.LASF6
  1140 0056 02       		.uleb128 0x2
  1141 0057 08       		.byte	0x8
  1142 0058 07       		.byte	0x7
- 1143 0059 15020000 		.4byte	.LASF7
+ 1143 0059 EA010000 		.4byte	.LASF7
  1144 005d 03       		.uleb128 0x3
  1145 005e 04       		.byte	0x4
  1146 005f 05       		.byte	0x5
@@ -1976,17 +1976,17 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1148 0064 02       		.uleb128 0x2
  1149 0065 04       		.byte	0x4
  1150 0066 07       		.byte	0x7
- 1151 0067 00020000 		.4byte	.LASF8
+ 1151 0067 D5010000 		.4byte	.LASF8
  1152 006b 04       		.uleb128 0x4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 34
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 34
 
 
- 1153 006c 5B010000 		.4byte	.LASF9
+ 1153 006c 85010000 		.4byte	.LASF9
  1154 0070 02       		.byte	0x2
  1155 0071 E401     		.2byte	0x1e4
  1156 0073 2C000000 		.4byte	0x2c
  1157 0077 04       		.uleb128 0x4
- 1158 0078 F9010000 		.4byte	.LASF10
+ 1158 0078 CE010000 		.4byte	.LASF10
  1159 007c 02       		.byte	0x2
  1160 007d E501     		.2byte	0x1e5
  1161 007f 3A000000 		.4byte	0x3a
@@ -1997,18 +1997,18 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1166 008a 02       		.uleb128 0x2
  1167 008b 08       		.byte	0x8
  1168 008c 04       		.byte	0x4
- 1169 008d DE010000 		.4byte	.LASF12
+ 1169 008d B3010000 		.4byte	.LASF12
  1170 0091 02       		.uleb128 0x2
  1171 0092 01       		.byte	0x1
  1172 0093 08       		.byte	0x8
- 1173 0094 C5020000 		.4byte	.LASF13
+ 1173 0094 9A020000 		.4byte	.LASF13
  1174 0098 04       		.uleb128 0x4
  1175 0099 00000000 		.4byte	.LASF14
  1176 009d 02       		.byte	0x2
  1177 009e 8602     		.2byte	0x286
  1178 00a0 48000000 		.4byte	0x48
  1179 00a4 04       		.uleb128 0x4
- 1180 00a5 35010000 		.4byte	.LASF15
+ 1180 00a5 5F010000 		.4byte	.LASF15
  1181 00a9 02       		.byte	0x2
  1182 00aa 8E02     		.2byte	0x28e
  1183 00ac B0000000 		.4byte	0xb0
@@ -2017,13 +2017,13 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1186 00b5 02       		.uleb128 0x2
  1187 00b6 08       		.byte	0x8
  1188 00b7 04       		.byte	0x4
- 1189 00b8 D4020000 		.4byte	.LASF16
+ 1189 00b8 A9020000 		.4byte	.LASF16
  1190 00bc 02       		.uleb128 0x2
  1191 00bd 04       		.byte	0x4
  1192 00be 07       		.byte	0x7
- 1193 00bf 68020000 		.4byte	.LASF17
+ 1193 00bf 3D020000 		.4byte	.LASF17
  1194 00c3 06       		.uleb128 0x6
- 1195 00c4 F2000000 		.4byte	.LASF18
+ 1195 00c4 1C010000 		.4byte	.LASF18
  1196 00c8 01       		.byte	0x1
  1197 00c9 21       		.byte	0x21
  1198 00ca 00000000 		.4byte	.LFB0
@@ -2031,18 +2031,18 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1200 00d2 01       		.uleb128 0x1
  1201 00d3 9C       		.byte	0x9c
  1202 00d4 06       		.uleb128 0x6
- 1203 00d5 00010000 		.4byte	.LASF19
+ 1203 00d5 2A010000 		.4byte	.LASF19
  1204 00d9 01       		.byte	0x1
  1205 00da 39       		.byte	0x39
  1206 00db 00000000 		.4byte	.LFB1
  1207 00df 0C000000 		.4byte	.LFE1-.LFB1
  1208 00e3 01       		.uleb128 0x1
  1209 00e4 9C       		.byte	0x9c
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 35
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 35
 
 
  1210 00e5 06       		.uleb128 0x6
- 1211 00e6 8C020000 		.4byte	.LASF20
+ 1211 00e6 61020000 		.4byte	.LASF20
  1212 00ea 01       		.byte	0x1
  1213 00eb 4D       		.byte	0x4d
  1214 00ec 00000000 		.4byte	.LFB2
@@ -2050,7 +2050,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1216 00f4 01       		.uleb128 0x1
  1217 00f5 9C       		.byte	0x9c
  1218 00f6 07       		.uleb128 0x7
- 1219 00f7 3E020000 		.4byte	.LASF26
+ 1219 00f7 13020000 		.4byte	.LASF26
  1220 00fb 01       		.byte	0x1
  1221 00fc 6A       		.byte	0x6a
  1222 00fd 98000000 		.4byte	0x98
@@ -2060,7 +2060,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1226 010a 9C       		.byte	0x9c
  1227 010b 56010000 		.4byte	0x156
  1228 010f 08       		.uleb128 0x8
- 1229 0110 70010000 		.4byte	.LASF21
+ 1229 0110 9A010000 		.4byte	.LASF21
  1230 0114 01       		.byte	0x1
  1231 0115 6A       		.byte	0x6a
  1232 0116 6B000000 		.4byte	0x6b
@@ -2068,7 +2068,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1234 011b 91       		.byte	0x91
  1235 011c 6F       		.sleb128 -17
  1236 011d 08       		.uleb128 0x8
- 1237 011e 0D020000 		.4byte	.LASF22
+ 1237 011e E2010000 		.4byte	.LASF22
  1238 0122 01       		.byte	0x1
  1239 0123 6A       		.byte	0x6a
  1240 0124 77000000 		.4byte	0x77
@@ -2076,7 +2076,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1242 0129 91       		.byte	0x91
  1243 012a 6C       		.sleb128 -20
  1244 012b 09       		.uleb128 0x9
- 1245 012c D0000000 		.4byte	.LASF23
+ 1245 012c 0A010000 		.4byte	.LASF23
  1246 0130 01       		.byte	0x1
  1247 0131 6C       		.byte	0x6c
  1248 0132 98000000 		.4byte	0x98
@@ -2084,7 +2084,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1250 0137 91       		.byte	0x91
  1251 0138 74       		.sleb128 -12
  1252 0139 09       		.uleb128 0x9
- 1253 013a CA020000 		.4byte	.LASF24
+ 1253 013a 9F020000 		.4byte	.LASF24
  1254 013e 01       		.byte	0x1
  1255 013f 6D       		.byte	0x6d
  1256 0140 77000000 		.4byte	0x77
@@ -2092,19 +2092,19 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1258 0145 91       		.byte	0x91
  1259 0146 72       		.sleb128 -14
  1260 0147 09       		.uleb128 0x9
- 1261 0148 E7000000 		.4byte	.LASF25
+ 1261 0148 11010000 		.4byte	.LASF25
  1262 014c 01       		.byte	0x1
  1263 014d 6E       		.byte	0x6e
  1264 014e 77000000 		.4byte	0x77
  1265 0152 02       		.uleb128 0x2
  1266 0153 91       		.byte	0x91
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 36
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 36
 
 
  1267 0154 70       		.sleb128 -16
  1268 0155 00       		.byte	0
  1269 0156 07       		.uleb128 0x7
- 1270 0157 D7000000 		.4byte	.LASF27
+ 1270 0157 A3010000 		.4byte	.LASF27
  1271 015b 01       		.byte	0x1
  1272 015c D0       		.byte	0xd0
  1273 015d 6B000000 		.4byte	0x6b
@@ -2114,7 +2114,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1277 016a 9C       		.byte	0x9c
  1278 016b 9A010000 		.4byte	0x19a
  1279 016f 08       		.uleb128 0x8
- 1280 0170 0D020000 		.4byte	.LASF22
+ 1280 0170 E2010000 		.4byte	.LASF22
  1281 0174 01       		.byte	0x1
  1282 0175 D0       		.byte	0xd0
  1283 0176 77000000 		.4byte	0x77
@@ -2122,7 +2122,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1285 017b 91       		.byte	0x91
  1286 017c 6E       		.sleb128 -18
  1287 017d 09       		.uleb128 0x9
- 1288 017e FF020000 		.4byte	.LASF28
+ 1288 017e D4020000 		.4byte	.LASF28
  1289 0182 01       		.byte	0x1
  1290 0183 D2       		.byte	0xd2
  1291 0184 6B000000 		.4byte	0x6b
@@ -2130,7 +2130,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1293 0189 91       		.byte	0x91
  1294 018a 76       		.sleb128 -10
  1295 018b 09       		.uleb128 0x9
- 1296 018c 3A010000 		.4byte	.LASF29
+ 1296 018c 64010000 		.4byte	.LASF29
  1297 0190 01       		.byte	0x1
  1298 0191 D3       		.byte	0xd3
  1299 0192 6B000000 		.4byte	0x6b
@@ -2139,7 +2139,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1302 0198 77       		.sleb128 -9
  1303 0199 00       		.byte	0
  1304 019a 0A       		.uleb128 0xa
- 1305 019b 4F020000 		.4byte	.LASF41
+ 1305 019b 24020000 		.4byte	.LASF41
  1306 019f 01       		.byte	0x1
  1307 01a0 F7       		.byte	0xf7
  1308 01a1 6B000000 		.4byte	0x6b
@@ -2148,7 +2148,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1311 01ad 01       		.uleb128 0x1
  1312 01ae 9C       		.byte	0x9c
  1313 01af 0B       		.uleb128 0xb
- 1314 01b0 EC020000 		.4byte	.LASF30
+ 1314 01b0 C1020000 		.4byte	.LASF30
  1315 01b4 01       		.byte	0x1
  1316 01b5 1101     		.2byte	0x111
  1317 01b7 98000000 		.4byte	0x98
@@ -2158,10 +2158,10 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1321 01c4 9C       		.byte	0x9c
  1322 01c5 E8010000 		.4byte	0x1e8
  1323 01c9 0C       		.uleb128 0xc
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 37
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 37
 
 
- 1324 01ca A2020000 		.4byte	.LASF31
+ 1324 01ca 77020000 		.4byte	.LASF31
  1325 01ce 01       		.byte	0x1
  1326 01cf 1101     		.2byte	0x111
  1327 01d1 6B000000 		.4byte	0x6b
@@ -2169,7 +2169,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1329 01d6 91       		.byte	0x91
  1330 01d7 6F       		.sleb128 -17
  1331 01d8 0D       		.uleb128 0xd
- 1332 01d9 D0000000 		.4byte	.LASF23
+ 1332 01d9 0A010000 		.4byte	.LASF23
  1333 01dd 01       		.byte	0x1
  1334 01de 1301     		.2byte	0x113
  1335 01e0 98000000 		.4byte	0x98
@@ -2178,7 +2178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1338 01e6 74       		.sleb128 -12
  1339 01e7 00       		.byte	0
  1340 01e8 0B       		.uleb128 0xb
- 1341 01e9 AF020000 		.4byte	.LASF32
+ 1341 01e9 84020000 		.4byte	.LASF32
  1342 01ed 01       		.byte	0x1
  1343 01ee 5901     		.2byte	0x159
  1344 01f0 98000000 		.4byte	0x98
@@ -2188,7 +2188,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1348 01fd 9C       		.byte	0x9c
  1349 01fe 30020000 		.4byte	0x230
  1350 0202 0C       		.uleb128 0xc
- 1351 0203 2D010000 		.4byte	.LASF33
+ 1351 0203 57010000 		.4byte	.LASF33
  1352 0207 01       		.byte	0x1
  1353 0208 5901     		.2byte	0x159
  1354 020a 30020000 		.4byte	0x230
@@ -2196,7 +2196,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1356 020f 91       		.byte	0x91
  1357 0210 6C       		.sleb128 -20
  1358 0211 0C       		.uleb128 0xc
- 1359 0212 CA020000 		.4byte	.LASF24
+ 1359 0212 9F020000 		.4byte	.LASF24
  1360 0216 01       		.byte	0x1
  1361 0217 5901     		.2byte	0x159
  1362 0219 6B000000 		.4byte	0x6b
@@ -2204,7 +2204,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1364 021e 91       		.byte	0x91
  1365 021f 6B       		.sleb128 -21
  1366 0220 0D       		.uleb128 0xd
- 1367 0221 D0000000 		.4byte	.LASF23
+ 1367 0221 0A010000 		.4byte	.LASF23
  1368 0225 01       		.byte	0x1
  1369 0226 5B01     		.2byte	0x15b
  1370 0228 98000000 		.4byte	0x98
@@ -2218,10 +2218,10 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1378 0236 0F       		.uleb128 0xf
  1379 0237 6B000000 		.4byte	0x6b
  1380 023b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 38
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 38
 
 
- 1381 023c 1B010000 		.4byte	.LASF34
+ 1381 023c 45010000 		.4byte	.LASF34
  1382 0240 01       		.byte	0x1
  1383 0241 C601     		.2byte	0x1c6
  1384 0243 98000000 		.4byte	0x98
@@ -2231,7 +2231,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1388 0250 9C       		.byte	0x9c
  1389 0251 83020000 		.4byte	0x283
  1390 0255 0C       		.uleb128 0xc
- 1391 0256 2D010000 		.4byte	.LASF33
+ 1391 0256 57010000 		.4byte	.LASF33
  1392 025a 01       		.byte	0x1
  1393 025b C601     		.2byte	0x1c6
  1394 025d 30020000 		.4byte	0x230
@@ -2239,7 +2239,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1396 0262 91       		.byte	0x91
  1397 0263 6C       		.sleb128 -20
  1398 0264 0C       		.uleb128 0xc
- 1399 0265 CA020000 		.4byte	.LASF24
+ 1399 0265 9F020000 		.4byte	.LASF24
  1400 0269 01       		.byte	0x1
  1401 026a C601     		.2byte	0x1c6
  1402 026c 6B000000 		.4byte	0x6b
@@ -2247,7 +2247,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1404 0271 91       		.byte	0x91
  1405 0272 6B       		.sleb128 -21
  1406 0273 0D       		.uleb128 0xd
- 1407 0274 D0000000 		.4byte	.LASF23
+ 1407 0274 0A010000 		.4byte	.LASF23
  1408 0278 01       		.byte	0x1
  1409 0279 C901     		.2byte	0x1c9
  1410 027b 98000000 		.4byte	0x98
@@ -2256,7 +2256,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1413 0281 74       		.sleb128 -12
  1414 0282 00       		.byte	0
  1415 0283 0B       		.uleb128 0xb
- 1416 0284 2C020000 		.4byte	.LASF35
+ 1416 0284 01020000 		.4byte	.LASF35
  1417 0288 01       		.byte	0x1
  1418 0289 2202     		.2byte	0x222
  1419 028b 98000000 		.4byte	0x98
@@ -2266,7 +2266,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1423 0298 9C       		.byte	0x9c
  1424 0299 BC020000 		.4byte	0x2bc
  1425 029d 0C       		.uleb128 0xc
- 1426 029e A2020000 		.4byte	.LASF31
+ 1426 029e 77020000 		.4byte	.LASF31
  1427 02a2 01       		.byte	0x1
  1428 02a3 2202     		.2byte	0x222
  1429 02a5 6B000000 		.4byte	0x6b
@@ -2274,11 +2274,11 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1431 02aa 91       		.byte	0x91
  1432 02ab 6F       		.sleb128 -17
  1433 02ac 0D       		.uleb128 0xd
- 1434 02ad D0000000 		.4byte	.LASF23
+ 1434 02ad 0A010000 		.4byte	.LASF23
  1435 02b1 01       		.byte	0x1
  1436 02b2 2402     		.2byte	0x224
  1437 02b4 98000000 		.4byte	0x98
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 39
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 39
 
 
  1438 02b8 02       		.uleb128 0x2
@@ -2286,7 +2286,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1440 02ba 74       		.sleb128 -12
  1441 02bb 00       		.byte	0
  1442 02bc 0B       		.uleb128 0xb
- 1443 02bd 7F020000 		.4byte	.LASF36
+ 1443 02bd 54020000 		.4byte	.LASF36
  1444 02c1 01       		.byte	0x1
  1445 02c2 5802     		.2byte	0x258
  1446 02c4 98000000 		.4byte	0x98
@@ -2296,7 +2296,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1450 02d1 9C       		.byte	0x9c
  1451 02d2 E6020000 		.4byte	0x2e6
  1452 02d6 0D       		.uleb128 0xd
- 1453 02d7 D0000000 		.4byte	.LASF23
+ 1453 02d7 0A010000 		.4byte	.LASF23
  1454 02db 01       		.byte	0x1
  1455 02dc 5A02     		.2byte	0x25a
  1456 02de 98000000 		.4byte	0x98
@@ -2305,7 +2305,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1459 02e4 74       		.sleb128 -12
  1460 02e5 00       		.byte	0
  1461 02e6 0B       		.uleb128 0xb
- 1462 02e7 E5010000 		.4byte	.LASF37
+ 1462 02e7 BA010000 		.4byte	.LASF37
  1463 02eb 01       		.byte	0x1
  1464 02ec 8B02     		.2byte	0x28b
  1465 02ee 98000000 		.4byte	0x98
@@ -2315,7 +2315,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1469 02fb 9C       		.byte	0x9c
  1470 02fc 3D030000 		.4byte	0x33d
  1471 0300 0C       		.uleb128 0xc
- 1472 0301 70010000 		.4byte	.LASF21
+ 1472 0301 9A010000 		.4byte	.LASF21
  1473 0305 01       		.byte	0x1
  1474 0306 8B02     		.2byte	0x28b
  1475 0308 6B000000 		.4byte	0x6b
@@ -2323,7 +2323,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1477 030d 91       		.byte	0x91
  1478 030e 6F       		.sleb128 -17
  1479 030f 0C       		.uleb128 0xc
- 1480 0310 CA020000 		.4byte	.LASF24
+ 1480 0310 9F020000 		.4byte	.LASF24
  1481 0314 01       		.byte	0x1
  1482 0315 8B02     		.2byte	0x28b
  1483 0317 6B000000 		.4byte	0x6b
@@ -2331,18 +2331,18 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1485 031c 91       		.byte	0x91
  1486 031d 6E       		.sleb128 -18
  1487 031e 0C       		.uleb128 0xc
- 1488 031f E7000000 		.4byte	.LASF25
+ 1488 031f 11010000 		.4byte	.LASF25
  1489 0323 01       		.byte	0x1
  1490 0324 8B02     		.2byte	0x28b
  1491 0326 6B000000 		.4byte	0x6b
  1492 032a 02       		.uleb128 0x2
  1493 032b 91       		.byte	0x91
  1494 032c 6D       		.sleb128 -19
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 40
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 40
 
 
  1495 032d 0D       		.uleb128 0xd
- 1496 032e D0000000 		.4byte	.LASF23
+ 1496 032e 0A010000 		.4byte	.LASF23
  1497 0332 01       		.byte	0x1
  1498 0333 8E02     		.2byte	0x28e
  1499 0335 98000000 		.4byte	0x98
@@ -2358,7 +2358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1509 034b 01       		.byte	0x1
  1510 034c 00       		.byte	0
  1511 034d 12       		.uleb128 0x12
- 1512 034e 61010000 		.4byte	.LASF42
+ 1512 034e 8B010000 		.4byte	.LASF42
  1513 0352 03       		.byte	0x3
  1514 0353 1C       		.byte	0x1c
  1515 0354 3D030000 		.4byte	0x33d
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1549 001e 03       		.uleb128 0x3
  1550 001f 24       		.uleb128 0x24
  1551 0020 00       		.byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 41
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 41
 
 
  1552 0021 0B       		.uleb128 0xb
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1606 0058 3F       		.uleb128 0x3f
  1607 0059 19       		.uleb128 0x19
  1608 005a 03       		.uleb128 0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 42
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 42
 
 
  1609 005b 0E       		.uleb128 0xe
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1663 0092 3F       		.uleb128 0x3f
  1664 0093 19       		.uleb128 0x19
  1665 0094 03       		.uleb128 0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 43
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 43
 
 
  1666 0095 0E       		.uleb128 0xe
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1720 00cd 05       		.uleb128 0x5
  1721 00ce 49       		.uleb128 0x49
  1722 00cf 13       		.uleb128 0x13
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 44
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 44
 
 
  1723 00d0 02       		.uleb128 0x2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1777 0106 34       		.uleb128 0x34
  1778 0107 00       		.byte	0
  1779 0108 03       		.uleb128 0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 45
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 45
 
 
  1780 0109 0E       		.uleb128 0xe
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1834 0010 00000000 		.4byte	.LFB2
  1835 0014 0C000000 		.4byte	.LFE2
  1836 0018 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 46
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 46
 
 
  1837 001c 14010000 		.4byte	.LFE3
@@ -2756,201 +2756,198 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 1
  1867              	.LASF11:
  1868 00b7 666C6F61 		.ascii	"float\000"
  1868      7400
- 1869              	.LASF3:
- 1870 00bd 73686F72 		.ascii	"short unsigned int\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 47
+ 1869              	.LASF40:
+ 1870 00bd 433A5C55 		.ascii	"C:\\Users\\mgnocco\\Documents\\GitHub\\PSoC5\\Toast"
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 47
 
 
- 1870      7420756E 
- 1870      7369676E 
- 1870      65642069 
- 1870      6E7400
- 1871              	.LASF23:
- 1872 00d0 73746174 		.ascii	"status\000"
- 1872      757300
- 1873              	.LASF27:
- 1874 00d7 45455052 		.ascii	"EEPROM_ReadByte\000"
- 1874      4F4D5F52 
- 1874      65616442 
- 1874      79746500 
- 1875              	.LASF25:
- 1876 00e7 62797465 		.ascii	"byteNumber\000"
- 1876      4E756D62 
- 1876      657200
- 1877              	.LASF18:
- 1878 00f2 45455052 		.ascii	"EEPROM_Enable\000"
- 1878      4F4D5F45 
- 1878      6E61626C 
- 1878      6500
- 1879              	.LASF19:
- 1880 0100 45455052 		.ascii	"EEPROM_Start\000"
- 1880      4F4D5F53 
- 1880      74617274 
- 1880      00
- 1881              	.LASF1:
- 1882 010d 756E7369 		.ascii	"unsigned char\000"
- 1882      676E6564 
- 1882      20636861 
- 1882      7200
- 1883              	.LASF34:
- 1884 011b 45455052 		.ascii	"EEPROM_StartWrite\000"
- 1884      4F4D5F53 
- 1884      74617274 
- 1884      57726974 
- 1884      6500
- 1885              	.LASF33:
- 1886 012d 726F7744 		.ascii	"rowData\000"
- 1886      61746100 
- 1887              	.LASF15:
- 1888 0135 72656738 		.ascii	"reg8\000"
- 1888      00
- 1889              	.LASF29:
- 1890 013a 696E7465 		.ascii	"interruptState\000"
- 1890      72727570 
- 1890      74537461 
- 1890      746500
- 1891              	.LASF5:
- 1892 0149 6C6F6E67 		.ascii	"long unsigned int\000"
- 1892      20756E73 
- 1892      69676E65 
- 1892      6420696E 
- 1892      7400
- 1893              	.LASF9:
- 1894 015b 75696E74 		.ascii	"uint8\000"
- 1894      3800
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 48
+ 1870      73657273 
+ 1870      5C6D676E 
+ 1870      6F63636F 
+ 1870      5C446F63 
+ 1871 00ea 5C546F61 		.ascii	"\\Toast.cydsn\000"
+ 1871      73742E63 
+ 1871      7964736E 
+ 1871      00
+ 1872              	.LASF3:
+ 1873 00f7 73686F72 		.ascii	"short unsigned int\000"
+ 1873      7420756E 
+ 1873      7369676E 
+ 1873      65642069 
+ 1873      6E7400
+ 1874              	.LASF23:
+ 1875 010a 73746174 		.ascii	"status\000"
+ 1875      757300
+ 1876              	.LASF25:
+ 1877 0111 62797465 		.ascii	"byteNumber\000"
+ 1877      4E756D62 
+ 1877      657200
+ 1878              	.LASF18:
+ 1879 011c 45455052 		.ascii	"EEPROM_Enable\000"
+ 1879      4F4D5F45 
+ 1879      6E61626C 
+ 1879      6500
+ 1880              	.LASF19:
+ 1881 012a 45455052 		.ascii	"EEPROM_Start\000"
+ 1881      4F4D5F53 
+ 1881      74617274 
+ 1881      00
+ 1882              	.LASF1:
+ 1883 0137 756E7369 		.ascii	"unsigned char\000"
+ 1883      676E6564 
+ 1883      20636861 
+ 1883      7200
+ 1884              	.LASF34:
+ 1885 0145 45455052 		.ascii	"EEPROM_StartWrite\000"
+ 1885      4F4D5F53 
+ 1885      74617274 
+ 1885      57726974 
+ 1885      6500
+ 1886              	.LASF33:
+ 1887 0157 726F7744 		.ascii	"rowData\000"
+ 1887      61746100 
+ 1888              	.LASF15:
+ 1889 015f 72656738 		.ascii	"reg8\000"
+ 1889      00
+ 1890              	.LASF29:
+ 1891 0164 696E7465 		.ascii	"interruptState\000"
+ 1891      72727570 
+ 1891      74537461 
+ 1891      746500
+ 1892              	.LASF5:
+ 1893 0173 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1893      20756E73 
+ 1893      69676E65 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 48
 
 
- 1895              	.LASF42:
- 1896 0161 64696554 		.ascii	"dieTemperature\000"
- 1896      656D7065 
- 1896      72617475 
- 1896      726500
- 1897              	.LASF21:
- 1898 0170 64617461 		.ascii	"dataByte\000"
- 1898      42797465 
- 1898      00
- 1899              	.LASF40:
- 1900 0179 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
- 1900      73657273 
- 1900      5C6D676E 
- 1900      6F63636F 
- 1900      5C4F6E65 
- 1901 01a9 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
- 1901      69616E6F 
- 1901      20546563 
- 1901      6E6F6C6F 
- 1901      6769615C 
- 1902 01d8 63796473 		.ascii	"cydsn\000"
- 1902      6E00
- 1903              	.LASF12:
- 1904 01de 646F7562 		.ascii	"double\000"
- 1904      6C6500
- 1905              	.LASF37:
- 1906 01e5 45455052 		.ascii	"EEPROM_ByteWritePos\000"
- 1906      4F4D5F42 
- 1906      79746557 
- 1906      72697465 
- 1906      506F7300 
- 1907              	.LASF10:
- 1908 01f9 75696E74 		.ascii	"uint16\000"
- 1908      313600
- 1909              	.LASF8:
- 1910 0200 756E7369 		.ascii	"unsigned int\000"
- 1910      676E6564 
- 1910      20696E74 
- 1910      00
- 1911              	.LASF22:
- 1912 020d 61646472 		.ascii	"address\000"
- 1912      65737300 
- 1913              	.LASF7:
- 1914 0215 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1914      206C6F6E 
- 1914      6720756E 
- 1914      7369676E 
- 1914      65642069 
- 1915              	.LASF35:
- 1916 022c 45455052 		.ascii	"EEPROM_StartErase\000"
- 1916      4F4D5F53 
- 1916      74617274 
- 1916      45726173 
- 1916      6500
- 1917              	.LASF26:
- 1918 023e 45455052 		.ascii	"EEPROM_WriteByte\000"
- 1918      4F4D5F57 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 49
+ 1893      6420696E 
+ 1893      7400
+ 1894              	.LASF9:
+ 1895 0185 75696E74 		.ascii	"uint8\000"
+ 1895      3800
+ 1896              	.LASF42:
+ 1897 018b 64696554 		.ascii	"dieTemperature\000"
+ 1897      656D7065 
+ 1897      72617475 
+ 1897      726500
+ 1898              	.LASF21:
+ 1899 019a 64617461 		.ascii	"dataByte\000"
+ 1899      42797465 
+ 1899      00
+ 1900              	.LASF27:
+ 1901 01a3 45455052 		.ascii	"EEPROM_ReadByte\000"
+ 1901      4F4D5F52 
+ 1901      65616442 
+ 1901      79746500 
+ 1902              	.LASF12:
+ 1903 01b3 646F7562 		.ascii	"double\000"
+ 1903      6C6500
+ 1904              	.LASF37:
+ 1905 01ba 45455052 		.ascii	"EEPROM_ByteWritePos\000"
+ 1905      4F4D5F42 
+ 1905      79746557 
+ 1905      72697465 
+ 1905      506F7300 
+ 1906              	.LASF10:
+ 1907 01ce 75696E74 		.ascii	"uint16\000"
+ 1907      313600
+ 1908              	.LASF8:
+ 1909 01d5 756E7369 		.ascii	"unsigned int\000"
+ 1909      676E6564 
+ 1909      20696E74 
+ 1909      00
+ 1910              	.LASF22:
+ 1911 01e2 61646472 		.ascii	"address\000"
+ 1911      65737300 
+ 1912              	.LASF7:
+ 1913 01ea 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1913      206C6F6E 
+ 1913      6720756E 
+ 1913      7369676E 
+ 1913      65642069 
+ 1914              	.LASF35:
+ 1915 0201 45455052 		.ascii	"EEPROM_StartErase\000"
+ 1915      4F4D5F53 
+ 1915      74617274 
+ 1915      45726173 
+ 1915      6500
+ 1916              	.LASF26:
+ 1917 0213 45455052 		.ascii	"EEPROM_WriteByte\000"
+ 1917      4F4D5F57 
+ 1917      72697465 
+ 1917      42797465 
+ 1917      00
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 49
 
 
- 1918      72697465 
- 1918      42797465 
- 1918      00
- 1919              	.LASF41:
- 1920 024f 45455052 		.ascii	"EEPROM_UpdateTemperature\000"
- 1920      4F4D5F55 
- 1920      70646174 
- 1920      6554656D 
- 1920      70657261 
- 1921              	.LASF17:
- 1922 0268 73697A65 		.ascii	"sizetype\000"
- 1922      74797065 
- 1922      00
- 1923              	.LASF6:
- 1924 0271 6C6F6E67 		.ascii	"long long int\000"
- 1924      206C6F6E 
- 1924      6720696E 
- 1924      7400
- 1925              	.LASF36:
- 1926 027f 45455052 		.ascii	"EEPROM_Query\000"
- 1926      4F4D5F51 
- 1926      75657279 
- 1926      00
- 1927              	.LASF20:
- 1928 028c 45455052 		.ascii	"EEPROM_Stop\000"
- 1928      4F4D5F53 
- 1928      746F7000 
- 1929              	.LASF2:
- 1930 0298 73686F72 		.ascii	"short int\000"
- 1930      7420696E 
- 1930      7400
- 1931              	.LASF31:
- 1932 02a2 73656374 		.ascii	"sectorNumber\000"
- 1932      6F724E75 
- 1932      6D626572 
- 1932      00
- 1933              	.LASF32:
- 1934 02af 45455052 		.ascii	"EEPROM_Write\000"
- 1934      4F4D5F57 
- 1934      72697465 
- 1934      00
- 1935              	.LASF4:
- 1936 02bc 6C6F6E67 		.ascii	"long int\000"
- 1936      20696E74 
- 1936      00
- 1937              	.LASF13:
- 1938 02c5 63686172 		.ascii	"char\000"
- 1938      00
- 1939              	.LASF24:
- 1940 02ca 726F774E 		.ascii	"rowNumber\000"
- 1940      756D6265 
- 1940      7200
- 1941              	.LASF16:
- 1942 02d4 6C6F6E67 		.ascii	"long double\000"
- 1942      20646F75 
- 1942      626C6500 
- 1943              	.LASF0:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccvkkPZz.s 			page 50
+ 1918              	.LASF41:
+ 1919 0224 45455052 		.ascii	"EEPROM_UpdateTemperature\000"
+ 1919      4F4D5F55 
+ 1919      70646174 
+ 1919      6554656D 
+ 1919      70657261 
+ 1920              	.LASF17:
+ 1921 023d 73697A65 		.ascii	"sizetype\000"
+ 1921      74797065 
+ 1921      00
+ 1922              	.LASF6:
+ 1923 0246 6C6F6E67 		.ascii	"long long int\000"
+ 1923      206C6F6E 
+ 1923      6720696E 
+ 1923      7400
+ 1924              	.LASF36:
+ 1925 0254 45455052 		.ascii	"EEPROM_Query\000"
+ 1925      4F4D5F51 
+ 1925      75657279 
+ 1925      00
+ 1926              	.LASF20:
+ 1927 0261 45455052 		.ascii	"EEPROM_Stop\000"
+ 1927      4F4D5F53 
+ 1927      746F7000 
+ 1928              	.LASF2:
+ 1929 026d 73686F72 		.ascii	"short int\000"
+ 1929      7420696E 
+ 1929      7400
+ 1930              	.LASF31:
+ 1931 0277 73656374 		.ascii	"sectorNumber\000"
+ 1931      6F724E75 
+ 1931      6D626572 
+ 1931      00
+ 1932              	.LASF32:
+ 1933 0284 45455052 		.ascii	"EEPROM_Write\000"
+ 1933      4F4D5F57 
+ 1933      72697465 
+ 1933      00
+ 1934              	.LASF4:
+ 1935 0291 6C6F6E67 		.ascii	"long int\000"
+ 1935      20696E74 
+ 1935      00
+ 1936              	.LASF13:
+ 1937 029a 63686172 		.ascii	"char\000"
+ 1937      00
+ 1938              	.LASF24:
+ 1939 029f 726F774E 		.ascii	"rowNumber\000"
+ 1939      756D6265 
+ 1939      7200
+ 1940              	.LASF16:
+ 1941 02a9 6C6F6E67 		.ascii	"long double\000"
+ 1941      20646F75 
+ 1941      626C6500 
+ 1942              	.LASF0:
+ 1943 02b5 7369676E 		.ascii	"signed char\000"
+ 1943      65642063 
+ 1943      68617200 
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccs23VHs.s 			page 50
 
 
- 1944 02e0 7369676E 		.ascii	"signed char\000"
- 1944      65642063 
- 1944      68617200 
- 1945              	.LASF30:
- 1946 02ec 45455052 		.ascii	"EEPROM_EraseSector\000"
- 1946      4F4D5F45 
- 1946      72617365 
- 1946      53656374 
- 1946      6F7200
- 1947              	.LASF28:
- 1948 02ff 72657442 		.ascii	"retByte\000"
- 1948      79746500 
- 1949              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1944              	.LASF30:
+ 1945 02c1 45455052 		.ascii	"EEPROM_EraseSector\000"
+ 1945      4F4D5F45 
+ 1945      72617365 
+ 1945      53656374 
+ 1945      6F7200
+ 1946              	.LASF28:
+ 1947 02d4 72657442 		.ascii	"retByte\000"
+ 1947      79746500 
+ 1948              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
