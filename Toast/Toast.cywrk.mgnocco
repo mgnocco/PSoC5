@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\TopDesign">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\Header Files">
 <ExpandedNodeIds>
 <v>Toast</v>
 <v>Toast\Toast</v>
@@ -41,7 +41,6 @@
 <v>Toast\Toast\Header Files\interruptions.h</v>
 <v>Toast\Toast\Header Files\SD_RTC_functions.h</v>
 <v>Toast\Toast\Header Files\utils.h</v>
-<v>Toast\Toast\Source Files</v>
 <v>Toast\Toast\Source Files\command_processing.c</v>
 <v>Toast\Toast\Source Files\Encoder_functions.c</v>
 <v>Toast\Toast\Source Files\FS_ConfigIO.c</v>
@@ -51,7 +50,6 @@
 <v>Toast\Toast\Source Files\main.c</v>
 <v>Toast\Toast\Source Files\SD_RTC_functions.c</v>
 <v>Toast\Toast\Source Files\utils.c</v>
-<v>Toast\Toast\Generated_Source</v>
 <v>Toast\Toast\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
@@ -82,15 +80,6 @@
 <v>Toast\Toast\Header Files\SD_RTC_functions.h</v>
 <v>Toast\Toast\Header Files\utils.h</v>
 <v>Toast\Toast\Source Files</v>
-<v>Toast\Toast\Source Files\command_processing.c</v>
-<v>Toast\Toast\Source Files\Encoder_functions.c</v>
-<v>Toast\Toast\Source Files\FS_ConfigIO.c</v>
-<v>Toast\Toast\Source Files\globals.c</v>
-<v>Toast\Toast\Source Files\IMU_functions.c</v>
-<v>Toast\Toast\Source Files\interruptions.c</v>
-<v>Toast\Toast\Source Files\main.c</v>
-<v>Toast\Toast\Source Files\SD_RTC_functions.c</v>
-<v>Toast\Toast\Source Files\utils.c</v>
 <v>Toast\Toast\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
