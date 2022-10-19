@@ -1,0 +1,6 @@
+C:\Users\mgnocco\OneDrive - Fondazione Istituto Italiano Tecnologia\Firmware\Psoc5\Electrostimulation\Electrostimulation.cydsn\Electrostimulation.cyprj|26db5877-f43c-4a39-9b57-82509b734bb8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|33c1e279-968e-49b8-ad5e-3b37bfdbc7fe
+C:\Users\mgnocco\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|d804779e-e799-4330-8762-c58e4a506f08
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e6c738a5-23ff-4406-99a7-bcff9d90dbb4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d72ac49b-3c32-45c5-8739-5e52746b1960
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7a52bb6e-9993-43d9-93a6-ace3d1a79117

@@ -1,0 +1,2257 @@
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"PWM_MOTORS.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	PWM_MOTORS_initVar
+  20              		.bss
+  21              		.type	PWM_MOTORS_initVar, %object
+  22              		.size	PWM_MOTORS_initVar, 1
+  23              	PWM_MOTORS_initVar:
+  24 0000 00       		.space	1
+  25              		.section	.text.PWM_MOTORS_Start,"ax",%progbits
+  26              		.align	2
+  27              		.global	PWM_MOTORS_Start
+  28              		.thumb
+  29              		.thumb_func
+  30              		.type	PWM_MOTORS_Start, %function
+  31              	PWM_MOTORS_Start:
+  32              	.LFB0:
+  33              		.file 1 "Generated_Source\\PSoC5\\PWM_MOTORS.c"
+   1:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/PWM_MOTORS.c **** * File Name: PWM_MOTORS.c
+   3:Generated_Source\PSoC5/PWM_MOTORS.c **** * Version 3.30
+   4:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+   5:Generated_Source\PSoC5/PWM_MOTORS.c **** * Description:
+   6:Generated_Source\PSoC5/PWM_MOTORS.c **** *  The PWM User Module consist of an 8 or 16-bit counter with two 8 or 16-bit
+   7:Generated_Source\PSoC5/PWM_MOTORS.c **** *  comparitors. Each instance of this user module is capable of generating
+   8:Generated_Source\PSoC5/PWM_MOTORS.c **** *  two PWM outputs with the same period. The pulse width is selectable between
+   9:Generated_Source\PSoC5/PWM_MOTORS.c **** *  1 and 255/65535. The period is selectable between 2 and 255/65536 clocks.
+  10:Generated_Source\PSoC5/PWM_MOTORS.c **** *  The compare value output may be configured to be active when the present
+  11:Generated_Source\PSoC5/PWM_MOTORS.c **** *  counter is less than or less than/equal to the compare value.
+  12:Generated_Source\PSoC5/PWM_MOTORS.c **** *  A terminal count output is also provided. It generates a pulse one clock
+  13:Generated_Source\PSoC5/PWM_MOTORS.c **** *  width wide when the counter is equal to zero.
+  14:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  15:Generated_Source\PSoC5/PWM_MOTORS.c **** * Note:
+  16:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  17:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************
+  18:Generated_Source\PSoC5/PWM_MOTORS.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  19:Generated_Source\PSoC5/PWM_MOTORS.c **** * You may use this file only in accordance with the license, terms, conditions,
+  20:Generated_Source\PSoC5/PWM_MOTORS.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  21:Generated_Source\PSoC5/PWM_MOTORS.c **** * the software package with which this file was provided.
+  22:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************/
+  23:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  24:Generated_Source\PSoC5/PWM_MOTORS.c **** #include "PWM_MOTORS.h"
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 2
+
+
+  25:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  26:Generated_Source\PSoC5/PWM_MOTORS.c **** /* Error message for removed <resource> through optimization */
+  27:Generated_Source\PSoC5/PWM_MOTORS.c **** #ifdef PWM_MOTORS_PWMUDB_genblk1_ctrlreg__REMOVED
+  28:Generated_Source\PSoC5/PWM_MOTORS.c ****     #error PWM_v3_30 detected with a constant 0 for the enable or \
+  29:Generated_Source\PSoC5/PWM_MOTORS.c ****          constant 1 for reset. This will prevent the component from operating.
+  30:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* PWM_MOTORS_PWMUDB_genblk1_ctrlreg__REMOVED */
+  31:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  32:Generated_Source\PSoC5/PWM_MOTORS.c **** uint8 PWM_MOTORS_initVar = 0u;
+  33:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  34:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  35:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+  36:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_Start
+  37:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+  38:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  39:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+  40:Generated_Source\PSoC5/PWM_MOTORS.c **** *  The start function initializes the pwm with the default values, the
+  41:Generated_Source\PSoC5/PWM_MOTORS.c **** *  enables the counter to begin counting.  It does not enable interrupts,
+  42:Generated_Source\PSoC5/PWM_MOTORS.c **** *  the EnableInt command should be called if interrupt generation is required.
+  43:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  44:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+  45:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+  46:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  47:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+  48:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+  49:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  50:Generated_Source\PSoC5/PWM_MOTORS.c **** * Global variables:
+  51:Generated_Source\PSoC5/PWM_MOTORS.c **** *  PWM_MOTORS_initVar: Is modified when this function is called for the
+  52:Generated_Source\PSoC5/PWM_MOTORS.c **** *   first time. Is used to ensure that initialization happens only once.
+  53:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  54:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+  55:Generated_Source\PSoC5/PWM_MOTORS.c **** void PWM_MOTORS_Start(void) 
+  56:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+  34              		.loc 1 56 0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 1, uses_anonymous_args = 0
+  38 0000 80B5     		push	{r7, lr}
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 7, -8
+  41              		.cfi_offset 14, -4
+  42 0002 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
+  57:Generated_Source\PSoC5/PWM_MOTORS.c ****     /* If not Initialized then initialize all required hardware and software */
+  58:Generated_Source\PSoC5/PWM_MOTORS.c ****     if(PWM_MOTORS_initVar == 0u)
+  44              		.loc 1 58 0
+  45 0004 064B     		ldr	r3, .L3
+  46 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  47 0008 002B     		cmp	r3, #0
+  48 000a 04D1     		bne	.L2
+  59:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+  60:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_Init();
+  49              		.loc 1 60 0
+  50 000c FFF7FEFF 		bl	PWM_MOTORS_Init
+  61:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_initVar = 1u;
+  51              		.loc 1 61 0
+  52 0010 034B     		ldr	r3, .L3
+  53 0012 0122     		movs	r2, #1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 3
+
+
+  54 0014 1A70     		strb	r2, [r3]
+  55              	.L2:
+  62:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+  63:Generated_Source\PSoC5/PWM_MOTORS.c ****     PWM_MOTORS_Enable();
+  56              		.loc 1 63 0
+  57 0016 FFF7FEFF 		bl	PWM_MOTORS_Enable
+  64:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  65:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+  58              		.loc 1 65 0
+  59 001a 00BF     		nop
+  60 001c 80BD     		pop	{r7, pc}
+  61              	.L4:
+  62 001e 00BF     		.align	2
+  63              	.L3:
+  64 0020 00000000 		.word	PWM_MOTORS_initVar
+  65              		.cfi_endproc
+  66              	.LFE0:
+  67              		.size	PWM_MOTORS_Start, .-PWM_MOTORS_Start
+  68              		.section	.text.PWM_MOTORS_Init,"ax",%progbits
+  69              		.align	2
+  70              		.global	PWM_MOTORS_Init
+  71              		.thumb
+  72              		.thumb_func
+  73              		.type	PWM_MOTORS_Init, %function
+  74              	PWM_MOTORS_Init:
+  75              	.LFB1:
+  66:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  67:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  68:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+  69:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_Init
+  70:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+  71:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  72:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+  73:Generated_Source\PSoC5/PWM_MOTORS.c **** *  Initialize component's parameters to the parameters set by user in the
+  74:Generated_Source\PSoC5/PWM_MOTORS.c **** *  customizer of the component placed onto schematic. Usually called in
+  75:Generated_Source\PSoC5/PWM_MOTORS.c **** *  PWM_MOTORS_Start().
+  76:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  77:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+  78:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+  79:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  80:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+  81:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+  82:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+  83:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+  84:Generated_Source\PSoC5/PWM_MOTORS.c **** void PWM_MOTORS_Init(void) 
+  85:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+  76              		.loc 1 85 0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 1, uses_anonymous_args = 0
+  80 0000 80B5     		push	{r7, lr}
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 7, -8
+  83              		.cfi_offset 14, -4
+  84 0002 00AF     		add	r7, sp, #0
+  85              		.cfi_def_cfa_register 7
+  86:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction || PWM_MOTORS_UseControl)
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 4
+
+
+  87:Generated_Source\PSoC5/PWM_MOTORS.c ****         uint8 ctrl;
+  88:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction || PWM_MOTORS_UseControl) */
+  89:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  90:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if(!PWM_MOTORS_UsingFixedFunction)
+  91:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UseStatus)
+  92:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Interrupt State Backup for Critical Region*/
+  93:Generated_Source\PSoC5/PWM_MOTORS.c ****             uint8 PWM_MOTORS_interruptState;
+  94:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UseStatus) */
+  95:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (!PWM_MOTORS_UsingFixedFunction) */
+  96:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+  97:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction)
+  98:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* You are allowed to write the compare value (FF only) */
+  99:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL |= PWM_MOTORS_CFG0_MODE;
+ 100:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_DeadBand2_4)
+ 101:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_CONTROL |= PWM_MOTORS_CFG0_DB;
+ 102:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_DeadBand2_4) */
+ 103:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 104:Generated_Source\PSoC5/PWM_MOTORS.c ****         ctrl = PWM_MOTORS_CONTROL3 & ((uint8 )(~PWM_MOTORS_CTRL_CMPMODE1_MASK));
+ 105:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL3 = ctrl | PWM_MOTORS_DEFAULT_COMPARE1_MODE;
+ 106:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 107:Generated_Source\PSoC5/PWM_MOTORS.c ****          /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+ 108:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_RT1 &= ((uint8)(~PWM_MOTORS_RT1_MASK));
+ 109:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_RT1 |= PWM_MOTORS_SYNC;
+ 110:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 111:Generated_Source\PSoC5/PWM_MOTORS.c ****         /*Enable DSI Sync all all inputs of the PWM*/
+ 112:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_RT1 &= ((uint8)(~PWM_MOTORS_SYNCDSI_MASK));
+ 113:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_RT1 |= PWM_MOTORS_SYNCDSI_EN;
+ 114:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 115:Generated_Source\PSoC5/PWM_MOTORS.c ****     #elif (PWM_MOTORS_UseControl)
+ 116:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Set the default compare mode defined in the parameter */
+ 117:Generated_Source\PSoC5/PWM_MOTORS.c ****         ctrl = PWM_MOTORS_CONTROL & ((uint8)(~PWM_MOTORS_CTRL_CMPMODE2_MASK)) &
+ 118:Generated_Source\PSoC5/PWM_MOTORS.c ****                 ((uint8)(~PWM_MOTORS_CTRL_CMPMODE1_MASK));
+ 119:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL = ctrl | PWM_MOTORS_DEFAULT_COMPARE2_MODE |
+ 120:Generated_Source\PSoC5/PWM_MOTORS.c ****                                    PWM_MOTORS_DEFAULT_COMPARE1_MODE;
+ 121:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 122:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 123:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (!PWM_MOTORS_UsingFixedFunction)
+ 124:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_Resolution == 8)
+ 125:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Set FIFO 0 to 1 byte register for period*/
+ 126:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_AUX_CONTROLDP0 |= (PWM_MOTORS_AUX_CTRL_FIFO0_CLR);
+  86              		.loc 1 126 0
+  87 0004 0A4A     		ldr	r2, .L6
+  88 0006 0A4B     		ldr	r3, .L6
+  89 0008 1B78     		ldrb	r3, [r3]
+  90 000a DBB2     		uxtb	r3, r3
+  91 000c 43F00103 		orr	r3, r3, #1
+  92 0010 DBB2     		uxtb	r3, r3
+  93 0012 1370     		strb	r3, [r2]
+ 127:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else /* (PWM_MOTORS_Resolution == 16)*/
+ 128:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Set FIFO 0 to 1 byte register for period */
+ 129:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_AUX_CONTROLDP0 |= (PWM_MOTORS_AUX_CTRL_FIFO0_CLR);
+ 130:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_AUX_CONTROLDP1 |= (PWM_MOTORS_AUX_CTRL_FIFO0_CLR);
+ 131:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_Resolution == 8) */
+ 132:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 133:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_WriteCounter(PWM_MOTORS_INIT_PERIOD_VALUE);
+  94              		.loc 1 133 0
+  95 0014 6420     		movs	r0, #100
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 5
+
+
+  96 0016 FFF7FEFF 		bl	PWM_MOTORS_WriteCounter
+ 134:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (!PWM_MOTORS_UsingFixedFunction) */
+ 135:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 136:Generated_Source\PSoC5/PWM_MOTORS.c ****     PWM_MOTORS_WritePeriod(PWM_MOTORS_INIT_PERIOD_VALUE);
+  97              		.loc 1 136 0
+  98 001a 6420     		movs	r0, #100
+  99 001c FFF7FEFF 		bl	PWM_MOTORS_WritePeriod
+ 137:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 138:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_UseOneCompareMode)
+ 139:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteCompare(PWM_MOTORS_INIT_COMPARE_VALUE1);
+ 140:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 141:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteCompare1(PWM_MOTORS_INIT_COMPARE_VALUE1);
+ 100              		.loc 1 141 0
+ 101 0020 3220     		movs	r0, #50
+ 102 0022 FFF7FEFF 		bl	PWM_MOTORS_WriteCompare1
+ 142:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteCompare2(PWM_MOTORS_INIT_COMPARE_VALUE2);
+ 103              		.loc 1 142 0
+ 104 0026 0020     		movs	r0, #0
+ 105 0028 FFF7FEFF 		bl	PWM_MOTORS_WriteCompare2
+ 143:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UseOneCompareMode) */
+ 144:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 145:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_KillModeMinTime)
+ 146:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteKillTime(PWM_MOTORS_MinimumKillTime);
+ 147:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_KillModeMinTime) */
+ 148:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 149:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_DeadBandUsed)
+ 150:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_WriteDeadTime(PWM_MOTORS_INIT_DEAD_TIME);
+ 151:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_DeadBandUsed) */
+ 152:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 153:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseStatus || PWM_MOTORS_UsingFixedFunction)
+ 154:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_SetInterruptMode(PWM_MOTORS_INIT_INTERRUPTS_MODE);
+ 155:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UseStatus || PWM_MOTORS_UsingFixedFunction) */
+ 156:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 157:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction)
+ 158:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Globally Enable the Fixed Function Block chosen */
+ 159:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_GLOBAL_ENABLE |= PWM_MOTORS_BLOCK_EN_MASK;
+ 160:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Set the Interrupt source to come from the status register */
+ 161:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL2 |= PWM_MOTORS_CTRL2_IRQ_SEL;
+ 162:Generated_Source\PSoC5/PWM_MOTORS.c ****     #else
+ 163:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UseStatus)
+ 164:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 165:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 166:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Enter Critical Region*/
+ 167:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_interruptState = CyEnterCriticalSection();
+ 168:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 169:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_STATUS_AUX_CTRL |= PWM_MOTORS_STATUS_ACTL_INT_EN_MASK;
+ 170:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 171:Generated_Source\PSoC5/PWM_MOTORS.c ****              /* Exit Critical Region*/
+ 172:Generated_Source\PSoC5/PWM_MOTORS.c ****             CyExitCriticalSection(PWM_MOTORS_interruptState);
+ 173:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 174:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Clear the FIFO to enable the PWM_MOTORS_STATUS_FIFOFULL
+ 175:Generated_Source\PSoC5/PWM_MOTORS.c ****                    bit to be set on FIFO full. */
+ 176:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_ClearFIFO();
+ 177:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UseStatus) */
+ 178:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 179:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+ 106              		.loc 1 179 0
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 6
+
+
+ 107 002c 00BF     		nop
+ 108 002e 80BD     		pop	{r7, pc}
+ 109              	.L7:
+ 110              		.align	2
+ 111              	.L6:
+ 112 0030 98640040 		.word	1073767576
+ 113              		.cfi_endproc
+ 114              	.LFE1:
+ 115              		.size	PWM_MOTORS_Init, .-PWM_MOTORS_Init
+ 116              		.section	.text.PWM_MOTORS_Enable,"ax",%progbits
+ 117              		.align	2
+ 118              		.global	PWM_MOTORS_Enable
+ 119              		.thumb
+ 120              		.thumb_func
+ 121              		.type	PWM_MOTORS_Enable, %function
+ 122              	PWM_MOTORS_Enable:
+ 123              	.LFB2:
+ 180:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 181:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 182:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+ 183:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_Enable
+ 184:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+ 185:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 186:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+ 187:Generated_Source\PSoC5/PWM_MOTORS.c **** *  Enables the PWM block operation
+ 188:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 189:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+ 190:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 191:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 192:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+ 193:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 194:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 195:Generated_Source\PSoC5/PWM_MOTORS.c **** * Side Effects:
+ 196:Generated_Source\PSoC5/PWM_MOTORS.c **** *  This works only if software enable mode is chosen
+ 197:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 198:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+ 199:Generated_Source\PSoC5/PWM_MOTORS.c **** void PWM_MOTORS_Enable(void) 
+ 200:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+ 124              		.loc 1 200 0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 1, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
+ 129 0000 80B4     		push	{r7}
+ 130              		.cfi_def_cfa_offset 4
+ 131              		.cfi_offset 7, -4
+ 132 0002 00AF     		add	r7, sp, #0
+ 133              		.cfi_def_cfa_register 7
+ 201:Generated_Source\PSoC5/PWM_MOTORS.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 202:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction)
+ 203:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_GLOBAL_ENABLE |= PWM_MOTORS_BLOCK_EN_MASK;
+ 204:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_GLOBAL_STBY_ENABLE |= PWM_MOTORS_BLOCK_STBY_EN_MASK;
+ 205:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 206:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 207:Generated_Source\PSoC5/PWM_MOTORS.c ****     /* Enable the PWM from the control register  */
+ 208:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction)
+ 209:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL |= PWM_MOTORS_CTRL_ENABLE;
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 7
+
+
+ 210:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction) */
+ 211:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+ 134              		.loc 1 211 0
+ 135 0004 00BF     		nop
+ 136 0006 BD46     		mov	sp, r7
+ 137              		.cfi_def_cfa_register 13
+ 138              		@ sp needed
+ 139 0008 80BC     		pop	{r7}
+ 140              		.cfi_restore 7
+ 141              		.cfi_def_cfa_offset 0
+ 142 000a 7047     		bx	lr
+ 143              		.cfi_endproc
+ 144              	.LFE2:
+ 145              		.size	PWM_MOTORS_Enable, .-PWM_MOTORS_Enable
+ 146              		.section	.text.PWM_MOTORS_Stop,"ax",%progbits
+ 147              		.align	2
+ 148              		.global	PWM_MOTORS_Stop
+ 149              		.thumb
+ 150              		.thumb_func
+ 151              		.type	PWM_MOTORS_Stop, %function
+ 152              	PWM_MOTORS_Stop:
+ 153              	.LFB3:
+ 212:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 213:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 214:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+ 215:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_Stop
+ 216:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+ 217:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 218:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+ 219:Generated_Source\PSoC5/PWM_MOTORS.c **** *  The stop function halts the PWM, but does not change any modes or disable
+ 220:Generated_Source\PSoC5/PWM_MOTORS.c **** *  interrupts.
+ 221:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 222:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+ 223:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 224:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 225:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+ 226:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 227:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 228:Generated_Source\PSoC5/PWM_MOTORS.c **** * Side Effects:
+ 229:Generated_Source\PSoC5/PWM_MOTORS.c **** *  If the Enable mode is set to Hardware only then this function
+ 230:Generated_Source\PSoC5/PWM_MOTORS.c **** *  has no effect on the operation of the PWM
+ 231:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 232:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+ 233:Generated_Source\PSoC5/PWM_MOTORS.c **** void PWM_MOTORS_Stop(void) 
+ 234:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+ 154              		.loc 1 234 0
+ 155              		.cfi_startproc
+ 156              		@ args = 0, pretend = 0, frame = 0
+ 157              		@ frame_needed = 1, uses_anonymous_args = 0
+ 158              		@ link register save eliminated.
+ 159 0000 80B4     		push	{r7}
+ 160              		.cfi_def_cfa_offset 4
+ 161              		.cfi_offset 7, -4
+ 162 0002 00AF     		add	r7, sp, #0
+ 163              		.cfi_def_cfa_register 7
+ 235:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction)
+ 236:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_CONTROL &= ((uint8)(~PWM_MOTORS_CTRL_ENABLE));
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 8
+
+
+ 237:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UseControl || PWM_MOTORS_UsingFixedFunction) */
+ 238:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 239:Generated_Source\PSoC5/PWM_MOTORS.c ****     /* Globally disable the Fixed Function Block chosen */
+ 240:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UsingFixedFunction)
+ 241:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_GLOBAL_ENABLE &= ((uint8)(~PWM_MOTORS_BLOCK_EN_MASK));
+ 242:Generated_Source\PSoC5/PWM_MOTORS.c ****         PWM_MOTORS_GLOBAL_STBY_ENABLE &= ((uint8)(~PWM_MOTORS_BLOCK_STBY_EN_MASK));
+ 243:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 244:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+ 164              		.loc 1 244 0
+ 165 0004 00BF     		nop
+ 166 0006 BD46     		mov	sp, r7
+ 167              		.cfi_def_cfa_register 13
+ 168              		@ sp needed
+ 169 0008 80BC     		pop	{r7}
+ 170              		.cfi_restore 7
+ 171              		.cfi_def_cfa_offset 0
+ 172 000a 7047     		bx	lr
+ 173              		.cfi_endproc
+ 174              	.LFE3:
+ 175              		.size	PWM_MOTORS_Stop, .-PWM_MOTORS_Stop
+ 176              		.section	.text.PWM_MOTORS_WriteCounter,"ax",%progbits
+ 177              		.align	2
+ 178              		.global	PWM_MOTORS_WriteCounter
+ 179              		.thumb
+ 180              		.thumb_func
+ 181              		.type	PWM_MOTORS_WriteCounter, %function
+ 182              	PWM_MOTORS_WriteCounter:
+ 183              	.LFB4:
+ 245:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 246:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_UseOneCompareMode)
+ 247:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_CompareMode1SW)
+ 248:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 249:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 250:Generated_Source\PSoC5/PWM_MOTORS.c ****         /*******************************************************************************
+ 251:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Function Name: PWM_MOTORS_SetCompareMode
+ 252:Generated_Source\PSoC5/PWM_MOTORS.c ****         ********************************************************************************
+ 253:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 254:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Summary:
+ 255:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  This function writes the Compare Mode for the pwm output when in Dither mode,
+ 256:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  Center Align Mode or One Output Mode.
+ 257:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 258:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Parameters:
+ 259:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 260:Generated_Source\PSoC5/PWM_MOTORS.c ****         *                defined in the H file as input arguments.
+ 261:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 262:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Return:
+ 263:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  None
+ 264:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 265:Generated_Source\PSoC5/PWM_MOTORS.c ****         *******************************************************************************/
+ 266:Generated_Source\PSoC5/PWM_MOTORS.c ****         void PWM_MOTORS_SetCompareMode(uint8 comparemode) 
+ 267:Generated_Source\PSoC5/PWM_MOTORS.c ****         {
+ 268:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(PWM_MOTORS_UsingFixedFunction)
+ 269:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 270:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #if(0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT)
+ 271:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMOD
+ 272:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #else
+ 273:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemodemasked = comparemode;
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 9
+
+
+ 274:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT) */
+ 275:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 276:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL3 &= ((uint8)(~PWM_MOTORS_CTRL_CMPMODE1_MASK)); /*Clear Existing 
+ 277:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL3 |= comparemodemasked;
+ 278:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 279:Generated_Source\PSoC5/PWM_MOTORS.c ****             #elif (PWM_MOTORS_UseControl)
+ 280:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 281:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #if(0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT)
+ 282:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemode1masked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMO
+ 283:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                 PWM_MOTORS_CTRL_CMPMODE1_MASK;
+ 284:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #else
+ 285:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemode1masked = comparemode & PWM_MOTORS_CTRL_CMPMODE1_MASK;
+ 286:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT) */
+ 287:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 288:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #if(0 != PWM_MOTORS_CTRL_CMPMODE2_SHIFT)
+ 289:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemode2masked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMO
+ 290:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                PWM_MOTORS_CTRL_CMPMODE2_MASK;
+ 291:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #else
+ 292:Generated_Source\PSoC5/PWM_MOTORS.c ****                     uint8 comparemode2masked = comparemode & PWM_MOTORS_CTRL_CMPMODE2_MASK;
+ 293:Generated_Source\PSoC5/PWM_MOTORS.c ****                 #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE2_SHIFT) */
+ 294:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 295:Generated_Source\PSoC5/PWM_MOTORS.c ****                 /*Clear existing mode */
+ 296:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL &= ((uint8)(~(PWM_MOTORS_CTRL_CMPMODE1_MASK |
+ 297:Generated_Source\PSoC5/PWM_MOTORS.c ****                                             PWM_MOTORS_CTRL_CMPMODE2_MASK)));
+ 298:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL |= (comparemode1masked | comparemode2masked);
+ 299:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 300:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
+ 301:Generated_Source\PSoC5/PWM_MOTORS.c ****                 uint8 temp = comparemode;
+ 302:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 303:Generated_Source\PSoC5/PWM_MOTORS.c ****         }
+ 304:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* PWM_MOTORS_CompareMode1SW */
+ 305:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 306:Generated_Source\PSoC5/PWM_MOTORS.c **** #else /* UseOneCompareMode */
+ 307:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 308:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_CompareMode1SW)
+ 309:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 310:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 311:Generated_Source\PSoC5/PWM_MOTORS.c ****         /*******************************************************************************
+ 312:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Function Name: PWM_MOTORS_SetCompareMode1
+ 313:Generated_Source\PSoC5/PWM_MOTORS.c ****         ********************************************************************************
+ 314:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 315:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Summary:
+ 316:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  This function writes the Compare Mode for the pwm or pwm1 output
+ 317:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 318:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Parameters:
+ 319:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 320:Generated_Source\PSoC5/PWM_MOTORS.c ****         *                defined in the H file as input arguments.
+ 321:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 322:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Return:
+ 323:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  None
+ 324:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 325:Generated_Source\PSoC5/PWM_MOTORS.c ****         *******************************************************************************/
+ 326:Generated_Source\PSoC5/PWM_MOTORS.c ****         void PWM_MOTORS_SetCompareMode1(uint8 comparemode) 
+ 327:Generated_Source\PSoC5/PWM_MOTORS.c ****         {
+ 328:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT)
+ 329:Generated_Source\PSoC5/PWM_MOTORS.c ****                 uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMODE1_S
+ 330:Generated_Source\PSoC5/PWM_MOTORS.c ****                                            PWM_MOTORS_CTRL_CMPMODE1_MASK;
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 10
+
+
+ 331:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
+ 332:Generated_Source\PSoC5/PWM_MOTORS.c ****                 uint8 comparemodemasked = comparemode & PWM_MOTORS_CTRL_CMPMODE1_MASK;
+ 333:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE1_SHIFT) */
+ 334:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 335:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if (PWM_MOTORS_UseControl)
+ 336:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL &= ((uint8)(~PWM_MOTORS_CTRL_CMPMODE1_MASK)); /*Clear existing m
+ 337:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_CONTROL |= comparemodemasked;
+ 338:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (PWM_MOTORS_UseControl) */
+ 339:Generated_Source\PSoC5/PWM_MOTORS.c ****         }
+ 340:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* PWM_MOTORS_CompareMode1SW */
+ 341:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 342:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_CompareMode2SW)
+ 343:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 344:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 345:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 346:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_SetCompareMode2
+ 347:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 348:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 349:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 350:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function writes the Compare Mode for the pwm or pwm2 output
+ 351:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 352:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 353:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 354:Generated_Source\PSoC5/PWM_MOTORS.c ****     *                defined in the H file as input arguments.
+ 355:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 356:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 357:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 358:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 359:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 360:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_SetCompareMode2(uint8 comparemode) 
+ 361:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 362:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 363:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(0 != PWM_MOTORS_CTRL_CMPMODE2_SHIFT)
+ 364:Generated_Source\PSoC5/PWM_MOTORS.c ****             uint8 comparemodemasked = ((uint8)((uint8)comparemode << PWM_MOTORS_CTRL_CMPMODE2_SHIFT
+ 365:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                  PWM_MOTORS_CTRL_CMPMODE2_MASK;
+ 366:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 367:Generated_Source\PSoC5/PWM_MOTORS.c ****             uint8 comparemodemasked = comparemode & PWM_MOTORS_CTRL_CMPMODE2_MASK;
+ 368:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (0 != PWM_MOTORS_CTRL_CMPMODE2_SHIFT) */
+ 369:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 370:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_UseControl)
+ 371:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_CONTROL &= ((uint8)(~PWM_MOTORS_CTRL_CMPMODE2_MASK)); /*Clear existing mode 
+ 372:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_CONTROL |= comparemodemasked;
+ 373:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UseControl) */
+ 374:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 375:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /*PWM_MOTORS_CompareMode2SW */
+ 376:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 377:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* UseOneCompareMode */
+ 378:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 379:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 380:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (!PWM_MOTORS_UsingFixedFunction)
+ 381:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 382:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 383:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 384:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteCounter
+ 385:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 386:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 387:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 11
+
+
+ 388:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Writes a new counter value directly to the counter register. This will be
+ 389:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  implemented for that currently running period and only that period. This API
+ 390:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  is valid only for UDB implementation and not available for fixed function
+ 391:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  PWM implementation.
+ 392:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 393:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 394:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  counter:  The period new period counter value.
+ 395:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 396:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 397:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 398:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 399:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Side Effects:
+ 400:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  The PWM Period will be reloaded when a counter value will be a zero
+ 401:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 402:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 403:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteCounter(uint8 counter) \
+ 404:Generated_Source\PSoC5/PWM_MOTORS.c ****                                        
+ 405:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 184              		.loc 1 405 0
+ 185              		.cfi_startproc
+ 186              		@ args = 0, pretend = 0, frame = 8
+ 187              		@ frame_needed = 1, uses_anonymous_args = 0
+ 188              		@ link register save eliminated.
+ 189 0000 80B4     		push	{r7}
+ 190              		.cfi_def_cfa_offset 4
+ 191              		.cfi_offset 7, -4
+ 192 0002 83B0     		sub	sp, sp, #12
+ 193              		.cfi_def_cfa_offset 16
+ 194 0004 00AF     		add	r7, sp, #0
+ 195              		.cfi_def_cfa_register 7
+ 196 0006 0346     		mov	r3, r0
+ 197 0008 FB71     		strb	r3, [r7, #7]
+ 406:Generated_Source\PSoC5/PWM_MOTORS.c ****         CY_SET_REG8(PWM_MOTORS_COUNTER_LSB_PTR, counter);
+ 198              		.loc 1 406 0
+ 199 000a 044A     		ldr	r2, .L11
+ 200 000c FB79     		ldrb	r3, [r7, #7]
+ 201 000e 1370     		strb	r3, [r2]
+ 407:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 202              		.loc 1 407 0
+ 203 0010 00BF     		nop
+ 204 0012 0C37     		adds	r7, r7, #12
+ 205              		.cfi_def_cfa_offset 4
+ 206 0014 BD46     		mov	sp, r7
+ 207              		.cfi_def_cfa_register 13
+ 208              		@ sp needed
+ 209 0016 80BC     		pop	{r7}
+ 210              		.cfi_restore 7
+ 211              		.cfi_def_cfa_offset 0
+ 212 0018 7047     		bx	lr
+ 213              	.L12:
+ 214 001a 00BF     		.align	2
+ 215              	.L11:
+ 216 001c 08640040 		.word	1073767432
+ 217              		.cfi_endproc
+ 218              	.LFE4:
+ 219              		.size	PWM_MOTORS_WriteCounter, .-PWM_MOTORS_WriteCounter
+ 220              		.section	.text.PWM_MOTORS_ReadCounter,"ax",%progbits
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 12
+
+
+ 221              		.align	2
+ 222              		.global	PWM_MOTORS_ReadCounter
+ 223              		.thumb
+ 224              		.thumb_func
+ 225              		.type	PWM_MOTORS_ReadCounter, %function
+ 226              	PWM_MOTORS_ReadCounter:
+ 227              	.LFB5:
+ 408:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 409:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 410:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 411:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadCounter
+ 412:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 413:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 414:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 415:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function returns the current value of the counter.  It doesn't matter
+ 416:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  if the counter is enabled or running.
+ 417:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 418:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 419:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 420:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 421:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 422:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  The current value of the counter.
+ 423:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 424:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 425:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCounter(void) 
+ 426:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 228              		.loc 1 426 0
+ 229              		.cfi_startproc
+ 230              		@ args = 0, pretend = 0, frame = 0
+ 231              		@ frame_needed = 1, uses_anonymous_args = 0
+ 232              		@ link register save eliminated.
+ 233 0000 80B4     		push	{r7}
+ 234              		.cfi_def_cfa_offset 4
+ 235              		.cfi_offset 7, -4
+ 236 0002 00AF     		add	r7, sp, #0
+ 237              		.cfi_def_cfa_register 7
+ 427:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Force capture by reading Accumulator */
+ 428:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Must first do a software capture to be able to read the counter */
+ 429:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 430:Generated_Source\PSoC5/PWM_MOTORS.c ****           (void)CY_GET_REG8(PWM_MOTORS_COUNTERCAP_LSB_PTR_8BIT);
+ 238              		.loc 1 430 0
+ 239 0004 044B     		ldr	r3, .L15
+ 240 0006 1B78     		ldrb	r3, [r3]
+ 431:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 432:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* Read the data from the FIFO */
+ 433:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_CAPTURE_LSB_PTR));
+ 241              		.loc 1 433 0
+ 242 0008 044B     		ldr	r3, .L15+4
+ 243 000a 1B78     		ldrb	r3, [r3]
+ 244 000c DBB2     		uxtb	r3, r3
+ 434:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 245              		.loc 1 434 0
+ 246 000e 1846     		mov	r0, r3
+ 247 0010 BD46     		mov	sp, r7
+ 248              		.cfi_def_cfa_register 13
+ 249              		@ sp needed
+ 250 0012 80BC     		pop	{r7}
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 13
+
+
+ 251              		.cfi_restore 7
+ 252              		.cfi_def_cfa_offset 0
+ 253 0014 7047     		bx	lr
+ 254              	.L16:
+ 255 0016 00BF     		.align	2
+ 256              	.L15:
+ 257 0018 18640040 		.word	1073767448
+ 258 001c 58640040 		.word	1073767512
+ 259              		.cfi_endproc
+ 260              	.LFE5:
+ 261              		.size	PWM_MOTORS_ReadCounter, .-PWM_MOTORS_ReadCounter
+ 262              		.section	.text.PWM_MOTORS_WritePeriod,"ax",%progbits
+ 263              		.align	2
+ 264              		.global	PWM_MOTORS_WritePeriod
+ 265              		.thumb
+ 266              		.thumb_func
+ 267              		.type	PWM_MOTORS_WritePeriod, %function
+ 268              	PWM_MOTORS_WritePeriod:
+ 269              	.LFB6:
+ 435:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 436:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if (PWM_MOTORS_UseStatus)
+ 437:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 438:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 439:Generated_Source\PSoC5/PWM_MOTORS.c ****         /*******************************************************************************
+ 440:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Function Name: PWM_MOTORS_ClearFIFO
+ 441:Generated_Source\PSoC5/PWM_MOTORS.c ****         ********************************************************************************
+ 442:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 443:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Summary:
+ 444:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  This function clears all capture data from the capture FIFO
+ 445:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 446:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Parameters:
+ 447:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  None
+ 448:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 449:Generated_Source\PSoC5/PWM_MOTORS.c ****         * Return:
+ 450:Generated_Source\PSoC5/PWM_MOTORS.c ****         *  None
+ 451:Generated_Source\PSoC5/PWM_MOTORS.c ****         *
+ 452:Generated_Source\PSoC5/PWM_MOTORS.c ****         *******************************************************************************/
+ 453:Generated_Source\PSoC5/PWM_MOTORS.c ****         void PWM_MOTORS_ClearFIFO(void) 
+ 454:Generated_Source\PSoC5/PWM_MOTORS.c ****         {
+ 455:Generated_Source\PSoC5/PWM_MOTORS.c ****             while(0u != (PWM_MOTORS_ReadStatusRegister() & PWM_MOTORS_STATUS_FIFONEMPTY))
+ 456:Generated_Source\PSoC5/PWM_MOTORS.c ****             {
+ 457:Generated_Source\PSoC5/PWM_MOTORS.c ****                 (void)PWM_MOTORS_ReadCapture();
+ 458:Generated_Source\PSoC5/PWM_MOTORS.c ****             }
+ 459:Generated_Source\PSoC5/PWM_MOTORS.c ****         }
+ 460:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 461:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* PWM_MOTORS_UseStatus */
+ 462:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 463:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* !PWM_MOTORS_UsingFixedFunction */
+ 464:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 465:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 466:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+ 467:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_WritePeriod
+ 468:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+ 469:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 470:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+ 471:Generated_Source\PSoC5/PWM_MOTORS.c **** *  This function is used to change the period of the counter.  The new period
+ 472:Generated_Source\PSoC5/PWM_MOTORS.c **** *  will be loaded the next time terminal count is detected.
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 14
+
+
+ 473:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 474:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+ 475:Generated_Source\PSoC5/PWM_MOTORS.c **** *  period:  Period value. May be between 1 and (2^Resolution)-1.  A value of 0
+ 476:Generated_Source\PSoC5/PWM_MOTORS.c **** *           will result in the counter remaining at zero.
+ 477:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 478:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+ 479:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 480:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 481:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+ 482:Generated_Source\PSoC5/PWM_MOTORS.c **** void PWM_MOTORS_WritePeriod(uint8 period) 
+ 483:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+ 270              		.loc 1 483 0
+ 271              		.cfi_startproc
+ 272              		@ args = 0, pretend = 0, frame = 8
+ 273              		@ frame_needed = 1, uses_anonymous_args = 0
+ 274              		@ link register save eliminated.
+ 275 0000 80B4     		push	{r7}
+ 276              		.cfi_def_cfa_offset 4
+ 277              		.cfi_offset 7, -4
+ 278 0002 83B0     		sub	sp, sp, #12
+ 279              		.cfi_def_cfa_offset 16
+ 280 0004 00AF     		add	r7, sp, #0
+ 281              		.cfi_def_cfa_register 7
+ 282 0006 0346     		mov	r3, r0
+ 283 0008 FB71     		strb	r3, [r7, #7]
+ 484:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if(PWM_MOTORS_UsingFixedFunction)
+ 485:Generated_Source\PSoC5/PWM_MOTORS.c ****         CY_SET_REG16(PWM_MOTORS_PERIOD_LSB_PTR, (uint16)period);
+ 486:Generated_Source\PSoC5/PWM_MOTORS.c ****     #else
+ 487:Generated_Source\PSoC5/PWM_MOTORS.c ****         CY_SET_REG8(PWM_MOTORS_PERIOD_LSB_PTR, period);
+ 284              		.loc 1 487 0
+ 285 000a 044A     		ldr	r2, .L18
+ 286 000c FB79     		ldrb	r3, [r7, #7]
+ 287 000e 1370     		strb	r3, [r2]
+ 488:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 489:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+ 288              		.loc 1 489 0
+ 289 0010 00BF     		nop
+ 290 0012 0C37     		adds	r7, r7, #12
+ 291              		.cfi_def_cfa_offset 4
+ 292 0014 BD46     		mov	sp, r7
+ 293              		.cfi_def_cfa_register 13
+ 294              		@ sp needed
+ 295 0016 80BC     		pop	{r7}
+ 296              		.cfi_restore 7
+ 297              		.cfi_def_cfa_offset 0
+ 298 0018 7047     		bx	lr
+ 299              	.L19:
+ 300 001a 00BF     		.align	2
+ 301              	.L18:
+ 302 001c 48640040 		.word	1073767496
+ 303              		.cfi_endproc
+ 304              	.LFE6:
+ 305              		.size	PWM_MOTORS_WritePeriod, .-PWM_MOTORS_WritePeriod
+ 306              		.section	.text.PWM_MOTORS_WriteCompare1,"ax",%progbits
+ 307              		.align	2
+ 308              		.global	PWM_MOTORS_WriteCompare1
+ 309              		.thumb
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 15
+
+
+ 310              		.thumb_func
+ 311              		.type	PWM_MOTORS_WriteCompare1, %function
+ 312              	PWM_MOTORS_WriteCompare1:
+ 313              	.LFB7:
+ 490:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 491:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_UseOneCompareMode)
+ 492:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 493:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 494:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 495:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteCompare
+ 496:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 497:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 498:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 499:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This funtion is used to change the compare1 value when the PWM is in Dither
+ 500:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  mode. The compare output will reflect the new value on the next UDB clock.
+ 501:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  The compare output will be driven high when the present counter value is
+ 502:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  compared to the compare value based on the compare mode defined in
+ 503:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Dither Mode.
+ 504:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 505:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 506:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  compare:  New compare value.
+ 507:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 508:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 509:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 510:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 511:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Side Effects:
+ 512:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function is only available if the PWM mode parameter is set to
+ 513:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Dither Mode, Center Aligned Mode or One Output Mode
+ 514:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 515:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 516:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteCompare(uint8 compare) \
+ 517:Generated_Source\PSoC5/PWM_MOTORS.c ****                                        
+ 518:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 519:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UsingFixedFunction)
+ 520:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG16(PWM_MOTORS_COMPARE1_LSB_PTR, (uint16)compare);
+ 521:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 522:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG8(PWM_MOTORS_COMPARE1_LSB_PTR, compare);
+ 523:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 524:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 525:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if (PWM_MOTORS_PWMMode == PWM_MOTORS__B_PWM__DITHER)
+ 526:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(PWM_MOTORS_UsingFixedFunction)
+ 527:Generated_Source\PSoC5/PWM_MOTORS.c ****                 CY_SET_REG16(PWM_MOTORS_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
+ 528:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
+ 529:Generated_Source\PSoC5/PWM_MOTORS.c ****                 CY_SET_REG8(PWM_MOTORS_COMPARE2_LSB_PTR, (compare + 1u));
+ 530:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 531:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_PWMMode == PWM_MOTORS__B_PWM__DITHER) */
+ 532:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 533:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 534:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 535:Generated_Source\PSoC5/PWM_MOTORS.c **** #else
+ 536:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 537:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 538:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 539:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteCompare1
+ 540:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 541:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 542:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 16
+
+
+ 543:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This funtion is used to change the compare1 value.  The compare output will
+ 544:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  reflect the new value on the next UDB clock.  The compare output will be
+ 545:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  driven high when the present counter value is less than or less than or
+ 546:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  equal to the compare register, depending on the mode.
+ 547:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 548:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 549:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  compare:  New compare value.
+ 550:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 551:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 552:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 553:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 554:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 555:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteCompare1(uint8 compare) \
+ 556:Generated_Source\PSoC5/PWM_MOTORS.c ****                                         
+ 557:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 314              		.loc 1 557 0
+ 315              		.cfi_startproc
+ 316              		@ args = 0, pretend = 0, frame = 8
+ 317              		@ frame_needed = 1, uses_anonymous_args = 0
+ 318              		@ link register save eliminated.
+ 319 0000 80B4     		push	{r7}
+ 320              		.cfi_def_cfa_offset 4
+ 321              		.cfi_offset 7, -4
+ 322 0002 83B0     		sub	sp, sp, #12
+ 323              		.cfi_def_cfa_offset 16
+ 324 0004 00AF     		add	r7, sp, #0
+ 325              		.cfi_def_cfa_register 7
+ 326 0006 0346     		mov	r3, r0
+ 327 0008 FB71     		strb	r3, [r7, #7]
+ 558:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UsingFixedFunction)
+ 559:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG16(PWM_MOTORS_COMPARE1_LSB_PTR, (uint16)compare);
+ 560:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 561:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG8(PWM_MOTORS_COMPARE1_LSB_PTR, compare);
+ 328              		.loc 1 561 0
+ 329 000a 044A     		ldr	r2, .L21
+ 330 000c FB79     		ldrb	r3, [r7, #7]
+ 331 000e 1370     		strb	r3, [r2]
+ 562:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 563:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 332              		.loc 1 563 0
+ 333 0010 00BF     		nop
+ 334 0012 0C37     		adds	r7, r7, #12
+ 335              		.cfi_def_cfa_offset 4
+ 336 0014 BD46     		mov	sp, r7
+ 337              		.cfi_def_cfa_register 13
+ 338              		@ sp needed
+ 339 0016 80BC     		pop	{r7}
+ 340              		.cfi_restore 7
+ 341              		.cfi_def_cfa_offset 0
+ 342 0018 7047     		bx	lr
+ 343              	.L22:
+ 344 001a 00BF     		.align	2
+ 345              	.L21:
+ 346 001c 28640040 		.word	1073767464
+ 347              		.cfi_endproc
+ 348              	.LFE7:
+ 349              		.size	PWM_MOTORS_WriteCompare1, .-PWM_MOTORS_WriteCompare1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 17
+
+
+ 350              		.section	.text.PWM_MOTORS_WriteCompare2,"ax",%progbits
+ 351              		.align	2
+ 352              		.global	PWM_MOTORS_WriteCompare2
+ 353              		.thumb
+ 354              		.thumb_func
+ 355              		.type	PWM_MOTORS_WriteCompare2, %function
+ 356              	PWM_MOTORS_WriteCompare2:
+ 357              	.LFB8:
+ 564:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 565:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 566:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 567:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteCompare2
+ 568:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 569:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 570:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 571:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This funtion is used to change the compare value, for compare1 output.
+ 572:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  The compare output will reflect the new value on the next UDB clock.
+ 573:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  The compare output will be driven high when the present counter value is
+ 574:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  less than or less than or equal to the compare register, depending on the
+ 575:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  mode.
+ 576:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 577:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 578:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  compare:  New compare value.
+ 579:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 580:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 581:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 582:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 583:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 584:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteCompare2(uint8 compare) \
+ 585:Generated_Source\PSoC5/PWM_MOTORS.c ****                                         
+ 586:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 358              		.loc 1 586 0
+ 359              		.cfi_startproc
+ 360              		@ args = 0, pretend = 0, frame = 8
+ 361              		@ frame_needed = 1, uses_anonymous_args = 0
+ 362              		@ link register save eliminated.
+ 363 0000 80B4     		push	{r7}
+ 364              		.cfi_def_cfa_offset 4
+ 365              		.cfi_offset 7, -4
+ 366 0002 83B0     		sub	sp, sp, #12
+ 367              		.cfi_def_cfa_offset 16
+ 368 0004 00AF     		add	r7, sp, #0
+ 369              		.cfi_def_cfa_register 7
+ 370 0006 0346     		mov	r3, r0
+ 371 0008 FB71     		strb	r3, [r7, #7]
+ 587:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UsingFixedFunction)
+ 588:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG16(PWM_MOTORS_COMPARE2_LSB_PTR, compare);
+ 589:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 590:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG8(PWM_MOTORS_COMPARE2_LSB_PTR, compare);
+ 372              		.loc 1 590 0
+ 373 000a 044A     		ldr	r2, .L24
+ 374 000c FB79     		ldrb	r3, [r7, #7]
+ 375 000e 1370     		strb	r3, [r2]
+ 591:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 592:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 376              		.loc 1 592 0
+ 377 0010 00BF     		nop
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 18
+
+
+ 378 0012 0C37     		adds	r7, r7, #12
+ 379              		.cfi_def_cfa_offset 4
+ 380 0014 BD46     		mov	sp, r7
+ 381              		.cfi_def_cfa_register 13
+ 382              		@ sp needed
+ 383 0016 80BC     		pop	{r7}
+ 384              		.cfi_restore 7
+ 385              		.cfi_def_cfa_offset 0
+ 386 0018 7047     		bx	lr
+ 387              	.L25:
+ 388 001a 00BF     		.align	2
+ 389              	.L24:
+ 390 001c 38640040 		.word	1073767480
+ 391              		.cfi_endproc
+ 392              	.LFE8:
+ 393              		.size	PWM_MOTORS_WriteCompare2, .-PWM_MOTORS_WriteCompare2
+ 394              		.section	.text.PWM_MOTORS_ReadCapture,"ax",%progbits
+ 395              		.align	2
+ 396              		.global	PWM_MOTORS_ReadCapture
+ 397              		.thumb
+ 398              		.thumb_func
+ 399              		.type	PWM_MOTORS_ReadCapture, %function
+ 400              	PWM_MOTORS_ReadCapture:
+ 401              	.LFB9:
+ 593:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* UseOneCompareMode */
+ 594:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 595:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_DeadBandUsed)
+ 596:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 597:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 598:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 599:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteDeadTime
+ 600:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 601:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 602:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 603:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function writes the dead-band counts to the corresponding register
+ 604:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 605:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 606:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  deadtime:  Number of counts for dead time
+ 607:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 608:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 609:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 610:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 611:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 612:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteDeadTime(uint8 deadtime) 
+ 613:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 614:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* If using the Dead Band 1-255 mode then just write the register */
+ 615:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(!PWM_MOTORS_DeadBand2_4)
+ 616:Generated_Source\PSoC5/PWM_MOTORS.c ****             CY_SET_REG8(PWM_MOTORS_DEADBAND_COUNT_PTR, deadtime);
+ 617:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 618:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Otherwise the data has to be masked and offset */
+ 619:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Clear existing data */
+ 620:Generated_Source\PSoC5/PWM_MOTORS.c ****             PWM_MOTORS_DEADBAND_COUNT &= ((uint8)(~PWM_MOTORS_DEADBAND_COUNT_MASK));
+ 621:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 622:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Set new dead time */
+ 623:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(PWM_MOTORS_DEADBAND_COUNT_SHIFT)
+ 624:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << PWM_MOTORS_DEADBAND_COUNT_
+ 625:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                     PWM_MOTORS_DEADBAND_COUNT_MASK;
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 19
+
+
+ 626:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
+ 627:Generated_Source\PSoC5/PWM_MOTORS.c ****                 PWM_MOTORS_DEADBAND_COUNT |= deadtime & PWM_MOTORS_DEADBAND_COUNT_MASK;
+ 628:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (PWM_MOTORS_DEADBAND_COUNT_SHIFT) */
+ 629:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 630:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (!PWM_MOTORS_DeadBand2_4) */
+ 631:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 632:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 633:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 634:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 635:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadDeadTime
+ 636:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 637:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 638:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 639:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function reads the dead-band counts from the corresponding register
+ 640:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 641:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 642:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 643:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 644:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 645:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Dead Band Counts
+ 646:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 647:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 648:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadDeadTime(void) 
+ 649:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 650:Generated_Source\PSoC5/PWM_MOTORS.c ****         /* If using the Dead Band 1-255 mode then just read the register */
+ 651:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(!PWM_MOTORS_DeadBand2_4)
+ 652:Generated_Source\PSoC5/PWM_MOTORS.c ****             return (CY_GET_REG8(PWM_MOTORS_DEADBAND_COUNT_PTR));
+ 653:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 654:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 655:Generated_Source\PSoC5/PWM_MOTORS.c ****             /* Otherwise the data has to be masked and offset */
+ 656:Generated_Source\PSoC5/PWM_MOTORS.c ****             #if(PWM_MOTORS_DEADBAND_COUNT_SHIFT)
+ 657:Generated_Source\PSoC5/PWM_MOTORS.c ****                 return ((uint8)(((uint8)(PWM_MOTORS_DEADBAND_COUNT & PWM_MOTORS_DEADBAND_COUNT_MASK
+ 658:Generated_Source\PSoC5/PWM_MOTORS.c ****                                                                            PWM_MOTORS_DEADBAND_COUN
+ 659:Generated_Source\PSoC5/PWM_MOTORS.c ****             #else
+ 660:Generated_Source\PSoC5/PWM_MOTORS.c ****                 return (PWM_MOTORS_DEADBAND_COUNT & PWM_MOTORS_DEADBAND_COUNT_MASK);
+ 661:Generated_Source\PSoC5/PWM_MOTORS.c ****             #endif /* (PWM_MOTORS_DEADBAND_COUNT_SHIFT) */
+ 662:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (!PWM_MOTORS_DeadBand2_4) */
+ 663:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 664:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* DeadBandUsed */
+ 665:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 666:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_UseStatus || PWM_MOTORS_UsingFixedFunction)
+ 667:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 668:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 669:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 670:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_SetInterruptMode
+ 671:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 672:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 673:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 674:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function configures the interrupts mask control of theinterrupt
+ 675:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  source status register.
+ 676:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 677:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 678:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8 interruptMode: Bit field containing the interrupt sources enabled
+ 679:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 680:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 681:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 682:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 20
+
+
+ 683:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 684:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_SetInterruptMode(uint8 interruptMode) 
+ 685:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 686:Generated_Source\PSoC5/PWM_MOTORS.c ****         CY_SET_REG8(PWM_MOTORS_STATUS_MASK_PTR, interruptMode);
+ 687:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 688:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 689:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 690:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 691:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadStatusRegister
+ 692:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 693:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 694:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 695:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  This function returns the current state of the status register.
+ 696:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 697:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 698:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 699:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 700:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 701:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8 : Current status register value. The status register bits are:
+ 702:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [7:6] : Unused(0)
+ 703:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [5]   : Kill event output
+ 704:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [4]   : FIFO not empty
+ 705:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [3]   : FIFO full
+ 706:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [2]   : Terminal count
+ 707:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [1]   : Compare output 2
+ 708:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [0]   : Compare output 1
+ 709:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 710:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 711:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadStatusRegister(void) 
+ 712:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 713:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_STATUS_PTR));
+ 714:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 715:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 716:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* (PWM_MOTORS_UseStatus || PWM_MOTORS_UsingFixedFunction) */
+ 717:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 718:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 719:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_UseControl)
+ 720:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 721:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 722:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 723:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadControlRegister
+ 724:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 725:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 726:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 727:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Returns the current state of the control register. This API is available
+ 728:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  only if the control register is not removed.
+ 729:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 730:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 731:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 732:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 733:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 734:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8 : Current control register value
+ 735:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 736:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 737:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadControlRegister(void) 
+ 738:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 739:Generated_Source\PSoC5/PWM_MOTORS.c ****         uint8 result;
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 21
+
+
+ 740:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 741:Generated_Source\PSoC5/PWM_MOTORS.c ****         result = CY_GET_REG8(PWM_MOTORS_CONTROL_PTR);
+ 742:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (result);
+ 743:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 744:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 745:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 746:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 747:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_WriteControlRegister
+ 748:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 749:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 750:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 751:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Sets the bit field of the control register. This API is available only if
+ 752:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  the control register is not removed.
+ 753:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 754:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 755:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8 control: Control register bit field, The status register bits are:
+ 756:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [7]   : PWM Enable
+ 757:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [6]   : Reset
+ 758:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [5:3] : Compare Mode2
+ 759:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  [2:0] : Compare Mode2
+ 760:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 761:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 762:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 763:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 764:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 765:Generated_Source\PSoC5/PWM_MOTORS.c ****     void PWM_MOTORS_WriteControlRegister(uint8 control) 
+ 766:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 767:Generated_Source\PSoC5/PWM_MOTORS.c ****         CY_SET_REG8(PWM_MOTORS_CONTROL_PTR, control);
+ 768:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 769:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 770:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* (PWM_MOTORS_UseControl) */
+ 771:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 772:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 773:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (!PWM_MOTORS_UsingFixedFunction)
+ 774:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 775:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 776:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 777:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadCapture
+ 778:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 779:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 780:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 781:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Reads the capture value from the capture FIFO.
+ 782:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 783:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 784:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 785:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 786:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 787:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8/uint16: The current capture value
+ 788:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 789:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 790:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCapture(void) 
+ 791:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 402              		.loc 1 791 0
+ 403              		.cfi_startproc
+ 404              		@ args = 0, pretend = 0, frame = 0
+ 405              		@ frame_needed = 1, uses_anonymous_args = 0
+ 406              		@ link register save eliminated.
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 22
+
+
+ 407 0000 80B4     		push	{r7}
+ 408              		.cfi_def_cfa_offset 4
+ 409              		.cfi_offset 7, -4
+ 410 0002 00AF     		add	r7, sp, #0
+ 411              		.cfi_def_cfa_register 7
+ 792:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_CAPTURE_LSB_PTR));
+ 412              		.loc 1 792 0
+ 413 0004 034B     		ldr	r3, .L28
+ 414 0006 1B78     		ldrb	r3, [r3]
+ 415 0008 DBB2     		uxtb	r3, r3
+ 793:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 416              		.loc 1 793 0
+ 417 000a 1846     		mov	r0, r3
+ 418 000c BD46     		mov	sp, r7
+ 419              		.cfi_def_cfa_register 13
+ 420              		@ sp needed
+ 421 000e 80BC     		pop	{r7}
+ 422              		.cfi_restore 7
+ 423              		.cfi_def_cfa_offset 0
+ 424 0010 7047     		bx	lr
+ 425              	.L29:
+ 426 0012 00BF     		.align	2
+ 427              	.L28:
+ 428 0014 58640040 		.word	1073767512
+ 429              		.cfi_endproc
+ 430              	.LFE9:
+ 431              		.size	PWM_MOTORS_ReadCapture, .-PWM_MOTORS_ReadCapture
+ 432              		.section	.text.PWM_MOTORS_ReadCompare1,"ax",%progbits
+ 433              		.align	2
+ 434              		.global	PWM_MOTORS_ReadCompare1
+ 435              		.thumb
+ 436              		.thumb_func
+ 437              		.type	PWM_MOTORS_ReadCompare1, %function
+ 438              	PWM_MOTORS_ReadCompare1:
+ 439              	.LFB10:
+ 794:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 795:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* (!PWM_MOTORS_UsingFixedFunction) */
+ 796:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 797:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 798:Generated_Source\PSoC5/PWM_MOTORS.c **** #if (PWM_MOTORS_UseOneCompareMode)
+ 799:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 800:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 801:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 802:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadCompare
+ 803:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 804:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 805:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 806:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Reads the compare value for the compare output when the PWM Mode parameter is
+ 807:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  set to Dither mode, Center Aligned mode, or One Output mode.
+ 808:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 809:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 810:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 811:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 812:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 813:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8/uint16: Current compare value
+ 814:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 815:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 23
+
+
+ 816:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCompare(void) 
+ 817:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 818:Generated_Source\PSoC5/PWM_MOTORS.c ****         #if(PWM_MOTORS_UsingFixedFunction)
+ 819:Generated_Source\PSoC5/PWM_MOTORS.c ****             return ((uint8)CY_GET_REG16(PWM_MOTORS_COMPARE1_LSB_PTR));
+ 820:Generated_Source\PSoC5/PWM_MOTORS.c ****         #else
+ 821:Generated_Source\PSoC5/PWM_MOTORS.c ****             return (CY_GET_REG8(PWM_MOTORS_COMPARE1_LSB_PTR));
+ 822:Generated_Source\PSoC5/PWM_MOTORS.c ****         #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 823:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 824:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 825:Generated_Source\PSoC5/PWM_MOTORS.c **** #else
+ 826:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 827:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 828:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 829:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadCompare1
+ 830:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 831:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 832:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 833:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Reads the compare value for the compare1 output.
+ 834:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 835:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 836:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 837:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 838:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 839:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8/uint16: Current compare value.
+ 840:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 841:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 842:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCompare1(void) 
+ 843:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 440              		.loc 1 843 0
+ 441              		.cfi_startproc
+ 442              		@ args = 0, pretend = 0, frame = 0
+ 443              		@ frame_needed = 1, uses_anonymous_args = 0
+ 444              		@ link register save eliminated.
+ 445 0000 80B4     		push	{r7}
+ 446              		.cfi_def_cfa_offset 4
+ 447              		.cfi_offset 7, -4
+ 448 0002 00AF     		add	r7, sp, #0
+ 449              		.cfi_def_cfa_register 7
+ 844:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_COMPARE1_LSB_PTR));
+ 450              		.loc 1 844 0
+ 451 0004 034B     		ldr	r3, .L32
+ 452 0006 1B78     		ldrb	r3, [r3]
+ 453 0008 DBB2     		uxtb	r3, r3
+ 845:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 454              		.loc 1 845 0
+ 455 000a 1846     		mov	r0, r3
+ 456 000c BD46     		mov	sp, r7
+ 457              		.cfi_def_cfa_register 13
+ 458              		@ sp needed
+ 459 000e 80BC     		pop	{r7}
+ 460              		.cfi_restore 7
+ 461              		.cfi_def_cfa_offset 0
+ 462 0010 7047     		bx	lr
+ 463              	.L33:
+ 464 0012 00BF     		.align	2
+ 465              	.L32:
+ 466 0014 28640040 		.word	1073767464
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 24
+
+
+ 467              		.cfi_endproc
+ 468              	.LFE10:
+ 469              		.size	PWM_MOTORS_ReadCompare1, .-PWM_MOTORS_ReadCompare1
+ 470              		.section	.text.PWM_MOTORS_ReadCompare2,"ax",%progbits
+ 471              		.align	2
+ 472              		.global	PWM_MOTORS_ReadCompare2
+ 473              		.thumb
+ 474              		.thumb_func
+ 475              		.type	PWM_MOTORS_ReadCompare2, %function
+ 476              	PWM_MOTORS_ReadCompare2:
+ 477              	.LFB11:
+ 846:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 847:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 848:Generated_Source\PSoC5/PWM_MOTORS.c ****     /*******************************************************************************
+ 849:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Function Name: PWM_MOTORS_ReadCompare2
+ 850:Generated_Source\PSoC5/PWM_MOTORS.c ****     ********************************************************************************
+ 851:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 852:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Summary:
+ 853:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  Reads the compare value for the compare2 output.
+ 854:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 855:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Parameters:
+ 856:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  None
+ 857:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 858:Generated_Source\PSoC5/PWM_MOTORS.c ****     * Return:
+ 859:Generated_Source\PSoC5/PWM_MOTORS.c ****     *  uint8/uint16: Current compare value.
+ 860:Generated_Source\PSoC5/PWM_MOTORS.c ****     *
+ 861:Generated_Source\PSoC5/PWM_MOTORS.c ****     *******************************************************************************/
+ 862:Generated_Source\PSoC5/PWM_MOTORS.c ****     uint8 PWM_MOTORS_ReadCompare2(void) 
+ 863:Generated_Source\PSoC5/PWM_MOTORS.c ****     {
+ 478              		.loc 1 863 0
+ 479              		.cfi_startproc
+ 480              		@ args = 0, pretend = 0, frame = 0
+ 481              		@ frame_needed = 1, uses_anonymous_args = 0
+ 482              		@ link register save eliminated.
+ 483 0000 80B4     		push	{r7}
+ 484              		.cfi_def_cfa_offset 4
+ 485              		.cfi_offset 7, -4
+ 486 0002 00AF     		add	r7, sp, #0
+ 487              		.cfi_def_cfa_register 7
+ 864:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_COMPARE2_LSB_PTR));
+ 488              		.loc 1 864 0
+ 489 0004 034B     		ldr	r3, .L36
+ 490 0006 1B78     		ldrb	r3, [r3]
+ 491 0008 DBB2     		uxtb	r3, r3
+ 865:Generated_Source\PSoC5/PWM_MOTORS.c ****     }
+ 492              		.loc 1 865 0
+ 493 000a 1846     		mov	r0, r3
+ 494 000c BD46     		mov	sp, r7
+ 495              		.cfi_def_cfa_register 13
+ 496              		@ sp needed
+ 497 000e 80BC     		pop	{r7}
+ 498              		.cfi_restore 7
+ 499              		.cfi_def_cfa_offset 0
+ 500 0010 7047     		bx	lr
+ 501              	.L37:
+ 502 0012 00BF     		.align	2
+ 503              	.L36:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 25
+
+
+ 504 0014 38640040 		.word	1073767480
+ 505              		.cfi_endproc
+ 506              	.LFE11:
+ 507              		.size	PWM_MOTORS_ReadCompare2, .-PWM_MOTORS_ReadCompare2
+ 508              		.section	.text.PWM_MOTORS_ReadPeriod,"ax",%progbits
+ 509              		.align	2
+ 510              		.global	PWM_MOTORS_ReadPeriod
+ 511              		.thumb
+ 512              		.thumb_func
+ 513              		.type	PWM_MOTORS_ReadPeriod, %function
+ 514              	PWM_MOTORS_ReadPeriod:
+ 515              	.LFB12:
+ 866:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 867:Generated_Source\PSoC5/PWM_MOTORS.c **** #endif /* (PWM_MOTORS_UseOneCompareMode) */
+ 868:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 869:Generated_Source\PSoC5/PWM_MOTORS.c **** 
+ 870:Generated_Source\PSoC5/PWM_MOTORS.c **** /*******************************************************************************
+ 871:Generated_Source\PSoC5/PWM_MOTORS.c **** * Function Name: PWM_MOTORS_ReadPeriod
+ 872:Generated_Source\PSoC5/PWM_MOTORS.c **** ********************************************************************************
+ 873:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 874:Generated_Source\PSoC5/PWM_MOTORS.c **** * Summary:
+ 875:Generated_Source\PSoC5/PWM_MOTORS.c **** *  Reads the period value used by the PWM hardware.
+ 876:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 877:Generated_Source\PSoC5/PWM_MOTORS.c **** * Parameters:
+ 878:Generated_Source\PSoC5/PWM_MOTORS.c **** *  None
+ 879:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 880:Generated_Source\PSoC5/PWM_MOTORS.c **** * Return:
+ 881:Generated_Source\PSoC5/PWM_MOTORS.c **** *  uint8/16: Period value
+ 882:Generated_Source\PSoC5/PWM_MOTORS.c **** *
+ 883:Generated_Source\PSoC5/PWM_MOTORS.c **** *******************************************************************************/
+ 884:Generated_Source\PSoC5/PWM_MOTORS.c **** uint8 PWM_MOTORS_ReadPeriod(void) 
+ 885:Generated_Source\PSoC5/PWM_MOTORS.c **** {
+ 516              		.loc 1 885 0
+ 517              		.cfi_startproc
+ 518              		@ args = 0, pretend = 0, frame = 0
+ 519              		@ frame_needed = 1, uses_anonymous_args = 0
+ 520              		@ link register save eliminated.
+ 521 0000 80B4     		push	{r7}
+ 522              		.cfi_def_cfa_offset 4
+ 523              		.cfi_offset 7, -4
+ 524 0002 00AF     		add	r7, sp, #0
+ 525              		.cfi_def_cfa_register 7
+ 886:Generated_Source\PSoC5/PWM_MOTORS.c ****     #if(PWM_MOTORS_UsingFixedFunction)
+ 887:Generated_Source\PSoC5/PWM_MOTORS.c ****         return ((uint8)CY_GET_REG16(PWM_MOTORS_PERIOD_LSB_PTR));
+ 888:Generated_Source\PSoC5/PWM_MOTORS.c ****     #else
+ 889:Generated_Source\PSoC5/PWM_MOTORS.c ****         return (CY_GET_REG8(PWM_MOTORS_PERIOD_LSB_PTR));
+ 526              		.loc 1 889 0
+ 527 0004 034B     		ldr	r3, .L40
+ 528 0006 1B78     		ldrb	r3, [r3]
+ 529 0008 DBB2     		uxtb	r3, r3
+ 890:Generated_Source\PSoC5/PWM_MOTORS.c ****     #endif /* (PWM_MOTORS_UsingFixedFunction) */
+ 891:Generated_Source\PSoC5/PWM_MOTORS.c **** }
+ 530              		.loc 1 891 0
+ 531 000a 1846     		mov	r0, r3
+ 532 000c BD46     		mov	sp, r7
+ 533              		.cfi_def_cfa_register 13
+ 534              		@ sp needed
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 26
+
+
+ 535 000e 80BC     		pop	{r7}
+ 536              		.cfi_restore 7
+ 537              		.cfi_def_cfa_offset 0
+ 538 0010 7047     		bx	lr
+ 539              	.L41:
+ 540 0012 00BF     		.align	2
+ 541              	.L40:
+ 542 0014 48640040 		.word	1073767496
+ 543              		.cfi_endproc
+ 544              	.LFE12:
+ 545              		.size	PWM_MOTORS_ReadPeriod, .-PWM_MOTORS_ReadPeriod
+ 546              		.text
+ 547              	.Letext0:
+ 548              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 549              		.section	.debug_info,"",%progbits
+ 550              	.Ldebug_info0:
+ 551 0000 03020000 		.4byte	0x203
+ 552 0004 0400     		.2byte	0x4
+ 553 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 554 000a 04       		.byte	0x4
+ 555 000b 01       		.uleb128 0x1
+ 556 000c 13000000 		.4byte	.LASF32
+ 557 0010 0C       		.byte	0xc
+ 558 0011 46020000 		.4byte	.LASF33
+ 559 0015 53010000 		.4byte	.LASF34
+ 560 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 561 001d 00000000 		.4byte	0
+ 562 0021 00000000 		.4byte	.Ldebug_line0
+ 563 0025 02       		.uleb128 0x2
+ 564 0026 01       		.byte	0x1
+ 565 0027 06       		.byte	0x6
+ 566 0028 EA020000 		.4byte	.LASF0
+ 567 002c 02       		.uleb128 0x2
+ 568 002d 01       		.byte	0x1
+ 569 002e 08       		.byte	0x8
+ 570 002f BF010000 		.4byte	.LASF1
+ 571 0033 02       		.uleb128 0x2
+ 572 0034 02       		.byte	0x2
+ 573 0035 05       		.byte	0x5
+ 574 0036 9B020000 		.4byte	.LASF2
+ 575 003a 02       		.uleb128 0x2
+ 576 003b 02       		.byte	0x2
+ 577 003c 07       		.byte	0x7
+ 578 003d D8000000 		.4byte	.LASF3
+ 579 0041 02       		.uleb128 0x2
+ 580 0042 04       		.byte	0x4
+ 581 0043 05       		.byte	0x5
+ 582 0044 D5020000 		.4byte	.LASF4
+ 583 0048 02       		.uleb128 0x2
+ 584 0049 04       		.byte	0x4
+ 585 004a 07       		.byte	0x7
+ 586 004b 0E010000 		.4byte	.LASF5
+ 587 004f 02       		.uleb128 0x2
+ 588 0050 08       		.byte	0x8
+ 589 0051 05       		.byte	0x5
+ 590 0052 33020000 		.4byte	.LASF6
+ 591 0056 02       		.uleb128 0x2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 27
+
+
+ 592 0057 08       		.byte	0x8
+ 593 0058 07       		.byte	0x7
+ 594 0059 EC010000 		.4byte	.LASF7
+ 595 005d 03       		.uleb128 0x3
+ 596 005e 04       		.byte	0x4
+ 597 005f 05       		.byte	0x5
+ 598 0060 696E7400 		.ascii	"int\000"
+ 599 0064 02       		.uleb128 0x2
+ 600 0065 04       		.byte	0x4
+ 601 0066 07       		.byte	0x7
+ 602 0067 CD010000 		.4byte	.LASF8
+ 603 006b 04       		.uleb128 0x4
+ 604 006c 20010000 		.4byte	.LASF12
+ 605 0070 02       		.byte	0x2
+ 606 0071 E401     		.2byte	0x1e4
+ 607 0073 2C000000 		.4byte	0x2c
+ 608 0077 02       		.uleb128 0x2
+ 609 0078 04       		.byte	0x4
+ 610 0079 04       		.byte	0x4
+ 611 007a EB000000 		.4byte	.LASF9
+ 612 007e 02       		.uleb128 0x2
+ 613 007f 08       		.byte	0x8
+ 614 0080 04       		.byte	0x4
+ 615 0081 B8010000 		.4byte	.LASF10
+ 616 0085 02       		.uleb128 0x2
+ 617 0086 01       		.byte	0x1
+ 618 0087 08       		.byte	0x8
+ 619 0088 41020000 		.4byte	.LASF11
+ 620 008c 04       		.uleb128 0x4
+ 621 008d 09010000 		.4byte	.LASF13
+ 622 0091 02       		.byte	0x2
+ 623 0092 8E02     		.2byte	0x28e
+ 624 0094 98000000 		.4byte	0x98
+ 625 0098 05       		.uleb128 0x5
+ 626 0099 6B000000 		.4byte	0x6b
+ 627 009d 02       		.uleb128 0x2
+ 628 009e 08       		.byte	0x8
+ 629 009f 04       		.byte	0x4
+ 630 00a0 DE020000 		.4byte	.LASF14
+ 631 00a4 02       		.uleb128 0x2
+ 632 00a5 04       		.byte	0x4
+ 633 00a6 07       		.byte	0x7
+ 634 00a7 2A020000 		.4byte	.LASF15
+ 635 00ab 06       		.uleb128 0x6
+ 636 00ac FE020000 		.4byte	.LASF16
+ 637 00b0 01       		.byte	0x1
+ 638 00b1 37       		.byte	0x37
+ 639 00b2 00000000 		.4byte	.LFB0
+ 640 00b6 24000000 		.4byte	.LFE0-.LFB0
+ 641 00ba 01       		.uleb128 0x1
+ 642 00bb 9C       		.byte	0x9c
+ 643 00bc 06       		.uleb128 0x6
+ 644 00bd F9000000 		.4byte	.LASF17
+ 645 00c1 01       		.byte	0x1
+ 646 00c2 54       		.byte	0x54
+ 647 00c3 00000000 		.4byte	.LFB1
+ 648 00c7 34000000 		.4byte	.LFE1-.LFB1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 28
+
+
+ 649 00cb 01       		.uleb128 0x1
+ 650 00cc 9C       		.byte	0x9c
+ 651 00cd 07       		.uleb128 0x7
+ 652 00ce DA010000 		.4byte	.LASF18
+ 653 00d2 01       		.byte	0x1
+ 654 00d3 C7       		.byte	0xc7
+ 655 00d4 00000000 		.4byte	.LFB2
+ 656 00d8 0C000000 		.4byte	.LFE2-.LFB2
+ 657 00dc 01       		.uleb128 0x1
+ 658 00dd 9C       		.byte	0x9c
+ 659 00de 07       		.uleb128 0x7
+ 660 00df 1A020000 		.4byte	.LASF19
+ 661 00e3 01       		.byte	0x1
+ 662 00e4 E9       		.byte	0xe9
+ 663 00e5 00000000 		.4byte	.LFB3
+ 664 00e9 0C000000 		.4byte	.LFE3-.LFB3
+ 665 00ed 01       		.uleb128 0x1
+ 666 00ee 9C       		.byte	0x9c
+ 667 00ef 08       		.uleb128 0x8
+ 668 00f0 83020000 		.4byte	.LASF20
+ 669 00f4 01       		.byte	0x1
+ 670 00f5 9301     		.2byte	0x193
+ 671 00f7 00000000 		.4byte	.LFB4
+ 672 00fb 20000000 		.4byte	.LFE4-.LFB4
+ 673 00ff 01       		.uleb128 0x1
+ 674 0100 9C       		.byte	0x9c
+ 675 0101 15010000 		.4byte	0x115
+ 676 0105 09       		.uleb128 0x9
+ 677 0106 F1000000 		.4byte	.LASF22
+ 678 010a 01       		.byte	0x1
+ 679 010b 9301     		.2byte	0x193
+ 680 010d 6B000000 		.4byte	0x6b
+ 681 0111 02       		.uleb128 0x2
+ 682 0112 91       		.byte	0x91
+ 683 0113 77       		.sleb128 -9
+ 684 0114 00       		.byte	0
+ 685 0115 0A       		.uleb128 0xa
+ 686 0116 3C010000 		.4byte	.LASF27
+ 687 011a 01       		.byte	0x1
+ 688 011b A901     		.2byte	0x1a9
+ 689 011d 6B000000 		.4byte	0x6b
+ 690 0121 00000000 		.4byte	.LFB5
+ 691 0125 20000000 		.4byte	.LFE5-.LFB5
+ 692 0129 01       		.uleb128 0x1
+ 693 012a 9C       		.byte	0x9c
+ 694 012b 08       		.uleb128 0x8
+ 695 012c 03020000 		.4byte	.LASF21
+ 696 0130 01       		.byte	0x1
+ 697 0131 E201     		.2byte	0x1e2
+ 698 0133 00000000 		.4byte	.LFB6
+ 699 0137 20000000 		.4byte	.LFE6-.LFB6
+ 700 013b 01       		.uleb128 0x1
+ 701 013c 9C       		.byte	0x9c
+ 702 013d 51010000 		.4byte	0x151
+ 703 0141 09       		.uleb128 0x9
+ 704 0142 BA000000 		.4byte	.LASF23
+ 705 0146 01       		.byte	0x1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 29
+
+
+ 706 0147 E201     		.2byte	0x1e2
+ 707 0149 6B000000 		.4byte	0x6b
+ 708 014d 02       		.uleb128 0x2
+ 709 014e 91       		.byte	0x91
+ 710 014f 77       		.sleb128 -9
+ 711 0150 00       		.byte	0
+ 712 0151 08       		.uleb128 0x8
+ 713 0152 6A020000 		.4byte	.LASF24
+ 714 0156 01       		.byte	0x1
+ 715 0157 2B02     		.2byte	0x22b
+ 716 0159 00000000 		.4byte	.LFB7
+ 717 015d 20000000 		.4byte	.LFE7-.LFB7
+ 718 0161 01       		.uleb128 0x1
+ 719 0162 9C       		.byte	0x9c
+ 720 0163 77010000 		.4byte	0x177
+ 721 0167 09       		.uleb128 0x9
+ 722 0168 F6020000 		.4byte	.LASF25
+ 723 016c 01       		.byte	0x1
+ 724 016d 2B02     		.2byte	0x22b
+ 725 016f 6B000000 		.4byte	0x6b
+ 726 0173 02       		.uleb128 0x2
+ 727 0174 91       		.byte	0x91
+ 728 0175 77       		.sleb128 -9
+ 729 0176 00       		.byte	0
+ 730 0177 08       		.uleb128 0x8
+ 731 0178 A1000000 		.4byte	.LASF26
+ 732 017c 01       		.byte	0x1
+ 733 017d 4802     		.2byte	0x248
+ 734 017f 00000000 		.4byte	.LFB8
+ 735 0183 20000000 		.4byte	.LFE8-.LFB8
+ 736 0187 01       		.uleb128 0x1
+ 737 0188 9C       		.byte	0x9c
+ 738 0189 9D010000 		.4byte	0x19d
+ 739 018d 09       		.uleb128 0x9
+ 740 018e F6020000 		.4byte	.LASF25
+ 741 0192 01       		.byte	0x1
+ 742 0193 4802     		.2byte	0x248
+ 743 0195 6B000000 		.4byte	0x6b
+ 744 0199 02       		.uleb128 0x2
+ 745 019a 91       		.byte	0x91
+ 746 019b 77       		.sleb128 -9
+ 747 019c 00       		.byte	0
+ 748 019d 0A       		.uleb128 0xa
+ 749 019e C1000000 		.4byte	.LASF28
+ 750 01a2 01       		.byte	0x1
+ 751 01a3 1603     		.2byte	0x316
+ 752 01a5 6B000000 		.4byte	0x6b
+ 753 01a9 00000000 		.4byte	.LFB9
+ 754 01ad 18000000 		.4byte	.LFE9-.LFB9
+ 755 01b1 01       		.uleb128 0x1
+ 756 01b2 9C       		.byte	0x9c
+ 757 01b3 0A       		.uleb128 0xa
+ 758 01b4 A5020000 		.4byte	.LASF29
+ 759 01b8 01       		.byte	0x1
+ 760 01b9 4A03     		.2byte	0x34a
+ 761 01bb 6B000000 		.4byte	0x6b
+ 762 01bf 00000000 		.4byte	.LFB10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 30
+
+
+ 763 01c3 18000000 		.4byte	.LFE10-.LFB10
+ 764 01c7 01       		.uleb128 0x1
+ 765 01c8 9C       		.byte	0x9c
+ 766 01c9 0A       		.uleb128 0xa
+ 767 01ca BD020000 		.4byte	.LASF30
+ 768 01ce 01       		.byte	0x1
+ 769 01cf 5E03     		.2byte	0x35e
+ 770 01d1 6B000000 		.4byte	0x6b
+ 771 01d5 00000000 		.4byte	.LFB11
+ 772 01d9 18000000 		.4byte	.LFE11-.LFB11
+ 773 01dd 01       		.uleb128 0x1
+ 774 01de 9C       		.byte	0x9c
+ 775 01df 0A       		.uleb128 0xa
+ 776 01e0 26010000 		.4byte	.LASF31
+ 777 01e4 01       		.byte	0x1
+ 778 01e5 7403     		.2byte	0x374
+ 779 01e7 6B000000 		.4byte	0x6b
+ 780 01eb 00000000 		.4byte	.LFB12
+ 781 01ef 18000000 		.4byte	.LFE12-.LFB12
+ 782 01f3 01       		.uleb128 0x1
+ 783 01f4 9C       		.byte	0x9c
+ 784 01f5 0B       		.uleb128 0xb
+ 785 01f6 00000000 		.4byte	.LASF35
+ 786 01fa 01       		.byte	0x1
+ 787 01fb 20       		.byte	0x20
+ 788 01fc 6B000000 		.4byte	0x6b
+ 789 0200 05       		.uleb128 0x5
+ 790 0201 03       		.byte	0x3
+ 791 0202 00000000 		.4byte	PWM_MOTORS_initVar
+ 792 0206 00       		.byte	0
+ 793              		.section	.debug_abbrev,"",%progbits
+ 794              	.Ldebug_abbrev0:
+ 795 0000 01       		.uleb128 0x1
+ 796 0001 11       		.uleb128 0x11
+ 797 0002 01       		.byte	0x1
+ 798 0003 25       		.uleb128 0x25
+ 799 0004 0E       		.uleb128 0xe
+ 800 0005 13       		.uleb128 0x13
+ 801 0006 0B       		.uleb128 0xb
+ 802 0007 03       		.uleb128 0x3
+ 803 0008 0E       		.uleb128 0xe
+ 804 0009 1B       		.uleb128 0x1b
+ 805 000a 0E       		.uleb128 0xe
+ 806 000b 55       		.uleb128 0x55
+ 807 000c 17       		.uleb128 0x17
+ 808 000d 11       		.uleb128 0x11
+ 809 000e 01       		.uleb128 0x1
+ 810 000f 10       		.uleb128 0x10
+ 811 0010 17       		.uleb128 0x17
+ 812 0011 00       		.byte	0
+ 813 0012 00       		.byte	0
+ 814 0013 02       		.uleb128 0x2
+ 815 0014 24       		.uleb128 0x24
+ 816 0015 00       		.byte	0
+ 817 0016 0B       		.uleb128 0xb
+ 818 0017 0B       		.uleb128 0xb
+ 819 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 31
+
+
+ 820 0019 0B       		.uleb128 0xb
+ 821 001a 03       		.uleb128 0x3
+ 822 001b 0E       		.uleb128 0xe
+ 823 001c 00       		.byte	0
+ 824 001d 00       		.byte	0
+ 825 001e 03       		.uleb128 0x3
+ 826 001f 24       		.uleb128 0x24
+ 827 0020 00       		.byte	0
+ 828 0021 0B       		.uleb128 0xb
+ 829 0022 0B       		.uleb128 0xb
+ 830 0023 3E       		.uleb128 0x3e
+ 831 0024 0B       		.uleb128 0xb
+ 832 0025 03       		.uleb128 0x3
+ 833 0026 08       		.uleb128 0x8
+ 834 0027 00       		.byte	0
+ 835 0028 00       		.byte	0
+ 836 0029 04       		.uleb128 0x4
+ 837 002a 16       		.uleb128 0x16
+ 838 002b 00       		.byte	0
+ 839 002c 03       		.uleb128 0x3
+ 840 002d 0E       		.uleb128 0xe
+ 841 002e 3A       		.uleb128 0x3a
+ 842 002f 0B       		.uleb128 0xb
+ 843 0030 3B       		.uleb128 0x3b
+ 844 0031 05       		.uleb128 0x5
+ 845 0032 49       		.uleb128 0x49
+ 846 0033 13       		.uleb128 0x13
+ 847 0034 00       		.byte	0
+ 848 0035 00       		.byte	0
+ 849 0036 05       		.uleb128 0x5
+ 850 0037 35       		.uleb128 0x35
+ 851 0038 00       		.byte	0
+ 852 0039 49       		.uleb128 0x49
+ 853 003a 13       		.uleb128 0x13
+ 854 003b 00       		.byte	0
+ 855 003c 00       		.byte	0
+ 856 003d 06       		.uleb128 0x6
+ 857 003e 2E       		.uleb128 0x2e
+ 858 003f 00       		.byte	0
+ 859 0040 3F       		.uleb128 0x3f
+ 860 0041 19       		.uleb128 0x19
+ 861 0042 03       		.uleb128 0x3
+ 862 0043 0E       		.uleb128 0xe
+ 863 0044 3A       		.uleb128 0x3a
+ 864 0045 0B       		.uleb128 0xb
+ 865 0046 3B       		.uleb128 0x3b
+ 866 0047 0B       		.uleb128 0xb
+ 867 0048 27       		.uleb128 0x27
+ 868 0049 19       		.uleb128 0x19
+ 869 004a 11       		.uleb128 0x11
+ 870 004b 01       		.uleb128 0x1
+ 871 004c 12       		.uleb128 0x12
+ 872 004d 06       		.uleb128 0x6
+ 873 004e 40       		.uleb128 0x40
+ 874 004f 18       		.uleb128 0x18
+ 875 0050 9642     		.uleb128 0x2116
+ 876 0052 19       		.uleb128 0x19
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 32
+
+
+ 877 0053 00       		.byte	0
+ 878 0054 00       		.byte	0
+ 879 0055 07       		.uleb128 0x7
+ 880 0056 2E       		.uleb128 0x2e
+ 881 0057 00       		.byte	0
+ 882 0058 3F       		.uleb128 0x3f
+ 883 0059 19       		.uleb128 0x19
+ 884 005a 03       		.uleb128 0x3
+ 885 005b 0E       		.uleb128 0xe
+ 886 005c 3A       		.uleb128 0x3a
+ 887 005d 0B       		.uleb128 0xb
+ 888 005e 3B       		.uleb128 0x3b
+ 889 005f 0B       		.uleb128 0xb
+ 890 0060 27       		.uleb128 0x27
+ 891 0061 19       		.uleb128 0x19
+ 892 0062 11       		.uleb128 0x11
+ 893 0063 01       		.uleb128 0x1
+ 894 0064 12       		.uleb128 0x12
+ 895 0065 06       		.uleb128 0x6
+ 896 0066 40       		.uleb128 0x40
+ 897 0067 18       		.uleb128 0x18
+ 898 0068 9742     		.uleb128 0x2117
+ 899 006a 19       		.uleb128 0x19
+ 900 006b 00       		.byte	0
+ 901 006c 00       		.byte	0
+ 902 006d 08       		.uleb128 0x8
+ 903 006e 2E       		.uleb128 0x2e
+ 904 006f 01       		.byte	0x1
+ 905 0070 3F       		.uleb128 0x3f
+ 906 0071 19       		.uleb128 0x19
+ 907 0072 03       		.uleb128 0x3
+ 908 0073 0E       		.uleb128 0xe
+ 909 0074 3A       		.uleb128 0x3a
+ 910 0075 0B       		.uleb128 0xb
+ 911 0076 3B       		.uleb128 0x3b
+ 912 0077 05       		.uleb128 0x5
+ 913 0078 27       		.uleb128 0x27
+ 914 0079 19       		.uleb128 0x19
+ 915 007a 11       		.uleb128 0x11
+ 916 007b 01       		.uleb128 0x1
+ 917 007c 12       		.uleb128 0x12
+ 918 007d 06       		.uleb128 0x6
+ 919 007e 40       		.uleb128 0x40
+ 920 007f 18       		.uleb128 0x18
+ 921 0080 9742     		.uleb128 0x2117
+ 922 0082 19       		.uleb128 0x19
+ 923 0083 01       		.uleb128 0x1
+ 924 0084 13       		.uleb128 0x13
+ 925 0085 00       		.byte	0
+ 926 0086 00       		.byte	0
+ 927 0087 09       		.uleb128 0x9
+ 928 0088 05       		.uleb128 0x5
+ 929 0089 00       		.byte	0
+ 930 008a 03       		.uleb128 0x3
+ 931 008b 0E       		.uleb128 0xe
+ 932 008c 3A       		.uleb128 0x3a
+ 933 008d 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 33
+
+
+ 934 008e 3B       		.uleb128 0x3b
+ 935 008f 05       		.uleb128 0x5
+ 936 0090 49       		.uleb128 0x49
+ 937 0091 13       		.uleb128 0x13
+ 938 0092 02       		.uleb128 0x2
+ 939 0093 18       		.uleb128 0x18
+ 940 0094 00       		.byte	0
+ 941 0095 00       		.byte	0
+ 942 0096 0A       		.uleb128 0xa
+ 943 0097 2E       		.uleb128 0x2e
+ 944 0098 00       		.byte	0
+ 945 0099 3F       		.uleb128 0x3f
+ 946 009a 19       		.uleb128 0x19
+ 947 009b 03       		.uleb128 0x3
+ 948 009c 0E       		.uleb128 0xe
+ 949 009d 3A       		.uleb128 0x3a
+ 950 009e 0B       		.uleb128 0xb
+ 951 009f 3B       		.uleb128 0x3b
+ 952 00a0 05       		.uleb128 0x5
+ 953 00a1 27       		.uleb128 0x27
+ 954 00a2 19       		.uleb128 0x19
+ 955 00a3 49       		.uleb128 0x49
+ 956 00a4 13       		.uleb128 0x13
+ 957 00a5 11       		.uleb128 0x11
+ 958 00a6 01       		.uleb128 0x1
+ 959 00a7 12       		.uleb128 0x12
+ 960 00a8 06       		.uleb128 0x6
+ 961 00a9 40       		.uleb128 0x40
+ 962 00aa 18       		.uleb128 0x18
+ 963 00ab 9742     		.uleb128 0x2117
+ 964 00ad 19       		.uleb128 0x19
+ 965 00ae 00       		.byte	0
+ 966 00af 00       		.byte	0
+ 967 00b0 0B       		.uleb128 0xb
+ 968 00b1 34       		.uleb128 0x34
+ 969 00b2 00       		.byte	0
+ 970 00b3 03       		.uleb128 0x3
+ 971 00b4 0E       		.uleb128 0xe
+ 972 00b5 3A       		.uleb128 0x3a
+ 973 00b6 0B       		.uleb128 0xb
+ 974 00b7 3B       		.uleb128 0x3b
+ 975 00b8 0B       		.uleb128 0xb
+ 976 00b9 49       		.uleb128 0x49
+ 977 00ba 13       		.uleb128 0x13
+ 978 00bb 3F       		.uleb128 0x3f
+ 979 00bc 19       		.uleb128 0x19
+ 980 00bd 02       		.uleb128 0x2
+ 981 00be 18       		.uleb128 0x18
+ 982 00bf 00       		.byte	0
+ 983 00c0 00       		.byte	0
+ 984 00c1 00       		.byte	0
+ 985              		.section	.debug_aranges,"",%progbits
+ 986 0000 7C000000 		.4byte	0x7c
+ 987 0004 0200     		.2byte	0x2
+ 988 0006 00000000 		.4byte	.Ldebug_info0
+ 989 000a 04       		.byte	0x4
+ 990 000b 00       		.byte	0
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 34
+
+
+ 991 000c 0000     		.2byte	0
+ 992 000e 0000     		.2byte	0
+ 993 0010 00000000 		.4byte	.LFB0
+ 994 0014 24000000 		.4byte	.LFE0-.LFB0
+ 995 0018 00000000 		.4byte	.LFB1
+ 996 001c 34000000 		.4byte	.LFE1-.LFB1
+ 997 0020 00000000 		.4byte	.LFB2
+ 998 0024 0C000000 		.4byte	.LFE2-.LFB2
+ 999 0028 00000000 		.4byte	.LFB3
+ 1000 002c 0C000000 		.4byte	.LFE3-.LFB3
+ 1001 0030 00000000 		.4byte	.LFB4
+ 1002 0034 20000000 		.4byte	.LFE4-.LFB4
+ 1003 0038 00000000 		.4byte	.LFB5
+ 1004 003c 20000000 		.4byte	.LFE5-.LFB5
+ 1005 0040 00000000 		.4byte	.LFB6
+ 1006 0044 20000000 		.4byte	.LFE6-.LFB6
+ 1007 0048 00000000 		.4byte	.LFB7
+ 1008 004c 20000000 		.4byte	.LFE7-.LFB7
+ 1009 0050 00000000 		.4byte	.LFB8
+ 1010 0054 20000000 		.4byte	.LFE8-.LFB8
+ 1011 0058 00000000 		.4byte	.LFB9
+ 1012 005c 18000000 		.4byte	.LFE9-.LFB9
+ 1013 0060 00000000 		.4byte	.LFB10
+ 1014 0064 18000000 		.4byte	.LFE10-.LFB10
+ 1015 0068 00000000 		.4byte	.LFB11
+ 1016 006c 18000000 		.4byte	.LFE11-.LFB11
+ 1017 0070 00000000 		.4byte	.LFB12
+ 1018 0074 18000000 		.4byte	.LFE12-.LFB12
+ 1019 0078 00000000 		.4byte	0
+ 1020 007c 00000000 		.4byte	0
+ 1021              		.section	.debug_ranges,"",%progbits
+ 1022              	.Ldebug_ranges0:
+ 1023 0000 00000000 		.4byte	.LFB0
+ 1024 0004 24000000 		.4byte	.LFE0
+ 1025 0008 00000000 		.4byte	.LFB1
+ 1026 000c 34000000 		.4byte	.LFE1
+ 1027 0010 00000000 		.4byte	.LFB2
+ 1028 0014 0C000000 		.4byte	.LFE2
+ 1029 0018 00000000 		.4byte	.LFB3
+ 1030 001c 0C000000 		.4byte	.LFE3
+ 1031 0020 00000000 		.4byte	.LFB4
+ 1032 0024 20000000 		.4byte	.LFE4
+ 1033 0028 00000000 		.4byte	.LFB5
+ 1034 002c 20000000 		.4byte	.LFE5
+ 1035 0030 00000000 		.4byte	.LFB6
+ 1036 0034 20000000 		.4byte	.LFE6
+ 1037 0038 00000000 		.4byte	.LFB7
+ 1038 003c 20000000 		.4byte	.LFE7
+ 1039 0040 00000000 		.4byte	.LFB8
+ 1040 0044 20000000 		.4byte	.LFE8
+ 1041 0048 00000000 		.4byte	.LFB9
+ 1042 004c 18000000 		.4byte	.LFE9
+ 1043 0050 00000000 		.4byte	.LFB10
+ 1044 0054 18000000 		.4byte	.LFE10
+ 1045 0058 00000000 		.4byte	.LFB11
+ 1046 005c 18000000 		.4byte	.LFE11
+ 1047 0060 00000000 		.4byte	.LFB12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 35
+
+
+ 1048 0064 18000000 		.4byte	.LFE12
+ 1049 0068 00000000 		.4byte	0
+ 1050 006c 00000000 		.4byte	0
+ 1051              		.section	.debug_line,"",%progbits
+ 1052              	.Ldebug_line0:
+ 1053 0000 44010000 		.section	.debug_str,"MS",%progbits,1
+ 1053      02004700 
+ 1053      00000201 
+ 1053      FB0E0D00 
+ 1053      01010101 
+ 1054              	.LASF35:
+ 1055 0000 50574D5F 		.ascii	"PWM_MOTORS_initVar\000"
+ 1055      4D4F544F 
+ 1055      52535F69 
+ 1055      6E697456 
+ 1055      617200
+ 1056              	.LASF32:
+ 1057 0013 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1057      43313120 
+ 1057      352E342E 
+ 1057      31203230 
+ 1057      31363036 
+ 1058 0046 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1058      20726576 
+ 1058      6973696F 
+ 1058      6E203233 
+ 1058      37373135 
+ 1059 0079 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 1059      66756E63 
+ 1059      74696F6E 
+ 1059      2D736563 
+ 1059      74696F6E 
+ 1060              	.LASF26:
+ 1061 00a1 50574D5F 		.ascii	"PWM_MOTORS_WriteCompare2\000"
+ 1061      4D4F544F 
+ 1061      52535F57 
+ 1061      72697465 
+ 1061      436F6D70 
+ 1062              	.LASF23:
+ 1063 00ba 70657269 		.ascii	"period\000"
+ 1063      6F6400
+ 1064              	.LASF28:
+ 1065 00c1 50574D5F 		.ascii	"PWM_MOTORS_ReadCapture\000"
+ 1065      4D4F544F 
+ 1065      52535F52 
+ 1065      65616443 
+ 1065      61707475 
+ 1066              	.LASF3:
+ 1067 00d8 73686F72 		.ascii	"short unsigned int\000"
+ 1067      7420756E 
+ 1067      7369676E 
+ 1067      65642069 
+ 1067      6E7400
+ 1068              	.LASF9:
+ 1069 00eb 666C6F61 		.ascii	"float\000"
+ 1069      7400
+ 1070              	.LASF22:
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 36
+
+
+ 1071 00f1 636F756E 		.ascii	"counter\000"
+ 1071      74657200 
+ 1072              	.LASF17:
+ 1073 00f9 50574D5F 		.ascii	"PWM_MOTORS_Init\000"
+ 1073      4D4F544F 
+ 1073      52535F49 
+ 1073      6E697400 
+ 1074              	.LASF13:
+ 1075 0109 72656738 		.ascii	"reg8\000"
+ 1075      00
+ 1076              	.LASF5:
+ 1077 010e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1077      20756E73 
+ 1077      69676E65 
+ 1077      6420696E 
+ 1077      7400
+ 1078              	.LASF12:
+ 1079 0120 75696E74 		.ascii	"uint8\000"
+ 1079      3800
+ 1080              	.LASF31:
+ 1081 0126 50574D5F 		.ascii	"PWM_MOTORS_ReadPeriod\000"
+ 1081      4D4F544F 
+ 1081      52535F52 
+ 1081      65616450 
+ 1081      6572696F 
+ 1082              	.LASF27:
+ 1083 013c 50574D5F 		.ascii	"PWM_MOTORS_ReadCounter\000"
+ 1083      4D4F544F 
+ 1083      52535F52 
+ 1083      65616443 
+ 1083      6F756E74 
+ 1084              	.LASF34:
+ 1085 0153 433A5C55 		.ascii	"C:\\Users\\mgnocco\\OneDrive - Fondazione Istituto "
+ 1085      73657273 
+ 1085      5C6D676E 
+ 1085      6F63636F 
+ 1085      5C4F6E65 
+ 1086 0183 4974616C 		.ascii	"Italiano Tecnologia\\Firmware\\Psoc5\\Toast\\Toast."
+ 1086      69616E6F 
+ 1086      20546563 
+ 1086      6E6F6C6F 
+ 1086      6769615C 
+ 1087 01b2 63796473 		.ascii	"cydsn\000"
+ 1087      6E00
+ 1088              	.LASF10:
+ 1089 01b8 646F7562 		.ascii	"double\000"
+ 1089      6C6500
+ 1090              	.LASF1:
+ 1091 01bf 756E7369 		.ascii	"unsigned char\000"
+ 1091      676E6564 
+ 1091      20636861 
+ 1091      7200
+ 1092              	.LASF8:
+ 1093 01cd 756E7369 		.ascii	"unsigned int\000"
+ 1093      676E6564 
+ 1093      20696E74 
+ 1093      00
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 37
+
+
+ 1094              	.LASF18:
+ 1095 01da 50574D5F 		.ascii	"PWM_MOTORS_Enable\000"
+ 1095      4D4F544F 
+ 1095      52535F45 
+ 1095      6E61626C 
+ 1095      6500
+ 1096              	.LASF7:
+ 1097 01ec 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1097      206C6F6E 
+ 1097      6720756E 
+ 1097      7369676E 
+ 1097      65642069 
+ 1098              	.LASF21:
+ 1099 0203 50574D5F 		.ascii	"PWM_MOTORS_WritePeriod\000"
+ 1099      4D4F544F 
+ 1099      52535F57 
+ 1099      72697465 
+ 1099      50657269 
+ 1100              	.LASF19:
+ 1101 021a 50574D5F 		.ascii	"PWM_MOTORS_Stop\000"
+ 1101      4D4F544F 
+ 1101      52535F53 
+ 1101      746F7000 
+ 1102              	.LASF15:
+ 1103 022a 73697A65 		.ascii	"sizetype\000"
+ 1103      74797065 
+ 1103      00
+ 1104              	.LASF6:
+ 1105 0233 6C6F6E67 		.ascii	"long long int\000"
+ 1105      206C6F6E 
+ 1105      6720696E 
+ 1105      7400
+ 1106              	.LASF11:
+ 1107 0241 63686172 		.ascii	"char\000"
+ 1107      00
+ 1108              	.LASF33:
+ 1109 0246 47656E65 		.ascii	"Generated_Source\\PSoC5\\PWM_MOTORS.c\000"
+ 1109      72617465 
+ 1109      645F536F 
+ 1109      75726365 
+ 1109      5C50536F 
+ 1110              	.LASF24:
+ 1111 026a 50574D5F 		.ascii	"PWM_MOTORS_WriteCompare1\000"
+ 1111      4D4F544F 
+ 1111      52535F57 
+ 1111      72697465 
+ 1111      436F6D70 
+ 1112              	.LASF20:
+ 1113 0283 50574D5F 		.ascii	"PWM_MOTORS_WriteCounter\000"
+ 1113      4D4F544F 
+ 1113      52535F57 
+ 1113      72697465 
+ 1113      436F756E 
+ 1114              	.LASF2:
+ 1115 029b 73686F72 		.ascii	"short int\000"
+ 1115      7420696E 
+ 1115      7400
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccv4e6Pc.s 			page 38
+
+
+ 1116              	.LASF29:
+ 1117 02a5 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare1\000"
+ 1117      4D4F544F 
+ 1117      52535F52 
+ 1117      65616443 
+ 1117      6F6D7061 
+ 1118              	.LASF30:
+ 1119 02bd 50574D5F 		.ascii	"PWM_MOTORS_ReadCompare2\000"
+ 1119      4D4F544F 
+ 1119      52535F52 
+ 1119      65616443 
+ 1119      6F6D7061 
+ 1120              	.LASF4:
+ 1121 02d5 6C6F6E67 		.ascii	"long int\000"
+ 1121      20696E74 
+ 1121      00
+ 1122              	.LASF14:
+ 1123 02de 6C6F6E67 		.ascii	"long double\000"
+ 1123      20646F75 
+ 1123      626C6500 
+ 1124              	.LASF0:
+ 1125 02ea 7369676E 		.ascii	"signed char\000"
+ 1125      65642063 
+ 1125      68617200 
+ 1126              	.LASF25:
+ 1127 02f6 636F6D70 		.ascii	"compare\000"
+ 1127      61726500 
+ 1128              	.LASF16:
+ 1129 02fe 50574D5F 		.ascii	"PWM_MOTORS_Start\000"
+ 1129      4D4F544F 
+ 1129      52535F53 
+ 1129      74617274 
+ 1129      00
+ 1130              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

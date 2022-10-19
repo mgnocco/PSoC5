@@ -1,0 +1,6 @@
+C:\Users\mgnocco\OneDrive - Fondazione Istituto Italiano Tecnologia\Firmware\Psoc5\IMU\Sample_saved_on_PC_array\FW_Accelerometer_acquisition_time\Generic.cydsn\Generic.cyprj|11af9e6d-e54a-4b32-977d-faffc37b6dc8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|3e878f83-9d34-4146-9cb4-375237f96b9a
+C:\Users\mgnocco\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|f764ffe4-871f-4c0b-b1e3-27c535cb62c1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c60cffbb-47aa-471f-a1d5-607f8aaeea9b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7b4caf2e-5070-4af5-a1df-7cef20b8af5e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|83e8a989-64d7-4e67-bd63-939122e085b2
