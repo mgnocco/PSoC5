@@ -118,38 +118,6 @@
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MOTOR_ON_OFF_1.h" value="HEADER;;;;;MOTOR_ON_OFF_1" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MOTOR_ON_OFF_1.c" value="SOURCE_C;CortexM3;;;;MOTOR_ON_OFF_1" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MOTOR_ON_OFF_1_PM.c" value="SOURCE_C;CortexM3;;;;MOTOR_ON_OFF_1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER0_aliases.h" value="HEADER;;;;;CS_ENCODER0" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER0.c" value="SOURCE_C;CortexM3;;;;CS_ENCODER0" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER0.h" value="HEADER;;;;;CS_ENCODER0" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\Chip_Select_ENCODER_LINE.h" value="HEADER;;;;;Chip_Select_ENCODER_LINE" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\Chip_Select_ENCODER_LINE.c" value="SOURCE_C;CortexM3;;;;Chip_Select_ENCODER_LINE" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\Chip_Select_ENCODER_LINE_PM.c" value="SOURCE_C;CortexM3;;;;Chip_Select_ENCODER_LINE" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER1_aliases.h" value="HEADER;;;;;CS_ENCODER1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER1.c" value="SOURCE_C;CortexM3;;;;CS_ENCODER1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CS_ENCODER1.h" value="HEADER;;;;;CS_ENCODER1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\RESET_COUNTERS.h" value="HEADER;;;;;RESET_COUNTERS" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\RESET_COUNTERS.c" value="SOURCE_C;CortexM3;;;;RESET_COUNTERS" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\RESET_COUNTERS_PM.c" value="SOURCE_C;CortexM3;;;;RESET_COUNTERS" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_1.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_1.h" value="HEADER;;;;;SHIFTREG_ENC_1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_1_PM.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_1" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MISO_ENCODER_aliases.h" value="HEADER;;;;;MISO_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MISO_ENCODER.c" value="SOURCE_C;CortexM3;;;;MISO_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MISO_ENCODER.h" value="HEADER;;;;;MISO_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CLK_ENCODER_aliases.h" value="HEADER;;;;;CLK_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CLK_ENCODER.c" value="SOURCE_C;CortexM3;;;;CLK_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CLK_ENCODER.h" value="HEADER;;;;;CLK_ENCODER" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_2.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_2" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_2.h" value="HEADER;;;;;SHIFTREG_ENC_2" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_2_PM.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_2" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_3.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_3" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_3.h" value="HEADER;;;;;SHIFTREG_ENC_3" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SHIFTREG_ENC_3_PM.c" value="SOURCE_C;CortexM3;;;;SHIFTREG_ENC_3" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CLOCK_ENCODERS.c" value="SOURCE_C;CortexM3;;;;CLOCK_ENCODERS" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\CLOCK_ENCODERS.h" value="HEADER;;;;;CLOCK_ENCODERS" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\COUNTER_ENC.c" value="SOURCE_C;CortexM3;;;;COUNTER_ENC" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\COUNTER_ENC.h" value="HEADER;;;;;COUNTER_ENC" />
-  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\COUNTER_ENC_PM.c" value="SOURCE_C;CortexM3;;;;COUNTER_ENC" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG.h" value="HEADER;;;;;MY_TIMER_REG" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG.c" value="SOURCE_C;CortexM3;;;;MY_TIMER_REG" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG_PM.c" value="SOURCE_C;CortexM3;;;;MY_TIMER_REG" />

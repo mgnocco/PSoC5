@@ -142,23 +142,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\counter_cyc_clk.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ISR_CYCLES.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\ISR_CYCLES.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\COUNTER_ENC.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\COUNTER_ENC.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\COUNTER_ENC_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CLOCK_ENCODERS.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CLOCK_ENCODERS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_3.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_3_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_2.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_2_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_1.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\SHIFTREG_ENC_1_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RESET_COUNTERS.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RESET_COUNTERS.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RESET_COUNTERS_PM.c</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC5\cm3gcc.ld</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC5\Cm3RealView.scat</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Cm3Start.c</File>
@@ -196,15 +179,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cybootloader.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Bootloadable.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Bootloadable.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER0_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER0.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER0.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MISO_ENCODER_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MISO_ENCODER.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MISO_ENCODER.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CLK_ENCODER_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CLK_ENCODER.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CLK_ENCODER.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOTOR_ON_OFF_1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOTOR_ON_OFF_1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MOTOR_ON_OFF_1_PM.c</File>
@@ -220,12 +194,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_RTC_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_RTC.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_RTC.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Chip_Select_ENCODER_LINE.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Chip_Select_ENCODER_LINE.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Chip_Select_ENCODER_LINE_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER1_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER1.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\CS_ENCODER1.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MY_TIMER_REG.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MY_TIMER_REG.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\MY_TIMER_REG_PM.c</File>

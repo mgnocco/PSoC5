@@ -1,5 +1,5 @@
 # Toast
-# 2022-10-20 12:09:10Z
+# 2022-10-20 13:54:55Z
 
 set_io "TOAST_1B(0)" iocell 3 2
 set_io "FTDI_ENABLE(0)" iocell 1 2
@@ -20,7 +20,3 @@ set_io "LED_RED(0)" iocell 12 0
 set_io "LED_GREEN(0)" iocell 12 1
 set_io "TOAST_2A(0)" iocell 3 4
 set_io "TOAST_2B(0)" iocell 3 5
-set_io "CS_ENCODER0(0)" iocell 1 5
-set_io "CS_ENCODER1(0)" iocell 1 1
-set_io "MISO_ENCODER(0)" iocell 1 6
-set_io "CLK_ENCODER(0)" iocell 1 7

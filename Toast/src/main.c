@@ -114,10 +114,10 @@ int main()
     enable_motor(1, 0x01);
 
     // Init AS5045 devices  
-    COUNTER_ENC_Start();
-    SHIFTREG_ENC_1_Start();
-    SHIFTREG_ENC_2_Start();
-    SHIFTREG_ENC_3_Start();
+  //  COUNTER_ENC_Start();
+    //SHIFTREG_ENC_1_Start();
+    //SHIFTREG_ENC_2_Start();
+    //SHIFTREG_ENC_3_Start();
               
     // TIMER
     MY_TIMER_Start();           

@@ -74,40 +74,13 @@ void EncoderReset() {
 *********************************************************************************/
 void InitEncoderGeneral()
 {
-    uint8 k_encoder_line=0;
-
-    for (k_encoder_line=0; k_encoder_line<N_ENCODER_LINE_MAX; k_encoder_line++) {
-    
-        // SSI ENCODERS
-        RESET_COUNTERS_Write(0x01);     // Stop COUNTER_ENC
-        Chip_Select_ENCODER_LINE_Write(k_encoder_line);
-        RESET_COUNTERS_Write(0x00);     // Activate encoder counters. Must be made before initializing measurements to zero.
-        CyDelay(5);                // Wait for encoders to have a valid value.
-        
-    	InitEncoderLine(k_encoder_line);
-    	CyDelay(5);
-    }
-    CyDelay(100);
 }
 
 /*******************************************************************************
 * Function Name: Encoder Initialization
 *********************************************************************************/
 void InitEncoderLine(uint8 n){
-    
-    uint8 i = 0;
-    
-    ReadEncoderLine(N_ENCODERS_PER_LINE_MAX, n);
-    for (i = 0; i < N_ENCODERS_PER_LINE_MAX; i++) {
-
-        if (Encoder_Value[n][i] != 0xFFF && Encoder_Check[n][i] > 15){ // Encoder is present and ready
-            N_Encoder_Line_Connected[n]++;
-        }
-        else {
-            break;
-        }
-    }
-}
+   }
 
 /*******************************************************************************
 * Function Name: Read Encoder
