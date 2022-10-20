@@ -1,6 +1,6 @@
-C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cyprj|8e8ceea5-3221-4489-b328-a08727c946d9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|22dd40f1-fb0b-45fe-b536-5cb87c19f361
-C:\Users\mgnocco\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|cb32a395-4d21-404d-a7ba-3004e5df9ee0
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|e9c61463-e638-405b-8788-580d7aec3b66
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|58855971-005d-47cd-a020-eab71f3b1bb0
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|256b3bf8-b900-4305-b6a2-9ef41078d33e
+C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cyprj|f33ed31c-6b58-4e1d-94d6-3d0feb57cc86
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a121b334-ab00-47cd-a677-9c75773aa1e3
+C:\Users\mgnocco\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|7144ac18-fc7a-485b-b593-d285cdd65efb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ca45a1b0-0da7-49ad-a2ad-2c8f0e629dfe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|dc4d8878-23db-430b-b228-1dcbe09be557
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|20b3ed9f-fc41-4ea3-afa9-393d70b4645a
