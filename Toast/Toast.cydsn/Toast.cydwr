@@ -610,7 +610,7 @@
     <Group key="Pin">
       <Data key="1ddf9c54-2e89-40fe-98b3-4a46d4fffe2a" value="EMG_1" />
       <Data key="4b905bda-c4a7-436e-a812-89b9b95dd04f" value="CS_SUPPORT_PIN" />
-      <Data key="4c15b41e-e284-4978-99e7-5aaee19bd0ce" value="USB_VDD" />
+      <Data key="4c15b41e-e284-4978-99e7-5aaee19bd0ce" value="RS485_CTS" />
       <Data key="05a9c8de-3ba2-4909-8250-95fdc61c0bf4" value="VOLTAGE_SENSE_1" />
       <Data key="6a68e3e4-9acf-4d48-b4e4-3e562e4e1d35" value="CS_ENCODER_1" />
       <Data key="7bc8296e-0925-4c45-bc42-d5d2c24c1efd" value="CURRENT_SENSE_1" />
@@ -627,18 +627,20 @@
       <Data key="041a7470-dfe4-408a-bfbd-d968909b561a" value="EMG_3" />
       <Data key="52f31aa9-2f0a-497d-9a1f-1424095e13e6" value="FTDI_ENABLE" />
       <Data key="84eeaa50-85f8-4580-b05a-35b9ac5ffe2b" value="CS3" />
+      <Data key="93fa5b77-1b2c-4737-91a6-25a7c7ae1232" value="TOAST_4A" />
       <Data key="98b272a4-6f1c-4a6f-85ed-bd27f1eacf51/6df85302-e45f-45fb-97de-4bdf3128e07b" value="emFile_SPI0_CS" />
       <Data key="98b272a4-6f1c-4a6f-85ed-bd27f1eacf51/1425177d-0d0e-4468-8bcc-e638e5509a9b" value="emFile_miso0" />
       <Data key="98b272a4-6f1c-4a6f-85ed-bd27f1eacf51/ae249072-87dc-41aa-9405-888517aefa28" value="emFile_sclk0" />
       <Data key="98b272a4-6f1c-4a6f-85ed-bd27f1eacf51/ed092b9b-d398-4703-be89-cebf998501f6" value="emFile_mosi0" />
       <Data key="98fdad8b-eec1-45d1-8a81-f61d84aa5faa" value="ENC_CS" />
       <Data key="294a8542-13bb-492d-93ce-945bd1f598a8" value="RS_485_EN" />
-      <Data key="653fafc2-0769-4d73-969e-7b60a05feecf" value="MOTOR_1B" />
+      <Data key="653fafc2-0769-4d73-969e-7b60a05feecf" value="TOAST_1B" />
       <Data key="1465fead-f679-4a57-8fc7-887b419aab9e" value="CS_ENCODER0" />
-      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/6df85302-e45f-45fb-97de-4bdf3128e07b" value="emFile_SPI0_CS" />
-      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/1425177d-0d0e-4468-8bcc-e638e5509a9b" value="emFile_miso0" />
-      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/ae249072-87dc-41aa-9405-888517aefa28" value="emFile_sclk0" />
-      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/ed092b9b-d398-4703-be89-cebf998501f6" value="emFile_mosi0" />
+      <Data key="2223a192-7c6e-4dfb-af0d-468347c37a09" value="TOAST_4B" />
+      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/6df85302-e45f-45fb-97de-4bdf3128e07b" value="SD_SPI0_CS" />
+      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/1425177d-0d0e-4468-8bcc-e638e5509a9b" value="SD_miso0" />
+      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/ae249072-87dc-41aa-9405-888517aefa28" value="SD_sclk0" />
+      <Data key="3537ae03-95e4-4c84-8be5-5c34ee791d4f/ed092b9b-d398-4703-be89-cebf998501f6" value="SD_mosi0" />
       <Data key="6463c433-b620-4259-b362-c1b91cb4cb79" value="EMG_4" />
       <Data key="9104f111-873f-4d4f-9435-55b9f7e766e1" value="MOSI_RTC" />
       <Data key="575430a4-8a3f-4c8d-b700-956ac3121f37" value="VOLTAGE_SENSE_2" />
@@ -657,13 +659,15 @@
       <Data key="cf40d4c6-577e-43fd-aaba-a74445905ab0" value="CURRENT_SENSE_2" />
       <Data key="d2b73a47-2288-411e-8c5b-d740ba0840ec" value="EMG_A" />
       <Data key="d55049de-f559-4856-91bd-6913f5ef939b" value="RS485_TX" />
+      <Data key="d356776a-e47b-4284-a111-a8ab51eca4ef" value="TOAST_3B" />
+      <Data key="e1c0ae15-d50c-4746-9212-8f3879fe2c4a" value="TOAST_3A" />
       <Data key="e7f51447-5016-4fc1-8c75-593a0f7f6464" value="SCLK" />
-      <Data key="e25c4c42-92cc-4661-a040-d5f89c990211" value="MOTOR_2A" />
+      <Data key="e25c4c42-92cc-4661-a040-d5f89c990211" value="TOAST_2A" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="MOSI" />
       <Data key="ea7993ca-43f7-4882-934e-1b33504cc372" value="EMG_2" />
-      <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="MOTOR_1A" />
+      <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="TOAST_1A" />
       <Data key="f79e8a2a-651d-480e-b8cb-b320bd7aaa0c" value="CS_on_board_IMU" />
-      <Data key="f304e074-cdf5-4088-ab4b-c9b40bedc753" value="MOTOR_2B" />
+      <Data key="f304e074-cdf5-4088-ab4b-c9b40bedc753" value="TOAST_2B" />
       <Data key="f6213fc3-2dc4-4fc3-a7f7-64d232c045b5" value="CS_ENCODER1" />
       <Data key="f1224875-b991-4103-8489-a48d67847102" value="MOTOR_EN_2" />
       <Data key="fa317fe3-42e6-4c88-87df-5d5f0f9ec96d" value="CS_RTC" />
@@ -3981,6 +3985,16 @@
     <Group key="d55049de-f559-4856-91bd-6913f5ef939b">
       <Group key="0">
         <Data key="Port Format" value="12,7" />
+      </Group>
+    </Group>
+    <Group key="d356776a-e47b-4284-a111-a8ab51eca4ef">
+      <Group key="0">
+        <Data key="Port Format" value="2,7" />
+      </Group>
+    </Group>
+    <Group key="e1c0ae15-d50c-4746-9212-8f3879fe2c4a">
+      <Group key="0">
+        <Data key="Port Format" value="2,6" />
       </Group>
     </Group>
     <Group key="e7f51447-5016-4fc1-8c75-593a0f7f6464">

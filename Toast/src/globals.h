@@ -61,7 +61,7 @@
 //                                                                        DEVICE
 //==============================================================================
 
-#define NUM_OF_MOTORS           2       /*!< Number of motors.*/
+#define NUM_OF_MOTORS           3       /*!< Number of motors.*/
 #define NUM_OF_SENSORS          3       /*!< Number of encoders.*/
 #define NUM_OF_INPUT_EMGS       2       /*!< Number of emg channels.*/
 #define NUM_OF_ADDITIONAL_EMGS  6       /*!< Number of additional emg channels.*/

@@ -121,6 +121,21 @@
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG.h" value="HEADER;;;;;MY_TIMER_REG" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG.c" value="SOURCE_C;CortexM3;;;;MY_TIMER_REG" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\MY_TIMER_REG_PM.c" value="SOURCE_C;CortexM3;;;;MY_TIMER_REG" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3A_aliases.h" value="HEADER;;;;;TOAST_3A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3A.c" value="SOURCE_C;CortexM3;;;;TOAST_3A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3A.h" value="HEADER;;;;;TOAST_3A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\PWM_MOTORS_3.c" value="SOURCE_C;CortexM3;;;;PWM_MOTORS_3" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\PWM_MOTORS_3.h" value="HEADER;;;;;PWM_MOTORS_3" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\PWM_MOTORS_3_PM.c" value="SOURCE_C;CortexM3;;;;PWM_MOTORS_3" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3B_aliases.h" value="HEADER;;;;;TOAST_3B" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3B.c" value="SOURCE_C;CortexM3;;;;TOAST_3B" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_3B.h" value="HEADER;;;;;TOAST_3B" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4A_aliases.h" value="HEADER;;;;;TOAST_4A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4A.c" value="SOURCE_C;CortexM3;;;;TOAST_4A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4A.h" value="HEADER;;;;;TOAST_4A" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4B_aliases.h" value="HEADER;;;;;TOAST_4B" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4B.c" value="SOURCE_C;CortexM3;;;;TOAST_4B" />
+  <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\TOAST_4B.h" value="HEADER;;;;;TOAST_4B" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SD_SPI0.c" value="SOURCE_C;CortexM3;;;;SD_SPI0" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SD_SPI0.h" value="HEADER;;;;;SD_SPI0" />
   <file name="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\codegentemp\SD_SPI0_PM.c" value="SOURCE_C;CortexM3;;;;SD_SPI0" />

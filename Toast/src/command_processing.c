@@ -3176,13 +3176,16 @@ void cmd_get_joystick() {
 void cmd_set_inputs(){
     
     // Store position setted in right variables
-    int16 aux_int16[2];
+    int16 aux_int16[3];
     static int16 last_aux_int16[1];
     
     aux_int16[0] = (int16)(g_rx.buffer[1]<<8 | g_rx.buffer[2]);
     aux_int16[1] = (int16)(g_rx.buffer[3]<<8 | g_rx.buffer[4]);
+    aux_int16[2] = (int16)(g_rx.buffer[5]<<8 | g_rx.buffer[6]);
+    
     PWM_MOTORS_WriteCompare1(aux_int16[0]);
     PWM_MOTORS_WriteCompare2(aux_int16[1]);
+    PWM_MOTORS_3_WriteCompare1(aux_int16[2]);
     // Check if last command received was the same as this 
     //(Note: last command not last motor reference in g_ref)
          // Update last command
@@ -3190,7 +3193,8 @@ void cmd_set_inputs(){
     
     // Update g_refNew in case a new command has been received
       g_refNew[0].pwm = aux_int16[0];
-      g_refNew[1].pwm = aux_int16[1];    
+      g_refNew[1].pwm = aux_int16[1];   
+      g_refNew[2].pwm = aux_int16[2]; 
             }  
                
             // Check if the reference is nor higher or lower than the position limits

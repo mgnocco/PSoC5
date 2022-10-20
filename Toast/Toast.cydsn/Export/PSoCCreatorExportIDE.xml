@@ -232,6 +232,21 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_2B_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_2B.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_2B.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3A_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3A.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3A.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_MOTORS_3.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_MOTORS_3.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\PWM_MOTORS_3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3B_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3B.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_3B.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4A_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4A.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4A.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4B_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4B.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\TOAST_4B.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Export\ARM_GCC_Generic">

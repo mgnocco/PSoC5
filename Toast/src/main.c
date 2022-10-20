@@ -108,10 +108,11 @@ int main()
     
     // PWM
     PWM_MOTORS_Start();
-    PWM_MOTORS_WriteCompare1(50);
-
+    PWM_MOTORS_3_Start();
+    PWM_MOTORS_3_WriteCompare1(50);
+    //PWM_MOTORS_WriteCompare1(50);
     enable_motor(0, 0x01);
-    enable_motor(1, 0x01);
+    
 
     // Init AS5045 devices  
   //  COUNTER_ENC_Start();
