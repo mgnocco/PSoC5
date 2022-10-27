@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Toast</v>
 <v>Toast\Toast</v>
@@ -93,7 +93,6 @@
 <v>Toast\Toast\Source Files\SD_RTC_functions.c</v>
 <v>Toast\Toast\Source Files\utils.c</v>
 <v>Toast\Toast\Generated_Source</v>
-<v>Toast\Toast\Generated_Source\PSoC5</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -256,7 +255,6 @@
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\CyLib.lst</v>
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\cymetadata.lst</v>
 <v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\cyPm.lst</v>
-<v>Toast\Toast\CortexM3\ARM_GCC_541\Release\Listing Files\CySpc.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

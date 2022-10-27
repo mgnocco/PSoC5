@@ -943,7 +943,7 @@ void commSetInputs(comm_settings *comm_settings_t, int id, short int inputs[]) {
     data_out[0] = ':';
     data_out[1] = ':';
     data_out[2] = (unsigned char) id;
-    data_out[3] = 6;
+    data_out[3] = 8;
 
     data_out[4] = CMD_SET_INPUTS;                // command
     data_out[5] = ((char *) &inputs[0])[1];
@@ -952,16 +952,16 @@ void commSetInputs(comm_settings *comm_settings_t, int id, short int inputs[]) {
     data_out[8] = ((char *) &inputs[1])[0];
      data_out[9] = ((char *) &inputs[2])[1];
     data_out[10] = ((char *) &inputs[2])[0];
-    data_out[11] = checksum(data_out + 4, 5);   // checksum
+    data_out[11] = checksum(data_out + 4, 7);   // checksum
 
 #if (defined(_WIN32) || defined(_WIN64))
-    WriteFile(comm_settings_t->file_handle, data_out, 10, &package_size_out, NULL);
+    WriteFile(comm_settings_t->file_handle, data_out, 12, &package_size_out, NULL);
 #else
     ioctl(comm_settings_t->file_handle, FIONREAD, &n_bytes);
     if(n_bytes)
         read(comm_settings_t->file_handle, package_in, n_bytes);
 
-    write(comm_settings_t->file_handle, data_out, 10);
+    write(comm_settings_t->file_handle, data_out, 12);
 #endif
 
 }

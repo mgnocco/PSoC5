@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
   55              		.global	ISR_RS485_RX_ExInterrupt
   56              		.thumb
   57              		.thumb_func
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 2
 
 
   58              		.type	ISR_RS485_RX_ExInterrupt, %function
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
   51:..\src/interruptions.c **** //==============================================================================
   52:..\src/interruptions.c **** // Processing RS-485 data frame:
   53:..\src/interruptions.c **** //
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 3
 
 
   54:..\src/interruptions.c **** // - 0:     Waits for beginning characters
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
   71              		.cfi_def_cfa_register 7
   99:..\src/interruptions.c **** 
  100:..\src/interruptions.c ****     // Set RS485 flag
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 4
 
 
  101:..\src/interruptions.c ****     
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  113 0008 1A70     		strb	r2, [r3]
  114:..\src/interruptions.c ****     
  115:..\src/interruptions.c ****     CYCLES_TIMER_STATUS;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 5
 
 
  114              		.loc 1 115 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  149              		.cfi_offset 14, -4
  150 0002 82B0     		sub	sp, sp, #8
  151              		.cfi_def_cfa_offset 16
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 6
 
 
  152 0004 00AF     		add	r7, sp, #0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  180 0038 85010000 		.word	.L14+1
  181              		.p2align 1
  182              	.L9:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 7
 
 
  161:..\src/interruptions.c ****             //-----     wait for frame start     -------------------------------
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  224              	.L15:
  174:..\src/interruptions.c ****                 }else
  175:..\src/interruptions.c ****                     if ((rx_queue[0] == 63) &&      //ASCII - ?
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 8
 
 
  225              		.loc 1 175 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  260              		.loc 1 192 0 is_stmt 1
  261 00b4 0023     		movs	r3, #0
  262 00b6 FB71     		strb	r3, [r7, #7]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 9
 
 
  263 00b8 01E0     		b	.L19
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  301 00ea 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  302 00ec 802B     		cmp	r3, #128
  303 00ee 06D9     		bls	.L22
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 10
 
 
  209:..\src/interruptions.c ****                     data_packet_length = 0;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  225:..\src/interruptions.c ****                 data_packet_index++;
  342              		.loc 1 225 0
  343 0126 304B     		ldr	r3, .L31+16
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 11
 
 
  344 0128 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  384              		.loc 1 239 0
  385 0170 1C4B     		ldr	r3, .L31+12
  386 0172 0022     		movs	r2, #0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 12
 
 
  387 0174 1A70     		strb	r2, [r3]
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  427 01b4 1A70     		strb	r2, [r3]
  254:..\src/interruptions.c ****                     package_count++;
  428              		.loc 1 254 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 13
 
 
  429 01b6 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  261:..\src/interruptions.c **** //                                                            FUNCTION SCHEDULER
  262:..\src/interruptions.c **** //==============================================================================
  263:..\src/interruptions.c **** // Call all the function with the right frequency
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 14
 
 
  264:..\src/interruptions.c **** //==============================================================================
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  513 0030 00000000 		.word	interrupt_flag
  514              		.cfi_endproc
  515              	.LFE67:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 15
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 15
 
 
  516              		.size	function_scheduler, .-function_scheduler
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  293:..\src/interruptions.c ****     
  294:..\src/interruptions.c **** 
  295:..\src/interruptions.c ****     // Static Variables
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 16
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 16
 
 
  296:..\src/interruptions.c ****     static int32 prev_pwm;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  580              		.loc 1 326 0
  581 0056 6FF06303 		mvn	r3, #99
  582 005a FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 17
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 17
 
 
  327:..\src/interruptions.c ****             else {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  616              		.loc 1 345 0
  617 008e 1C4B     		ldr	r3, .L54+8
  618 0090 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 18
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 18
 
 
  619 0092 FA68     		ldr	r2, [r7, #12]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  662              		.loc 1 356 0 discriminator 2
  663 00d8 4FF0FF32 		mov	r2, #-1
  664              	.L52:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 19
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 19
 
 
  665              		.loc 1 356 0 discriminator 4
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  703              		.cfi_startproc
  704              		@ args = 0, pretend = 0, frame = 8
  705              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 20
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 20
 
 
  706              		@ link register save eliminated.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  751              		.loc 1 381 0
  752 0004 00BF     		nop
  753 0006 BD46     		mov	sp, r7
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 21
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 21
 
 
  754              		.cfi_def_cfa_register 13
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  799 0022 002B     		cmp	r3, #0
  800 0024 5CD0     		beq	.L60
  801              	.LBB3:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 22
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 22
 
 
  391:..\src/interruptions.c ****             int32 curr = g_meas[g_mem.motor[i].encoder_line].curr;
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  846 007a 32F81320 		ldrh	r2, [r2, r3, lsl #1]
  847 007e 013A     		subs	r2, r2, #1
  848 0080 91B2     		uxth	r1, r2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 23
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 23
 
 
  849 0082 204A     		ldr	r2, .L66+12
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  891 00dc 22F81310 		strh	r1, [r2, r3, lsl #1]	@ movhi
  892              	.L60:
  893              	.LBE3:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 24
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 24
 
 
  389:..\src/interruptions.c ****         if (c_mem.motor[i].current_limit != 0) {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  937              		@ frame_needed = 1, uses_anonymous_args = 0
  938              		@ link register save eliminated.
  939 0000 80B4     		push	{r7}
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 25
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 25
 
 
  940              		.cfi_def_cfa_offset 4
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  975 003c 17DA     		bge	.L71
  430:..\src/interruptions.c ****             dev_pwm_sat[mot_idx] = PWM_MAX_VALUE_ESC;
  976              		.loc 1 430 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 26
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 26
 
 
  977 003e FA79     		ldrb	r2, [r7, #7]	@ zero_extendqisi2
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1027              		@ sp needed
  1028 0094 80BC     		pop	{r7}
  1029              		.cfi_restore 7
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 27
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 27
 
 
  1030              		.cfi_def_cfa_offset 0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1067              		.loc 1 456 0
  1068 0006 0023     		movs	r3, #0
  1069 0008 FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 28
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 28
 
 
  1070 000a 0023     		movs	r3, #0
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1113 0068 012B     		cmp	r3, #1
  1114 006a 0CD0     		beq	.L83
  1115              	.L82:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 29
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 29
 
 
  1116              		.loc 1 467 0 discriminator 3
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1166              	.L87:
  472:..\src/interruptions.c ****                 }
  473:..\src/interruptions.c ****                 pos_cycle_status = STATE_ACTIVE;
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 30
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 30
 
 
  1167              		.loc 1 473 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1215              		.loc 1 479 0 discriminator 2
  1216 0116 694B     		ldr	r3, .L155+16
  1217 0118 1A68     		ldr	r2, [r3]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 31
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 31
 
 
  1218 011a 694B     		ldr	r3, .L155+20
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1263 015c D31A     		subs	r3, r2, r3
  1264              	.L95:
  1265              		.loc 1 488 0 discriminator 4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 32
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 32
 
 
  1266 015e BB60     		str	r3, [r7, #8]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1312 01c0 7B70     		strb	r3, [r7, #1]
  497:..\src/interruptions.c ****                 bin_2 = (bin_st<bin_max)?bin_max:bin_st;    
  1313              		.loc 1 497 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 33
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 33
 
 
  1314 01c2 FA78     		ldrb	r2, [r7, #3]	@ zero_extendqisi2
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1358 020c 1BB2     		sxth	r3, r3
  1359 020e 7B60     		str	r3, [r7, #4]
  505:..\src/interruptions.c ****                 if (g_mem.motor[0].not_revers_motor_flag == TRUE)
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 34
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 34
 
 
  1360              		.loc 1 505 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1405 0264 05DA     		bge	.L104
  515:..\src/interruptions.c ****                     g_mem.cnt.current_hist[3] = g_mem.cnt.current_hist[3] + 1; 
  1406              		.loc 1 515 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 35
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 35
 
 
  1407 0266 114B     		ldr	r3, .L155
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1450              		.align	2
  1451              	.L155:
  1452 02ac 00000000 		.word	g_mem
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 36
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 36
 
 
  1453 02b0 00000000 		.word	g_meas
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1499 0318 16DA     		bge	.L148
  533:..\src/interruptions.c ****                     emg_cycle_status[i] = COUNTER_INC;
  1500              		.loc 1 533 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 37
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 37
 
 
  1501 031a FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1544 0358 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  1545 035a 002B     		cmp	r3, #0
  1546 035c 03D1     		bne	.L112
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 38
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 38
 
 
  524:..\src/interruptions.c ****         switch (emg_cycle_status[i]){
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1588              		.loc 1 551 0
  1589 03a8 34E0     		b	.L149
  1590              	.L116:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 39
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 39
 
 
  552:..\src/interruptions.c ****             case STATE_ACTIVE:
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1632 03f2 574A     		ldr	r2, .L157+8
  1633 03f4 1A33     		adds	r3, r3, #26
  1634 03f6 9B00     		lsls	r3, r3, #2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 40
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 40
 
 
  1635 03f8 1344     		add	r3, r3, r2
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  569:..\src/interruptions.c ****     // State machine - Evaluate EMG excessive activity counter update
  570:..\src/interruptions.c ****     for (i=0; i<2 && emg_1_status == NORMAL && emg_2_status == NORMAL; i++){
  1678              		.loc 1 570 0 is_stmt 1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 41
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 41
 
 
  1679 0436 0023     		movs	r3, #0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1724 048a 77DA     		bge	.L152
  580:..\src/interruptions.c ****                     timer_exc_e[i] = (uint32)CYCLES_TIMER_ReadCounter();
  1725              		.loc 1 580 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 42
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 42
 
 
  1726 048c FC7D     		ldrb	r4, [r7, #23]	@ zero_extendqisi2
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1776 0506 04D0     		beq	.L144
  585:..\src/interruptions.c ****                         emg_excess_status[i] = COUNTER_INC;
  1777              		.loc 1 585 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 43
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 43
 
 
  1778 0508 FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1820              	.L157:
  1821 0548 A0000000 		.word	emg_cycle_status.9760
  1822 054c 00000000 		.word	g_adc_meas
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 44
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 44
 
 
  1823 0550 00000000 		.word	g_mem
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  601:..\src/interruptions.c ****         case STATE_INACTIVE:
  602:..\src/interruptions.c ****             if (rest_enabled){
  1867              		.loc 1 602 0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 45
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 45
 
 
  1868 05ac 274B     		ldr	r3, .L159+12
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1911              		.loc 1 613 0
  1912 05f6 144B     		ldr	r3, .L159+8
  1913 05f8 0222     		movs	r2, #2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 46
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 46
 
 
  1914 05fa 1A70     		strb	r2, [r3]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  626:..\src/interruptions.c **** }
  1954              		.loc 1 626 0
  1955 0636 00BF     		nop
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 47
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 47
 
 
  1956 0638 1C37     		adds	r7, r7, #28
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  1999              		.loc 1 637 0
  2000 000a 394B     		ldr	r3, .L177
  2001 000c 3B61     		str	r3, [r7, #16]
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 48
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 48
 
 
  638:..\src/interruptions.c ****     uint8* addr_start_c = (uint8*)&c_mem.cnt.emg_act_counter[0];
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2043 0058 46E0     		b	.L162
  2044              	.L165:
  651:..\src/interruptions.c ****             
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 49
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 49
 
 
  652:..\src/interruptions.c ****         case WRITE_CYCLES:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2086 009a FA7A     		ldrb	r2, [r7, #11]	@ zero_extendqisi2
  2087 009c 9A42     		cmp	r2, r3
  2088 009e 0ED9     		bls	.L172
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 50
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 50
 
 
  665:..\src/interruptions.c ****                     m_addr = m_addr + EEPROM_BYTES_ROW;
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2126 00d4 F968     		ldr	r1, [r7, #12]
  2127 00d6 3869     		ldr	r0, [r7, #16]
  2128 00d8 FFF7FEFF 		bl	memcpy
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 51
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 51
 
 
  681:..\src/interruptions.c ****             break;
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2174 0009 000000   		.align	2
  2175              	data_packet_buffer.9708:
  2176 000c 00000000 		.space	128
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 52
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 52
 
 
  2176      00000000 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2224 00c4 00       		.space	1
  2225 00c5 000000   		.align	2
  2226              	timer_value_s.9777:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 53
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 53
 
 
  2227 00c8 00000000 		.space	4
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2281 004e 05       		.byte	0x5
  2282 004f 47020000 		.4byte	.LASF4
  2283 0053 02       		.uleb128 0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 54
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 54
 
 
  2284 0054 04       		.byte	0x4
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2338 00c9 05       		.uleb128 0x5
  2339 00ca AD020000 		.4byte	.LASF17
  2340 00ce 04       		.byte	0x4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 55
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 55
 
 
  2341 00cf EA01     		.2byte	0x1ea
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2395 0141 0A       		.uleb128 0xa
  2396 0142 CA010000 		.4byte	.LASF27
  2397 0146 02       		.byte	0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 56
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 56
 
 
  2398 0147 0A       		.uleb128 0xa
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2452 01b3 0C       		.uleb128 0xc
  2453 01b4 70776D00 		.ascii	"pwm\000"
  2454 01b8 06       		.byte	0x6
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 57
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 57
 
 
  2455 01b9 E8       		.byte	0xe8
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2509 0225 06       		.byte	0x6
  2510 0226 F7       		.byte	0xf7
  2511 0227 2D020000 		.4byte	0x22d
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 58
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 58
 
 
  2512 022b 28       		.byte	0x28
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2566 029d 00       		.byte	0
  2567 029e 0E       		.uleb128 0xe
  2568 029f 98000000 		.4byte	.LASF48
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 59
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 59
 
 
  2569 02a3 86       		.byte	0x86
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2623 0317 0F       		.uleb128 0xf
  2624 0318 2A080000 		.4byte	.LASF55
  2625 031c 06       		.byte	0x6
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 60
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 60
 
 
  2626 031d 1801     		.2byte	0x118
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2680 0392 9D030000 		.4byte	0x39d
  2681 0396 08       		.uleb128 0x8
  2682 0397 0E010000 		.4byte	0x10e
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 61
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 61
 
 
  2683 039b 01       		.byte	0x1
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2737 040e 67020000 		.4byte	.LASF68
  2738 0412 06       		.byte	0x6
  2739 0413 2C01     		.2byte	0x12c
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 62
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 62
 
 
  2740 0415 81000000 		.4byte	0x81
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2794 048b 06       		.byte	0x6
  2795 048c 3A01     		.2byte	0x13a
  2796 048e BD000000 		.4byte	0xbd
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 63
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 63
 
 
  2797 0492 04       		.byte	0x4
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2851 0507 28       		.byte	0x28
  2852 0508 0F       		.uleb128 0xf
  2853 0509 D40C0000 		.4byte	.LASF82
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 64
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 64
 
 
  2854 050d 06       		.byte	0x6
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2908 0582 06       		.byte	0x6
  2909 0583 4D01     		.2byte	0x14d
  2910 0585 E6050000 		.4byte	0x5e6
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 65
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 65
 
 
  2911 0589 44       		.byte	0x44
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  2965 05ff 08       		.uleb128 0x8
  2966 0600 0E010000 		.4byte	0x10e
  2967 0604 0C       		.byte	0xc
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 66
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 66
 
 
  2968 0605 00       		.byte	0
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3022 067a 25       		.byte	0x25
  3023 067b 0F       		.uleb128 0xf
  3024 067c 8D020000 		.4byte	.LASF63
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 67
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 67
 
 
  3025 0680 06       		.byte	0x6
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3079 06f5 81000000 		.4byte	0x81
  3080 06f9 0E       		.byte	0xe
  3081 06fa 0F       		.uleb128 0xf
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 68
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 68
 
 
  3082 06fb 01030000 		.4byte	.LASF111
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3136 0773 08       		.uleb128 0x8
  3137 0774 0E010000 		.4byte	0x10e
  3138 0778 04       		.byte	0x4
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 69
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 69
 
 
  3139 0779 08       		.uleb128 0x8
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3193 07ec 07       		.uleb128 0x7
  3194 07ed 81000000 		.4byte	0x81
  3195 07f1 FC070000 		.4byte	0x7fc
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 70
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 70
 
 
  3196 07f5 08       		.uleb128 0x8
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3250 0866 07050000 		.4byte	.LASF129
  3251 086a 06       		.byte	0x6
  3252 086b 9D01     		.2byte	0x19d
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 71
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 71
 
 
  3253 086d 81000000 		.4byte	0x81
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3307 08e1 06       		.byte	0x6
  3308 08e2 B201     		.2byte	0x1b2
  3309 08e4 81000000 		.4byte	0x81
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 72
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 72
 
 
  3310 08e8 01       		.byte	0x1
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3364 095a 97010000 		.4byte	.LASF141
  3365 095e 12       		.byte	0x12
  3366 095f 06       		.byte	0x6
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 73
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 73
 
 
  3367 0960 C501     		.2byte	0x1c5
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3421 09d8 06       		.byte	0x6
  3422 09d9 D601     		.2byte	0x1d6
  3423 09db F0020000 		.4byte	0x2f0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 74
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 74
 
 
  3424 09df 10       		.byte	0x10
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3478 0a58 1003     		.2byte	0x310
  3479 0a5a 13       		.uleb128 0x13
  3480 0a5b BC000000 		.4byte	.LASF150
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 75
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 75
 
 
  3481 0a5f 06       		.byte	0x6
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3535 0ad9 08       		.uleb128 0x8
  3536 0ada 0E010000 		.4byte	0x10e
  3537 0ade 02       		.byte	0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 76
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 76
 
 
  3538 0adf 00       		.byte	0
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3592 0b4b 5B0A0000 		.4byte	.LASF163
  3593 0b4f 06       		.byte	0x6
  3594 0b50 1E02     		.2byte	0x21e
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 77
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 77
 
 
  3595 0b52 1E0B0000 		.4byte	0xb1e
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3649 0bc7 E0020000 		.4byte	0x2e0
  3650 0bcb 05       		.uleb128 0x5
  3651 0bcc 03       		.byte	0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 78
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 78
 
 
  3652 0bcd 0C000000 		.4byte	data_packet_buffer.9708
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3706 0c3b 1E01     		.2byte	0x11e
  3707 0c3d BD000000 		.4byte	0xbd
  3708 0c41 02       		.uleb128 0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 79
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 79
 
 
  3709 0c42 91       		.byte	0x91
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3763 0cae D10C0000 		.4byte	0xcd1
  3764 0cb2 1D       		.uleb128 0x1d
  3765 0cb3 B5000000 		.4byte	.LASF183
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 80
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 80
 
 
  3766 0cb7 01       		.byte	0x1
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3820 0d27 00       		.byte	0
  3821 0d28 00       		.byte	0
  3822 0d29 00       		.byte	0
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 81
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 81
 
 
  3823 0d2a 1C       		.uleb128 0x1c
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3877 0d99 BE01     		.2byte	0x1be
  3878 0d9b 81000000 		.4byte	0x81
  3879 0d9f 05       		.uleb128 0x5
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 82
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 82
 
 
  3880 0da0 03       		.byte	0x3
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3934 0e19 BD000000 		.4byte	0xbd
  3935 0e1d 05       		.uleb128 0x5
  3936 0e1e 03       		.byte	0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 83
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 83
 
 
  3937 0e1f 98000000 		.4byte	thr_pos.9766
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  3991 0e8a 02       		.uleb128 0x2
  3992 0e8b 91       		.byte	0x91
  3993 0e8c 64       		.sleb128 -28
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 84
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 84
 
 
  3994 0e8d 1A       		.uleb128 0x1a
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4048 0efd 03       		.byte	0x3
  4049 0efe BC000000 		.4byte	timer_exc_e.9780
  4050 0f02 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 85
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 85
 
 
  4051 0f03 C4040000 		.4byte	.LASF214
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4105 0f76 02       		.uleb128 0x2
  4106 0f77 91       		.byte	0x91
  4107 0f78 6C       		.sleb128 -20
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 86
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 86
 
 
  4108 0f79 1A       		.uleb128 0x1a
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4162 0fee D2040000 		.4byte	.LASF225
  4163 0ff2 06       		.byte	0x6
  4164 0ff3 2202     		.2byte	0x222
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 87
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 87
 
 
  4165 0ff5 DD0F0000 		.4byte	0xfdd
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4219 1075 5D100000 		.4byte	0x105d
  4220 1079 23       		.uleb128 0x23
  4221 107a A50A0000 		.4byte	.LASF234
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 88
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 88
 
 
  4222 107e 06       		.byte	0x6
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4276 0008 0E       		.uleb128 0xe
  4277 0009 1B       		.uleb128 0x1b
  4278 000a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 89
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 89
 
 
  4279 000b 55       		.uleb128 0x55
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4333 0041 00       		.byte	0
  4334 0042 00       		.byte	0
  4335 0043 06       		.uleb128 0x6
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 90
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 90
 
 
  4336 0044 35       		.uleb128 0x35
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4390 007a 0E       		.uleb128 0xe
  4391 007b 0B       		.uleb128 0xb
  4392 007c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 91
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 91
 
 
  4393 007d 3A       		.uleb128 0x3a
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4447 00b3 0D       		.uleb128 0xd
  4448 00b4 00       		.byte	0
  4449 00b5 03       		.uleb128 0x3
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 92
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 92
 
 
  4450 00b6 0E       		.uleb128 0xe
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4504 00ec 00       		.byte	0
  4505 00ed 00       		.byte	0
  4506 00ee 13       		.uleb128 0x13
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 93
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 93
 
 
  4507 00ef 0D       		.uleb128 0xd
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4561 0126 01       		.byte	0x1
  4562 0127 3F       		.uleb128 0x3f
  4563 0128 19       		.uleb128 0x19
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 94
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 94
 
 
  4564 0129 03       		.uleb128 0x3
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4618 0161 00       		.byte	0
  4619 0162 00       		.byte	0
  4620 0163 19       		.uleb128 0x19
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 95
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 95
 
 
  4621 0164 2E       		.uleb128 0x2e
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4675 019b 0B       		.uleb128 0xb
  4676 019c 3B       		.uleb128 0x3b
  4677 019d 05       		.uleb128 0x5
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 96
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 96
 
 
  4678 019e 27       		.uleb128 0x27
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4732 01d6 19       		.uleb128 0x19
  4733 01d7 03       		.uleb128 0x3
  4734 01d8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 97
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 97
 
 
  4735 01d9 3A       		.uleb128 0x3a
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4789 0210 3B       		.uleb128 0x3b
  4790 0211 05       		.uleb128 0x5
  4791 0212 49       		.uleb128 0x49
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 98
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 98
 
 
  4792 0213 13       		.uleb128 0x13
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4846 0030 00000000 		.4byte	.LFB70
  4847 0034 0C000000 		.4byte	.LFE70
  4848 0038 00000000 		.4byte	.LFB71
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 99
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 99
 
 
  4849 003c 0C010000 		.4byte	.LFE71
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4875              	.LASF149:
  4876 0086 75736572 		.ascii	"user\000"
  4876      00
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 100
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 100
 
 
  4877              	.LASF10:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4904      6B757000 
  4905              	.LASF177:
  4906 0122 70776D5F 		.ascii	"pwm_input\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 101
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 101
 
 
  4906      696E7075 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4932 01c0 73745F64 		.ascii	"st_device\000"
  4932      65766963 
  4932      6500
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 102
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 102
 
 
  4933              	.LASF27:
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4954      74687265 
  4954      73686F6C 
  4954      6400
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 103
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 103
 
 
  4955              	.LASF124:
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  4979              	.LASF238:
  4980 0319 696E7465 		.ascii	"interrupt_flag\000"
  4980      72727570 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 104
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 104
 
 
  4980      745F666C 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5004      69746572 
  5004      00
  5005              	.LASF76:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 105
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 105
 
 
  5006 03b5 6B5F645F 		.ascii	"k_d_c\000"
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5034      635F646C 
  5034      00
  5035              	.LASF172:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 106
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 106
 
 
  5036 044a 72785F64 		.ascii	"rx_data_type\000"
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5058      44455F45 
  5058      58544552 
  5058      4E414C00 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 107
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 107
 
 
  5059              	.LASF189:
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5080      5F637572 
  5080      7200
  5081              	.LASF31:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 108
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 108
 
 
  5082 0595 494E5055 		.ascii	"INPUT_MODE_JOYSTICK\000"
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5104      74696F6E 
  5104      2D736563 
  5104      74696F6E 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 109
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 109
 
 
  5105              	.LASF41:
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5127      00
  5128              	.LASF155:
  5129 074f 57414954 		.ascii	"WAIT\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 110
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 110
 
 
  5129      00
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5157 07d9 72785F71 		.ascii	"rx_queue\000"
  5157      75657565 
  5157      00
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 111
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 111
 
 
  5158              	.LASF184:
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5182              	.LASF117:
  5183 087f 63757272 		.ascii	"curr_time\000"
  5183      5F74696D 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 112
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 112
 
 
  5183      6500
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5208              	.LASF85:
  5209 0925 6D6F746F 		.ascii	"motor_driver_type\000"
  5209      725F6472 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 113
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 113
 
 
  5209      69766572 
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5234              	.LASF194:
  5235 09bb 656D675F 		.ascii	"emg_cycle_status\000"
  5235      6379636C 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 114
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 114
 
 
  5235      655F7374 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5257      3800
  5258              	.LASF130:
  5259 0a70 73745F4A 		.ascii	"st_JOY_spec\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 115
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 115
 
 
  5259      4F595F73 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5284              	.LASF212:
  5285 0b0c 74696D65 		.ascii	"timer_exc_s\000"
  5285      725F6578 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 116
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 116
 
 
  5285      635F7300 
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5310              	.LASF143:
  5311 0bb2 66617374 		.ascii	"fast_act_threshold\000"
  5311      5F616374 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 117
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 117
 
 
  5311      5F746872 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 1
  5335 0c57 434F4E54 		.ascii	"CONTROL_ANGLE\000"
  5335      524F4C5F 
  5335      414E474C 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccMHOURg.s 			page 118
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccuVecaK.s 			page 118
 
 
  5335      4500

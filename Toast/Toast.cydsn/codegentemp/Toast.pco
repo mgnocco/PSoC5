@@ -1,5 +1,5 @@
 # Toast
-# 2022-10-20 14:27:09Z
+# 2022-10-27 08:12:19Z
 
 set_location "\SD:SPI0:BSPIM:mosi_pre_reg_split\" 2 5 1 0
 set_location "ClockBlock" clockblockcell -1 -1 0
