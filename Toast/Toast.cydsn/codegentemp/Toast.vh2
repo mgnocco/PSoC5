@@ -2,7 +2,7 @@
 --	Conversion of Toast.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Oct 27 10:12:14 2022
+--	Mon Oct 31 11:36:19 2022
 --
 
 USE cypress.cypress.all;
@@ -2592,7 +2592,7 @@ TOAST_1B:cy_psoc3_pins_v1_10
 		oe_reset=>'0',
 		pin_aliases=>"",
 		pin_mode=>"O",
-		por_state=>2,
+		por_state=>4,
 		sio_group_cnt=>0,
 		sio_hifreq=>"00000000",
 		sio_hyst=>"1",
@@ -2912,7 +2912,7 @@ TOAST_1A:cy_psoc3_pins_v1_10
 		oe_reset=>'0',
 		pin_aliases=>"",
 		pin_mode=>"O",
-		por_state=>2,
+		por_state=>4,
 		sio_group_cnt=>0,
 		sio_hifreq=>"00000000",
 		sio_hyst=>"1",
@@ -4758,7 +4758,7 @@ TOAST_2A:cy_psoc3_pins_v1_10
 		oe_reset=>'0',
 		pin_aliases=>"",
 		pin_mode=>"O",
-		por_state=>2,
+		por_state=>4,
 		sio_group_cnt=>0,
 		sio_hifreq=>"00000000",
 		sio_hyst=>"1",
@@ -4828,7 +4828,7 @@ TOAST_2B:cy_psoc3_pins_v1_10
 		oe_reset=>'0',
 		pin_aliases=>"",
 		pin_mode=>"O",
-		por_state=>2,
+		por_state=>4,
 		sio_group_cnt=>0,
 		sio_hifreq=>"00000000",
 		sio_hyst=>"1",

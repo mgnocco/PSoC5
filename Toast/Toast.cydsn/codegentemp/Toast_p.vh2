@@ -1,5 +1,5 @@
 -- Project:   Toast
--- Generated: 10/27/2022 10:12:15
+-- Generated: 10/31/2022 11:36:20
 -- PSoC Creator  4.4
 
 ENTITY Toast IS
@@ -294,13 +294,13 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : LABEL IS "macrocell1";
     ATTRIBUTE lib_model OF TOAST_1B(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF TOAST_1B(0) : LABEL IS "P3[2]";
+    ATTRIBUTE Location OF TOAST_1B(0) : LABEL IS "P2[7]";
     ATTRIBUTE lib_model OF FTDI_ENABLE(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF FTDI_ENABLE(0) : LABEL IS "P1[2]";
     ATTRIBUTE lib_model OF RS485_CTS(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF RS485_CTS(0) : LABEL IS "P1[4]";
     ATTRIBUTE lib_model OF TOAST_1A(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF TOAST_1A(0) : LABEL IS "P3[1]";
+    ATTRIBUTE Location OF TOAST_1A(0) : LABEL IS "P2[6]";
     ATTRIBUTE lib_model OF RS485_RX(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF RS485_RX(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF RS485_TX(0) : LABEL IS "iocell6";
@@ -328,13 +328,17 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE lib_model OF LED_GREEN(0) : LABEL IS "iocell17";
     ATTRIBUTE Location OF LED_GREEN(0) : LABEL IS "P12[1]";
     ATTRIBUTE lib_model OF TOAST_2A(0) : LABEL IS "iocell18";
-    ATTRIBUTE Location OF TOAST_2A(0) : LABEL IS "P3[4]";
+    ATTRIBUTE Location OF TOAST_2A(0) : LABEL IS "P1[0]";
     ATTRIBUTE lib_model OF TOAST_2B(0) : LABEL IS "iocell19";
-    ATTRIBUTE Location OF TOAST_2B(0) : LABEL IS "P3[5]";
+    ATTRIBUTE Location OF TOAST_2B(0) : LABEL IS "P1[3]";
     ATTRIBUTE lib_model OF TOAST_3A(0) : LABEL IS "iocell20";
-    ATTRIBUTE Location OF TOAST_3A(0) : LABEL IS "P2[6]";
+    ATTRIBUTE Location OF TOAST_3A(0) : LABEL IS "P15[0]";
     ATTRIBUTE lib_model OF TOAST_3B(0) : LABEL IS "iocell21";
-    ATTRIBUTE Location OF TOAST_3B(0) : LABEL IS "P2[7]";
+    ATTRIBUTE Location OF TOAST_3B(0) : LABEL IS "P15[1]";
+    ATTRIBUTE lib_model OF TOAST_4A(0) : LABEL IS "iocell22";
+    ATTRIBUTE Location OF TOAST_4A(0) : LABEL IS "P0[4]";
+    ATTRIBUTE lib_model OF TOAST_4B(0) : LABEL IS "iocell23";
+    ATTRIBUTE Location OF TOAST_4B(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF Net_2627 : LABEL IS "macrocell2";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:counter_load_not\ : LABEL IS "macrocell3";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_status_0\ : LABEL IS "macrocell4";
@@ -870,7 +874,7 @@ BEGIN
             pa_out_reset => -1,
             pin_aliases => "",
             pin_mode => "O",
-            por_state => 2,
+            por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
             sio_group_cnt => 0,
@@ -1142,7 +1146,7 @@ BEGIN
             pa_out_reset => -1,
             pin_aliases => "",
             pin_mode => "O",
-            por_state => 2,
+            por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
             sio_group_cnt => 0,
@@ -2419,7 +2423,7 @@ BEGIN
             pa_out_reset => -1,
             pin_aliases => "",
             pin_mode => "O",
-            por_state => 2,
+            por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
             sio_group_cnt => 0,
@@ -2511,7 +2515,7 @@ BEGIN
             pa_out_reset => -1,
             pin_aliases => "",
             pin_mode => "O",
-            por_state => 2,
+            por_state => 4,
             port_alias_group => "",
             port_alias_required => 0,
             sio_group_cnt => 0,

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Toast\Toast\Source Files\main.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>Toast</v>
 <v>Toast\Toast</v>
@@ -351,7 +351,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="950, 484" SelectedTabbedMdiWindow="38dd4688-5a2d-4901-90d9-0c02f11de044"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e6c53592-2600-47bd-bb84-e80a1b9fa9d1" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\TopDesign\TopDesign.cysch" Guid="38dd4688-5a2d-4901-90d9-0c02f11de044" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cydwr" Guid="5149e52a-6cc6-4806-98cf-de540164c478" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\command_processing.c" Guid="65ef2f08-2247-439b-be37-9ca80ab170ea" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1124, 510" SelectedTabbedMdiWindow="5149e52a-6cc6-4806-98cf-de540164c478"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="e6c53592-2600-47bd-bb84-e80a1b9fa9d1" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\TopDesign\TopDesign.cysch" Guid="38dd4688-5a2d-4901-90d9-0c02f11de044" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cydwr" Guid="5149e52a-6cc6-4806-98cf-de540164c478" /><DocumentWindow Key="C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\src\command_processing.c" Guid="65ef2f08-2247-439b-be37-9ca80ab170ea" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="Release" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

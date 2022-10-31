@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
   24:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** * Function Name: PWM_MOTORS_SaveConfig
   25:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** ********************************************************************************
   26:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** *
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 2
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 2
 
 
   27:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
   59:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****         #if(PWM_MOTORS_KillModeMinTime)
   60:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****              PWM_MOTORS_backup.PWMKillCounterPeriod = PWM_MOTORS_ReadKillTime();
   61:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****         #endif /* (PWM_MOTORS_KillModeMinTime) */
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 3
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 3
 
 
   62:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
   80 0002 00AF     		add	r7, sp, #0
   81              		.cfi_def_cfa_register 7
   90:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****         #if(!PWM_MOTORS_UsingFixedFunction)
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 4
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 4
 
 
   91:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****             #if(!PWM_MOTORS_PWMModeIsCenterAligned)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  117:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** /*******************************************************************************
  118:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** * Function Name: PWM_MOTORS_Sleep
  119:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** ********************************************************************************
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 5
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 5
 
 
  120:Generated_Source\PSoC5/PWM_MOTORS_PM.c **** *
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  127              		.cfi_endproc
  128              	.LFE2:
  129              		.size	PWM_MOTORS_Sleep, .-PWM_MOTORS_Sleep
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 6
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 6
 
 
  130              		.section	.text.PWM_MOTORS_Wakeup,"ax",%progbits
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  186:Generated_Source\PSoC5/PWM_MOTORS_PM.c ****         PWM_MOTORS_Enable();
  155              		.loc 1 186 0
  156 0010 FFF7FEFF 		bl	PWM_MOTORS_Enable
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 7
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 7
 
 
  157              	.L10:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  208 004a 07       		.byte	0x7
  209 004b 91000000 		.4byte	.LASF5
  210 004f 02       		.uleb128 0x2
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 8
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 8
 
 
  211 0050 08       		.byte	0x8
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  265 00b4 71       		.byte	0x71
  266 00b5 6B000000 		.4byte	0x6b
  267 00b9 01       		.byte	0x1
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 9
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 9
 
 
  268 00ba 06       		.uleb128 0x6
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  322              	.Ldebug_abbrev0:
  323 0000 01       		.uleb128 0x1
  324 0001 11       		.uleb128 0x11
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 10
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 10
 
 
  325 0002 01       		.byte	0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  379 0038 01       		.byte	0x1
  380 0039 0B       		.uleb128 0xb
  381 003a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 11
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 11
 
 
  382 003b 3A       		.uleb128 0x3a
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  436 0071 18       		.uleb128 0x18
  437 0072 9642     		.uleb128 0x2116
  438 0074 19       		.uleb128 0x19
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 12
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 12
 
 
  439 0075 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  489      01010101 
  490              	.LASF6:
  491 0000 6C6F6E67 		.ascii	"long long int\000"
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 13
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 13
 
 
  491      206C6F6E 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  510      61636B75 
  510      7000
  511              	.LASF9:
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 14
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 14
 
 
  512 00dd 666C6F61 		.ascii	"float\000"
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 1
  533              	.LASF3:
  534 01e2 73686F72 		.ascii	"short unsigned int\000"
  534      7420756E 
-ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccEszC2b.s 			page 15
+ARM GAS  C:\Users\mgnocco\AppData\Local\Temp\ccLOgOGy.s 			page 15
 
 
  534      7369676E 

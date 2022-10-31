@@ -1,6 +1,6 @@
 // ======================================================================
 // Toast.v generated from TopDesign.cysch
-// 10/27/2022 at 10:12
+// 10/31/2022 at 11:36
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1591,7 +1591,7 @@ module top ;
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
 		  .pin_mode("O"),
-		  .por_state(2),
+		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
 		  .sio_ibuf(""),
@@ -1848,7 +1848,7 @@ module top ;
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
 		  .pin_mode("O"),
-		  .por_state(2),
+		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
 		  .sio_ibuf(""),
@@ -2917,7 +2917,7 @@ module top ;
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
 		  .pin_mode("O"),
-		  .por_state(2),
+		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
 		  .sio_ibuf(""),
@@ -2992,7 +2992,7 @@ module top ;
 		  .pa_out_reset(-1),
 		  .pin_aliases(""),
 		  .pin_mode("O"),
-		  .por_state(2),
+		  .por_state(4),
 		  .sio_group_cnt(0),
 		  .sio_hyst(1'b1),
 		  .sio_ibuf(""),

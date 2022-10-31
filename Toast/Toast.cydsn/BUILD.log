@@ -1,10 +1,9 @@
---------------- Build Started: 10/27/2022 10:12:03 Project: Toast, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
+--------------- Build Started: 10/31/2022 11:36:12 Project: Toast, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
 cydsfit.exe -.appdatapath "C:\Users\mgnocco\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cyprj -d CY8C5888LTI-LP097 -s C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
 Synthesis...
 Tech Mapping...
-ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: TOAST_4A(0), TOAST_4B(0)
 Analog Placement...
 Analog Routing...
 Analog Code Generation...
@@ -16,6 +15,11 @@ Static timing analysis...
 API Generation...
 Dependency Generation...
 Cleanup...
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/command_processing.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\command_processing.c -o .\CortexM3\ARM_GCC_541\Release\command_processing.o
+..\src\command_processing.c: In function 'cmd_set_inputs':
+..\src\command_processing.c:3180:18: warning: unused variable 'last_aux_int16' [-Wunused-variable]
+     static int16 last_aux_int16[1];
+                  ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/globals.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\globals.c -o .\CortexM3\ARM_GCC_541\Release\globals.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/interruptions.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\interruptions.c -o .\CortexM3\ARM_GCC_541\Release\interruptions.o
 ..\src\interruptions.c: In function 'motor_control_SH':
@@ -26,6 +30,14 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include
      uint8 SH_ENC_L = SH_MOT->encoder_line;          // Associated encoder line
            ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/utils.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\utils.c -o .\CortexM3\ARM_GCC_541\Release\utils.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/main.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\main.c -o .\CortexM3\ARM_GCC_541\Release\main.o
+..\src\main.c: In function 'main':
+..\src\main.c:78:14: warning: unused variable 'j' [-Wunused-variable]
+     uint8 i, j;
+              ^
+..\src\main.c:78:11: warning: unused variable 'i' [-Wunused-variable]
+     uint8 i, j;
+           ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I..\src\emFile_V322c\Code\Include\PSoC5\emf16nOS -I..\src\emFile_V322c\Code\Include\PSoC5 -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/Encoder_functions.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -O0 -D SOFTHAND_FW -c ..\src\Encoder_functions.c -o .\CortexM3\ARM_GCC_541\Release\Encoder_functions.o
 ..\src\Encoder_functions.c: In function 'Change_CS_EncoderLine':
 ..\src\Encoder_functions.c:53:9: warning: implicit declaration of function 'Chip_Select_ENCODER_LINE_Read' [-Wimplicit-function-declaration]
@@ -139,6 +151,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\CortexM3\ARM_GCC_541\Release\Toast.elf
-Flash used: 104532 of 262144 bytes (39,9%). Bootloader: 7424 bytes. Application: 96852 bytes. Metadata: 256 bytes.
+Flash used: 104676 of 262144 bytes (39,9%). Bootloader: 7424 bytes. Application: 96996 bytes. Metadata: 256 bytes.
 SRAM used: 15525 of 65536 bytes (23,7%). Stack: 2048 bytes. Heap: 2048 bytes.
---------------- Build Succeeded: 10/27/2022 10:12:46 ---------------
+--------------- Build Succeeded: 10/31/2022 11:36:42 ---------------
