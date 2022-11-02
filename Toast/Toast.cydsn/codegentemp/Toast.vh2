@@ -2,7 +2,7 @@
 --	Conversion of Toast.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Mon Oct 31 15:05:44 2022
+--	Wed Nov 02 18:46:46 2022
 --
 
 USE cypress.cypress.all;
@@ -13,7 +13,7 @@ END top_RTL;
 --------------------------------------------------------
 ARCHITECTURE R_T_L OF top_RTL IS
 SIGNAL tmpOE__TOAST_1B_net_0 : bit;
-SIGNAL Net_10379 : bit;
+SIGNAL Net_10437 : bit;
 SIGNAL tmpFB_0__TOAST_1B_net_0 : bit;
 SIGNAL tmpIO_0__TOAST_1B_net_0 : bit;
 TERMINAL tmpSIOVREF__TOAST_1B_net_0 : bit;
@@ -954,7 +954,6 @@ SIGNAL tmpFB_0__MISO_RTC_net_0 : bit;
 SIGNAL tmpIO_0__MISO_RTC_net_0 : bit;
 TERMINAL tmpSIOVREF__MISO_RTC_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__MISO_RTC_net_0 : bit;
-SIGNAL Net_10357 : bit;
 SIGNAL tmpOE__LED_RED_net_0 : bit;
 SIGNAL Net_7325 : bit;
 SIGNAL tmpFB_0__LED_RED_net_0 : bit;
@@ -2154,7 +2153,6 @@ SIGNAL \PWM_MOTORS_3:Net_113\ : bit;
 SIGNAL \PWM_MOTORS_3:Net_107\ : bit;
 SIGNAL \PWM_MOTORS_3:Net_114\ : bit;
 SIGNAL tmpOE__TOAST_3B_net_0 : bit;
-SIGNAL Net_10397 : bit;
 SIGNAL tmpFB_0__TOAST_3B_net_0 : bit;
 SIGNAL tmpIO_0__TOAST_3B_net_0 : bit;
 TERMINAL tmpSIOVREF__TOAST_3B_net_0 : bit;
@@ -2165,7 +2163,6 @@ SIGNAL tmpIO_0__TOAST_4A_net_0 : bit;
 TERMINAL tmpSIOVREF__TOAST_4A_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__TOAST_4A_net_0 : bit;
 SIGNAL tmpOE__TOAST_4B_net_0 : bit;
-SIGNAL Net_10398 : bit;
 SIGNAL tmpFB_0__TOAST_4B_net_0 : bit;
 SIGNAL tmpIO_0__TOAST_4B_net_0 : bit;
 TERMINAL tmpSIOVREF__TOAST_4B_net_0 : bit;
@@ -2262,8 +2259,6 @@ SIGNAL \PWM_MOTORS_3:PWMUDB:pwm1_i_reg\\D\ : bit;
 SIGNAL \PWM_MOTORS_3:PWMUDB:pwm2_i_reg\\D\ : bit;
 SIGNAL \PWM_MOTORS_3:PWMUDB:tc_i_reg\\D\ : bit;
 BEGIN
-
-zero <=  ('0') ;
 
 tmpOE__TOAST_1B_net_0 <=  ('1') ;
 
@@ -2500,8 +2495,6 @@ Net_6020D <= ((not \UART_RS485:BUART:reset_reg\ and \UART_RS485:BUART:tx_state_2
 	OR (not \SD:SPI0:BSPIM:state_1\ and \SD:SPI0:BSPIM:ld_ident\)
 	OR (\SD:SPI0:BSPIM:state_2\ and \SD:SPI0:BSPIM:ld_ident\));
 
-Net_10357 <= (not Net_10345);
-
 \BLINK_05HZ:PWMUDB:runmode_enable\\D\ <= ((\BLINK_05HZ:PWMUDB:control_7\ and Net_3925));
 
 \BLINK_05HZ:PWMUDB:sc_kill_tmp\\D\ <= (not \BLINK_05HZ:PWMUDB:tc_i\);
@@ -2541,8 +2534,6 @@ Net_7325 <= (Net_7667
 	OR Net_7450
 	OR Net_5579);
 
-Net_10379 <= (not Net_9969);
-
 \PWM_MOTORS_3:PWMUDB:sc_kill_tmp\\D\ <= (not \PWM_MOTORS_3:PWMUDB:tc_i\);
 
 \PWM_MOTORS_3:PWMUDB:dith_count_1\\D\ <= ((not \PWM_MOTORS_3:PWMUDB:dith_count_1\ and \PWM_MOTORS_3:PWMUDB:tc_i\ and \PWM_MOTORS_3:PWMUDB:dith_count_0\)
@@ -2560,9 +2551,7 @@ Net_10379 <= (not Net_9969);
 \PWM_MOTORS_3:PWMUDB:pwm2_i\ <= ((\PWM_MOTORS_3:PWMUDB:runmode_enable\ and \PWM_MOTORS_3:PWMUDB:cmp2_less\)
 	OR (\PWM_MOTORS_3:PWMUDB:runmode_enable\ and \PWM_MOTORS_3:PWMUDB:cmp2_eq\));
 
-Net_10398 <= (not Net_10392);
-
-Net_10397 <= (not Net_10382);
+Net_10437 <=  ('0') ;
 
 TOAST_1B:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"653fafc2-0769-4d73-969e-7b60a05feecf",
@@ -2621,18 +2610,18 @@ TOAST_1B:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>Net_10379,
+		y=>Net_10437,
 		fb=>(tmpFB_0__TOAST_1B_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__TOAST_1B_net_0),
 		siovref=>(tmpSIOVREF__TOAST_1B_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_1B_net_0);
 FTDI_ENABLE:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"52f31aa9-2f0a-497d-9a1f-1424095e13e6",
@@ -2691,18 +2680,18 @@ FTDI_ENABLE:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__FTDI_ENABLE_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__FTDI_ENABLE_net_0),
 		siovref=>(tmpSIOVREF__FTDI_ENABLE_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__FTDI_ENABLE_net_0);
 RS485_CTS:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"4c15b41e-e284-4978-99e7-5aaee19bd0ce",
@@ -2761,25 +2750,25 @@ RS485_CTS:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__RS485_CTS_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__RS485_CTS_net_0),
 		siovref=>(tmpSIOVREF__RS485_CTS_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__RS485_CTS_net_0);
 CLOCK_PWM:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"f801b4a9-38f2-478d-b30d-81c0e8844af6",
 		source_clock_id=>"61737EF6-3B74-48f9-8B91-F7473A442AE7",
 		divisor=>0,
-		period=>"5E+15",
+		period=>"500000000",
 		is_direct=>'0',
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_2334,
@@ -2811,15 +2800,15 @@ CLOCK_PWM:cy_clock_v1_0
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\PWM_MOTORS:PWMUDB:tc_i\, \PWM_MOTORS:PWMUDB:runmode_enable\, zero),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(\PWM_MOTORS:PWMUDB:tc_i\, \PWM_MOTORS:PWMUDB:runmode_enable\, Net_10437),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\PWM_MOTORS:PWMUDB:cmp1_eq\,
 		cl0=>\PWM_MOTORS:PWMUDB:cmp1_less\,
 		z0=>\PWM_MOTORS:PWMUDB:tc_i\,
@@ -2852,37 +2841,37 @@ CLOCK_PWM:cy_clock_v1_0
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_24\);
 \PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_16\);
 \PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS:PWMUDB:MODULE_1:g2:a0:g1:z1:s0:g1:u0:c_8\);
 TOAST_1A:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ed092b9b-d398-4703-be89-cebf998501f6",
@@ -2947,20 +2936,20 @@ TOAST_1A:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__TOAST_1A_net_0),
 		siovref=>(tmpSIOVREF__TOAST_1A_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_1A_net_0);
 \PACER_TIMER:TimerHW\:cy_psoc3_timer_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(clock=>Net_3328,
-		kill=>zero,
+		kill=>Net_10437,
 		enable=>tmpOE__TOAST_1B_net_0,
-		capture=>zero,
-		timer_reset=>zero,
+		capture=>Net_10437,
+		timer_reset=>Net_10437,
 		tc=>Net_3264,
 		compare=>\PACER_TIMER:Net_261\,
 		interrupt=>\PACER_TIMER:Net_57\);
@@ -2980,23 +2969,23 @@ timer_clock_1:cy_clock_v1_0
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>zero,
+	PORT MAP(reset=>Net_10437,
+		clock=>Net_10437,
 		control=>(\RESET_FF:control_7\, \RESET_FF:control_6\, \RESET_FF:control_5\, \RESET_FF:control_4\,
 			\RESET_FF:control_3\, \RESET_FF:control_2\, \RESET_FF:control_1\, Net_3334));
 \FF_STATUS:sts:sts_reg\:cy_psoc3_status
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"00000000")
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clock=>Net_3328,
-		status=>(zero, zero, zero, zero,
-			zero, zero, zero, cy_srff_1));
+		status=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, cy_srff_1));
 \MY_TIMER:TimerHW\:cy_psoc3_timer_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(clock=>Net_4387,
-		kill=>zero,
+		kill=>Net_10437,
 		enable=>tmpOE__TOAST_1B_net_0,
-		capture=>zero,
+		capture=>Net_10437,
 		timer_reset=>Net_4386,
 		tc=>\MY_TIMER:Net_51\,
 		compare=>\MY_TIMER:Net_261\,
@@ -3049,12 +3038,12 @@ timer_clock:cy_clock_v1_0
 	PORT MAP(reset=>\UART_RS485:BUART:reset_reg\,
 		clk=>\UART_RS485:BUART:clock_op\,
 		cs_addr=>(\UART_RS485:BUART:tx_state_1\, \UART_RS485:BUART:tx_state_0\, \UART_RS485:BUART:tx_bitclk_enable_pre\),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>open,
 		cl0=>open,
 		z0=>open,
@@ -3087,28 +3076,28 @@ timer_clock:cy_clock_v1_0
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \UART_RS485:BUART:sTX:sCLOCK:TxBitClkGen\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"1010100001000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111100000111001000000100000000000101111100000000000000001000",
@@ -3134,13 +3123,13 @@ timer_clock:cy_clock_v1_0
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>\UART_RS485:BUART:reset_reg\,
 		clk=>\UART_RS485:BUART:clock_op\,
-		cs_addr=>(zero, zero, \UART_RS485:BUART:counter_load_not\),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(Net_10437, Net_10437, \UART_RS485:BUART:counter_load_not\),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>open,
 		cl0=>open,
 		z0=>open,
@@ -3173,28 +3162,28 @@ timer_clock:cy_clock_v1_0
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>(\UART_RS485:BUART:sc_out_7\, \UART_RS485:BUART:sc_out_6\, \UART_RS485:BUART:sc_out_5\, \UART_RS485:BUART:sc_out_4\,
 			\UART_RS485:BUART:sc_out_3\, \UART_RS485:BUART:sc_out_2\, \UART_RS485:BUART:sc_out_1\, \UART_RS485:BUART:sc_out_0\));
 \UART_RS485:BUART:sTX:TxSts\:cy_psoc3_statusi
@@ -3203,7 +3192,7 @@ timer_clock:cy_clock_v1_0
 		cy_int_mask=>"1111111")
 	PORT MAP(reset=>\UART_RS485:BUART:reset_reg\,
 		clock=>\UART_RS485:BUART:clock_op\,
-		status=>(zero, zero, zero, \UART_RS485:BUART:tx_fifo_notfull\,
+		status=>(Net_10437, Net_10437, Net_10437, \UART_RS485:BUART:tx_fifo_notfull\,
 			\UART_RS485:BUART:tx_status_2\, \UART_RS485:BUART:tx_fifo_empty\, \UART_RS485:BUART:tx_status_0\),
 		interrupt=>\UART_RS485:BUART:tx_interrupt_out\);
 \UART_RS485:BUART:sRX:RxShifter:u0\:cy_psoc3_dp
@@ -3232,11 +3221,11 @@ timer_clock:cy_clock_v1_0
 		clk=>\UART_RS485:BUART:clock_op\,
 		cs_addr=>(\UART_RS485:BUART:rx_state_1\, \UART_RS485:BUART:rx_state_0\, \UART_RS485:BUART:rx_bitclk_enable\),
 		route_si=>Net_6196,
-		route_ci=>zero,
+		route_ci=>Net_10437,
 		f0_load=>\UART_RS485:BUART:rx_load_fifo\,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\UART_RS485:BUART:rx_addressmatch1\,
 		cl0=>open,
 		z0=>open,
@@ -3269,28 +3258,28 @@ timer_clock:cy_clock_v1_0
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \UART_RS485:BUART:sRX:RxBitCounter\:cy_psoc3_count7
 	GENERIC MAP(cy_period=>"1101001",
@@ -3311,8 +3300,8 @@ timer_clock:cy_clock_v1_0
 		cy_int_mask=>"1111111")
 	PORT MAP(reset=>\UART_RS485:BUART:reset_reg\,
 		clock=>\UART_RS485:BUART:clock_op\,
-		status=>(zero, \UART_RS485:BUART:rx_status_5\, \UART_RS485:BUART:rx_status_4\, \UART_RS485:BUART:rx_status_3\,
-			\UART_RS485:BUART:rx_status_2\, \UART_RS485:BUART:rx_status_1\, zero),
+		status=>(Net_10437, \UART_RS485:BUART:rx_status_5\, \UART_RS485:BUART:rx_status_4\, \UART_RS485:BUART:rx_status_3\,
+			\UART_RS485:BUART:rx_status_2\, \UART_RS485:BUART:rx_status_1\, Net_10437),
 		interrupt=>Net_6117);
 RS485_RX:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"1425177d-0d0e-4468-8bcc-e638e5509a9b",
@@ -3371,18 +3360,18 @@ RS485_RX:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>Net_6196,
 		analog=>(open),
 		io=>(tmpIO_0__RS485_RX_net_0),
 		siovref=>(tmpSIOVREF__RS485_RX_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__RS485_RX_net_0);
 RS485_TX:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"d55049de-f559-4856-91bd-6913f5ef939b",
@@ -3447,12 +3436,12 @@ RS485_TX:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__RS485_TX_net_0),
 		siovref=>(tmpSIOVREF__RS485_TX_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__RS485_TX_net_0);
 RS_485_EN:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"294a8542-13bb-492d-93ce-945bd1f598a8",
@@ -3517,12 +3506,12 @@ RS_485_EN:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__RS_485_EN_net_0),
 		siovref=>(tmpSIOVREF__RS_485_EN_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__RS_485_EN_net_0);
 ISR_RS485_RX:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
@@ -3541,10 +3530,10 @@ CLOCK_UART:cy_clock_v1_0
 \CYCLES_TIMER:TimerHW\:cy_psoc3_timer_v1_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(clock=>Net_2711,
-		kill=>zero,
+		kill=>Net_10437,
 		enable=>tmpOE__TOAST_1B_net_0,
-		capture=>zero,
-		timer_reset=>zero,
+		capture=>Net_10437,
+		timer_reset=>Net_10437,
 		tc=>Net_345,
 		compare=>\CYCLES_TIMER:Net_261\,
 		interrupt=>\CYCLES_TIMER:Net_57\);
@@ -3574,8 +3563,8 @@ ISR_CYCLES:cy_isr_v1_0
 		cy_route_en=>'1',
 		cy_alt_mode=>'0')
 	PORT MAP(clock=>\SD:SPI0:BSPIM:clk_fin\,
-		reset=>zero,
-		load=>zero,
+		reset=>Net_10437,
+		load=>Net_10437,
 		enable=>\SD:SPI0:BSPIM:cnt_enable\,
 		count=>(\SD:SPI0:BSPIM:count_6\, \SD:SPI0:BSPIM:count_5\, \SD:SPI0:BSPIM:count_4\, \SD:SPI0:BSPIM:count_3\,
 			\SD:SPI0:BSPIM:count_2\, \SD:SPI0:BSPIM:count_1\, \SD:SPI0:BSPIM:count_0\),
@@ -3584,19 +3573,19 @@ ISR_CYCLES:cy_isr_v1_0
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"0001001",
 		cy_int_mask=>"0000000")
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clock=>\SD:SPI0:BSPIM:clk_fin\,
-		status=>(zero, zero, \SD:SPI0:BSPIM:tx_status_4\, \SD:SPI0:BSPIM:load_rx_data\,
+		status=>(Net_10437, Net_10437, \SD:SPI0:BSPIM:tx_status_4\, \SD:SPI0:BSPIM:load_rx_data\,
 			\SD:SPI0:BSPIM:tx_status_2\, \SD:SPI0:BSPIM:tx_status_1\, \SD:SPI0:BSPIM:tx_status_0\),
 		interrupt=>\SD:Net_5\);
 \SD:SPI0:BSPIM:RxStsReg\:cy_psoc3_statusi
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"1000000",
 		cy_int_mask=>"0000000")
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clock=>\SD:SPI0:BSPIM:clk_fin\,
-		status=>(\SD:SPI0:BSPIM:rx_status_6\, \SD:SPI0:BSPIM:rx_status_5\, \SD:SPI0:BSPIM:rx_status_4\, zero,
-			zero, zero, zero),
+		status=>(\SD:SPI0:BSPIM:rx_status_6\, \SD:SPI0:BSPIM:rx_status_5\, \SD:SPI0:BSPIM:rx_status_4\, Net_10437,
+			Net_10437, Net_10437, Net_10437),
 		interrupt=>\SD:Net_3\);
 \SD:SPI0:BSPIM:sR8:Dp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000011111111000000001111111111111111000000000010001000001000111100000000000000000100",
@@ -3620,15 +3609,15 @@ ISR_CYCLES:cy_isr_v1_0
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\SD:SPI0:BSPIM:clk_fin\,
 		cs_addr=>(\SD:SPI0:BSPIM:state_2\, \SD:SPI0:BSPIM:state_1\, \SD:SPI0:BSPIM:state_0\),
 		route_si=>\SD:Net_16\,
-		route_ci=>zero,
-		f0_load=>zero,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
 		f1_load=>\SD:SPI0:BSPIM:load_rx_data\,
-		d0_load=>zero,
-		d1_load=>zero,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>open,
 		cl0=>open,
 		z0=>open,
@@ -3661,28 +3650,28 @@ ISR_CYCLES:cy_isr_v1_0
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \SD:mosi0\:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"3537ae03-95e4-4c84-8be5-5c34ee791d4f/ed092b9b-d398-4703-be89-cebf998501f6",
@@ -3747,12 +3736,12 @@ ISR_CYCLES:cy_isr_v1_0
 		io=>(\SD:tmpIO_0__mosi0_net_0\),
 		siovref=>(\SD:tmpSIOVREF__mosi0_net_0\),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>\SD:tmpINTERRUPT_0__mosi0_net_0\);
 \SD:Clock_1\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -3821,18 +3810,18 @@ ISR_CYCLES:cy_isr_v1_0
 		ovt_hyst_trim=>"",
 		input_buffer_sel=>"")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>\SD:Net_16\,
 		analog=>(open),
 		io=>(\SD:tmpIO_0__miso0_net_0\),
 		siovref=>(\SD:tmpSIOVREF__miso0_net_0\),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>\SD:tmpINTERRUPT_0__miso0_net_0\);
 \SD:sclk0\:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"3537ae03-95e4-4c84-8be5-5c34ee791d4f/ae249072-87dc-41aa-9405-888517aefa28",
@@ -3897,12 +3886,12 @@ ISR_CYCLES:cy_isr_v1_0
 		io=>(\SD:tmpIO_0__sclk0_net_0\),
 		siovref=>(\SD:tmpSIOVREF__sclk0_net_0\),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>\SD:tmpINTERRUPT_0__sclk0_net_0\);
 \SD:SPI0_CS\:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"3537ae03-95e4-4c84-8be5-5c34ee791d4f/6df85302-e45f-45fb-97de-4bdf3128e07b",
@@ -3961,18 +3950,18 @@ ISR_CYCLES:cy_isr_v1_0
 		ovt_hyst_trim=>"",
 		input_buffer_sel=>"")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(\SD:tmpFB_0__SPI0_CS_net_0\),
 		analog=>(open),
 		io=>(\SD:tmpIO_0__SPI0_CS_net_0\),
 		siovref=>(\SD:tmpSIOVREF__SPI0_CS_net_0\),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>\SD:tmpINTERRUPT_0__SPI0_CS_net_0\);
 CS_RTC:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"fa317fe3-42e6-4c88-87df-5d5f0f9ec96d",
@@ -4031,18 +4020,18 @@ CS_RTC:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__CS_RTC_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__CS_RTC_net_0),
 		siovref=>(tmpSIOVREF__CS_RTC_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__CS_RTC_net_0);
 CLK_RTC:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ab3a2ca0-fa0c-4599-b9a3-2d4b412fba13",
@@ -4101,18 +4090,18 @@ CLK_RTC:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__CLK_RTC_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__CLK_RTC_net_0),
 		siovref=>(tmpSIOVREF__CLK_RTC_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__CLK_RTC_net_0);
 MOSI_RTC:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"9104f111-873f-4d4f-9435-55b9f7e766e1",
@@ -4171,18 +4160,18 @@ MOSI_RTC:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__MOSI_RTC_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__MOSI_RTC_net_0),
 		siovref=>(tmpSIOVREF__MOSI_RTC_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__MOSI_RTC_net_0);
 MISO_RTC:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"9ba63a55-9029-4fc5-8979-f92f80c52cd3",
@@ -4241,18 +4230,18 @@ MISO_RTC:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>(zero),
+		y=>(Net_10437),
 		fb=>(tmpFB_0__MISO_RTC_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__MISO_RTC_net_0),
 		siovref=>(tmpSIOVREF__MISO_RTC_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__MISO_RTC_net_0);
 LED_RED:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"9a2cf45d-6117-434c-b59b-8d3b55fadb43",
@@ -4317,12 +4306,12 @@ LED_RED:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__LED_RED_net_0),
 		siovref=>(tmpSIOVREF__LED_RED_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__LED_RED_net_0);
 \BLINK_05HZ:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
@@ -4335,7 +4324,7 @@ LED_RED:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"11111111",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clock=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		control=>(\BLINK_05HZ:PWMUDB:control_7\, \BLINK_05HZ:PWMUDB:control_6\, \BLINK_05HZ:PWMUDB:control_5\, \BLINK_05HZ:PWMUDB:control_4\,
 			\BLINK_05HZ:PWMUDB:control_3\, \BLINK_05HZ:PWMUDB:control_2\, \BLINK_05HZ:PWMUDB:control_1\, \BLINK_05HZ:PWMUDB:control_0\));
@@ -4361,15 +4350,15 @@ LED_RED:cy_psoc3_pins_v1_10
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\BLINK_05HZ:PWMUDB:tc_i\, \BLINK_05HZ:PWMUDB:runmode_enable\, zero),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(\BLINK_05HZ:PWMUDB:tc_i\, \BLINK_05HZ:PWMUDB:runmode_enable\, Net_10437),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\BLINK_05HZ:PWMUDB:nc2\,
 		cl0=>\BLINK_05HZ:PWMUDB:nc3\,
 		z0=>\BLINK_05HZ:PWMUDB:nc1\,
@@ -4402,28 +4391,28 @@ LED_RED:cy_psoc3_pins_v1_10
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:carry\,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
 		sil=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:sh_right\,
 		sol=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:sh_left\,
 		msbi=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:msb\,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_eq_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_eq_0\),
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_lt_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_lt_0\),
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_zero_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_zero_0\),
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_ff_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_ff_0\),
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cap_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cap_0\),
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:cfb\,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000",
@@ -4447,15 +4436,15 @@ LED_RED:cy_psoc3_pins_v1_10
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\BLINK_05HZ:PWMUDB:tc_i\, \BLINK_05HZ:PWMUDB:runmode_enable\, zero),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(\BLINK_05HZ:PWMUDB:tc_i\, \BLINK_05HZ:PWMUDB:runmode_enable\, Net_10437),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\BLINK_05HZ:PWMUDB:cmp1_eq\,
 		cl0=>\BLINK_05HZ:PWMUDB:cmp1_less\,
 		z0=>\BLINK_05HZ:PWMUDB:tc_i\,
@@ -4492,9 +4481,9 @@ LED_RED:cy_psoc3_pins_v1_10
 		co=>open,
 		sir=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:sh_left\,
 		sor=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:sh_right\,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:msb\,
 		cei=>(\BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_eq_1\, \BLINK_05HZ:PWMUDB:sP16:pwmdp:cmp_eq_0\),
 		ceo=>open,
@@ -4508,17 +4497,17 @@ LED_RED:cy_psoc3_pins_v1_10
 		capo=>open,
 		cfbi=>\BLINK_05HZ:PWMUDB:sP16:pwmdp:cfb\,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:c_24\);
 \BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:c_16\);
 \BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_05HZ:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:c_8\);
 \LED_CTRL:Sync:ctrl_reg\:cy_psoc3_control
 	GENERIC MAP(cy_init_value=>"00000000",
@@ -4526,8 +4515,8 @@ LED_RED:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>zero,
+	PORT MAP(reset=>Net_10437,
+		clock=>Net_10437,
 		control=>(\LED_CTRL:control_7\, \LED_CTRL:control_6\, \LED_CTRL:control_5\, \LED_CTRL:control_4\,
 			\LED_CTRL:control_3\, \LED_CTRL:control_2\, Net_7694, Net_7450));
 \BLINK_CTRL_EN:Sync:ctrl_reg\:cy_psoc3_control
@@ -4536,8 +4525,8 @@ LED_RED:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>zero,
+	PORT MAP(reset=>Net_10437,
+		clock=>Net_10437,
 		control=>(\BLINK_CTRL_EN:control_7\, \BLINK_CTRL_EN:control_6\, \BLINK_CTRL_EN:control_5\, \BLINK_CTRL_EN:control_4\,
 			\BLINK_CTRL_EN:control_3\, \BLINK_CTRL_EN:control_2\, Net_5930, Net_3925));
 LED_GREEN:cy_psoc3_pins_v1_10
@@ -4603,12 +4592,12 @@ LED_GREEN:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__LED_GREEN_net_0),
 		siovref=>(tmpSIOVREF__LED_GREEN_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__LED_GREEN_net_0);
 \BLINK_25HZ:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
@@ -4621,7 +4610,7 @@ LED_GREEN:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"11111111",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clock=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		control=>(\BLINK_25HZ:PWMUDB:control_7\, \BLINK_25HZ:PWMUDB:control_6\, \BLINK_25HZ:PWMUDB:control_5\, \BLINK_25HZ:PWMUDB:control_4\,
 			\BLINK_25HZ:PWMUDB:control_3\, \BLINK_25HZ:PWMUDB:control_2\, \BLINK_25HZ:PWMUDB:control_1\, \BLINK_25HZ:PWMUDB:control_0\));
@@ -4647,15 +4636,15 @@ LED_GREEN:cy_psoc3_pins_v1_10
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\BLINK_25HZ:PWMUDB:tc_i\, \BLINK_25HZ:PWMUDB:runmode_enable\, zero),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(\BLINK_25HZ:PWMUDB:tc_i\, \BLINK_25HZ:PWMUDB:runmode_enable\, Net_10437),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\BLINK_25HZ:PWMUDB:cmp1_eq\,
 		cl0=>\BLINK_25HZ:PWMUDB:cmp1_less\,
 		z0=>\BLINK_25HZ:PWMUDB:tc_i\,
@@ -4688,37 +4677,37 @@ LED_GREEN:cy_psoc3_pins_v1_10
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_24\);
 \BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_16\);
 \BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\BLINK_25HZ:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\);
 CLOCK_PWM_BLINK:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -4793,12 +4782,12 @@ TOAST_2A:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__TOAST_2A_net_0),
 		siovref=>(tmpSIOVREF__TOAST_2A_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_2A_net_0);
 TOAST_2B:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"f304e074-cdf5-4088-ab4b-c9b40bedc753",
@@ -4857,18 +4846,18 @@ TOAST_2B:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>Net_10357,
+		y=>Net_10437,
 		fb=>(tmpFB_0__TOAST_2B_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__TOAST_2B_net_0),
 		siovref=>(tmpSIOVREF__TOAST_2B_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_2B_net_0);
 \MOTOR_ON_OFF_1:Sync:ctrl_reg\:cy_psoc3_control
 	GENERIC MAP(cy_init_value=>"00000000",
@@ -4876,8 +4865,8 @@ TOAST_2B:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>zero,
+	PORT MAP(reset=>Net_10437,
+		clock=>Net_10437,
 		control=>(\MOTOR_ON_OFF_1:control_7\, \MOTOR_ON_OFF_1:control_6\, \MOTOR_ON_OFF_1:control_5\, \MOTOR_ON_OFF_1:control_4\,
 			\MOTOR_ON_OFF_1:control_3\, \MOTOR_ON_OFF_1:control_2\, \MOTOR_ON_OFF_1:control_1\, Net_10289));
 \MY_TIMER_REG:Sync:ctrl_reg\:cy_psoc3_control
@@ -4886,8 +4875,8 @@ TOAST_2B:cy_psoc3_pins_v1_10
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"00000000",
 		cy_ext_reset=>'0')
-	PORT MAP(reset=>zero,
-		clock=>zero,
+	PORT MAP(reset=>Net_10437,
+		clock=>Net_10437,
 		control=>(\MY_TIMER_REG:control_7\, \MY_TIMER_REG:control_6\, \MY_TIMER_REG:control_5\, \MY_TIMER_REG:control_4\,
 			\MY_TIMER_REG:control_3\, \MY_TIMER_REG:control_2\, \MY_TIMER_REG:control_1\, Net_4386));
 TOAST_3A:cy_psoc3_pins_v1_10
@@ -4953,12 +4942,12 @@ TOAST_3A:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__TOAST_3A_net_0),
 		siovref=>(tmpSIOVREF__TOAST_3A_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_3A_net_0);
 \PWM_MOTORS_3:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
@@ -4987,15 +4976,15 @@ TOAST_3A:cy_psoc3_pins_v1_10
 		f0_blk_sync=>'1',
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
-	PORT MAP(reset=>zero,
+	PORT MAP(reset=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\PWM_MOTORS_3:PWMUDB:tc_i\, \PWM_MOTORS_3:PWMUDB:runmode_enable\, zero),
-		route_si=>zero,
-		route_ci=>zero,
-		f0_load=>zero,
-		f1_load=>zero,
-		d0_load=>zero,
-		d1_load=>zero,
+		cs_addr=>(\PWM_MOTORS_3:PWMUDB:tc_i\, \PWM_MOTORS_3:PWMUDB:runmode_enable\, Net_10437),
+		route_si=>Net_10437,
+		route_ci=>Net_10437,
+		f0_load=>Net_10437,
+		f1_load=>Net_10437,
+		d0_load=>Net_10437,
+		d1_load=>Net_10437,
 		ce0=>\PWM_MOTORS_3:PWMUDB:cmp1_eq\,
 		cl0=>\PWM_MOTORS_3:PWMUDB:cmp1_less\,
 		z0=>\PWM_MOTORS_3:PWMUDB:tc_i\,
@@ -5028,37 +5017,37 @@ TOAST_3A:cy_psoc3_pins_v1_10
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>zero,
+		ci=>Net_10437,
 		co=>open,
-		sir=>zero,
+		sir=>Net_10437,
 		sor=>open,
-		sil=>zero,
+		sil=>Net_10437,
 		sol=>open,
-		msbi=>zero,
+		msbi=>Net_10437,
 		msbo=>open,
-		cei=>(zero, zero),
+		cei=>(Net_10437, Net_10437),
 		ceo=>open,
-		cli=>(zero, zero),
+		cli=>(Net_10437, Net_10437),
 		clo=>open,
-		zi=>(zero, zero),
+		zi=>(Net_10437, Net_10437),
 		zo=>open,
-		fi=>(zero, zero),
+		fi=>(Net_10437, Net_10437),
 		fo=>open,
-		capi=>(zero, zero),
+		capi=>(Net_10437, Net_10437),
 		capo=>open,
-		cfbi=>zero,
+		cfbi=>Net_10437,
 		cfbo=>open,
-		pi=>(zero, zero, zero, zero,
-			zero, zero, zero, zero),
+		pi=>(Net_10437, Net_10437, Net_10437, Net_10437,
+			Net_10437, Net_10437, Net_10437, Net_10437),
 		po=>open);
 \PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_24\);
 \PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_16\);
 \PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
-	PORT MAP(x=>zero,
+	PORT MAP(x=>Net_10437,
 		y=>\PWM_MOTORS_3:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_8\);
 TOAST_3B:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"d356776a-e47b-4284-a111-a8ab51eca4ef",
@@ -5117,18 +5106,18 @@ TOAST_3B:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>Net_10397,
+		y=>Net_10437,
 		fb=>(tmpFB_0__TOAST_3B_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__TOAST_3B_net_0),
 		siovref=>(tmpSIOVREF__TOAST_3B_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_3B_net_0);
 TOAST_4A:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"93fa5b77-1b2c-4737-91a6-25a7c7ae1232",
@@ -5193,12 +5182,12 @@ TOAST_4A:cy_psoc3_pins_v1_10
 		io=>(tmpIO_0__TOAST_4A_net_0),
 		siovref=>(tmpSIOVREF__TOAST_4A_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_4A_net_0);
 TOAST_4B:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"2223a192-7c6e-4dfb-af0d-468347c37a09",
@@ -5257,37 +5246,37 @@ TOAST_4B:cy_psoc3_pins_v1_10
 		ovt_hyst_trim=>"0",
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(tmpOE__TOAST_1B_net_0),
-		y=>Net_10398,
+		y=>Net_10437,
 		fb=>(tmpFB_0__TOAST_4B_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__TOAST_4B_net_0),
 		siovref=>(tmpSIOVREF__TOAST_4B_net_0),
 		annotation=>(open),
-		in_clock=>zero,
+		in_clock=>Net_10437,
 		in_clock_en=>tmpOE__TOAST_1B_net_0,
-		in_reset=>zero,
-		out_clock=>zero,
+		in_reset=>Net_10437,
+		out_clock=>Net_10437,
 		out_clock_en=>tmpOE__TOAST_1B_net_0,
-		out_reset=>zero,
+		out_reset=>Net_10437,
 		interrupt=>tmpINTERRUPT_0__TOAST_4B_net_0);
 \PWM_MOTORS:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:min_kill_reg\);
 \PWM_MOTORS:PWMUDB:prevCapture\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:prevCapture\);
 \PWM_MOTORS:PWMUDB:trig_last\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:trig_last\);
 \PWM_MOTORS:PWMUDB:runmode_enable\:cy_dsrff
 	PORT MAP(d=>Net_10289,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:runmode_enable\);
 \PWM_MOTORS:PWMUDB:sc_kill_tmp\:cy_dff
@@ -5296,24 +5285,24 @@ TOAST_4B:cy_psoc3_pins_v1_10
 		q=>\PWM_MOTORS:PWMUDB:sc_kill_tmp\);
 \PWM_MOTORS:PWMUDB:ltch_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:ltch_kill_reg\);
 \PWM_MOTORS:PWMUDB:dith_count_1\:cy_dsrff
 	PORT MAP(d=>\PWM_MOTORS:PWMUDB:dith_count_1\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:dith_count_1\);
 \PWM_MOTORS:PWMUDB:dith_count_0\:cy_dsrff
 	PORT MAP(d=>\PWM_MOTORS:PWMUDB:dith_count_0\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:dith_count_0\);
 \PWM_MOTORS:PWMUDB:pwm_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS:PWMUDB:pwm_i_reg\);
 \PWM_MOTORS:PWMUDB:pwm1_i_reg\:cy_dff
@@ -5333,7 +5322,7 @@ cy_srff_1:cy_dff
 		clk=>Net_3328,
 		q=>cy_srff_1);
 \UART_RS485:BUART:reset_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:reset_reg\);
 \UART_RS485:BUART:txn\:cy_dff
@@ -5401,7 +5390,7 @@ Net_6020:cy_dff
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_state_stop1_reg\);
 \UART_RS485:BUART:rx_markspace_status\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_markspace_status\);
 \UART_RS485:BUART:rx_break_status\:cy_dff
@@ -5409,7 +5398,7 @@ Net_6020:cy_dff
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_status_1\);
 \UART_RS485:BUART:rx_parity_error_status\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_status_2\);
 \UART_RS485:BUART:rx_stop_bit_error\:cy_dff
@@ -5417,7 +5406,7 @@ Net_6020:cy_dff
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_status_3\);
 \UART_RS485:BUART:rx_addr_match_status\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_addr_match_status\);
 \UART_RS485:BUART:rx_markspace_pre\:cy_dff
@@ -5445,7 +5434,7 @@ Net_6020:cy_dff
 		clk=>\UART_RS485:BUART:clock_op\,
 		q=>\UART_RS485:BUART:rx_parity_bit\);
 \SD:SPI0:BSPIM:so_send_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\SD:SPI0:BSPIM:clk_fin\,
 		q=>\SD:SPI0:BSPIM:so_send_reg\);
 \SD:SPI0:BSPIM:state_2\:cy_dff
@@ -5502,22 +5491,22 @@ Net_6020:cy_dff
 		q=>\SD:Net_22\);
 \BLINK_05HZ:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:min_kill_reg\);
 \BLINK_05HZ:PWMUDB:prevCapture\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:prevCapture\);
 \BLINK_05HZ:PWMUDB:trig_last\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:trig_last\);
 \BLINK_05HZ:PWMUDB:runmode_enable\:cy_dsrff
 	PORT MAP(d=>\BLINK_05HZ:PWMUDB:runmode_enable\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:runmode_enable\);
 \BLINK_05HZ:PWMUDB:sc_kill_tmp\:cy_dff
@@ -5526,20 +5515,20 @@ Net_6020:cy_dff
 		q=>\BLINK_05HZ:PWMUDB:sc_kill_tmp\);
 \BLINK_05HZ:PWMUDB:ltch_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:ltch_kill_reg\);
 \BLINK_05HZ:PWMUDB:dith_count_1\:cy_dsrff
 	PORT MAP(d=>\BLINK_05HZ:PWMUDB:dith_count_1\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:dith_count_1\);
 \BLINK_05HZ:PWMUDB:dith_count_0\:cy_dsrff
 	PORT MAP(d=>\BLINK_05HZ:PWMUDB:dith_count_0\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:dith_count_0\);
 \BLINK_05HZ:PWMUDB:pwm_i_reg\:cy_dff
@@ -5547,11 +5536,11 @@ Net_6020:cy_dff
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>Net_5579);
 \BLINK_05HZ:PWMUDB:pwm1_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:pwm1_i_reg\);
 \BLINK_05HZ:PWMUDB:pwm2_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_05HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_05HZ:PWMUDB:pwm2_i_reg\);
 \BLINK_05HZ:PWMUDB:tc_i_reg\:cy_dff
@@ -5560,22 +5549,22 @@ Net_6020:cy_dff
 		q=>\BLINK_05HZ:PWMUDB:tc_i_reg\);
 \BLINK_25HZ:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:min_kill_reg\);
 \BLINK_25HZ:PWMUDB:prevCapture\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:prevCapture\);
 \BLINK_25HZ:PWMUDB:trig_last\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:trig_last\);
 \BLINK_25HZ:PWMUDB:runmode_enable\:cy_dsrff
 	PORT MAP(d=>\BLINK_25HZ:PWMUDB:runmode_enable\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:runmode_enable\);
 \BLINK_25HZ:PWMUDB:sc_kill_tmp\:cy_dff
@@ -5584,20 +5573,20 @@ Net_6020:cy_dff
 		q=>\BLINK_25HZ:PWMUDB:sc_kill_tmp\);
 \BLINK_25HZ:PWMUDB:ltch_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:ltch_kill_reg\);
 \BLINK_25HZ:PWMUDB:dith_count_1\:cy_dsrff
 	PORT MAP(d=>\BLINK_25HZ:PWMUDB:dith_count_1\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:dith_count_1\);
 \BLINK_25HZ:PWMUDB:dith_count_0\:cy_dsrff
 	PORT MAP(d=>\BLINK_25HZ:PWMUDB:dith_count_0\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:dith_count_0\);
 \BLINK_25HZ:PWMUDB:pwm_i_reg\:cy_dff
@@ -5605,11 +5594,11 @@ Net_6020:cy_dff
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>Net_7667);
 \BLINK_25HZ:PWMUDB:pwm1_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:pwm1_i_reg\);
 \BLINK_25HZ:PWMUDB:pwm2_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\BLINK_25HZ:PWMUDB:ClockOutFromEnBlock\,
 		q=>\BLINK_25HZ:PWMUDB:pwm2_i_reg\);
 \BLINK_25HZ:PWMUDB:tc_i_reg\:cy_dff
@@ -5618,22 +5607,22 @@ Net_6020:cy_dff
 		q=>\BLINK_25HZ:PWMUDB:tc_i_reg\);
 \PWM_MOTORS_3:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:min_kill_reg\);
 \PWM_MOTORS_3:PWMUDB:prevCapture\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:prevCapture\);
 \PWM_MOTORS_3:PWMUDB:trig_last\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:trig_last\);
 \PWM_MOTORS_3:PWMUDB:runmode_enable\:cy_dsrff
 	PORT MAP(d=>Net_10289,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:runmode_enable\);
 \PWM_MOTORS_3:PWMUDB:sc_kill_tmp\:cy_dff
@@ -5642,24 +5631,24 @@ Net_6020:cy_dff
 		q=>\PWM_MOTORS_3:PWMUDB:sc_kill_tmp\);
 \PWM_MOTORS_3:PWMUDB:ltch_kill_reg\:cy_dsrff
 	PORT MAP(d=>tmpOE__TOAST_1B_net_0,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:ltch_kill_reg\);
 \PWM_MOTORS_3:PWMUDB:dith_count_1\:cy_dsrff
 	PORT MAP(d=>\PWM_MOTORS_3:PWMUDB:dith_count_1\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:dith_count_1\);
 \PWM_MOTORS_3:PWMUDB:dith_count_0\:cy_dsrff
 	PORT MAP(d=>\PWM_MOTORS_3:PWMUDB:dith_count_0\\D\,
-		s=>zero,
-		r=>zero,
+		s=>Net_10437,
+		r=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:dith_count_0\);
 \PWM_MOTORS_3:PWMUDB:pwm_i_reg\:cy_dff
-	PORT MAP(d=>zero,
+	PORT MAP(d=>Net_10437,
 		clk=>\PWM_MOTORS_3:PWMUDB:ClockOutFromEnBlock\,
 		q=>\PWM_MOTORS_3:PWMUDB:pwm_i_reg\);
 \PWM_MOTORS_3:PWMUDB:pwm1_i_reg\:cy_dff

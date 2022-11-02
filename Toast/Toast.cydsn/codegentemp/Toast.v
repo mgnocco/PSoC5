@@ -1,6 +1,6 @@
 // ======================================================================
 // Toast.v generated from TopDesign.cysch
-// 10/31/2022 at 15:05
+// 11/02/2022 at 18:46
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1080,19 +1080,6 @@ module emFile_v1_20_6 ;
 
 endmodule
 
-// Component: not_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v"
-`endif
-
 // PWM_v3_30(CaptureMode=0, Clock_CheckTolerance=true, Clock_desired_freq=12, Clock_desired_freq_unit=6, Clock_divisor=1, Clock_FractDividerDenominator=0, Clock_FractDividerNumerator=0, Clock_FractDividerUsed=false, Clock_is_direct=false, Clock_is_divider=false, Clock_is_freq=true, Clock_minus_tolerance=5, Clock_ph_align_clock_id=, Clock_ph_align_clock_name=, Clock_plus_tolerance=5, Clock_source_clock_id=, Clock_source_clock_name=, Compare1_16=true, Compare1_8=false, Compare2_16=false, Compare2_8=false, CompareStatusEdgeSense=true, CompareType1=2, CompareType1Software=0, CompareType2=2, CompareType2Software=0, CompareValue1=499, CompareValue2=0, CONTROL3=0, ControlReg=true, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeadBand=0, DeadBand2_4=0, DeadBand256=0, DeadBandUsed=0, DeadTime=1, DitherOffset=1, EnableMode=2, FF16=false, FF8=false, FixedFunction=false, FixedFunctionUsed=0, InterruptOnCMP1=false, InterruptOnCMP2=false, InterruptOnKill=false, InterruptOnTC=false, IntOnCMP1=0, IntOnCMP2=0, IntOnKill=0, IntOnTC=0, KillMode=0, KillModeMinTime=0, MinimumKillTime=1, OneCompare=true, Period=999, PWMMode=0, PWMModeCenterAligned=0, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=sSTSReg_rstSts, RunMode=0, Status=false, TermMode_capture=0, TermMode_clock=0, TermMode_cmp_sel=0, TermMode_enable=0, TermMode_interrupt=0, TermMode_kill=0, TermMode_ph1=0, TermMode_ph2=0, TermMode_pwm=0, TermMode_pwm1=0, TermMode_pwm2=0, TermMode_reset=0, TermMode_tc=0, TermMode_trigger=0, TermVisibility_capture=false, TermVisibility_clock=true, TermVisibility_cmp_sel=false, TermVisibility_enable=true, TermVisibility_interrupt=false, TermVisibility_kill=false, TermVisibility_ph1=false, TermVisibility_ph2=false, TermVisibility_pwm=true, TermVisibility_pwm1=false, TermVisibility_pwm2=false, TermVisibility_reset=true, TermVisibility_tc=true, TermVisibility_trigger=false, TriggerMode=0, UDB16=true, UDB8=false, UseControl=true, UseInterrupt=false, UseStatus=false, VerilogSectionReplacementString=sP16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=PWM_v3_30, CY_CONFIG_TITLE=BLINK_05HZ, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=BLINK_05HZ, CY_INSTANCE_SHORT_NAME=BLINK_05HZ, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=30, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.4, INSTANCE_NAME=BLINK_05HZ, )
 module PWM_v3_30_7 (
     capture,
@@ -1391,8 +1378,6 @@ endmodule
 // top
 module top ;
 
-          wire  Net_10398;
-          wire  Net_10397;
           wire  Net_10426;
           wire  Net_10425;
           wire  Net_10393;
@@ -1461,7 +1446,6 @@ module top ;
           wire  Net_8892;
           wire  Net_8889;
           wire  Net_7325;
-          wire  Net_10357;
           wire  Net_7002;
           wire  Net_3876;
           wire  Net_3872;
@@ -1519,7 +1503,7 @@ module top ;
           wire  Net_10287;
           wire  Net_7001;
           wire  Net_9919;
-          wire  Net_10379;
+          wire  Net_10437;
           wire  Net_10392;
           wire  Net_10289;
           wire  Net_10382;
@@ -1612,7 +1596,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		TOAST_1B
 		 (.oe(tmpOE__TOAST_1B_net),
-		  .y({Net_10379}),
+		  .y({Net_10437}),
 		  .fb({tmpFB_0__TOAST_1B_net[0:0]}),
 		  .io({tmpIO_0__TOAST_1B_net[0:0]}),
 		  .siovref(tmpSIOVREF__TOAST_1B_net),
@@ -1784,7 +1768,7 @@ module top ;
 		#(.id("f801b4a9-38f2-478d-b30d-81c0e8844af6"),
 		  .source_clock_id("61737EF6-3B74-48f9-8B91-F7473A442AE7"),
 		  .divisor(0),
-		  .period("5E+15"),
+		  .period("500000000"),
 		  .is_direct(0),
 		  .is_digital(1))
 		CLOCK_PWM
@@ -2622,9 +2606,6 @@ module top ;
 
 	assign tmpOE__MISO_RTC_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-
-    assign Net_10357 = ~Net_10345;
-
 	wire [0:0] tmpOE__LED_RED_net;
 	wire [0:0] tmpFB_0__LED_RED_net;
 	wire [0:0] tmpIO_0__LED_RED_net;
@@ -3013,7 +2994,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		TOAST_2B
 		 (.oe(tmpOE__TOAST_2B_net),
-		  .y({Net_10357}),
+		  .y({Net_10437}),
 		  .fb({tmpFB_0__TOAST_2B_net[0:0]}),
 		  .io({tmpIO_0__TOAST_2B_net[0:0]}),
 		  .siovref(tmpSIOVREF__TOAST_2B_net),
@@ -3074,9 +3055,6 @@ module top ;
     defparam MY_TIMER_REG.BusDisplay = 0;
     defparam MY_TIMER_REG.ExtrReset = 0;
     defparam MY_TIMER_REG.NumOutputs = 1;
-
-
-    assign Net_10379 = ~Net_9969;
 
 	wire [0:0] tmpOE__TOAST_3A_net;
 	wire [0:0] tmpFB_0__TOAST_3A_net;
@@ -3234,7 +3212,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		TOAST_3B
 		 (.oe(tmpOE__TOAST_3B_net),
-		  .y({Net_10397}),
+		  .y({Net_10437}),
 		  .fb({tmpFB_0__TOAST_3B_net[0:0]}),
 		  .io({tmpIO_0__TOAST_3B_net[0:0]}),
 		  .siovref(tmpSIOVREF__TOAST_3B_net),
@@ -3384,7 +3362,7 @@ module top ;
 		  .input_buffer_sel(2'b00))
 		TOAST_4B
 		 (.oe(tmpOE__TOAST_4B_net),
-		  .y({Net_10398}),
+		  .y({Net_10437}),
 		  .fb({tmpFB_0__TOAST_4B_net[0:0]}),
 		  .io({tmpIO_0__TOAST_4B_net[0:0]}),
 		  .siovref(tmpSIOVREF__TOAST_4B_net),
@@ -3398,11 +3376,8 @@ module top ;
 
 	assign tmpOE__TOAST_4B_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-
-    assign Net_10398 = ~Net_10392;
-
-
-    assign Net_10397 = ~Net_10382;
+    ZeroTerminal ZeroTerminal_5 (
+        .z(Net_10437));
 
 
 

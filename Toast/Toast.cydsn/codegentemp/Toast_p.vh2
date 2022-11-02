@@ -1,5 +1,5 @@
 -- Project:   Toast
--- Generated: 10/31/2022 15:05:45
+-- Generated: 11/02/2022 18:46:47
 -- PSoC Creator  4.4
 
 ENTITY Toast IS
@@ -59,12 +59,10 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL MOSI_RTC(0)__PA : bit;
     SIGNAL Net_10289 : bit;
     SIGNAL Net_10345 : bit;
-    SIGNAL Net_10357 : bit;
-    SIGNAL Net_10379 : bit;
     SIGNAL Net_10382 : bit;
     SIGNAL Net_10392 : bit;
-    SIGNAL Net_10397 : bit;
-    SIGNAL Net_10398 : bit;
+    SIGNAL Net_10437 : bit;
+    ATTRIBUTE GROUND OF Net_10437 : SIGNAL IS true;
     SIGNAL Net_124 : bit;
     ATTRIBUTE udbclken_assigned OF Net_124 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_124 : SIGNAL IS true;
@@ -274,11 +272,9 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL cy_srff_1 : bit;
     SIGNAL tmpOE__TOAST_1B_net_0 : bit;
     ATTRIBUTE POWER OF tmpOE__TOAST_1B_net_0 : SIGNAL IS true;
-    SIGNAL zero : bit;
-    ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     SIGNAL \ClockBlock.clk_bus_glb_ff__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_2__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_4__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_3__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_5__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.cl0__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.z0__sig\ : bit;
@@ -351,13 +347,9 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:tx_status_0\ : LABEL IS "macrocell11";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:tx_status_4\ : LABEL IS "macrocell12";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:rx_status_6\ : LABEL IS "macrocell13";
-    ATTRIBUTE lib_model OF Net_10357 : LABEL IS "macrocell14";
-    ATTRIBUTE lib_model OF Net_7353 : LABEL IS "macrocell15";
-    ATTRIBUTE lib_model OF Net_7325 : LABEL IS "macrocell16";
-    ATTRIBUTE lib_model OF Net_10379 : LABEL IS "macrocell17";
-    ATTRIBUTE lib_model OF Net_10398 : LABEL IS "macrocell18";
-    ATTRIBUTE lib_model OF Net_10397 : LABEL IS "macrocell19";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF Net_7353 : LABEL IS "macrocell14";
+    ATTRIBUTE lib_model OF Net_7325 : LABEL IS "macrocell15";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell16";
     ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell1";
     ATTRIBUTE lib_model OF \RESET_FF:Sync:ctrl_reg\ : LABEL IS "controlcell1";
     ATTRIBUTE lib_model OF \FF_STATUS:sts:sts_reg\ : LABEL IS "statuscell1";
@@ -379,46 +371,46 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE lib_model OF \MOTOR_ON_OFF_1:Sync:ctrl_reg\ : LABEL IS "controlcell6";
     ATTRIBUTE lib_model OF \MY_TIMER_REG:Sync:ctrl_reg\ : LABEL IS "controlcell7";
     ATTRIBUTE lib_model OF \PWM_MOTORS_3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell9";
-    ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "macrocell21";
-    ATTRIBUTE lib_model OF Net_9969 : LABEL IS "macrocell22";
-    ATTRIBUTE lib_model OF Net_10345 : LABEL IS "macrocell23";
-    ATTRIBUTE lib_model OF cy_srff_1 : LABEL IS "macrocell24";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:txn\ : LABEL IS "macrocell25";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "macrocell26";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "macrocell27";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "macrocell28";
-    ATTRIBUTE lib_model OF Net_6020 : LABEL IS "macrocell29";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "macrocell30";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "macrocell31";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "macrocell32";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "macrocell33";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "macrocell34";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "macrocell35";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "macrocell36";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell37";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "macrocell38";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "macrocell39";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "macrocell40";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "macrocell41";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_last\ : LABEL IS "macrocell42";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "macrocell43";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "macrocell44";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "macrocell45";
-    ATTRIBUTE lib_model OF \SD:Net_1\ : LABEL IS "macrocell46";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell47";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell48";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "macrocell49";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell50";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "macrocell51";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "macrocell52";
-    ATTRIBUTE lib_model OF \SD:Net_22\ : LABEL IS "macrocell53";
-    ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell54";
-    ATTRIBUTE lib_model OF Net_5579 : LABEL IS "macrocell55";
-    ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell56";
-    ATTRIBUTE lib_model OF Net_7667 : LABEL IS "macrocell57";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "macrocell58";
-    ATTRIBUTE lib_model OF Net_10382 : LABEL IS "macrocell59";
-    ATTRIBUTE lib_model OF Net_10392 : LABEL IS "macrocell60";
+    ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "macrocell17";
+    ATTRIBUTE lib_model OF Net_9969 : LABEL IS "macrocell18";
+    ATTRIBUTE lib_model OF Net_10345 : LABEL IS "macrocell19";
+    ATTRIBUTE lib_model OF cy_srff_1 : LABEL IS "macrocell20";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:txn\ : LABEL IS "macrocell21";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "macrocell22";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "macrocell23";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "macrocell24";
+    ATTRIBUTE lib_model OF Net_6020 : LABEL IS "macrocell25";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "macrocell26";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "macrocell27";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "macrocell28";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "macrocell29";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "macrocell30";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "macrocell31";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "macrocell32";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell33";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "macrocell34";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "macrocell35";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "macrocell36";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "macrocell37";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_last\ : LABEL IS "macrocell38";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "macrocell39";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "macrocell40";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "macrocell41";
+    ATTRIBUTE lib_model OF \SD:Net_1\ : LABEL IS "macrocell42";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell43";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell44";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "macrocell45";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell46";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "macrocell47";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "macrocell48";
+    ATTRIBUTE lib_model OF \SD:Net_22\ : LABEL IS "macrocell49";
+    ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell50";
+    ATTRIBUTE lib_model OF Net_5579 : LABEL IS "macrocell51";
+    ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell52";
+    ATTRIBUTE lib_model OF Net_7667 : LABEL IS "macrocell53";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "macrocell54";
+    ATTRIBUTE lib_model OF Net_10382 : LABEL IS "macrocell55";
+    ATTRIBUTE lib_model OF Net_10392 : LABEL IS "macrocell56";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -823,17 +815,17 @@ BEGIN
             dclk_0 => Net_124_local,
             dclk_glb_1 => \SD:Net_19\,
             dclk_1 => \SD:Net_19_local\,
-            dclk_glb_2 => Net_4387,
-            dclk_2 => Net_4387_local,
-            dclk_glb_3 => Net_6987,
-            dclk_3 => Net_6987_local,
-            dclk_glb_4 => Net_2711,
-            dclk_4 => Net_2711_local,
-            dclk_glb_5 => Net_2334,
-            dclk_5 => Net_2334_local,
+            dclk_glb_2 => Net_2334,
+            dclk_2 => Net_2334_local,
+            dclk_glb_3 => Net_4387,
+            dclk_3 => Net_4387_local,
+            dclk_glb_4 => Net_6987,
+            dclk_4 => Net_6987_local,
+            dclk_glb_5 => Net_2711,
+            dclk_5 => Net_2711_local,
             clk_bus_glb_ff => \ClockBlock.clk_bus_glb_ff__sig\,
-            dclk_glb_ff_2 => \ClockBlock.dclk_glb_ff_2__sig\,
-            dclk_glb_ff_4 => \ClockBlock.dclk_glb_ff_4__sig\);
+            dclk_glb_ff_3 => \ClockBlock.dclk_glb_ff_3__sig\,
+            dclk_glb_ff_5 => \ClockBlock.dclk_glb_ff_5__sig\);
 
     TOAST_1B:logicalport
         GENERIC MAP(
@@ -913,12 +905,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_1B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_1B(0)__PA,
             oe => open,
-            pin_input => Net_10379,
-            pad_out => TOAST_1B(0)_PAD,
             pad_in => TOAST_1B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2554,12 +2544,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_2B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_2B(0)__PA,
             oe => open,
-            pin_input => Net_10357,
-            pad_out => TOAST_2B(0)_PAD,
             pad_in => TOAST_2B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2738,12 +2726,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_3B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_3B(0)__PA,
             oe => open,
-            pin_input => Net_10397,
-            pad_out => TOAST_3B(0)_PAD,
             pad_in => TOAST_3B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2922,12 +2908,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_4B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_4B(0)__PA,
             oe => open,
-            pin_input => Net_10398,
-            pad_out => TOAST_4B(0)_PAD,
             pad_in => TOAST_4B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -3073,15 +3057,6 @@ BEGIN
             main_4 => \SD:SPI0:BSPIM:count_0\,
             main_5 => \SD:SPI0:BSPIM:rx_status_4\);
 
-    Net_10357:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10357,
-            main_0 => Net_10345);
-
     Net_7353:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1)",
@@ -3103,15 +3078,6 @@ BEGIN
             main_1 => Net_7450,
             main_2 => Net_7667);
 
-    Net_10379:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10379,
-            main_0 => Net_9969);
-
     RS485_RX(0)_SYNC:synccell
         GENERIC MAP(
             clk_inv => '0',
@@ -3120,24 +3086,6 @@ BEGIN
             in => Net_6196,
             out => Net_6196_SYNCOUT,
             clock => ClockBlock_BUS_CLK);
-
-    Net_10398:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10398,
-            main_0 => Net_10392);
-
-    Net_10397:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10397,
-            main_0 => Net_10382);
 
     __ONE__:macrocell
         GENERIC MAP(
@@ -3237,7 +3185,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_2__sig\,
+            clock => \ClockBlock.dclk_glb_ff_3__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,
@@ -3447,7 +3395,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_4__sig\,
+            clock => \ClockBlock.dclk_glb_ff_5__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,

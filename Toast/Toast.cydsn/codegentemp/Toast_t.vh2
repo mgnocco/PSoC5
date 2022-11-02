@@ -1,5 +1,5 @@
 -- Project:   C:\Users\mgnocco\Documents\GitHub\PSoC5\Toast\Toast.cydsn\Toast.cyprj
--- Generated: 10/31/2022 15:05:49
+-- Generated: 11/02/2022 18:46:52
 -- PSoC Creator  4.4
 
 ENTITY Toast IS
@@ -59,19 +59,13 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL MOSI_RTC(0)__PA : bit;
     SIGNAL Net_10289 : bit;
     SIGNAL Net_10345 : bit;
-    ATTRIBUTE placement_force OF Net_10345 : SIGNAL IS "U(2,5,B)0";
-    SIGNAL Net_10357 : bit;
-    ATTRIBUTE placement_force OF Net_10357 : SIGNAL IS "U(2,4,A)1";
-    SIGNAL Net_10379 : bit;
-    ATTRIBUTE placement_force OF Net_10379 : SIGNAL IS "U(2,5,A)1";
+    ATTRIBUTE placement_force OF Net_10345 : SIGNAL IS "U(2,0,B)2";
     SIGNAL Net_10382 : bit;
-    ATTRIBUTE placement_force OF Net_10382 : SIGNAL IS "U(3,5,A)1";
+    ATTRIBUTE placement_force OF Net_10382 : SIGNAL IS "U(2,0,B)1";
     SIGNAL Net_10392 : bit;
-    ATTRIBUTE placement_force OF Net_10392 : SIGNAL IS "U(3,5,A)3";
-    SIGNAL Net_10397 : bit;
-    ATTRIBUTE placement_force OF Net_10397 : SIGNAL IS "U(3,5,B)2";
-    SIGNAL Net_10398 : bit;
-    ATTRIBUTE placement_force OF Net_10398 : SIGNAL IS "U(3,5,B)1";
+    ATTRIBUTE placement_force OF Net_10392 : SIGNAL IS "U(2,0,B)3";
+    SIGNAL Net_10437 : bit;
+    ATTRIBUTE GROUND OF Net_10437 : SIGNAL IS true;
     SIGNAL Net_124 : bit;
     ATTRIBUTE udbclken_assigned OF Net_124 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_124 : SIGNAL IS true;
@@ -81,7 +75,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE global_signal OF Net_2334 : SIGNAL IS true;
     SIGNAL Net_2334_local : bit;
     SIGNAL Net_2627 : bit;
-    ATTRIBUTE placement_force OF Net_2627 : SIGNAL IS "U(2,1,B)1";
+    ATTRIBUTE placement_force OF Net_2627 : SIGNAL IS "U(2,2,A)1";
     SIGNAL Net_2711 : bit;
     ATTRIBUTE global_signal OF Net_2711 : SIGNAL IS true;
     SIGNAL Net_2711_local : bit;
@@ -95,10 +89,10 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE global_signal OF Net_4387 : SIGNAL IS true;
     SIGNAL Net_4387_local : bit;
     SIGNAL Net_5579 : bit;
-    ATTRIBUTE placement_force OF Net_5579 : SIGNAL IS "U(2,1,B)3";
+    ATTRIBUTE placement_force OF Net_5579 : SIGNAL IS "U(3,4,A)0";
     SIGNAL Net_5930 : bit;
     SIGNAL Net_6020 : bit;
-    ATTRIBUTE placement_force OF Net_6020 : SIGNAL IS "U(2,2,B)2";
+    ATTRIBUTE placement_force OF Net_6020 : SIGNAL IS "U(2,3,A)0";
     SIGNAL Net_6117 : bit;
     SIGNAL Net_6196 : bit;
     SIGNAL Net_6196_SYNCOUT : bit;
@@ -107,15 +101,15 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE global_signal OF Net_6987 : SIGNAL IS true;
     SIGNAL Net_6987_local : bit;
     SIGNAL Net_7325 : bit;
-    ATTRIBUTE placement_force OF Net_7325 : SIGNAL IS "U(2,0,A)3";
+    ATTRIBUTE placement_force OF Net_7325 : SIGNAL IS "U(3,0,B)3";
     SIGNAL Net_7353 : bit;
-    ATTRIBUTE placement_force OF Net_7353 : SIGNAL IS "U(2,0,A)2";
+    ATTRIBUTE placement_force OF Net_7353 : SIGNAL IS "U(3,4,A)3";
     SIGNAL Net_7450 : bit;
     SIGNAL Net_7667 : bit;
-    ATTRIBUTE placement_force OF Net_7667 : SIGNAL IS "U(2,0,B)0";
+    ATTRIBUTE placement_force OF Net_7667 : SIGNAL IS "U(2,5,A)1";
     SIGNAL Net_7694 : bit;
     SIGNAL Net_9969 : bit;
-    ATTRIBUTE placement_force OF Net_9969 : SIGNAL IS "U(2,5,B)2";
+    ATTRIBUTE placement_force OF Net_9969 : SIGNAL IS "U(2,0,B)0";
     SIGNAL RS485_CTS(0)__PA : bit;
     SIGNAL RS485_RX(0)__PA : bit;
     SIGNAL RS485_TX(0)__PA : bit;
@@ -139,7 +133,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \BLINK_05HZ:PWMUDB:control_6\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:control_7\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \BLINK_05HZ:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,0,A)0";
+    ATTRIBUTE placement_force OF \BLINK_05HZ:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,5,A)0";
     SIGNAL \BLINK_05HZ:PWMUDB:tc_i\ : bit;
     SIGNAL \BLINK_25HZ:PWMUDB:cmp1_eq\ : bit;
     SIGNAL \BLINK_25HZ:PWMUDB:cmp1_less\ : bit;
@@ -152,7 +146,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \BLINK_25HZ:PWMUDB:control_6\ : bit;
     SIGNAL \BLINK_25HZ:PWMUDB:control_7\ : bit;
     SIGNAL \BLINK_25HZ:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \BLINK_25HZ:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,0,B)1";
+    ATTRIBUTE placement_force OF \BLINK_25HZ:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,5,A)3";
     SIGNAL \BLINK_25HZ:PWMUDB:tc_i\ : bit;
     SIGNAL \BLINK_CTRL_EN:control_2\ : bit;
     SIGNAL \BLINK_CTRL_EN:control_3\ : bit;
@@ -192,7 +186,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \PWM_MOTORS:PWMUDB:cmp2_eq\ : bit;
     SIGNAL \PWM_MOTORS:PWMUDB:cmp2_less\ : bit;
     SIGNAL \PWM_MOTORS:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \PWM_MOTORS:PWMUDB:runmode_enable\ : SIGNAL IS "U(3,5,A)0";
+    ATTRIBUTE placement_force OF \PWM_MOTORS:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,0,A)0";
     SIGNAL \PWM_MOTORS:PWMUDB:tc_i\ : bit;
     SIGNAL \PWM_MOTORS_3:PWMUDB:cmp1_eq\ : bit;
     SIGNAL \PWM_MOTORS_3:PWMUDB:cmp1_less\ : bit;
@@ -207,18 +201,18 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \RESET_FF:control_6\ : bit;
     SIGNAL \RESET_FF:control_7\ : bit;
     SIGNAL \SD:Net_10\ : bit;
-    ATTRIBUTE placement_force OF \SD:Net_10\ : SIGNAL IS "U(3,3,A)0";
+    ATTRIBUTE placement_force OF \SD:Net_10\ : SIGNAL IS "U(3,5,A)0";
     SIGNAL \SD:Net_16\ : bit;
     SIGNAL \SD:Net_19\ : bit;
     ATTRIBUTE udbclken_assigned OF \SD:Net_19\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \SD:Net_19\ : SIGNAL IS true;
     SIGNAL \SD:Net_19_local\ : bit;
     SIGNAL \SD:Net_1\ : bit;
-    ATTRIBUTE placement_force OF \SD:Net_1\ : SIGNAL IS "U(3,3,A)1";
+    ATTRIBUTE placement_force OF \SD:Net_1\ : SIGNAL IS "U(3,5,B)0";
     SIGNAL \SD:Net_22\ : bit;
-    ATTRIBUTE placement_force OF \SD:Net_22\ : SIGNAL IS "U(3,2,A)0";
+    ATTRIBUTE placement_force OF \SD:Net_22\ : SIGNAL IS "U(3,5,B)1";
     SIGNAL \SD:SPI0:BSPIM:cnt_enable\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:cnt_enable\ : SIGNAL IS "U(3,2,A)1";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:cnt_enable\ : SIGNAL IS "U(2,5,B)0";
     SIGNAL \SD:SPI0:BSPIM:cnt_tc\ : bit;
     SIGNAL \SD:SPI0:BSPIM:count_0\ : bit;
     SIGNAL \SD:SPI0:BSPIM:count_1\ : bit;
@@ -228,48 +222,48 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \SD:SPI0:BSPIM:count_5\ : bit;
     SIGNAL \SD:SPI0:BSPIM:count_6\ : bit;
     SIGNAL \SD:SPI0:BSPIM:ld_ident\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:ld_ident\ : SIGNAL IS "U(3,1,A)2";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:ld_ident\ : SIGNAL IS "U(2,3,B)2";
     SIGNAL \SD:SPI0:BSPIM:load_cond\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:load_cond\ : SIGNAL IS "U(3,0,A)1";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:load_cond\ : SIGNAL IS "U(2,4,B)1";
     SIGNAL \SD:SPI0:BSPIM:load_rx_data\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:load_rx_data\ : SIGNAL IS "U(3,3,A)3";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:load_rx_data\ : SIGNAL IS "U(3,2,A)1";
     SIGNAL \SD:SPI0:BSPIM:mosi_from_dp\ : bit;
     SIGNAL \SD:SPI0:BSPIM:mosi_from_dp_reg\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : SIGNAL IS "U(2,3,A)2";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : SIGNAL IS "U(3,3,A)0";
     SIGNAL \SD:SPI0:BSPIM:mosi_hs_reg\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_hs_reg\ : SIGNAL IS "U(2,3,A)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_hs_reg\ : SIGNAL IS "U(3,5,A)1";
     SIGNAL \SD:SPI0:BSPIM:mosi_pre_reg\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg\ : SIGNAL IS "U(3,0,B)1";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg\ : SIGNAL IS "U(3,2,B)1";
     SIGNAL \SD:SPI0:BSPIM:mosi_pre_reg_split\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : SIGNAL IS "U(3,1,B)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : SIGNAL IS "U(2,2,B)0";
     SIGNAL \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : SIGNAL IS "U(3,0,B)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : SIGNAL IS "U(3,2,A)0";
     SIGNAL \SD:SPI0:BSPIM:rx_status_4\ : bit;
     SIGNAL \SD:SPI0:BSPIM:rx_status_5\ : bit;
     SIGNAL \SD:SPI0:BSPIM:rx_status_6\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:rx_status_6\ : SIGNAL IS "U(2,4,B)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:rx_status_6\ : SIGNAL IS "U(3,2,A)2";
     SIGNAL \SD:SPI0:BSPIM:state_0\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_0\ : SIGNAL IS "U(3,1,A)1";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_0\ : SIGNAL IS "U(2,3,B)1";
     SIGNAL \SD:SPI0:BSPIM:state_1\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_1\ : SIGNAL IS "U(3,0,A)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_1\ : SIGNAL IS "U(2,4,B)0";
     SIGNAL \SD:SPI0:BSPIM:state_2\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_2\ : SIGNAL IS "U(3,1,A)0";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:state_2\ : SIGNAL IS "U(2,3,B)0";
     SIGNAL \SD:SPI0:BSPIM:tx_status_0\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:tx_status_0\ : SIGNAL IS "U(3,0,A)2";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:tx_status_0\ : SIGNAL IS "U(2,4,B)2";
     SIGNAL \SD:SPI0:BSPIM:tx_status_1\ : bit;
     SIGNAL \SD:SPI0:BSPIM:tx_status_2\ : bit;
     SIGNAL \SD:SPI0:BSPIM:tx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:tx_status_4\ : SIGNAL IS "U(3,0,A)3";
+    ATTRIBUTE placement_force OF \SD:SPI0:BSPIM:tx_status_4\ : SIGNAL IS "U(2,5,B)3";
     SIGNAL \\\SD:SPI0_CS(0)\\__PA\ : bit;
     SIGNAL \\\SD:miso0(0)\\__PA\ : bit;
     SIGNAL \\\SD:mosi0(0)\\__PA\ : bit;
     SIGNAL \\\SD:sclk0(0)\\__PA\ : bit;
     SIGNAL \UART_RS485:BUART:counter_load_not\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:counter_load_not\ : SIGNAL IS "U(2,2,B)3";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:counter_load_not\ : SIGNAL IS "U(2,5,B)1";
     SIGNAL \UART_RS485:BUART:rx_bitclk_enable\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_bitclk_enable\ : SIGNAL IS "U(3,5,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_bitclk_enable\ : SIGNAL IS "U(3,4,B)0";
     SIGNAL \UART_RS485:BUART:rx_break_detect\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_break_detect\ : SIGNAL IS "U(3,4,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_break_detect\ : SIGNAL IS "U(3,3,B)0";
     SIGNAL \UART_RS485:BUART:rx_count7_tc\ : bit;
     SIGNAL \UART_RS485:BUART:rx_count_0\ : bit;
     SIGNAL \UART_RS485:BUART:rx_count_1\ : bit;
@@ -279,66 +273,64 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \UART_RS485:BUART:rx_count_5\ : bit;
     SIGNAL \UART_RS485:BUART:rx_count_6\ : bit;
     SIGNAL \UART_RS485:BUART:rx_counter_load\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_counter_load\ : SIGNAL IS "U(3,2,B)3";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_counter_load\ : SIGNAL IS "U(3,1,B)3";
     SIGNAL \UART_RS485:BUART:rx_fifofull\ : bit;
     SIGNAL \UART_RS485:BUART:rx_fifonotempty\ : bit;
     SIGNAL \UART_RS485:BUART:rx_last\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_last\ : SIGNAL IS "U(2,3,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_last\ : SIGNAL IS "U(2,1,B)2";
     SIGNAL \UART_RS485:BUART:rx_load_fifo\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_load_fifo\ : SIGNAL IS "U(3,4,A)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_load_fifo\ : SIGNAL IS "U(3,0,A)1";
     SIGNAL \UART_RS485:BUART:rx_state_0\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_0\ : SIGNAL IS "U(3,3,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_0\ : SIGNAL IS "U(3,1,A)0";
     SIGNAL \UART_RS485:BUART:rx_state_1\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_1\ : SIGNAL IS "U(3,2,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_1\ : SIGNAL IS "U(3,1,B)0";
     SIGNAL \UART_RS485:BUART:rx_state_2\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_2\ : SIGNAL IS "U(3,4,B)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_2\ : SIGNAL IS "U(3,3,B)1";
     SIGNAL \UART_RS485:BUART:rx_state_2_split\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_2_split\ : SIGNAL IS "U(3,4,A)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_2_split\ : SIGNAL IS "U(3,0,A)0";
     SIGNAL \UART_RS485:BUART:rx_state_3\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_3\ : SIGNAL IS "U(3,3,B)2";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_3\ : SIGNAL IS "U(3,1,A)2";
     SIGNAL \UART_RS485:BUART:rx_state_stop1_reg\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_stop1_reg\ : SIGNAL IS "U(3,2,B)2";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_state_stop1_reg\ : SIGNAL IS "U(3,1,B)2";
     SIGNAL \UART_RS485:BUART:rx_status_1\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_1\ : SIGNAL IS "U(3,3,B)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_1\ : SIGNAL IS "U(3,1,A)1";
     SIGNAL \UART_RS485:BUART:rx_status_3\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_3\ : SIGNAL IS "U(3,2,B)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_3\ : SIGNAL IS "U(3,1,B)1";
     SIGNAL \UART_RS485:BUART:rx_status_4\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_4\ : SIGNAL IS "U(3,5,A)2";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_4\ : SIGNAL IS "U(3,3,A)3";
     SIGNAL \UART_RS485:BUART:rx_status_5\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_5\ : SIGNAL IS "U(3,3,A)2";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:rx_status_5\ : SIGNAL IS "U(3,5,A)3";
     SIGNAL \UART_RS485:BUART:tx_bitclk\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_bitclk\ : SIGNAL IS "U(2,2,A)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_bitclk\ : SIGNAL IS "U(2,3,A)1";
     SIGNAL \UART_RS485:BUART:tx_bitclk_enable_pre\ : bit;
     SIGNAL \UART_RS485:BUART:tx_counter_dp\ : bit;
     SIGNAL \UART_RS485:BUART:tx_fifo_empty\ : bit;
     SIGNAL \UART_RS485:BUART:tx_fifo_notfull\ : bit;
     SIGNAL \UART_RS485:BUART:tx_shift_out\ : bit;
     SIGNAL \UART_RS485:BUART:tx_state_0\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_0\ : SIGNAL IS "U(2,2,B)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_0\ : SIGNAL IS "U(2,4,A)1";
     SIGNAL \UART_RS485:BUART:tx_state_1\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_1\ : SIGNAL IS "U(2,2,A)3";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_1\ : SIGNAL IS "U(2,4,A)3";
     SIGNAL \UART_RS485:BUART:tx_state_2\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_2\ : SIGNAL IS "U(2,2,A)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_state_2\ : SIGNAL IS "U(2,4,A)0";
     SIGNAL \UART_RS485:BUART:tx_status_0\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_status_0\ : SIGNAL IS "U(2,2,B)1";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_status_0\ : SIGNAL IS "U(2,5,B)2";
     SIGNAL \UART_RS485:BUART:tx_status_2\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_status_2\ : SIGNAL IS "U(2,3,A)3";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:tx_status_2\ : SIGNAL IS "U(2,1,A)3";
     SIGNAL \UART_RS485:BUART:txn\ : bit;
-    ATTRIBUTE placement_force OF \UART_RS485:BUART:txn\ : SIGNAL IS "U(2,1,A)0";
+    ATTRIBUTE placement_force OF \UART_RS485:BUART:txn\ : SIGNAL IS "U(2,2,A)3";
     SIGNAL __ONE__ : bit;
-    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(0,3,B)3";
+    ATTRIBUTE placement_force OF __ONE__ : SIGNAL IS "U(2,0,A)1";
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
     ATTRIBUTE GROUND OF __ZERO__ : SIGNAL IS true;
     SIGNAL cy_srff_1 : bit;
-    ATTRIBUTE placement_force OF cy_srff_1 : SIGNAL IS "U(2,5,A)0";
+    ATTRIBUTE placement_force OF cy_srff_1 : SIGNAL IS "U(2,1,A)0";
     SIGNAL tmpOE__TOAST_1B_net_0 : bit;
     ATTRIBUTE POWER OF tmpOE__TOAST_1B_net_0 : SIGNAL IS true;
-    SIGNAL zero : bit;
-    ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     SIGNAL \ClockBlock.clk_bus_glb_ff__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_2__sig\ : bit;
-    SIGNAL \ClockBlock.dclk_glb_ff_4__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_3__sig\ : bit;
+    SIGNAL \ClockBlock.dclk_glb_ff_5__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.cl0__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0.z0__sig\ : bit;
@@ -353,7 +345,7 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1.sor__sig\ : bit;
     SIGNAL \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1.cmsbo__sig\ : bit;
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg_split\ : LABEL IS "U(2,2)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF TOAST_1B(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF TOAST_1B(0) : LABEL IS "P2[7]";
@@ -402,175 +394,167 @@ ARCHITECTURE __DEFAULT__ OF Toast IS
     ATTRIBUTE lib_model OF TOAST_4B(0) : LABEL IS "iocell23";
     ATTRIBUTE Location OF TOAST_4B(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF Net_2627 : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF Net_2627 : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF Net_2627 : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:counter_load_not\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \UART_RS485:BUART:counter_load_not\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:counter_load_not\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_status_0\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_status_0\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_status_0\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_status_2\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_status_2\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_status_2\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_counter_load\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_counter_load\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_counter_load\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_4\ : LABEL IS "macrocell7";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_4\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_4\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_5\ : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_5\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_5\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:load_rx_data\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:load_rx_data\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:load_rx_data\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \SD:Net_10\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \SD:Net_10\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \SD:Net_10\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:tx_status_0\ : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:tx_status_0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:tx_status_0\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:tx_status_4\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:tx_status_4\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:tx_status_4\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:rx_status_6\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:rx_status_6\ : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF Net_10357 : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF Net_10357 : LABEL IS "U(2,4)";
-    ATTRIBUTE lib_model OF Net_7353 : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF Net_7353 : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF Net_7325 : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF Net_7325 : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF Net_10379 : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF Net_10379 : LABEL IS "U(2,5)";
-    ATTRIBUTE Location OF RS485_RX(0)_SYNC : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF Net_10398 : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF Net_10398 : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF Net_10397 : LABEL IS "macrocell19";
-    ATTRIBUTE Location OF Net_10397 : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:rx_status_6\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF Net_7353 : LABEL IS "macrocell14";
+    ATTRIBUTE Location OF Net_7353 : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF Net_7325 : LABEL IS "macrocell15";
+    ATTRIBUTE Location OF Net_7325 : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF RS485_RX(0)_SYNC : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF __ONE__ : LABEL IS "macrocell16";
+    ATTRIBUTE Location OF __ONE__ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \PWM_MOTORS:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \PWM_MOTORS:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(2,0)";
     ATTRIBUTE Location OF \PACER_TIMER:TimerHW\ : LABEL IS "F(Timer,2)";
     ATTRIBUTE lib_model OF \RESET_FF:Sync:ctrl_reg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \RESET_FF:Sync:ctrl_reg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \RESET_FF:Sync:ctrl_reg\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \FF_STATUS:sts:sts_reg\ : LABEL IS "statuscell1";
-    ATTRIBUTE Location OF \FF_STATUS:sts:sts_reg\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \FF_STATUS:sts:sts_reg\ : LABEL IS "U(2,3)";
     ATTRIBUTE Location OF \MY_TIMER:TimerHW\ : LABEL IS "F(Timer,1)";
-    ATTRIBUTE Location OF \Sync_1:genblk1[0]:INST\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \Sync_1:genblk1[0]:INST\ : LABEL IS "U(2,0)";
     ATTRIBUTE Location OF \UART_RS485:RXInternalInterrupt\ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:TxShifter:u0\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:TxShifter:u0\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:sTX:TxSts\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:TxSts\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:sTX:TxSts\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:sRX:RxShifter:u0\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \UART_RS485:BUART:sRX:RxShifter:u0\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \UART_RS485:BUART:sRX:RxShifter:u0\ : LABEL IS "U(3,1)";
     ATTRIBUTE Location OF \UART_RS485:BUART:sRX:RxBitCounter\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \UART_RS485:BUART:sRX:RxSts\ : LABEL IS "statusicell2";
     ATTRIBUTE Location OF \UART_RS485:BUART:sRX:RxSts\ : LABEL IS "U(3,1)";
     ATTRIBUTE Location OF ISR_RS485_RX : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
     ATTRIBUTE Location OF \CYCLES_TIMER:TimerHW\ : LABEL IS "F(Timer,0)";
     ATTRIBUTE Location OF ISR_CYCLES : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:BitCounter\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:BitCounter\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:TxStsReg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:TxStsReg\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:TxStsReg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:RxStsReg\ : LABEL IS "statusicell4";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:RxStsReg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:RxStsReg\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:sR8:Dp:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:sR8:Dp:u0\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:sR8:Dp:u0\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell7";
-    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \LED_CTRL:Sync:ctrl_reg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \LED_CTRL:Sync:ctrl_reg\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \LED_CTRL:Sync:ctrl_reg\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \BLINK_CTRL_EN:Sync:ctrl_reg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \BLINK_CTRL_EN:Sync:ctrl_reg\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \BLINK_CTRL_EN:Sync:ctrl_reg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell5";
     ATTRIBUTE Location OF \BLINK_25HZ:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell8";
-    ATTRIBUTE Location OF \BLINK_25HZ:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \BLINK_25HZ:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \MOTOR_ON_OFF_1:Sync:ctrl_reg\ : LABEL IS "controlcell6";
-    ATTRIBUTE Location OF \MOTOR_ON_OFF_1:Sync:ctrl_reg\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \MOTOR_ON_OFF_1:Sync:ctrl_reg\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \MY_TIMER_REG:Sync:ctrl_reg\ : LABEL IS "controlcell7";
-    ATTRIBUTE Location OF \MY_TIMER_REG:Sync:ctrl_reg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \MY_TIMER_REG:Sync:ctrl_reg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \PWM_MOTORS_3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell9";
-    ATTRIBUTE Location OF \PWM_MOTORS_3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF Net_9969 : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF Net_9969 : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF Net_10345 : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF Net_10345 : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF cy_srff_1 : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF cy_srff_1 : LABEL IS "U(2,5)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:txn\ : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF \UART_RS485:BUART:txn\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "macrocell26";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF Net_6020 : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF Net_6020 : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell37";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "macrocell38";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_last\ : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_last\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "macrocell44";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "macrocell45";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \SD:Net_1\ : LABEL IS "macrocell46";
-    ATTRIBUTE Location OF \SD:Net_1\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell47";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell48";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "macrocell49";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell50";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "macrocell51";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "macrocell52";
-    ATTRIBUTE Location OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \SD:Net_22\ : LABEL IS "macrocell53";
-    ATTRIBUTE Location OF \SD:Net_22\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell54";
-    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF Net_5579 : LABEL IS "macrocell55";
-    ATTRIBUTE Location OF Net_5579 : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell56";
-    ATTRIBUTE Location OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF Net_7667 : LABEL IS "macrocell57";
-    ATTRIBUTE Location OF Net_7667 : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "macrocell58";
-    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF Net_10382 : LABEL IS "macrocell59";
-    ATTRIBUTE Location OF Net_10382 : LABEL IS "U(3,5)";
-    ATTRIBUTE lib_model OF Net_10392 : LABEL IS "macrocell60";
-    ATTRIBUTE Location OF Net_10392 : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \PWM_MOTORS_3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "macrocell17";
+    ATTRIBUTE Location OF \PWM_MOTORS:PWMUDB:runmode_enable\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF Net_9969 : LABEL IS "macrocell18";
+    ATTRIBUTE Location OF Net_9969 : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF Net_10345 : LABEL IS "macrocell19";
+    ATTRIBUTE Location OF Net_10345 : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF cy_srff_1 : LABEL IS "macrocell20";
+    ATTRIBUTE Location OF cy_srff_1 : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:txn\ : LABEL IS "macrocell21";
+    ATTRIBUTE Location OF \UART_RS485:BUART:txn\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "macrocell22";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_1\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "macrocell23";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_0\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "macrocell24";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_state_2\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF Net_6020 : LABEL IS "macrocell25";
+    ATTRIBUTE Location OF Net_6020 : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "macrocell26";
+    ATTRIBUTE Location OF \UART_RS485:BUART:tx_bitclk\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "macrocell27";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_1\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "macrocell28";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "macrocell29";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_load_fifo\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "macrocell30";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_3\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "macrocell31";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_2\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "macrocell32";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_bitclk_enable\ : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "macrocell33";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_stop1_reg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "macrocell34";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_1\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "macrocell35";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg_split_1\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "macrocell36";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_status_3\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "macrocell37";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_break_detect\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_last\ : LABEL IS "macrocell38";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_last\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "macrocell39";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_2\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "macrocell40";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_1\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "macrocell41";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:state_0\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \SD:Net_1\ : LABEL IS "macrocell42";
+    ATTRIBUTE Location OF \SD:Net_1\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "macrocell43";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_hs_reg\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "macrocell44";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_pre_reg\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "macrocell45";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:load_cond\ : LABEL IS "U(2,4)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "macrocell46";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:mosi_from_dp_reg\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "macrocell47";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:ld_ident\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "macrocell48";
+    ATTRIBUTE Location OF \SD:SPI0:BSPIM:cnt_enable\ : LABEL IS "U(2,5)";
+    ATTRIBUTE lib_model OF \SD:Net_22\ : LABEL IS "macrocell49";
+    ATTRIBUTE Location OF \SD:Net_22\ : LABEL IS "U(3,5)";
+    ATTRIBUTE lib_model OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell50";
+    ATTRIBUTE Location OF \BLINK_05HZ:PWMUDB:runmode_enable\ : LABEL IS "U(2,5)";
+    ATTRIBUTE lib_model OF Net_5579 : LABEL IS "macrocell51";
+    ATTRIBUTE Location OF Net_5579 : LABEL IS "U(3,4)";
+    ATTRIBUTE lib_model OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "macrocell52";
+    ATTRIBUTE Location OF \BLINK_25HZ:PWMUDB:runmode_enable\ : LABEL IS "U(2,5)";
+    ATTRIBUTE lib_model OF Net_7667 : LABEL IS "macrocell53";
+    ATTRIBUTE Location OF Net_7667 : LABEL IS "U(2,5)";
+    ATTRIBUTE lib_model OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "macrocell54";
+    ATTRIBUTE Location OF \UART_RS485:BUART:rx_state_2_split\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF Net_10382 : LABEL IS "macrocell55";
+    ATTRIBUTE Location OF Net_10382 : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF Net_10392 : LABEL IS "macrocell56";
+    ATTRIBUTE Location OF Net_10392 : LABEL IS "U(2,0)";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -948,17 +932,17 @@ BEGIN
             dclk_0 => Net_124_local,
             dclk_glb_1 => \SD:Net_19\,
             dclk_1 => \SD:Net_19_local\,
-            dclk_glb_2 => Net_4387,
-            dclk_2 => Net_4387_local,
-            dclk_glb_3 => Net_6987,
-            dclk_3 => Net_6987_local,
-            dclk_glb_4 => Net_2711,
-            dclk_4 => Net_2711_local,
-            dclk_glb_5 => Net_2334,
-            dclk_5 => Net_2334_local,
+            dclk_glb_2 => Net_2334,
+            dclk_2 => Net_2334_local,
+            dclk_glb_3 => Net_4387,
+            dclk_3 => Net_4387_local,
+            dclk_glb_4 => Net_6987,
+            dclk_4 => Net_6987_local,
+            dclk_glb_5 => Net_2711,
+            dclk_5 => Net_2711_local,
             clk_bus_glb_ff => \ClockBlock.clk_bus_glb_ff__sig\,
-            dclk_glb_ff_2 => \ClockBlock.dclk_glb_ff_2__sig\,
-            dclk_glb_ff_4 => \ClockBlock.dclk_glb_ff_4__sig\);
+            dclk_glb_ff_3 => \ClockBlock.dclk_glb_ff_3__sig\,
+            dclk_glb_ff_5 => \ClockBlock.dclk_glb_ff_5__sig\);
 
     TOAST_1B:logicalport
         GENERIC MAP(
@@ -1038,12 +1022,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_1B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_1B(0)__PA,
             oe => open,
-            pin_input => Net_10379,
-            pad_out => TOAST_1B(0)_PAD,
             pad_in => TOAST_1B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2679,12 +2661,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_2B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_2B(0)__PA,
             oe => open,
-            pin_input => Net_10357,
-            pad_out => TOAST_2B(0)_PAD,
             pad_in => TOAST_2B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -2863,12 +2843,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_3B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_3B(0)__PA,
             oe => open,
-            pin_input => Net_10397,
-            pad_out => TOAST_3B(0)_PAD,
             pad_in => TOAST_3B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -3047,12 +3025,10 @@ BEGIN
             oe_sync_mode => 0,
             logicalport => "TOAST_4B",
             logicalport_pin_id => 0,
-            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
         PORT MAP(
             pa_out => TOAST_4B(0)__PA,
             oe => open,
-            pin_input => Net_10398,
-            pad_out => TOAST_4B(0)_PAD,
             pad_in => TOAST_4B(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
@@ -3198,15 +3174,6 @@ BEGIN
             main_4 => \SD:SPI0:BSPIM:count_0\,
             main_5 => \SD:SPI0:BSPIM:rx_status_4\);
 
-    Net_10357:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10357,
-            main_0 => Net_10345);
-
     Net_7353:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1)",
@@ -3228,15 +3195,6 @@ BEGIN
             main_1 => Net_7450,
             main_2 => Net_7667);
 
-    Net_10379:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10379,
-            main_0 => Net_9969);
-
     RS485_RX(0)_SYNC:synccell
         GENERIC MAP(
             clk_inv => '0',
@@ -3245,24 +3203,6 @@ BEGIN
             in => Net_6196,
             out => Net_6196_SYNCOUT,
             clock => ClockBlock_BUS_CLK);
-
-    Net_10398:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10398,
-            main_0 => Net_10392);
-
-    Net_10397:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0)",
-            regmode => 0,
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_10397,
-            main_0 => Net_10382);
 
     __ONE__:macrocell
         GENERIC MAP(
@@ -3362,7 +3302,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_2__sig\,
+            clock => \ClockBlock.dclk_glb_ff_3__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,
@@ -3572,7 +3512,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clock => \ClockBlock.dclk_glb_ff_4__sig\,
+            clock => \ClockBlock.dclk_glb_ff_5__sig\,
             kill => open,
             enable => __ONE__,
             capture => open,
