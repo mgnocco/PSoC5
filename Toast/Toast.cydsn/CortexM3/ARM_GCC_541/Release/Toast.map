@@ -3234,115 +3234,116 @@ END GROUP
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 0x000172dc                __exidx_end = .
 
-.rodata         0x000172e0     0x2350
+.rodata         0x000172e0     0x2340
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata        0x000172e0     0x1f4d .\CortexM3\ARM_GCC_541\Release\command_processing.o
  *fill*         0x0001922d        0x3 
  .rodata        0x00019230       0x66 .\CortexM3\ARM_GCC_541\Release\SD_RTC_functions.o
  *fill*         0x00019296        0x2 
- .rodata        0x00019298       0x4c .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
- .rodata        0x000192e4       0x10 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_LFN.o)
-                0x000192e4                FAT_LFN_API
- .rodata        0x000192f4       0x10 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Misc.o)
-                0x000192f4                FAT_SFN_API
+ .rodata        0x00019298       0x3a .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ *fill*         0x000192d2        0x2 
+ .rodata        0x000192d4       0x10 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_LFN.o)
+                0x000192d4                FAT_LFN_API
+ .rodata        0x000192e4       0x10 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Misc.o)
+                0x000192e4                FAT_SFN_API
  .rodata.str1.1
-                0x00019304        0x3 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Open.o)
- *fill*         0x00019307        0x1 
- .rodata        0x00019308       0x78 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FS_Misc.o)
+                0x000192f4        0x3 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Open.o)
+ *fill*         0x000192f7        0x1 
+ .rodata        0x000192f8       0x78 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FS_Misc.o)
  .rodata.str1.1
-                0x00019380       0x30 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FS_Misc.o)
- .rodata        0x000193b0       0x18 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Dir.o)
- .rodata        0x000193c8       0x68 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(MMC_Drv.o)
-                0x00019410                FS_MMC_SPI_Driver
+                0x00019370       0x30 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FS_Misc.o)
+ .rodata        0x000193a0       0x18 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(FAT_Dir.o)
+ .rodata        0x000193b8       0x68 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(MMC_Drv.o)
+                0x00019400                FS_MMC_SPI_Driver
  .rodata.str1.1
-                0x00019430        0x4 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(MMC_Drv.o)
+                0x00019420        0x4 ..\src\emFile_V322c\LinkLibrary\PSoC5\GCC\libemf16noslfn.a(MMC_Drv.o)
  .rodata.str1.1
-                0x00019434        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
- *fill*         0x00019436        0x2 
+                0x00019424        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ *fill*         0x00019426        0x2 
  .rodata._global_impure_ptr
-                0x00019438        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x00019438                _global_impure_ptr
+                0x00019428        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00019428                _global_impure_ptr
  .rodata.str1.1
-                0x0001943c       0x11 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x0001942c       0x11 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf.o)
  .rodata.str1.1
-                0x0001944d       0x12 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
+                0x0001943d       0x12 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_float.o)
  .rodata.str1.1
-                0x0001945f       0x22 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0001944f       0x22 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata.str1.1
-                0x00019481        0xd c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
+                0x00019471        0xd c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-dtoa.o)
                                   0xf (size before relaxing)
- *fill*         0x0001948e        0x2 
+ *fill*         0x0001947e        0x2 
  .rodata.__sf_fake_stdin
-                0x00019490       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x00019490                __sf_fake_stdin
+                0x00019480       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x00019480                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x000194b0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x000194b0                __sf_fake_stdout
+                0x000194a0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x000194a0                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x000194d0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
-                0x000194d0                __sf_fake_stderr
+                0x000194c0       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-findfp.o)
+                0x000194c0                __sf_fake_stderr
  .rodata.str1.1
-                0x000194f0        0x6 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
+                0x000194e0        0x6 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-locale.o)
                                   0xb (size before relaxing)
- *fill*         0x000194f6        0x2 
+ *fill*         0x000194e6        0x2 
  .rodata.__mprec_tens
-                0x000194f8       0xc8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x000194f8                __mprec_tens
+                0x000194e8       0xc8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x000194e8                __mprec_tens
  .rodata.p05.5408
-                0x000195c0        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
- *fill*         0x000195cc        0x4 
+                0x000195b0        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+ *fill*         0x000195bc        0x4 
  .rodata.__mprec_bigtens
-                0x000195d0       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
-                0x000195d0                __mprec_bigtens
+                0x000195c0       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-mprec.o)
+                0x000195c0                __mprec_bigtens
  .rodata.str1.1
-                0x000195f8       0x11 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0001960c                . = ALIGN (0x4)
+                0x000195e8       0x11 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x000195fc                . = ALIGN (0x4)
  *(.init)
- .init          0x000195f8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x000195f8                _init
- .init          0x000195fc        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x0001960c                . = ALIGN (0x4)
-                0x0001960c                __preinit_array_start = .
+ .init          0x000195e8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x000195e8                _init
+ .init          0x000195ec        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x000195fc                . = ALIGN (0x4)
+                0x000195fc                __preinit_array_start = .
  *(.preinit_array)
-                0x0001960c                __preinit_array_end = .
-                0x0001960c                . = ALIGN (0x4)
-                0x0001960c                __init_array_start = .
+                0x000195fc                __preinit_array_end = .
+                0x000195fc                . = ALIGN (0x4)
+                0x000195fc                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00019604        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x00019608        0x4 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
-                0x0001960c                __init_array_end = .
-                0x0001960c                . = ALIGN (0x4)
+ .init_array    0x000195f4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x000195f8        0x4 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x000195fc                __init_array_end = .
+                0x000195fc                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0001960c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x0001960c                _fini
- .fini          0x00019610        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00019618                . = ALIGN (0x4)
-                0x00019618                __fini_array_start = .
+ .fini          0x000195fc        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x000195fc                _fini
+ .fini          0x00019600        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00019608                . = ALIGN (0x4)
+                0x00019608                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00019618        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x00019608        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0001961c                __fini_array_end = .
-                0x0001961c                . = ALIGN (0x4)
+                0x0001960c                __fini_array_end = .
+                0x0001960c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0001961c                . = ALIGN (0x4)
+                0x0001960c                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0001961c                . = ALIGN (0x4)
-                0x0001961c                __cy_regions = .
-                0x0001961c        0x4 LONG 0x19630 __cy_region_init_ram
-                0x00019620        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x00019624        0x4 LONG 0x190 __cy_region_init_size_ram
-                0x00019628        0x4 LONG 0x2a50 __cy_region_zero_size_ram
-                0x0001962c                __cy_regions_end = .
-                0x00019630                . = ALIGN (0x8)
- *fill*         0x0001962c        0x4 
-                0x00019630                _etext = .
+                0x0001960c                . = ALIGN (0x4)
+                0x0001960c                __cy_regions = .
+                0x0001960c        0x4 LONG 0x19620 __cy_region_init_ram
+                0x00019610        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00019614        0x4 LONG 0x190 __cy_region_init_size_ram
+                0x00019618        0x4 LONG 0x2a50 __cy_region_zero_size_ram
+                0x0001961c                __cy_regions_end = .
+                0x00019620                . = ALIGN (0x8)
+ *fill*         0x0001961c        0x4 
+                0x00019620                _etext = .
 
 .ramvectors     0x1fff8000       0xc0
                 0x1fff8000                __cy_region_start_ram = .
@@ -3356,7 +3357,7 @@ END GROUP
  .noinit        0x1fff80c4        0x1 .\CortexM3\ARM_GCC_541\Release\Toast.a(CyLib.o)
                 0x1fff80c4                CyResetStatus
 
-.data           0x1fff80c8      0x190 load address 0x00019630
+.data           0x1fff80c8      0x190 load address 0x00019620
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -3396,10 +3397,10 @@ END GROUP
  *(.ram)
                 0x1fff8258                _edata = .
 
-.igot.plt       0x1fff8258        0x0 load address 0x000197c0
+.igot.plt       0x1fff8258        0x0 load address 0x000197b0
  .igot.plt      0x1fff8258        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8258     0x2a50 load address 0x000197c0
+.bss            0x1fff8258     0x2a50 load address 0x000197b0
                 0x1fff8258                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -3530,11 +3531,11 @@ END GROUP
                 0x1fffaca8                __end = .
                 0x1fffaca8                PROVIDE (end, .)
                 0x1fffaca8                PROVIDE (__bss_end__, .)
-                0x00019630                __cy_region_init_ram = LOADADDR (.data)
+                0x00019620                __cy_region_init_ram = LOADADDR (.data)
                 0x00000190                __cy_region_init_size_ram = (_edata - ADDR (.data))
                 0x00002a50                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fffaca8      0x800 load address 0x000197c0
+.heap           0x1fffaca8      0x800 load address 0x000197b0
                 0x1fffaca8                . = _end
                 0x1fffb4a8                . = (. + 0x800)
  *fill*         0x1fffaca8      0x800 
@@ -3564,9 +3565,9 @@ END GROUP
                 0x0003ffc0       0x40 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
                 0x0003ffc0                cy_meta_loadable
 
-.cyconfigecc    0x800003a0      0x9a8
+.cyconfigecc    0x800003a0      0x9b0
  *(.cyconfigecc)
- .cyconfigecc   0x800003a0      0x9a8 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .cyconfigecc   0x800003a0      0x9b0 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
                 0x800003a0                cy_meta_configecc
 
 .cycustnvl      0x90000000        0x4

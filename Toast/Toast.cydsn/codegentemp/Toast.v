@@ -1,6 +1,6 @@
 // ======================================================================
 // Toast.v generated from TopDesign.cysch
-// 11/02/2022 at 18:46
+// 11/03/2022 at 18:15
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1768,7 +1768,7 @@ module top ;
 		#(.id("f801b4a9-38f2-478d-b30d-81c0e8844af6"),
 		  .source_clock_id("61737EF6-3B74-48f9-8B91-F7473A442AE7"),
 		  .divisor(0),
-		  .period("500000000"),
+		  .period("41666666.6666667"),
 		  .is_direct(0),
 		  .is_digital(1))
 		CLOCK_PWM
